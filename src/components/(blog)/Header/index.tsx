@@ -17,9 +17,9 @@ import { useState } from "react";
 import { cx } from "@/src/utils";
 
 const Header = () => {
-  const [mode, setMode] = useThemeSwitch();
+  const [mode, setMode] = useState<string>("light");
   const { changeNav, toggle, nav } = useContext(AlexioContext);
-  const [click, setClick] = useState(false);
+  const [click, setClick] = useState(false)
 
   const toggle2 = () => {
     setClick(!click);
@@ -81,7 +81,7 @@ const Header = () => {
           Home
         </Link>
         <button
-          onClick={() => setMode(mode === "light" ? "dark" : "light")}
+          onClick={() => setMode (mode === "light" ? "dark" : "light")}
           className={cx(
             "w-6 h-6 ease ml-2 flex items-center justify-center rounded-full p-1",
             mode === "light" ? "bg-dark text-light" : "bg-light text-dark"
