@@ -12,7 +12,7 @@ const SectionContainer = ({
   leftImageTitle,
 }) => {
   const { nav, changeNav } = useContext(AlexioContext);
-  const activePageClass = () => (name === nav ? "" : "page--inactive");
+  const activePageClass = (name: any) => (name === nav ? "" : "page--inactive");
   return (
     <div
       className={`page ${extraClass} white-bg ${activePageClass(name)}`}
