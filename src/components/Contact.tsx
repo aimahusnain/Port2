@@ -46,10 +46,12 @@ const Contact = () => {
   };
   return (
     <SectionContainer
+      extraClass="about-section" // Add extraClass or adjust as per your requirements
       name={"contact"}
       title="CONTACT ME"
       subTitle={"GET IN TOUCH"}
       leftImage="static/img/title-4.jpg"
+      leftImageTitle={"About Me"} // Add leftImageTitle or adjust as per your requirements
     >
       <div className="row">
         <div className="col-lg-12 m-30px-b sm-m-15px-b">

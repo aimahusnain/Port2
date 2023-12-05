@@ -12,7 +12,7 @@ const AboutUs = () => {
     >
       <div className="row">
         <div className="col-md-4">
-          <img src="static/img/my-pic.jpg" title alt />
+        <img src="static/img/my-pic.jpg" title="" alt="" />
         </div>
         <div className="col-md-8 md-m-30px-t">
           <div className="about-text">

@@ -7,15 +7,15 @@ const HomeBanner = () => {
   const activePageClass = () => ("home" === nav ? "" : "page--inactive");
   return (
     <div
-      className={`page home-banner white-bg ${activePageClass("home")}`}
-      id={"home"}
-      onClick={() => changeNav("home", false)}
-    >
+    className={`page home-banner white-bg ${activePageClass()}`}
+    id={"home"}
+    onClick={() => changeNav("home", false)}
+  >
       <div className="container-fluid p-0">
         <div className="row no-gutters full-screen">
           <div className="col-lg-3 col-xl-4 blue-bg">
             <div className="d-flex align-items-end home-user-avtar v-center-box">
-              <img src="static/img/user.png" title alt />
+              <img src="static/img/user.png" title="" alt="" />
             </div>
           </div>
           <div className="col-lg-9 col-xl-8">

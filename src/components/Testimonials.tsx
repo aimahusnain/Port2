@@ -1,6 +1,8 @@
+import React from "react";
 import Slider from "react-slick";
 import { sliderProps } from "../sliderProps";
-const Testimonials = () => {
+
+const Testimonials: React.FC = () => {
   return (
     <div className="testimonial-section m-30px-t sm-m-20px-t pb-5">
       <div className="sub-title m-30px-b">
@@ -17,7 +19,7 @@ const Testimonials = () => {
           </div>
           <div className="user">
             <div className="img">
-              <img src="static/img/avtar1.jpg" alt title />
+              <img src="static/img/avtar1.jpg" alt="" title="" />
             </div>
             <div className="name ml-2">
               <span>Jennifer Lutheran</span>
@@ -35,7 +37,7 @@ const Testimonials = () => {
           </div>
           <div className="user">
             <div className="img">
-              <img src="static/img/avtar1.jpg" alt title />
+              <img src="static/img/avtar1.jpg" alt="" title="" />
             </div>
             <div className="name ml-2">
               <span>Salma Hayek</span>
@@ -53,7 +55,7 @@ const Testimonials = () => {
           </div>
           <div className="user">
             <div className="img">
-              <img src="static/img/avtar1.jpg" alt title />
+              <img src="static/img/avtar1.jpg" alt="" title="" />
             </div>
             <div className="name ml-2">
               <span>Martin Lutheran</span>
@@ -65,4 +67,5 @@ const Testimonials = () => {
     </div>
   );
 };
+
 export default Testimonials;

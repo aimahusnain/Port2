@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import Isotope from "isotope-layout";
 import { useCallback, useEffect, useRef, useState } from "react";
@@ -7,7 +7,7 @@ import Testimonials from "./Testimonials";
 
 const Portfolio = () => {
   // Isotope
-  const isotope = useRef();
+  const isotope = useRef<Isotope | null>(null);
   const [filterKey, setFilterKey] = useState("*");
   useEffect(() => {
     const imagesLoaded = require("imagesloaded");
@@ -48,10 +48,12 @@ const Portfolio = () => {
 
   return (
     <SectionContainer
+      extraClass="portfolio-section"
       name={"portfolio"}
       title={"My Projects"}
       subTitle={"Latest Work"}
       leftImage="static/img/title-3.jpg"
+      leftImageTitle={"Portfolio"}
     >
       <div className="portfolio-section">
         <div className="portfolio-filter m-10px-b">
@@ -93,7 +95,7 @@ const Portfolio = () => {
               <div className="portfolio-col portfolio-hover-01">
                 <div className="portfolio-img">
                   <a href="#">
-                    <img src="static/img/portfolio-1.jpg" title alt />
+                    <img src="static/img/portfolio-1.jpg" title="" alt="" />
                   </a>
                   <div className="hover">
                     <div className="action-btn">
@@ -130,7 +132,7 @@ const Portfolio = () => {
               <div className="portfolio-col portfolio-hover-01">
                 <div className="portfolio-img">
                   <a href="#">
-                    <img src="static/img/portfolio-2.jpg" title alt />
+                    <img src="static/img/portfolio-2.jpg" title="" alt="" />
                   </a>
                   <div className="hover">
                     <div className="action-btn">
@@ -167,7 +169,7 @@ const Portfolio = () => {
               <div className="portfolio-col portfolio-hover-01">
                 <div className="portfolio-img">
                   <a href="#">
-                    <img src="static/img/portfolio-3.jpg" title alt />
+                    <img src="static/img/portfolio-3.jpg" title="" alt="" />
                   </a>
                   <div className="hover">
                     <div className="action-btn">
@@ -204,7 +206,7 @@ const Portfolio = () => {
               <div className="portfolio-col portfolio-hover-01">
                 <div className="portfolio-img">
                   <a href="#">
-                    <img src="static/img/portfolio-4.jpg" title alt />
+                    <img src="static/img/portfolio-4.jpg" title="" alt="" />
                   </a>
                   <div className="hover">
                     <div className="action-btn">
@@ -241,7 +243,7 @@ const Portfolio = () => {
               <div className="portfolio-col portfolio-hover-01">
                 <div className="portfolio-img">
                   <a href="#">
-                    <img src="static/img/portfolio-5.jpg" title alt />
+                    <img src="static/img/portfolio-5.jpg" title="" alt="" />
                   </a>
                   <div className="hover">
                     <div className="action-btn">
@@ -278,7 +280,7 @@ const Portfolio = () => {
               <div className="portfolio-col portfolio-hover-01">
                 <div className="portfolio-img">
                   <a href="#">
-                    <img src="static/img/portfolio-6.jpg" title alt />
+                    <img src="static/img/portfolio-6.jpg" title="" alt="" />
                   </a>
                   <div className="hover">
                     <div className="action-btn">
