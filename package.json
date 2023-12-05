@@ -1,0 +1,49 @@
+{
+  "name": "developer-blog-starter-code",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "postbuild": "next-sitemap --next-sitemap.config.js",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@dotlottie/react-player": "^1.2.1",
+    "@supabase/auth-helpers-nextjs": "^0.7.4",
+    "@tailwindcss/forms": "^0.5.5",
+    "@tailwindcss/typography": "^0.5.9",
+    "autoprefixer": "10.4.15",
+    "contentlayer": "^0.3.4",
+    "date-fns": "^2.30.0",
+    "emailjs-com": "^3.2.0",
+    "eslint": "8.48.0",
+    "eslint-config-next": "13.4.19",
+    "github-slugger": "^2.0.0",
+    "imagesloaded": "^5.0.0",
+    "isotope-layout": "^3.0.6",
+    "next": "13.5.4",
+    "next-contentlayer": "^0.3.4",
+    "next-sitemap": "^4.2.2",
+    "postcss": "8.4.31",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-hook-form": "^7.45.4",
+    "react-player": "^2.13.0",
+    "react-slick": "^0.29.0",
+    "reading-time": "^1.5.0",
+    "rehype-autolink-headings": "^6.1.1",
+    "rehype-pretty-code": "^0.10.0",
+    "rehype-slug": "^5.1.0",
+    "remark-gfm": "^3.0.1",
+    "shiki": "^0.14.3",
+    "slick-carousel": "^1.8.1",
+    "tailwindcss": "3.3.3",
+    "typeit-react": "^2.7.0"
+  },
+  "devDependencies": {
+    "@types/react": "18.2.42",
+    "encoding": "^0.1.13"
+  }
+}
