@@ -1,6 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
 import { sliderProps } from "../sliderProps";
+import Image from "next/image";
 
 const Testimonials: React.FC = () => {
   return (
@@ -19,7 +20,7 @@ const Testimonials: React.FC = () => {
           </div>
           <div className="user">
             <div className="img">
-              <img src="static/img/avtar1.jpg" alt="" title="" />
+              <Image width={60} height={40} src="/static/img/avtar1.jpg" alt="" title="" />
             </div>
             <div className="name ml-2">
               <span>Jennifer Lutheran</span>
@@ -37,7 +38,7 @@ const Testimonials: React.FC = () => {
           </div>
           <div className="user">
             <div className="img">
-              <img src="static/img/avtar1.jpg" alt="" title="" />
+              <Image width={60} height={40} src="/static/img/avtar1.jpg" alt="" title="" />
             </div>
             <div className="name ml-2">
               <span>Salma Hayek</span>
@@ -55,7 +56,7 @@ const Testimonials: React.FC = () => {
           </div>
           <div className="user">
             <div className="img">
-              <img src="static/img/avtar1.jpg" alt="" title="" />
+              <Image width={60} height={40} src="/static/img/avtar1.jpg" alt="" title="" />
             </div>
             <div className="name ml-2">
               <span>Martin Lutheran</span>
