@@ -12,6 +12,7 @@ import React from 'react'
 import ImageView from "../components/popup/ImageView";
 import VideoPopup from "../components/popup/VideoPopup";
 import dynamic from "next/dynamic";
+
 const Portfolio = dynamic(() => import("../components/Portfolio"), {
   ssr: false,
 });
@@ -30,11 +31,12 @@ const Index = () => {
       <ImageView />
       <Nav />
       <div className={`pages-stack ${toggle ? "pages-stack--open" : ""}`}>
-        <HomeBanner />
+      <HomeBanner />
         <AboutUs />
         <Services />
         <Portfolio />
         <Contact />
+
       </div>
       <Header />
     </div>
