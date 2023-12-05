@@ -1,4 +1,6 @@
+import Link from "next/link";
 import SectionContainer from "./SectionContainer";
+import Image from "next/image"
 
 const AboutUs = () => {
   return (
@@ -12,7 +14,7 @@ const AboutUs = () => {
     >
       <div className="row">
         <div className="col-md-4">
-        <img src="static/img/my-pic.jpg" title="" alt="" />
+        <Image width={300} height={100} src="/static/img/my-pic.jpg" title="" alt="" />
         </div>
         <div className="col-md-8 md-m-30px-t">
           <div className="about-text">
@@ -81,9 +83,9 @@ const AboutUs = () => {
           </div>{" "}
           {/* row */}
           <div className="btn-bar">
-            <a href="#" className="btn btn-theme">
+            <Link href="#" className="btn btn-theme">
               Download CV
-            </a>
+            </Link>
           </div>
         </div>
       </div>{" "}

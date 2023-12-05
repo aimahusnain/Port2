@@ -1,5 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import { AlexioContext } from "./Context";
+import Link from "next/link";
 
 const Nav = () => {
   const { changeNav, toggle, nav } = useContext(AlexioContext);
@@ -57,52 +58,56 @@ const Nav = () => {
   return (
     <nav className={`pages-nav ${toggle ? "pages-nav--open" : ""}`}>
       <div className="pages-nav__item">
-        <a className="link link--page" onClick={() => changeNav("home", false)}>
+        <Link href="" className="link link--page" onClick={() => changeNav("home", false)}>
           Home
-        </a>
+        </Link>
       </div>
       <div className="pages-nav__item">
-        <a
+        <Link
+        href=""
           className="link link--page"
           onClick={() => changeNav("about", false)}
         >
           About Us
-        </a>
+        </Link>
       </div>
 
       <div className="pages-nav__item">
-        <a
+        <Link
+        href=""
           className="link link--page"
           onClick={() => changeNav("resume", false)}
         >
           Resume
-        </a>
+        </Link>
       </div>
 
       <div className="pages-nav__item">
-        <a
+        <Link
           className="link link--page"
           href="blog"
         >
           Blog
-        </a>
+        </Link>
       </div>
       
       <div className="pages-nav__item">
-        <a
+        <Link
+        href=""
           className="link link--page"
           onClick={() => changeNav("portfolio", false)}
         >
           Portfolio
-        </a>
+        </Link>
       </div>
       <div className="pages-nav__item">
-        <a
+        <Link
+        href=""
           className="link link--page"
           onClick={() => changeNav("contact", false)}
         >
           Contact Me
-        </a>
+        </Link>
       </div>
     </nav>
   );

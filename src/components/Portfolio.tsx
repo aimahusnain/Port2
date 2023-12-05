@@ -4,6 +4,8 @@ import Isotope from "isotope-layout";
 import { useCallback, useEffect, useRef, useState } from "react";
 import SectionContainer from "./SectionContainer";
 import Testimonials from "./Testimonials";
+import Link from "next/link";
+import Image from "next/image";
 
 const Portfolio = () => {
   // Isotope
@@ -94,27 +96,27 @@ const Portfolio = () => {
             <li className="portfolio-item website">
               <div className="portfolio-col portfolio-hover-01">
                 <div className="portfolio-img">
-                  <a href="#">
-                    <img src="static/img/portfolio-1.jpg" title="" alt="" />
-                  </a>
+                  <Link href="#">
+                  <Image width={230} height={100}  src="/static/img/portfolio-1.jpg" title="" alt="" />
+                  </Link>
                   <div className="hover">
                     <div className="action-btn">
-                      <a
+                      <Link
                         href="http://www.youtube.com/watch?v=0O2aH4XLbto"
                         className="popup-video theme-color"
                       >
                         <i className="fa fa-play" />
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         className="lightbox-gallery theme-color"
                         href="static/img/portfolio-1.jpg"
                         title="Lightbox gallery image title..."
                       >
                         <i className="fas fa-expand" />
-                      </a>
-                      <a href="#" className="theme-color">
+                      </Link>
+                      <Link href="#" className="theme-color">
                         <i className="fa fa-link" />
-                      </a>
+                        </Link>
                     </div>{" "}
                     {/* Video Btn */}
                   </div>{" "}
@@ -131,27 +133,27 @@ const Portfolio = () => {
             <li className="portfolio-item apps">
               <div className="portfolio-col portfolio-hover-01">
                 <div className="portfolio-img">
-                  <a href="#">
-                    <img src="static/img/portfolio-2.jpg" title="" alt="" />
-                  </a>
+                  <Link href="#">
+                  <Image width={230} height={100} src="/static/img/portfolio-2.jpg" title="" alt="" />
+                  </Link>
                   <div className="hover">
                     <div className="action-btn">
-                      <a
+                      <Link
                         href="http://www.youtube.com/watch?v=0O2aH4XLbto"
                         className="popup-video theme-color"
                       >
                         <i className="fa fa-play" />
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         className="lightbox-gallery theme-color"
                         href="static/img/portfolio-2.jpg"
                         title="Lightbox gallery image title..."
                       >
                         <i className="fas fa-expand" />
-                      </a>
-                      <a href="#" className="theme-color">
+                      </Link>
+                      <Link href="#" className="theme-color">
                         <i className="fa fa-link" />
-                      </a>
+                      </Link>
                     </div>{" "}
                     {/* Video Btn */}
                   </div>{" "}
@@ -168,27 +170,27 @@ const Portfolio = () => {
             <li className="portfolio-item photoshop apps">
               <div className="portfolio-col portfolio-hover-01">
                 <div className="portfolio-img">
-                  <a href="#">
-                    <img src="static/img/portfolio-3.jpg" title="" alt="" />
-                  </a>
+                  <Link href="#">
+                    <Image width={230} height={100}  src="/static/img/portfolio-3.jpg" title="" alt="" />
+                  </Link>
                   <div className="hover">
                     <div className="action-btn">
-                      <a
+                      <Link
                         href="http://www.youtube.com/watch?v=0O2aH4XLbto"
                         className="popup-video theme-color"
                       >
                         <i className="fa fa-play" />
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         className="lightbox-gallery theme-color"
                         href="static/img/portfolio-3.jpg"
                         title="Lightbox gallery image title..."
                       >
                         <i className="fas fa-expand" />
-                      </a>
-                      <a href="#" className="theme-color">
+                      </Link>
+                      <Link href="#" className="theme-color">
                         <i className="fa fa-link" />
-                      </a>
+                      </Link>
                     </div>{" "}
                     {/* Video Btn */}
                   </div>{" "}
@@ -205,27 +207,27 @@ const Portfolio = () => {
             <li className="portfolio-item photoshop website">
               <div className="portfolio-col portfolio-hover-01">
                 <div className="portfolio-img">
-                  <a href="#">
-                    <img src="static/img/portfolio-4.jpg" title="" alt="" />
-                  </a>
+                  <Link href="#">
+                  <Image width={230} height={100}  src="/static/img/portfolio-4.jpg" title="" alt="" />
+                  </Link>
                   <div className="hover">
                     <div className="action-btn">
-                      <a
+                      <Link
                         href="http://www.youtube.com/watch?v=0O2aH4XLbto"
                         className="popup-video theme-color"
                       >
                         <i className="fa fa-play" />
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         className="lightbox-gallery theme-color"
                         href="static/img/portfolio-4.jpg"
                         title="Lightbox gallery image title..."
                       >
                         <i className="fas fa-expand" />
-                      </a>
-                      <a href="#" className="theme-color">
+                      </Link>
+                      <Link href="#" className="theme-color">
                         <i className="fa fa-link" />
-                      </a>
+                      </Link>
                     </div>{" "}
                     {/* Video Btn */}
                   </div>{" "}
@@ -242,27 +244,27 @@ const Portfolio = () => {
             <li className="portfolio-item photoshop apps">
               <div className="portfolio-col portfolio-hover-01">
                 <div className="portfolio-img">
-                  <a href="#">
-                    <img src="static/img/portfolio-5.jpg" title="" alt="" />
-                  </a>
+                  <Link href="#">
+                  <Image width={230} height={100}  src="/static/img/portfolio-5.jpg" title="" alt="" />
+                  </Link>
                   <div className="hover">
                     <div className="action-btn">
-                      <a
+                      <Link
                         href="http://www.youtube.com/watch?v=0O2aH4XLbto"
                         className="popup-video theme-color"
                       >
                         <i className="fa fa-play" />
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         className="lightbox-gallery theme-color"
                         href="static/img/portfolio-5.jpg"
                         title="Lightbox gallery image title..."
                       >
                         <i className="fas fa-expand" />
-                      </a>
-                      <a href="#" className="theme-color">
+                      </Link>
+                      <Link href="#" className="theme-color">
                         <i className="fa fa-link" />
-                      </a>
+                      </Link>
                     </div>{" "}
                     {/* Video Btn */}
                   </div>{" "}
@@ -279,27 +281,27 @@ const Portfolio = () => {
             <li className="portfolio-item app website">
               <div className="portfolio-col portfolio-hover-01">
                 <div className="portfolio-img">
-                  <a href="#">
-                    <img src="static/img/portfolio-6.jpg" title="" alt="" />
-                  </a>
+                  <Link href="#">
+                  <Image width={230} height={100} src="/static/img/portfolio-6.jpg" title="" alt="" />
+                  </Link>
                   <div className="hover">
                     <div className="action-btn">
-                      <a
+                      <Link
                         href="http://www.youtube.com/watch?v=0O2aH4XLbto"
                         className="popup-video theme-color"
                       >
                         <i className="fa fa-play" />
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         className="lightbox-gallery theme-color"
                         href="static/img/portfolio-6.jpg"
                         title="Lightbox gallery image title..."
                       >
                         <i className="fas fa-expand" />
-                      </a>
-                      <a href="#" className="theme-color">
+                      </Link>
+                      <Link href="#" className="theme-color">
                         <i className="fa fa-link" />
-                      </a>
+                      </Link>
                     </div>{" "}
                     {/* Video Btn */}
                   </div>{" "}
