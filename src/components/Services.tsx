@@ -1,12 +1,14 @@
 import SectionContainer from "./SectionContainer";
 const Services = () => {
+  const extraClasses = "service-section resume-section";
   return (
     <SectionContainer
-      name={"resume"}
-      extraClass={"resume-section"}
-      title={"My Resume"}
-      subTitle={"History"}
+      extraClass={extraClasses}
+      name="resume"
+      title="My Resume"
+      subTitle="History"
       leftImage="static/img/title-2.jpg"
+      leftImageTitle="services"
     >
       <div className="row">
         <div className="col-md-6">
