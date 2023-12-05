@@ -1,11 +1,11 @@
 import { useEffect, useRef } from "react";
 
 let useClickOutside = (handler) => {
-  let domNode = useRef();
+  let domNode = useRef(null);
 
   useEffect(() => {
     let maybeHandler = (event) => {
-      if (!domNode.current.contains(event.target)) {
+      if (domNode.current && !domNode.current.contains(event.target)) {
         handler();
       }
     };
@@ -15,7 +15,7 @@ let useClickOutside = (handler) => {
     return () => {
       document.removeEventListener("mousedown", maybeHandler);
     };
-  });
+  }, [handler]);
 
   return domNode;
 };

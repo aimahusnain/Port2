@@ -5,7 +5,7 @@ import { createContext, useCallback, useReducer } from "react";
 // Create Context
 const AlexioContext = createContext({
   nav: "home",
-  changeNav: () => {}, // You can set default functions if needed
+  changeNav: (value, toggleValue) => {}, // Adjust function signature to match expected arguments
   toggle: false,
 });
 
@@ -56,6 +56,7 @@ const AlexioState = ({ children }) => {
       payload: toggleValue,
     });
   }, []);
+  
 
   const { nav, toggle } = state;
   return (

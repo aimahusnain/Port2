@@ -1,5 +1,3 @@
-'use client'
-
 import { useContext, useEffect, useState } from "react";
 import { AlexioContext } from "./Context";
 
@@ -10,46 +8,50 @@ const Nav = () => {
   useEffect(() => {
     const pages = document.querySelectorAll(".page");
     pages.forEach((page, index) => {
-      page.style.opacity = 0;
-      page.style.zIndex = 2;
-      page.style.transform = `translate3d(0px, 75%, -300px)`;
+      const pageElement = page as HTMLElement; // Explicitly cast to HTMLElement
+      pageElement.style.opacity = "0";
+      pageElement.style.zIndex = "2";
+      pageElement.style.transform = `translate3d(0px, 75%, -300px)`;
+      
       if (toggle) {
-        if (nav == page.id) {
+        if (nav === page.id) {
           setActiveIndex(index);
-          page.style.zIndex = 5;
-          page.style.transform = `translate3d(0px, 75%, -200px)`;
-          page.style.opacity = `1`;
+          pageElement.style.zIndex = "5";
+          pageElement.style.transform = `translate3d(0px, 75%, -200px)`;
+          pageElement.style.opacity = "1";
         }
         let next =
-            pages.length - 1 == activeIndex
-              ? pages[0]
-              : pages.length - 2 == activeIndex
-              ? pages[activeIndex + 1]
-              : pages[activeIndex + 1],
+          pages.length - 1 === activeIndex
+            ? pages[0]
+            : pages.length - 2 === activeIndex
+            ? pages[activeIndex + 1]
+            : pages[activeIndex + 1],
           next2 =
-            pages.length - 1 == activeIndex
+            pages.length - 1 === activeIndex
               ? pages[1]
-              : pages.length - 2 == activeIndex
+              : pages.length - 2 === activeIndex
               ? pages[0]
               : pages[activeIndex + 2];
 
-        next.style.zIndex = 4;
-        next.style.transform = `translate3d(0px, 75%, -250px)`;
-        next.style.opacity = `.9`;
+        const nextElement = next as HTMLElement;
+        nextElement.style.zIndex = "4";
+        nextElement.style.transform = `translate3d(0px, 75%, -250px)`;
+        nextElement.style.opacity = ".9";
 
-        next2.style.zIndex = 3;
-        next2.style.transform = `translate3d(0px, 75%, -300px)`;
-        next2.style.opacity = `.8`;
+        const next2Element = next2 as HTMLElement;
+        next2Element.style.zIndex = "3";
+        next2Element.style.transform = `translate3d(0px, 75%, -300px)`;
+        next2Element.style.opacity = ".8";
       } else {
-        if (nav == page.id) {
+        if (nav === page.id) {
           setActiveIndex(index);
-          page.style.zIndex = 5;
-          page.style.opacity = `1`;
-          page.style.transform = `translate3d(0px, 0px, 0px)`;
+          pageElement.style.zIndex = "5";
+          pageElement.style.opacity = "1";
+          pageElement.style.transform = `translate3d(0px, 0px, 0px)`;
         }
       }
     });
-  }, [toggle, nav]);
+  }, [toggle, nav, activeIndex]);
 
   
   return (
