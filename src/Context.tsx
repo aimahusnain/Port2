@@ -3,7 +3,12 @@
 import { createContext, useCallback, useReducer } from "react";
 
 // Create Context
-const AlexioContext = createContext();
+const AlexioContext = createContext({
+  nav: "home",
+  changeNav: () => {}, // You can set default functions if needed
+  toggle: false,
+});
+
 
 // Type
 const type = {
