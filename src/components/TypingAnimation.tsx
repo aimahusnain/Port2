@@ -2,7 +2,7 @@ import TypeIt from "typeit-react";
 
 const TypingAnimation = () => {
   return (
-    <span className="type-it">
+    <span>
       <TypeIt
         options={{
           speed: 200,

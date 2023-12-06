@@ -34,7 +34,7 @@ const AlexioHead = () => {
       />
       {/* / */}
       {/* Plugin CSS */}
-      <link
+       <link
         href="static/plugin/bootstrap/css/bootstrap.min.css"
         rel="stylesheet"
       />

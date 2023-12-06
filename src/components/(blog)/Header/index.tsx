@@ -12,12 +12,11 @@ import {
 import { useContext } from "react";
 import { AlexioContext } from "../../../Context";
 import siteMetadata from "@/src/utils/siteMetaData";
-import { useThemeSwitch } from "../Hooks/useThemeSwitch";
 import { useState } from "react";
 import { cx } from "@/src/utils";
 
 const Header = () => {
-  const [mode, setMode] = useState<string>("light");
+  const [mode, setMode] = useState<string>("dark");
   const { changeNav, toggle, nav } = useContext(AlexioContext);
   const [click, setClick] = useState(false)
 
@@ -80,20 +79,7 @@ const Header = () => {
         <Link href="/" className="mr-2">
           Home
         </Link>
-        <button
-          onClick={() => setMode (mode === "light" ? "dark" : "light")}
-          className={cx(
-            "w-6 h-6 ease ml-2 flex items-center justify-center rounded-full p-1",
-            mode === "light" ? "bg-dark text-light" : "bg-light text-dark"
-          )}
-          aria-label="theme-switcher"
-        >
-          {mode === "light" ? (
-            <MoonIcon className={"fill-dark"} />
-          ) : (
-            <SunIcon className={"fill-dark"} />
-          )}
-        </button>
+
       </nav>
 
       <nav
@@ -140,20 +126,6 @@ const Header = () => {
           Contact Me
         </Link>
 
-        <button
-          onClick={() => setMode(mode === "light" ? "dark" : "light")}
-          className={cx(
-            "w-6 h-6 ease ml-2 flex items-center justify-center rounded-full p-1",
-            mode === "light" ? "bg-dark text-light" : "bg-light text-dark"
-          )}
-          aria-label="theme-switcher"
-        >
-          {mode === "light" ? (
-            <MoonIcon className={"fill-dark"} />
-          ) : (
-            <SunIcon className={"fill-dark"} />
-          )}
-        </button>
       </nav>
       <div className=" hidden sm:flex items-center">
         <a

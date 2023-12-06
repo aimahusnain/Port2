@@ -122,10 +122,10 @@ code {
     overflow: hidden;
   }
   
-  .pages-nav__item a {
+  /* .pages-nav__item a {
     cursor: pointer;
-    color: #fff !important;
-  }
+    color: blaxk;
+  } */
   
   .ti-cursor {
     margin-left: 5px;

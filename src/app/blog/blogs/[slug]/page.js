@@ -1,4 +1,4 @@
-import BlogDetails from "@/src/components/(blog)/Blog/BlogDetails";
+  import BlogDetails from "@/src/components/(blog)/Blog/BlogDetails";
 import RenderMdx from "@/src/components/(blog)/Blog/RenderMdx";
 import Tag from "@/src/components/(blog)/Elements/Tag";
 import siteMetadata from "@/src/utils/siteMetaData";

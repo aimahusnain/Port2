@@ -26,7 +26,7 @@ const Index = () => {
   const { toggle } = useContext(AlexioContext);
 
   return (
-    <div className="bg-dark">
+    <div className="bg-black">
       <VideoPopup />
       <ImageView />
       <Nav />

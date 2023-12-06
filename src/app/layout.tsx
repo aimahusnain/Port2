@@ -2,10 +2,9 @@ import { cx } from "../utils";
 import { Inter, Manrope } from "next/font/google";
 import siteMetadata from "../utils/siteMetaData";
 import "./globals.css";
-
-
 import AlexioHead from "../AlexioHead";
 import AlexioState from "../Context";
+import Loader from "../Loader";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -58,17 +57,23 @@ export default function RootLayout({ children }) {
   return (
     <html>
       <AlexioState>
-      <AlexioHead />
+        <AlexioHead />
+
         <body
-          className={cx(
-            inter.variable,
-            manrope.variable,
-            "font-mr bg-light dark:bg-dark"
-          )}
-          >
+          className={cx(inter.variable, manrope.variable, "font-mr bg-dark")}
+        >
+          <Loader >
           {children}
+          </Loader>
         </body>
-        </AlexioState>
-        </html>
+      </AlexioState>
+    </html>
   );
+}
+function useState(arg0: boolean): [any, any] {
+  throw new Error("Function not implemented.");
+}
+
+function useEffect(arg0: () => void, arg1: undefined[]) {
+  throw new Error("Function not implemented.");
 }

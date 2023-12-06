@@ -2,7 +2,7 @@ import Header from "@/src/components/(blog)/Header";
 import { cx } from "@/src/utils";
 import { Inter, Manrope } from "next/font/google";
 import Footer from "../../components/(blog)/Footer";
-import ThemeScript from "../../components/(blog)/ThemeScript";
+
 import siteMetadata from "../../utils/siteMetaData";
 import "../globals.css";
 
@@ -60,10 +60,9 @@ export default function RootLayout({ children }) {
           className={cx(
             inter.variable,
             manrope.variable,
-            "font-mr bg-light dark:bg-dark"
+            "font-mr bg-dark"
           )}
         >
-          <ThemeScript />
           <Header />
           {children}
           <Footer />

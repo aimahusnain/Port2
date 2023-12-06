@@ -57,7 +57,7 @@ const Nav = () => {
   
   return (
     <nav className={`pages-nav ${toggle ? "pages-nav--open" : ""}`}>
-      <div className="pages-nav__item">
+      <div className="flex flex-col gap-36">
         <Link href="" className="link link--page" onClick={() => changeNav("home", false)}>
           Home
         </Link>
