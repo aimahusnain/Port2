@@ -34,31 +34,31 @@ const HomeBanner = () => {
                     <p>
                       WEB <TypingAnimation />
                     </p>
-                    <div className="btn-bar">
+                    <div  >
                       <Link href="#" className="btn btn-theme">
                         Download CV
                       </Link>
                     </div>
                   </div>
-                  <ul className="social-icons">
+                  <ul className="absolute bottom-0 flex gap-2 right-7">
                     <li>
-                      <Link className="facebook" href="#">
-                        <Facebook fill="white" className="fab fa-facebook-f" stroke="0" size={20} />
+                      <Link className="bg-black p-2 rounded-full" href="#">
+                        <Facebook fill="white" className="fab fa-facebook-f right-1 bottom-1" stroke="0" size={16} />
                       </Link>
                     </li>
                     <li>
-                      <Link className="twitter" href="#">
-                        <Twitter fill="white" className="fab fa-twitter" stroke="0" size={20} />
+                      <Link className="bg-black p-2 rounded-full" href="#">
+                        <Twitter fill="white" className="fab fa-twitter mr-[1px]" stroke="0" size={15} />
                       </Link>
                     </li>
                     <li>
-                      <Link className="google" href="#">
-                        <FaGooglePlusG fill="white" className="fab fa-google-plus-g" stroke="0" size={20} />
+                      <Link className="bg-black p-2 rounded-full" href="#">
+                        <FaGooglePlusG fill="white" className="fab fa-google-plus-g mr-[1px]" stroke="0" size={15} />
                       </Link>
                     </li>
                     <li>
-                      <Link className="linkedin" href="#">
-                        <FaLinkedinIn fill="white" className="fab fa-linkedin-in" stroke="0" size={20} />
+                      <Link className="bg-black p-2 rounded-full" href="#">
+                        <FaLinkedinIn fill="white" className="fab fa-linkedin-in mr-[1px]" stroke="0" size={15} />
                       </Link>
                     </li>
                   </ul>

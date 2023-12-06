@@ -1,6 +1,13 @@
 import Link from "next/link";
 import SectionContainer from "./SectionContainer";
-import Image from "next/image"
+import Image from "next/image";
+import {
+  FileImage,
+  LayoutTemplate,
+  Smile,
+  TabletSmartphone,
+  Workflow,
+} from "lucide-react";
 
 const AboutUs = () => {
   return (
@@ -14,7 +21,13 @@ const AboutUs = () => {
     >
       <div className="row">
         <div className="col-md-4">
-        <Image width={300} height={100} src="/static/img/my-pic.jpg" title="" alt="" />
+          <Image
+            width={300}
+            height={100}
+            src="/static/img/my-pic.jpg"
+            title=""
+            alt=""
+          />
         </div>
         <div className="col-md-8 md-m-30px-t">
           <div className="about-text">
@@ -30,7 +43,10 @@ const AboutUs = () => {
           <div className="row m-30px-t">
             <div className="col-md-6 col-sm-6 m-30px-b">
               <div className="feature-box">
-                <i className="icon dark-color theme-after ti-ruler-pencil" />
+                <Workflow
+                  className="icon dark-color theme-after"
+                  size={30}
+                />
                 <div className="feature-content">
                   <h5 className="dark-color">Development</h5>
                   <p>
@@ -43,7 +59,10 @@ const AboutUs = () => {
             {/* col */}
             <div className="col-md-6 col-sm-6 m-30px-b">
               <div className="feature-box">
-                <i className="icon dark-color theme-after ti-image" />
+                <FileImage
+                  className="icon dark-color theme-after"
+                  size={30}
+                />
                 <div className="feature-content">
                   <h5 className="dark-color">Graphic</h5>
                   <p>
@@ -56,7 +75,10 @@ const AboutUs = () => {
             {/* col */}
             <div className="col-md-6 col-sm-6 m-30px-b">
               <div className="feature-box">
-                <i className="icon dark-color theme-after ti-brush-alt" />
+                <LayoutTemplate
+                  className="icon dark-color theme-after"
+                  size={30}
+                />
                 <div className="feature-content">
                   <h5 className="dark-color">Web design</h5>
                   <p>
@@ -69,7 +91,11 @@ const AboutUs = () => {
             {/* col */}
             <div className="col-md-6 col-sm-6 m-30px-b">
               <div className="feature-box">
-                <i className="icon dark-color theme-after ti-mobile" />
+                {/* <i className="icon dark-color theme-after ti-mobile" /> */}
+                <TabletSmartphone
+                  className="icon dark-color theme-after"
+                  size={30}
+                />
                 <div className="feature-content">
                   <h5 className="dark-color">Mobile apps</h5>
                   <p>
@@ -100,7 +126,7 @@ const AboutUs = () => {
           <div className="col-md-3 col-sm-6 md-m-15px-tb">
             <div className="counter-col counter-box">
               <div className="counter-data" data-count={375}>
-                <i className="theme-color ti-face-smile" />
+                <Smile className="theme-color" size={30}/>
                 <div className="count dark-color">375</div>
                 <h6>Happy Clients</h6>
               </div>

@@ -217,7 +217,7 @@ body.dark-body {
   color: #292929;
 }
 .yellow-bg {
-  background-color: #020201;
+  background-color: #f8c964;
 }
 .yellow-after:after {
   background-color: #f8c964;
@@ -410,11 +410,9 @@ body.dark-body {
   width: 300px;
   height: 60px;
   z-index: 9999;
-
 }
 .header .logo {
   color: #fff;
-  
   font-size: 20px;
   font-weight: 600;
   text-transform: uppercase;
@@ -560,6 +558,8 @@ body.dark-body {
   bottom: 30px;
   right: 40px;
   margin: 0;
+  display: flex;
+  gap: 10px;
   padding: 0;
   list-style: none;
 }
@@ -603,7 +603,7 @@ body.dark-body {
   .home-text {
     padding: 10px 10px 60px;
   }
-  .home-banner .social-icons {
+  .home-banner . {
     left: 30px;
   }
   .home-text h1 {

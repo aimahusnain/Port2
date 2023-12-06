@@ -5,7 +5,7 @@ import Link from "next/link";
 const Nav = () => {
   const { changeNav, toggle, nav } = useContext(AlexioContext);
   const [activeIndex, setActiveIndex] = useState(0);
-  
+
   useEffect(() => {
     const pages = document.querySelectorAll(".page");
     pages.forEach((page, index) => {
@@ -13,7 +13,7 @@ const Nav = () => {
       pageElement.style.opacity = "0";
       pageElement.style.zIndex = "2";
       pageElement.style.transform = `translate3d(0px, 75%, -300px)`;
-      
+
       if (toggle) {
         if (nav === page.id) {
           setActiveIndex(index);
@@ -22,11 +22,11 @@ const Nav = () => {
           pageElement.style.opacity = "1";
         }
         let next =
-          pages.length - 1 === activeIndex
-            ? pages[0]
-            : pages.length - 2 === activeIndex
-            ? pages[activeIndex + 1]
-            : pages[activeIndex + 1],
+            pages.length - 1 === activeIndex
+              ? pages[0]
+              : pages.length - 2 === activeIndex
+              ? pages[activeIndex + 1]
+              : pages[activeIndex + 1],
           next2 =
             pages.length - 1 === activeIndex
               ? pages[1]
@@ -54,62 +54,64 @@ const Nav = () => {
     });
   }, [toggle, nav, activeIndex]);
 
-  
   return (
-    <nav className={`pages-nav ${toggle ? "pages-nav--open" : ""}`}>
-      <div className="flex flex-col gap-36">
-        <Link href="" className="link link--page" onClick={() => changeNav("home", false)}>
-          Home
-        </Link>
-      </div>
-      <div className="pages-nav__item">
-        <Link
-        href=""
-          className="link link--page"
-          onClick={() => changeNav("about", false)}
-        >
-          About Us
-        </Link>
-      </div>
+    <div className={toggle ? "visible" : "hidden"}>
+      <nav className={`pages-nav ${toggle ? "pages-nav--open" : ""}`}>
+        <div>
+          <Link
+            href=""
+            className="link link--page"
+            onClick={() => changeNav("home", false)}
+          >
+            Home
+          </Link>
+        </div>
+        <div className="pages-nav__item">
+          <Link
+            href=""
+            className="link link--page"
+            onClick={() => changeNav("about", false)}
+          >
+            About Us
+          </Link>
+        </div>
 
-      <div className="pages-nav__item">
-        <Link
-        href=""
-          className="link link--page"
-          onClick={() => changeNav("resume", false)}
-        >
-          Resume
-        </Link>
-      </div>
+        <div className="pages-nav__item">
+          <Link
+            href=""
+            className="link link--page"
+            onClick={() => changeNav("resume", false)}
+          >
+            Resume
+          </Link>
+        </div>
 
-      <div className="pages-nav__item">
-        <Link
-          className="link link--page"
-          href="blog"
-        >
-          Blog
-        </Link>
-      </div>
-      
-      <div className="pages-nav__item">
-        <Link
-        href=""
-          className="link link--page"
-          onClick={() => changeNav("portfolio", false)}
-        >
-          Portfolio
-        </Link>
-      </div>
-      <div className="pages-nav__item">
-        <Link
-        href=""
-          className="link link--page"
-          onClick={() => changeNav("contact", false)}
-        >
-          Contact Me
-        </Link>
-      </div>
-    </nav>
+        <div className="pages-nav__item">
+          <Link className="link link--page" href="blog">
+            Blog
+          </Link>
+        </div>
+
+        <div className="pages-nav__item">
+          <Link
+            href=""
+            className="link link--page"
+            onClick={() => changeNav("portfolio", false)}
+          >
+            Portfolio
+          </Link>
+        </div>
+        <div className="pages-nav__item">
+          <Link
+            href=""
+            className="link link--page"
+            onClick={() => changeNav("contact", false)}
+          >
+            Contact Me
+          </Link>
+        </div>
+      </nav>
+    </div>
   );
 };
 export default Nav;

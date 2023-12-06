@@ -11,7 +11,7 @@ const Header = () => {
           className={`menu-button ${toggle ? "menu-button--open" : ""}`}
           onClick={() => changeNav(nav, !toggle)}
         >
-          <span>Menu</span>
+          <span></span>
         </button>
       </div>
     </header>

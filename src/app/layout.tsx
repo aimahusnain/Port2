@@ -4,7 +4,6 @@ import siteMetadata from "../utils/siteMetaData";
 import "./globals.css";
 import AlexioHead from "../AlexioHead";
 import AlexioState from "../Context";
-import Loader from "../Loader";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -62,9 +61,7 @@ export default function RootLayout({ children }) {
         <body
           className={cx(inter.variable, manrope.variable, "font-mr bg-dark")}
         >
-          <Loader >
           {children}
-          </Loader>
         </body>
       </AlexioState>
     </html>
