@@ -217,7 +217,7 @@ body.dark-body {
   color: #292929;
 }
 .yellow-bg {
-  background-color: #f8c964;
+  background-color: #020201;
 }
 .yellow-after:after {
   background-color: #f8c964;
@@ -410,9 +410,11 @@ body.dark-body {
   width: 300px;
   height: 60px;
   z-index: 9999;
+
 }
 .header .logo {
   color: #fff;
+  
   font-size: 20px;
   font-weight: 600;
   text-transform: uppercase;
