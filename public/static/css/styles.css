@@ -559,7 +559,7 @@ body.dark-body {
   right: 40px;
   margin: 0;
   display: flex;
-  gap: 10px;
+  gap: 40px;
   padding: 0;
   list-style: none;
 }
@@ -603,7 +603,7 @@ body.dark-body {
   .home-text {
     padding: 10px 10px 60px;
   }
-  .home-banner . {
+  .home-banner .social-icons {
     left: 30px;
   }
   .home-text h1 {

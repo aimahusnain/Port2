@@ -24,14 +24,14 @@ const AlexioHead = () => {
       <title>Alexio - Personal Portfolio React NextJS Template</title>
       {/* / */}
       {/*-Font Icon*/}
-      <link
+      {/* <link
         href="static/plugin/font-awesome/css/fontawesome-all.min.css"
         rel="stylesheet"
-      />
-      <link
+      /> */}
+      {/* <link
         href="static/plugin/themify-icons/themify-icons.css"
         rel="stylesheet"
-      />
+      /> */}
       {/* / */}
       {/* Plugin CSS */}
        <link
