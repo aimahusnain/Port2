@@ -30,7 +30,7 @@ const HomeBanner = () => {
                 <div className="v-center-box d-flex align-items-center">
                   <div className="home-text">
                     <h6 className="dark-color theme-after">Hello, There</h6>
-                    <h1 className="dark-color blue-after">I'm Alexis Larten</h1>
+                    <h1 className="dark-color blue-after">We DevKin Solutions</h1>
                     <p>
                       WEB <TypingAnimation />
                     </p>

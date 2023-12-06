@@ -1,5 +1,6 @@
-'use client'
+"use client";
 
+import {allBlogs} from "contentlayer/generated";
 import AboutUs from "../components/AboutUs";
 import Contact from "../components/Contact";
 import HomeBanner from "../components/HomeBanner";
@@ -7,12 +8,12 @@ import Services from "../components/Services";
 import { AlexioContext } from "../Context";
 import Header from "../Header";
 import Nav from "../Nav";
-import { useEffect ,useContext } from "react";
-import React from 'react'
+import { useEffect, useContext } from "react";
+import React from "react";
 import ImageView from "../components/popup/ImageView";
 import VideoPopup from "../components/popup/VideoPopup";
 import dynamic from "next/dynamic";
-
+import HomeCoverSection2 from "../components/HomeCoverSection2";
 const Portfolio = dynamic(() => import("../components/Portfolio"), {
   ssr: false,
 });
@@ -31,11 +32,12 @@ const Index = () => {
       <ImageView />
       <Nav />
       <div className={`pages-stack ${toggle ? "pages-stack--open" : ""}`}>
-      <HomeBanner />
+        <HomeBanner />
         <AboutUs />
         <Services />
         <Portfolio />
         <Contact />
+        <HomeCoverSection2 blogs={allBlogs} />
       </div>
 
       <Header />
