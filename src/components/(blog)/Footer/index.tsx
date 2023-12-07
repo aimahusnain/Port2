@@ -41,15 +41,15 @@ const Footer = () => {
         />
       </form>
       <div className="flex items-center mt-8">
-        <a
+        <Link
           href={siteMetadata.linkedin}
           className="inline-block w-6 h-6 mr-4"
           aria-label="Reach out to me via LinkedIn"
           target="_blank"
         >
           <LinkedinIcon className="hover:scale-125 transition-all ease duration-200" />
-        </a>
-        <a
+        </Link>
+        <Link
           href={siteMetadata.twitter}
           className="inline-block w-6 h-6 mr-4"
           aria-label="Reach out to me via Twitter"
@@ -57,7 +57,7 @@ const Footer = () => {
         >
           <TwitterIcon className="hover:scale-125 transition-all ease duration-200" />
         </a>
-        <a
+        <Link
           href={siteMetadata.github}
           className="inline-block w-6 h-6 mr-4 fill-light"
           aria-label="Check my profile on Github"
@@ -65,7 +65,7 @@ const Footer = () => {
         >
           <GithubIcon className="fill-light dark:fill-dark  hover:scale-125 transition-all ease duration-200" />
         </a>
-        <a
+        <Link
           href={siteMetadata.dribbble}
           className="inline-block w-6 h-6 mr-4"
           aria-label="Check my profile on Dribbble"
