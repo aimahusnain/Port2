@@ -19,7 +19,7 @@ const HomeBanner = () => {
     >
       <div className="container-fluid p-0">
         <div className="row no-gutters full-screen">
-          <div className="col-lg-3 overflow-hidden sm:overflow-visible sm:h-full h-[700px] col-xl-4 bg-boo">
+          <div className="col-lg-3 overflow-hidden sm:overflow-visible sm:h-full h-[500px] col-xl-4 bg-boo">
             <div className="d-flex align-items-end home-user-avtar v-center-box">
               <Image
                 height={300}
@@ -40,18 +40,18 @@ const HomeBanner = () => {
                   WEB <TypingAnimation />
                 </p>
 
-                <div className="flex flex-row gap-4">
-                  <div className="mt-4 pages-nav__item">
+                <div className="flex w-full mt-4 flex-col gap-4 sm:flex-row justify-center sm:justify-start items-center">
+                  <div className="">
                     <Link
                       href=""
                       onClick={() => changeNav("portfolio", false)}
-                      className="bg-pinky text-black hover:text-white tracking-widest shadow-lg hover:shadow-xl transition-all duration-500 px-4 py-2 rounded-lg font-bold hover:no-underline"
+                      className="bg-pinky border-pinky text-black hover:text-white tracking-widest shadow-lg hover:shadow-xl transition-all duration-500 px-4 py-2 rounded-lg font-bold hover:no-underline"
                     >
                       View Portfolio
                     </Link>
                   </div>
 
-                  <div className="pages-nav__item mt-4">
+                  <div className="mt-3">
                     <Link
                       href=""
                       className="bg-pinky border-pinky text-black hover:text-white tracking-widest shadow-lg hover:shadow-xl transition-all duration-500 px-4 py-2 rounded-lg font-bold hover:no-underline"
