@@ -184,18 +184,19 @@ const Contact = () => {
             <div>
               <ul className="flex flex-row gap-2 ">
                 <li className="transition-all duration-500 hover:bg-boo p-2 cursor-pointer rounded-full">
-                  <Link href="#">
+                  <Link href="https://www.facebook.com/" target="_blank">
                     <Facebook className="fill-white" stroke="0" size={15} />
                   </Link>
                 </li>
                 <li className="transition-all duration-500 hover:bg-boo p-2 cursor-pointer rounded-full">
-                  <Link href="#">
+                  <Link href="https://twitter.com/" target="_blank">
                     <Twitter className="fill-white" stroke="0" size={15} />
                   </Link>
                 </li>
                 <li className="transition-all duration-500 hover:bg-boo p-2 cursor-pointer rounded-full">
-                  <Link href="#">
+                  <Link href="https://Google.com/" target="_blank">
                     <FaGooglePlusG
+                    
                       className="fill-white"
                       stroke="0"
                       size={15}
@@ -203,7 +204,7 @@ const Contact = () => {
                   </Link>
                 </li>
                 <li className="transition-all duration-500 hover:bg-boo p-2 cursor-pointer rounded-full">
-                  <Link href="#">
+                  <Link href="https://Linkedin.com/" target="_blank">
                     <FaLinkedinIn className="fill-white" stroke="0" size={15} />
                   </Link>
                 </li>
