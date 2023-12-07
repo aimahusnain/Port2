@@ -13,12 +13,12 @@ const Services = () => {
       <div className="row">
         <div className="col-md-6">
           <div className="resume-row">
-            <h2 className="theme-after dark-color">Experience</h2>
+            <h2 className="theme-after text-white">Experience</h2>
             <ul>
               <li>
                 <div className="r-name">
                   <i className="theme-bg ti-briefcase" />
-                  <span className="dark-color">Google</span>
+                  <span className="text-white">Google</span>
                   <label>OCT 2015 - JUNE 2016</label>
                 </div>
                 <div className="r-info">
@@ -33,7 +33,7 @@ const Services = () => {
               <li>
                 <div className="r-name">
                   <i className="theme-bg ti-briefcase" />
-                  <span className="dark-color">Apple</span>
+                  <span className="text-white">Apple</span>
                   <label>OCT 2015 - JUNE 2016</label>
                 </div>
                 <div className="r-info">
@@ -51,12 +51,12 @@ const Services = () => {
         {/* col */}
         <div className="col-md-6">
           <div className="resume-row">
-            <h2 className="theme-after dark-color">Education</h2>
+            <h2 className="theme-after text-white">Education</h2>
             <ul>
               <li>
                 <div className="r-name">
                   <i className="theme-bg fas fa-graduation-cap" />
-                  <span className="dark-color">University</span>
+                  <span className="text-white">University</span>
                   <label>OCT 2015 - JUNE 2016</label>
                 </div>
                 <div className="r-info">
@@ -71,7 +71,7 @@ const Services = () => {
               <li>
                 <div className="r-name">
                   <i className="theme-bg fas fa-graduation-cap" />
-                  <span className="dark-color">Design and Art</span>
+                  <span className="text-white">Design and Art</span>
                   <label>OCT 2015 - JUNE 2016</label>
                 </div>
                 <div className="r-info">
@@ -91,11 +91,11 @@ const Services = () => {
       {/* row */}
       <div className="skill-row m-30px-t sm-m-20px-t">
         <div className="sub-title m-30px-b">
-          <h2 className="dark-color theme-after">My Skills</h2>
+          <h2 className="text-white theme-after">My Skills</h2>
         </div>
         <div className="row">
           <div className="col-md-6 p-30px-r sm-p-15px-r">
-            <h3 className="dark-color">Design Skills</h3>
+            <h3 className="text-white">Design Skills</h3>
             <div className="skills">
               <div className="progress-lt">
                 <h6>Coral Draw</h6>
@@ -130,7 +130,7 @@ const Services = () => {
             </div>
           </div>
           <div className="col-md-6 p-30px-l sm-p-15px-l sm-m-30px-t">
-            <h3 className="dark-color">Coding Skills</h3>
+            <h3 className="text-white">Coding Skills</h3>
             <div className="skills">
               <div className="progress-lt">
                 <h6>HTML5</h6>

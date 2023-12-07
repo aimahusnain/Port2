@@ -19,7 +19,7 @@ const HomeBanner = () => {
     >
       <div className="container-fluid p-0">
         <div className="row no-gutters full-screen">
-          <div className="col-lg-3 overflow-hidden sm:overflow-visible sm:h-screen h-[500px] col-xl-4 bg-boo">
+          <div className="col-lg-3 overflow-hidden sm:h-screen h-[500px] col-xl-4 bg-boo">
             <div className="d-flex align-items-end home-user-avtar v-center-box">
               <Image
               loading="lazy"
@@ -67,33 +67,7 @@ const HomeBanner = () => {
               </div>
               
 
-              <ul className="flex flex-row gap-2 absolute bottom-5 right-10">
-                
-                <li className="transition-all duration-500 hover:bg-boo p-2 cursor-pointer rounded-full">
-                <Link href="#">
-                <Facebook className="fill-white" stroke="0" size={15} />
-                </Link>
-                </li>
-                <li className="transition-all duration-500 hover:bg-boo p-2 cursor-pointer rounded-full">
-                <Link href="#">
-                <Twitter className="fill-white" stroke="0" size={15} />
-                </Link>
-                </li>
-                <li className="transition-all duration-500 hover:bg-boo p-2 cursor-pointer rounded-full">
-                <Link href="#">
-                <FaGooglePlusG
-                className="fill-white"
-                stroke="0"
-                size={15}
-                />
-                </Link>
-                </li>
-                <li className="transition-all duration-500 hover:bg-boo p-2 cursor-pointer rounded-full">
-                <Link href="#">
-                    <FaLinkedinIn className="fill-white" stroke="0" size={15} />
-                    </Link>
-                    </li>
-                  </ul>
+              
             </div>
           </div>
         </div>

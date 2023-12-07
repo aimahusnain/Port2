@@ -29,9 +29,9 @@ const AboutUs = () => {
             alt=""
           />
         </div>
-        <div className="col-md-8 md-m-30px-t">
+        <div className="col-md-8">
           <div className="about-text">
-            <h3 className="dark-color">I'm Alexis Larten</h3>
+            <h3>I'm Alexis Larten</h3>
             <p className="m-0px">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -44,11 +44,11 @@ const AboutUs = () => {
             <div className="col-md-6 col-sm-6 m-30px-b">
               <div className="feature-box">
                 <Workflow
-                  className="icon dark-color theme-after"
+                  className="icon theme-after"
                   size={30}
                 />
                 <div className="feature-content">
-                  <h5 className="dark-color">Development</h5>
+                  <h5>Development</h5>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                     sed do eiusmod tempor incididunt.
@@ -60,11 +60,11 @@ const AboutUs = () => {
             <div className="col-md-6 col-sm-6 m-30px-b">
               <div className="feature-box">
                 <FileImage
-                  className="icon dark-color theme-after"
+                  className="icon theme-after"
                   size={30}
                 />
                 <div className="feature-content">
-                  <h5 className="dark-color">Graphic</h5>
+                  <h5 className="text-white">Graphic</h5>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                     sed do eiusmod tempor incididunt.
@@ -76,11 +76,11 @@ const AboutUs = () => {
             <div className="col-md-6 col-sm-6 m-30px-b">
               <div className="feature-box">
                 <LayoutTemplate
-                  className="icon dark-color theme-after"
+                  className="icon text-white theme-after"
                   size={30}
                 />
                 <div className="feature-content">
-                  <h5 className="dark-color">Web design</h5>
+                  <h5 className="text-white">Web design</h5>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                     sed do eiusmod tempor incididunt.
@@ -91,13 +91,13 @@ const AboutUs = () => {
             {/* col */}
             <div className="col-md-6 col-sm-6 m-30px-b">
               <div className="feature-box">
-                {/* <i className="icon dark-color theme-after ti-mobile" /> */}
+                {/* <i className="icon text-white theme-after ti-mobile" /> */}
                 <TabletSmartphone
-                  className="icon dark-color theme-after"
+                  className="icon text-white theme-after"
                   size={30}
                 />
                 <div className="feature-content">
-                  <h5 className="dark-color">Mobile apps</h5>
+                  <h5 className="text-white">Mobile apps</h5>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                     sed do eiusmod tempor incididunt.
@@ -127,7 +127,7 @@ const AboutUs = () => {
             <div className="counter-col counter-box">
               <div className="counter-data" data-count={375}>
                 <Smile className="theme-color" size={30}/>
-                <div className="count dark-color">375</div>
+                <div className="count text-white">375</div>
                 <h6>Happy Clients</h6>
               </div>
             </div>
@@ -137,7 +137,7 @@ const AboutUs = () => {
             <div className="counter-col counter-box">
               <div className="counter-data" data-count={375}>
                 <i className="theme-color ti-headphone" />
-                <div className="count dark-color">375</div>
+                <div className="count text-white">375</div>
                 <h6>Telephonic Talk</h6>
               </div>
             </div>
@@ -147,7 +147,7 @@ const AboutUs = () => {
             <div className="counter-col counter-box">
               <div className="counter-data" data-count={375}>
                 <i className="theme-color ti-camera" />
-                <div className="count dark-color">375</div>
+                <div className="count text-white">375</div>
                 <h6>Photo Capture</h6>
               </div>
             </div>
@@ -157,7 +157,7 @@ const AboutUs = () => {
             <div className="counter-col counter-box">
               <div className="counter-data" data-count={375}>
                 <i className="theme-color ti-thumb-up" />
-                <div className="count dark-color">375</div>
+                <div className="count text-white">375</div>
                 <h6>Projects</h6>
               </div>
             </div>

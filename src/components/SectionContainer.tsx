@@ -1,6 +1,5 @@
 import { useContext } from "react";
 import { AlexioContext } from "../Context";
-import SectionTitle from "./SectionTitle";
 
 const SectionContainer = ({
   extraClass,
@@ -38,7 +37,12 @@ const SectionContainer = ({
         Page Titel
       ==========================
       */}
-                <SectionTitle title={title} subTitle={subTitle} />
+                <div className="section-titel">
+      <h6 className="theme-after text-white">{subTitle}</h6>
+      <div className="st-title">
+        <h2 className="theme-after text-white">{title}</h2>
+      </div>
+    </div>
                 {/* 
       ==========================
         Contact Us

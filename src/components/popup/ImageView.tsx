@@ -8,7 +8,7 @@ const ImgViews = ({ close, src }) => {
     close(false);
   });
   return (
-    <Fragment>
+    <>
       <div className="mfp-bg mfp-ready" onClick={() => close(false)}></div>
       <div
         className="mfp-wrap mfp-close-btn-in mfp-auto-cursor mfp-ready"
@@ -26,7 +26,7 @@ const ImgViews = ({ close, src }) => {
           <div className="mfp-preloader">Loading...</div>
         </div>
       </div>
-    </Fragment>
+    </>
   );
 };
 

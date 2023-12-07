@@ -7,7 +7,7 @@ const Testimonials: React.FC = () => {
   return (
     <div className="testimonial-section m-30px-t sm-m-20px-t pb-5">
       <div className="sub-title m-30px-b">
-        <h2 className="dark-color theme-after">What People Say?</h2>
+        <h2 className="text-white theme-after">What People Say?</h2>
       </div>
       <Slider {...sliderProps.testimonial} id="client-slider-single">
         <div className="testimonial-col">

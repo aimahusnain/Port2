@@ -1,10 +1,10 @@
-import {
-  useToast
-} from "@chakra-ui/react";
+import { useToast } from "@chakra-ui/react";
 import emailjs from "emailjs-com";
+import { Facebook, Twitter } from "lucide-react";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { ChangeEvent, FormEvent, useState } from "react";
-import { FaPhoneAlt } from "react-icons/fa";
+import { FaGooglePlusG, FaLinkedinIn, FaPhoneAlt } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 
 interface FormData {
@@ -84,7 +84,9 @@ const Contact = () => {
     }
   };
 
-  const handleInputChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleInputChange = (
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
     setFormData((prevFormData) => ({
       ...prevFormData,
@@ -167,15 +169,44 @@ const Contact = () => {
               </div>
             </div>
           </button>
-          <div className="flex text-white lg:mt-0 mt-6 lg:absolute mb-2 lg:right-52 flex-col gap-0">
-            <p className="m-0 p-0 flex flex-row items-center gap-3">
-              <FaPhoneAlt fill="white" />
-              tahaamindob2013@gmail.com
-            </p>
-            <p className="m-0 p-0 flex flex-row items-center gap-3">
-              <IoMdMail />
-              +92 3074241757
-            </p>
+
+          <div className="flex gap-8 static sm:absolute sm:right-6 sm:flex-row py-0 flex-col justify-center items-center">
+            <div className="flex text-white lg:mt-0 mt-6 flex-col">
+              <p className="m-0 p-0 flex flex-row items-center gap-3">
+                <FaPhoneAlt fill="white" />
+                tahaamindob2013@gmail.com
+              </p>
+              <p className="m-0 p-0 flex flex-row items-center gap-3">
+                <IoMdMail />
+                +92 3074241757
+              </p>
+            </div>
+            <div>
+
+            
+            <ul className="flex flex-row gap-2 ">
+              <li className="transition-all duration-500 hover:bg-boo p-2 cursor-pointer rounded-full">
+                <Link href="#">
+                  <Facebook className="fill-white" stroke="0" size={15} />
+                </Link>
+              </li>
+              <li className="transition-all duration-500 hover:bg-boo p-2 cursor-pointer rounded-full">
+                <Link href="#">
+                  <Twitter className="fill-white" stroke="0" size={15} />
+                </Link>
+              </li>
+              <li className="transition-all duration-500 hover:bg-boo p-2 cursor-pointer rounded-full">
+                <Link href="#">
+                  <FaGooglePlusG className="fill-white" stroke="0" size={15} />
+                </Link>
+              </li>
+              <li className="transition-all duration-500 hover:bg-boo p-2 cursor-pointer rounded-full">
+                <Link href="#">
+                  <FaLinkedinIn className="fill-white" stroke="0" size={15} />
+                </Link>
+              </li>
+            </ul>
+            </div>
           </div>
         </div>
       </div>

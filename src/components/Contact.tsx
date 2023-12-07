@@ -56,7 +56,7 @@ const Contact = () => {
       <div className="row">
         <div className="col-lg-12 m-30px-b sm-m-15px-b">
           <div className="contact-form">
-            <h4 className="dark-color m-20px-b">Say Something</h4>
+            <h4 className="text-white m-20px-b">Say Something</h4>
             <form className="contactform" onSubmit={(e) => onSubmit(e)}>
               <div className="row">
                 <div className="col-md-6">
@@ -128,14 +128,14 @@ const Contact = () => {
         <div className="col-md-4 m-15px-tb">
           <div className="contact-info">
             <i className="theme-color ti-location-pin" />
-            <h6 className="dark-color font-alt">Our Address</h6>
+            <h6 className="text-white font-alt">Our Address</h6>
             <p>123 Stree New York City , USA 750065.</p>
           </div>
         </div>
         <div className="col-md-4 m-15px-tb">
           <div className="contact-info">
             <i className="theme-color ti-mobile" />
-            <h6 className="dark-color font-alt">Our Phone</h6>
+            <h6 className="text-white font-alt">Our Phone</h6>
             <p>
               Office: +004 444 444
               <br />
@@ -147,7 +147,7 @@ const Contact = () => {
         <div className="col-md-4 m-15px-tb sm-m-0px-b">
           <div className="contact-info">
             <i className="theme-color ti-email" />
-            <h6 className="dark-color font-alt">Our Email</h6>
+            <h6 className="text-white font-alt">Our Email</h6>
             <p>
               info@domain.com
               <br />
