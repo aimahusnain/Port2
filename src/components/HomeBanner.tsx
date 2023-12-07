@@ -22,6 +22,7 @@ const HomeBanner = () => {
           <div className="col-lg-3 overflow-hidden sm:overflow-visible sm:h-screen h-[500px] col-xl-4 bg-boo">
             <div className="d-flex align-items-end home-user-avtar v-center-box">
               <Image
+              loading="lazy"
                 height={300}
                 width={3020}
                 src="/static/img/H1.png"
