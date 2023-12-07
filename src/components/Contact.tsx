@@ -46,17 +46,17 @@ const Contact = () => {
   };
   return (
     <SectionContainer
-      extraClass="about-section" // Add extraClass or adjust as per your requirements
-      name={"contact"}
+    extraClass="about-section" // Add extraClass or adjust as per your requirements
+    name={"contact"}
       title="CONTACT ME"
       subTitle={"GET IN TOUCH"}
-      leftImage="static/img/title-4.jpg"
+      leftImage="static/img/team/Eman.png"
       leftImageTitle={"About Me"} // Add leftImageTitle or adjust as per your requirements
     >
       <div className="row">
         <div className="col-lg-12 m-30px-b sm-m-15px-b">
           <div className="contact-form">
-            <h4 className="dark-color font-alt m-20px-b">Say Something</h4>
+            <h4 className="dark-color m-20px-b">Say Something</h4>
             <form className="contactform" onSubmit={(e) => onSubmit(e)}>
               <div className="row">
                 <div className="col-md-6">

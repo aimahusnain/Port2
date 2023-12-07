@@ -20,7 +20,7 @@ const SectionContainer = ({
       onClick={() => changeNav(name, false)}
     >
       {" "}
-      <div className="container-fluid p-0">
+      <div className="bg-darkness container-fluid p-0">
         <div className="row no-gutters">  
           <div
             className="col-lg-3 col-xl-4 page-title"
@@ -31,7 +31,7 @@ const SectionContainer = ({
             </div>
           </div>
           <div className="col-lg-9 col-xl-8">
-            <div className="page-scroll">
+            <div className="">
               <div className="page-content">
                 {/* 
       ==========================

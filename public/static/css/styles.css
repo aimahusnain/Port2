@@ -1122,28 +1122,22 @@ body.dark-body {
 }
 .form-group .form-control {
   outline: none;
+  border: none;
   box-shadow: none;
   height: 50px;
-  border: 1px solid #d4d4d4;
+  border-bottom: 1px solid #ececec;
   width: 100%;
-  font-size: 14px;
-  color: #000;
-  background: #f7fafc;
+  font-size: 18px;
+  color: white;
+  background: transparent;
   border-radius: 0;
 }
 
-.form-group .form-control.form-xl {
+.form-group .form-control .form-xl {
   height: 55px;
-  border: 1px solid #ddd;
+  border: none;
   font-size: 16px;
-  border-bottom: 2px solid #ddd;
-}
-
-.form-group textarea.form-control {
-  height: 160px;
-}
-.form-group textarea.form-control.form-xl {
-  height: 170px;
+  border-bottom: none;
 }
 
 .form-group .input-focus-effect {
