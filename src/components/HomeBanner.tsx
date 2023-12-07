@@ -19,7 +19,7 @@ const HomeBanner = () => {
     >
       <div className="container-fluid p-0">
         <div className="row no-gutters full-screen">
-          <div className="col-lg-3 overflow-hidden sm:overflow-visible sm:h-full h-[500px] col-xl-4 bg-boo">
+          <div className="col-lg-3 overflow-hidden sm:overflow-visible sm:h-screen h-[500px] col-xl-4 bg-boo">
             <div className="d-flex align-items-end home-user-avtar v-center-box">
               <Image
                 height={300}
@@ -31,7 +31,7 @@ const HomeBanner = () => {
             </div>
           </div>
           <div className="col-lg-20 mb-7 col-xl-8">
-            <div className="h-full  flex flex-col justify-between items-start">
+            <div className="h-full flex flex-col justify-between items-start">
               <div />
               <div className="home-text">
                 <h6 className="text-white theme-after">Wellcome to</h6>
