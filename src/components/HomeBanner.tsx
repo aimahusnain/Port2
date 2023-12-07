@@ -42,17 +42,17 @@ const HomeBanner = () => {
                 <div className="flex flex-row gap-4">
                   <div className="pages-nav__item">
                     
-                    <Portfolio />
+                    {/* <Portfolio /> */}
 
                   </div>
-                  <div className="mt-4">
+                  {/* <div className="mt-4">
                     <Link
                       href="/"
                       className="bg-pinky text-black hover:text-white tracking-widest shadow-lg hover:shadow-xl transition-all duration-500 px-4 py-2 rounded-lg font-bold hover:no-underline"
                     >
                       View Portfolio
                     </Link>
-                  </div>
+                  </div> */}
 
                   <div className="pages-nav__item mt-4">
                     <Link
