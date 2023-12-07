@@ -34,14 +34,14 @@ const HomeBanner = () => {
           <div className="col-lg-20 mb-7 col-xl-8">
             <div className="h-full flex flex-col justify-between items-start">
               <div />
-              <div className="home-text">
+              <div className="home-text px-4">
                 <h6 className="text-white theme-after">Wellcome to</h6>
                 <h1 className="text-white theme-after">DevKin Solutions</h1>
                 <p className="text-white">
                   WEB <TypingAnimation />
                 </p>
 
-                <div className="flex w-full px-4 sm:px-0 mt-2 gap-2 flex-row justify-between sm:justify-start items-center">
+                <div className="flex w-full mt-2 gap-2 flex-row justify-between sm:justify-start items-center">
                   <div className="">
                     <button
                       onClick={() => changeNav("portfolio", false)}

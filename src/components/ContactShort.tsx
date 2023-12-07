@@ -196,7 +196,6 @@ const Contact = () => {
                 <li className="transition-all duration-500 hover:bg-boo p-2 cursor-pointer rounded-full">
                   <Link href="https://Google.com/" target="_blank">
                     <FaGooglePlusG
-                    
                       className="fill-white"
                       stroke="0"
                       size={15}
