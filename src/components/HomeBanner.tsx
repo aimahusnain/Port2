@@ -39,7 +39,7 @@ const HomeBanner = () => {
                 <p className="text-white">
                   WEB <TypingAnimation />
                 </p>
-                <div className="flex flex-row gap-4">
+                <div className="flex flex-row">
                   <div className="pages-nav__item">
                     
                     {/* <Portfolio /> */}
