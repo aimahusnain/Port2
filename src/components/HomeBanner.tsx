@@ -35,7 +35,7 @@ const HomeBanner = () => {
             <div className="h-full flex flex-col justify-between items-start">
               <div />
               <div className="home-text px-4">
-                <h6 className="text-white theme-after">Wellcome to</h6>
+                <h6 className="text-white theme-after">Welcome to</h6>
                 <h1 className="text-white theme-after">DevKin Solutions</h1>
                 <p className="text-white">
                   WEB <TypingAnimation />
@@ -65,8 +65,6 @@ const HomeBanner = () => {
               <div className="flex justify-end flex-row gap-2">
                 <ContactShort />
               </div>
-              
-
               
             </div>
           </div>
