@@ -182,30 +182,32 @@ const Contact = () => {
               </p>
             </div>
             <div>
-
-            
-            <ul className="flex flex-row gap-2 ">
-              <li className="transition-all duration-500 hover:bg-boo p-2 cursor-pointer rounded-full">
-                <Link href="#">
-                  <Facebook className="fill-white" stroke="0" size={15} />
-                </Link>
-              </li>
-              <li className="transition-all duration-500 hover:bg-boo p-2 cursor-pointer rounded-full">
-                <Link href="#">
-                  <Twitter className="fill-white" stroke="0" size={15} />
-                </Link>
-              </li>
-              <li className="transition-all duration-500 hover:bg-boo p-2 cursor-pointer rounded-full">
-                <Link href="#">
-                  <FaGooglePlusG className="fill-white" stroke="0" size={15} />
-                </Link>
-              </li>
-              <li className="transition-all duration-500 hover:bg-boo p-2 cursor-pointer rounded-full">
-                <Link href="#">
-                  <FaLinkedinIn className="fill-white" stroke="0" size={15} />
-                </Link>
-              </li>
-            </ul>
+              <ul className="flex flex-row gap-2 ">
+                <li className="transition-all duration-500 hover:bg-boo p-2 cursor-pointer rounded-full">
+                  <Link href="#">
+                    <Facebook className="fill-white" stroke="0" size={15} />
+                  </Link>
+                </li>
+                <li className="transition-all duration-500 hover:bg-boo p-2 cursor-pointer rounded-full">
+                  <Link href="#">
+                    <Twitter className="fill-white" stroke="0" size={15} />
+                  </Link>
+                </li>
+                <li className="transition-all duration-500 hover:bg-boo p-2 cursor-pointer rounded-full">
+                  <Link href="#">
+                    <FaGooglePlusG
+                      className="fill-white"
+                      stroke="0"
+                      size={15}
+                    />
+                  </Link>
+                </li>
+                <li className="transition-all duration-500 hover:bg-boo p-2 cursor-pointer rounded-full">
+                  <Link href="#">
+                    <FaLinkedinIn className="fill-white" stroke="0" size={15} />
+                  </Link>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

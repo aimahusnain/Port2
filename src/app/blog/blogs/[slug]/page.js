@@ -130,7 +130,7 @@ export default function BlogPage({ params }) {
               {blog.toc.map((heading) => {
                 return (
                   <li key={`#${heading.slug}`} className="py-1">
-                    <Link
+                    <a
                       href={`#${heading.slug}`}
                       data-level={heading.level}
                       className="data-[level=two]:pl-0  data-[level=two]:pt-2
@@ -147,7 +147,7 @@ export default function BlogPage({ params }) {
                       ) : null}
 
                       <span className="hover:underline">{heading.text}</span>
-                    </Link>
+                    </a>
                   </li>
                 );
               })}
