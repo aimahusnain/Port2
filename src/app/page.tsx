@@ -1,6 +1,5 @@
 "use client";
 
-import {allBlogs} from "contentlayer/generated";
 import AboutUs from "../components/AboutUs";
 import Contact from "../components/Contact";
 import HomeBanner from "../components/HomeBanner";
@@ -13,7 +12,6 @@ import React from "react";
 import ImageView from "../components/popup/ImageView";
 import VideoPopup from "../components/popup/VideoPopup";
 import dynamic from "next/dynamic";
-import HomeCoverSection2 from "../components/HomeCoverSection2";
 const Portfolio = dynamic(() => import("../components/Portfolio"), {
   ssr: false,
 });
@@ -21,13 +19,13 @@ const Portfolio = dynamic(() => import("../components/Portfolio"), {
 const Index = () => {
   useEffect(() => {
     document.querySelector("html").classList.add("js");
-    document.querySelector("body").classList.add("dark-body");
+    // document.querySelector("body").classList.add("#201926");
   }, []);
 
   const { toggle } = useContext(AlexioContext);
 
   return (
-    <div className="bg-black">
+    <div>
       <VideoPopup />
       <ImageView />
       <Nav />
@@ -37,9 +35,7 @@ const Index = () => {
         <Services />
         <Portfolio />
         <Contact />
-        <HomeCoverSection2 blogs={allBlogs} />
       </div>
-
       <Header />
     </div>
   );

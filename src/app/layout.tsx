@@ -59,7 +59,7 @@ export default function RootLayout({ children }) {
         <AlexioHead />
 
         <body
-          className={cx(inter.variable, manrope.variable, "font-mr bg-dark")}
+          className={cx(inter.variable, manrope.variable, "font-mr bg-darkess")}
         >
           {children}
         </body>

@@ -15,23 +15,18 @@ const AlexioHead = () => {
      EXCLUSIVE ON themeforest.net
      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
      Template Name   : Alexio
-     Author          : Codeefly
-     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     Author          : Codeeflw~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
      Copyright (c) 2013 - Codeefly
      ========================================================================
      */}
       {/* Page Title */}
-      <title>Alexio - Personal Portfolio React NextJS Template</title>
+      <title>DevKin Solutions - Professional Web Developer Team</title>
       {/* / */}
       {/*-Font Icon*/}
-      {/* <link
-        href="static/plugin/font-awesome/css/fontawesome-all.min.css"
-        rel="stylesheet"
-      /> */}
-      {/* <link
+      <link
         href="static/plugin/themify-icons/themify-icons.css"
         rel="stylesheet"
-      /> */}
+      />
       {/* / */}
       {/* Plugin CSS */}
        <link

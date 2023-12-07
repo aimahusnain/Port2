@@ -226,7 +226,7 @@ body.dark-body {
   background-color: #2fb3cd;
 }
 .blue-after:after {
-  background-color: #2fb3cd;
+  background-color: #FF9AFF;
 }
 
 .white-bg {
@@ -405,6 +405,8 @@ body.dark-body {
 -----------------------------------*/
 .header {
   position: fixed;
+  border-radius: 40px;
+  padding-left: 12px;
   top: 0;
   right: 0;
   width: 300px;
@@ -412,6 +414,7 @@ body.dark-body {
   z-index: 9999;
 }
 .header .logo {
+  
   color: #fff;
   font-size: 20px;
   font-weight: 600;
@@ -439,7 +442,7 @@ body.dark-body {
 }
 
 .pages-nav .link {
-  color: #fff;
+  color: black;
   font-size: 16px;
   text-transform: uppercase;
   text-decoration: none;
@@ -456,7 +459,7 @@ body.dark-body {
   bottom: 0;
   height: 1px;
   left: auto;
-  background: #fff;
+  background: black;
   right: 0;
   transition: ease all 0.3s;
   width: 0px;
@@ -484,9 +487,7 @@ body.dark-body {
 .v-center-box {
   min-height: 100%;
 }
-.home-banner {
-  background: #fff;
-}
+
 .home-banner .page-content .v-center-box {
   min-height: calc(100vh - 100px);
 }

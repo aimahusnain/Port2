@@ -66,6 +66,7 @@ const Nav = () => {
             Home
           </Link>
         </div>
+        
         <div className="pages-nav__item">
           <Link
             href=""
@@ -102,15 +103,6 @@ const Nav = () => {
           </Link>
         </div>
         
-        <div className="pages-nav__item">
-          <Link
-            href=""
-            className="link link--page"
-            onClick={() => changeNav("BlogCoverSecton2", false)}
-          >
-            BlogCoverSection2
-          </Link>
-        </div>
         <div className="pages-nav__item">
           <Link
             href=""
