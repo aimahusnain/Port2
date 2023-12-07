@@ -40,25 +40,23 @@ const HomeBanner = () => {
                   WEB <TypingAnimation />
                 </p>
 
-                <div className="flex w-full mt-4 flex-col gap-4 sm:flex-row justify-center sm:justify-start items-center">
+                <div className="flex w-full px-4 sm:px-0 mt-4 gap-2 flex-row justify-between sm:justify-start items-center">
                   <div className="">
-                    <Link
-                      href=""
+                    <button
                       onClick={() => changeNav("portfolio", false)}
-                      className="bg-pinky border-pinky text-black hover:text-white tracking-widest shadow-lg hover:shadow-xl transition-all duration-500 px-4 py-2 rounded-lg font-bold hover:no-underline"
+                      className="bg-pinky w-32 p-1 border-pinky text-black hover:text-white transition-all duration-500 rounded-lg font-bold hover:no-underline"
                     >
                       View Portfolio
-                    </Link>
+                    </button>
                   </div>
 
-                  <div className="mt-3">
-                    <Link
-                      href=""
-                      className="bg-pinky border-pinky text-black hover:text-white tracking-widest shadow-lg hover:shadow-xl transition-all duration-500 px-4 py-2 rounded-lg font-bold hover:no-underline"
+                  <div className="">
+                    <button
+                      className="bg-pinky w-32 p-1 border-pinky text-black hover:text-white transition-all duration-500 rounded-lg font-bold hover:no-underline"
                       onClick={() => changeNav("resume", false)}
                     >
                       Our Services
-                    </Link>
+                    </button>
                   </div>
                 </div>
               </div>
