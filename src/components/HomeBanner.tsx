@@ -30,8 +30,8 @@ const HomeBanner = () => {
               />
             </div>
           </div>
-          <div className="col-lg-20 col-xl-8">
-            <div className="h-full flex flex-col justify-between items-start">
+          <div className="col-lg-20 mb-7 col-xl-8">
+            <div className="h-full  flex flex-col justify-between items-start">
               <div />
               <div className="home-text">
                 <h6 className="text-white theme-after">Wellcome to</h6>
@@ -40,7 +40,7 @@ const HomeBanner = () => {
                   WEB <TypingAnimation />
                 </p>
 
-                <div className="flex w-full px-4 sm:px-0 mt-4 gap-2 flex-row justify-between sm:justify-start items-center">
+                <div className="flex w-full px-4 sm:px-0 mt-2 gap-2 flex-row justify-between sm:justify-start items-center">
                   <div className="">
                     <button
                       onClick={() => changeNav("portfolio", false)}
