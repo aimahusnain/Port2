@@ -5,7 +5,7 @@ const Header = () => {
   const { changeNav, nav, toggle } = useContext(AlexioContext);
   return (
     <header className="header theme-bg">
-      <div className="logo">DevKin</div>
+      <div className="logo">DevKin Solutions</div>
       <div className="menu-toggle">
         <button
           className={`menu-button ${toggle ? "menu-button--open" : ""}`}

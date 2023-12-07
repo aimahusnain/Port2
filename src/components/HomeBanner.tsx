@@ -1,21 +1,16 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { AlexioContext } from "../Context";
 import TypingAnimation from "./TypingAnimation";
 import Image from "next/image";
 import Link from "next/link";
 import { Facebook, Twitter } from "lucide-react";
 import { FaGooglePlusG, FaLinkedinIn } from "react-icons/fa";
+import Portfolio from "./Portfolio";
 
 const HomeBanner = () => {
   const activePageClass = (page) => (page === nav ? "" : "page--inactive"); // Accepts a parameter
-
-  const [mode, setMode] = useState<string>("dark");
   const { changeNav, toggle, nav } = useContext(AlexioContext);
-  const [click, setClick] = useState(false);
 
-  const toggle2 = () => {
-    setClick(!click);
-  };
 
   return (
     <div
@@ -45,17 +40,11 @@ const HomeBanner = () => {
                   WEB <TypingAnimation />
                 </p>
                 <div className="flex flex-row gap-4">
-                <nav className={`pages-nav ${toggle ? "pages-nav--open" : ""}`}>
-        <div>
-          <Link
-            href=""
-            className="link link--page"
-            onClick={() => changeNav("home", false)}
-          >
-            Home
-          </Link>
-        </div>
-        </nav>
+                  <div className="pages-nav__item">
+                    
+                    <Portfolio />
+
+                  </div>
                   <div className="mt-4">
                     <Link
                       href="/"
