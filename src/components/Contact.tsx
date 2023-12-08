@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import SectionContainer from "./SectionContainer";
 import { useToast } from "@chakra-ui/react";
@@ -108,7 +108,6 @@ const Contact = () => {
     router.refresh();
   };
 
-
   const [mailData, setMailData] = useState({
     name: "",
     email: "",
@@ -149,7 +148,6 @@ const Contact = () => {
     }
   };
 
-
   return (
     <SectionContainer
       extraClass="about-section bg-darkness"
@@ -159,97 +157,118 @@ const Contact = () => {
       leftImage="static/img/team/Eman.png"
       leftImageTitle={"About Me"}
     >
-      <form className="contactform mb-6 gap-0" onSubmit={onFormSubmit}>
-    
-      <div className="row m-0 gap-0">
-        <div className="col-md-6 m-0 gap-0">
-          <div className="form-group m-0 gap-0">
-            <input
-              id="name"
-              name="name"
-              onChange={handleInputChange}
-              value={formData.name}
-              type="text"
-              placeholder="Name"
-              className="validate form-control"
-              required
-            />
-            <span className="input-focus-effect bg-boo" />
+      <p className="text-white/60 text-lg tracking-widest">
+        Thank you for reaching out! We're here to assist you. Please feel free
+        to contact us using the information below:
+      </p>
+      <br />
+      <div>
+        <div className="w-full flex justify-center p-0 h-fit items-center text-left">
+          <div className="flex flex-col sm:w-full align-middle w-fit sm:flex-row text-center gap-4 sm:gap-0  sm:justify-between">
+            <p className="m-0 text-white p-0 flex flex-row items-center gap-3">
+              <FaPhoneAlt fill="white" />
+              tahaamindob2013@gmail.com <br />
+            </p>
+            <p className="m-0 text-white p-0 flex flex-row items-center gap-3">
+              <IoMdMail />
+              +92 3074241757
+            </p>
+
+            <ul className="flex flex-row gap-2">
+              <li className="transition-all duration-500 hover:bg-boo p-2 cursor-pointer rounded-full">
+                <Link href="https://www.facebook.com/" target="_blank">
+                  <Facebook className="fill-white" stroke="0" size={15} />
+                </Link>
+              </li>
+              <li className="transition-all duration-500 hover:bg-boo p-2 cursor-pointer rounded-full">
+                <Link href="https://twitter.com/" target="_blank">
+                  <Twitter className="fill-white" stroke="0" size={15} />
+                </Link>
+              </li>
+              <li className="transition-all duration-500 hover:bg-boo p-2 cursor-pointer rounded-full">
+                <Link href="https://Google.com/" target="_blank">
+                  <FaGooglePlusG className="fill-white" stroke="0" size={15} />
+                </Link>
+              </li>
+              <li className="transition-all duration-500 hover:bg-boo p-2 cursor-pointer rounded-full">
+                <Link href="https://Linkedin.com/" target="_blank">
+                  <FaLinkedinIn className="fill-white" stroke="0" size={15} />
+                </Link>
+              </li>
+            </ul>
           </div>
         </div>
-
-        <div className="col-md-6 m-0 gap-0">
-          <div className="form-group">
-            <input
-              id="email"
-              type="email"
-              placeholder="Email"
-              name="email"
-              onChange={handleInputChange}
-              value={formData.email}
-              className="validate form-control"
-              required
-            />
-            <span className="input-focus-effect bg-boo" />
-          </div>
-        </div>
-
-        <div className="col-md-12 m-0 gap-0">
-          <div className="form-group">
-            <textarea
-              name="message"
-              value={formData.message}
-              onChange={handleInputChange}
-              placeholder="Message..."
-              className="w-full focus:ring-0 pl-0 bg-transparent border-none border-b-2 text-[17px] text-white resize-none border-b-white focus:outline-none"
-              style={{ borderBottom: "1px solid #ececec" }}
-              rows={6}
-            />
-
-            <span className="input-focus-effect bg-boo relative top-[200px]" />
-          </div>  
-        </div>
-
-        <div className="flex sm:gap-[380px] gap-16">
-                <button
-                type="submit"
-                  className="text-black w-fit ml-2 hover:text-white border-black hover:border-white tracking-widest shadow-lg hover:shadow-xl transition-all duration-500 
-               px-4 py-2 rounded-lg font-bold border-2 bg-pinky hover:no-underline"
-                >
-                  Send Message
-                </button>
-
-
-
-          <ul className="flex flex-row gap-2 mt-3">
-                <li className="transition-all duration-500 hover:bg-boo p-2 cursor-pointer rounded-full">
-                  <Link href="https://www.facebook.com/" target="_blank">
-                    <Facebook className="fill-white" stroke="0" size={15} />
-                  </Link>
-                </li>
-                <li className="transition-all duration-500 hover:bg-boo p-2 cursor-pointer rounded-full">
-                  <Link href="https://twitter.com/" target="_blank">
-                    <Twitter className="fill-white" stroke="0" size={15} />
-                  </Link>
-                </li>
-                <li className="transition-all duration-500 hover:bg-boo p-2 cursor-pointer rounded-full">
-                  <Link href="https://Google.com/" target="_blank">
-                    <FaGooglePlusG
-                      className="fill-white"
-                      stroke="0"
-                      size={15}
-                    />
-                  </Link>
-                </li>
-                <li className="transition-all duration-500 hover:bg-boo p-2 cursor-pointer rounded-full">
-                  <Link href="https://Linkedin.com/" target="_blank">
-                    <FaLinkedinIn className="fill-white" stroke="0" size={15} />
-                  </Link>
-                </li>
-              </ul>
-        </div>
+        <br />
+        <p className="text-white/60 tracking-widest text-lg">
+          Have a specific question our request? Feel free to use the form below
+          to send us a direct message:
+        </p>
+        <br />
       </div>
-    </form>
+      <form className="contactform mb-6 gap-0" onSubmit={onFormSubmit}>
+        <div className="row m-0 gap-0">
+          <div className="col-md-6 m-0 gap-0">
+            <div className="form-group m-0 gap-0">
+              <input
+                id="name"
+                name="name"
+                onChange={handleInputChange}
+                value={formData.name}
+                type="text"
+                placeholder="Name"
+                className="validate form-control"
+                required
+              />
+              <span className="input-focus-effect bg-boo" />
+            </div>
+          </div>
+
+          <div className="col-md-6 m-0 gap-0">
+            <div className="form-group">
+              <input
+                id="email"
+                type="email"
+                placeholder="Email"
+                name="email"
+                onChange={handleInputChange}
+                value={formData.email}
+                className="validate form-control"
+                required
+              />
+              <span className="input-focus-effect bg-boo" />
+            </div>
+          </div>
+
+          <div className="col-md-12 m-0 gap-0">
+            <div className="form-group">
+              <textarea
+                name="message"
+                value={formData.message}
+                onChange={handleInputChange}
+                placeholder="Message..."
+                className="w-full focus:ring-0 pl-0 bg-transparent border-none border-b-2 text-[17px] text-white resize-none border-b-white focus:outline-none"
+                style={{ borderBottom: "1px solid #ececec" }}
+                rows={5}
+              />
+
+              <span className="input-focus-effect bg-boo relative top-[169px]" />
+            </div>
+          </div>
+
+          <div className="flex sm:gap-[380px] gap-16">
+            <button
+              type="submit"
+              className="text-black w-fit ml-2 hover:text-white border-black hover:border-white tracking-widest shadow-lg hover:shadow-xl transition-all duration-500 
+               px-4 py-2 rounded-lg font-bold border-2 bg-pinky hover:no-underline"
+            >
+              Send Message
+            </button>
+          </div>
+        </div>
+      </form>
+      <p className="text-white tracking-widest mt-[60px] text-lg">
+        We value your feedback and aim to respond witin 24 hours.
+      </p>
     </SectionContainer>
   );
 };
