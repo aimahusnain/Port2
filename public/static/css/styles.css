@@ -145,16 +145,27 @@ body.dark-body {
   .page-scroll {
     overflow-y: scroll;
     height: 100vh;
+    
   }
   .page-scroll:after {
     content: "";
     top: 0;
     bottom: 0;
-    width: 20px;
+    display: none;
+    min-width: 1px;
     background: #fff;
     right: 0px;
     z-index: 1;
     position: fixed;
+  }
+
+  .page-scroll {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+  }
+  
+  .page-scroll::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
   }
 }
 .page-content {

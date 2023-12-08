@@ -17,7 +17,9 @@ const SectionContainer = ({
   const activePageClass = (name: any) => (name === nav ? "" : "page--inactive");
   return (
     <div
-      className={`page ${extraClass} bg-darkness ml-0 gap-0  ${activePageClass(name)}`}
+      className={`page ${extraClass} bg-darkness ml-0 gap-0  ${activePageClass(
+        name
+      )}`}
       id={name}
       onClick={() => changeNav(name, false)}
     >
@@ -64,14 +66,16 @@ const SectionContainer = ({
           </div>
           <div className="col-lg-20 mb-7 col-xl-8">
             <div className="h-full flex flex-col justify-between items-start">
-              <div className="page-content">
-                <div className="section-titel">
-                  <h6 className="theme-after text-white">{subTitle}</h6>
-                  <div className="st-title">
-                    <h2 className="theme-after text-white">{title}</h2>
+              <div className="page-scroll">
+                <div className="page-content">
+                  <div className="section-titel">
+                    <h6 className="theme-after text-white">{subTitle}</h6>
+                    <div className="st-title">
+                      <h2 className="theme-after text-white">{title}</h2>
+                    </div>
                   </div>
+                  {children}
                 </div>
-                {children}
               </div>
             </div>
           </div>

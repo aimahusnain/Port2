@@ -6,6 +6,7 @@ import Link from "next/link";
 import { Facebook, Twitter } from "lucide-react";
 import { FaGooglePlusG, FaLinkedinIn } from "react-icons/fa";
 import ContactShort from "./ContactShort";
+import siteMetadata from "../utils/siteMetaData";
 
 const HomeBanner = () => {
   const activePageClass = (page) => (page === nav ? "" : "page--inactive"); // Accepts a parameter
@@ -81,7 +82,7 @@ const HomeBanner = () => {
               <div />
               <div className="home-text px-4">
                 <h6 className="text-white theme-after">Welcome to</h6>
-                <h1 className="text-white theme-after">DevKin Solutions</h1>
+                <h1 className="text-white theme-after">{siteMetadata.WebName}</h1>
                 <p className="text-white">
                   WEB <TypingAnimation />
                 </p>

@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import siteMetadata from "./utils/siteMetaData";
 
 const AlexioHead = () => {
   return (
@@ -20,7 +21,7 @@ const AlexioHead = () => {
      ========================================================================
      */}
       {/* Page Title */}
-      <title>DevKin Solutions - Professional Web Developer Team</title>
+      <title>{siteMetadata.WebName} - Professional Web Developer Team</title>
       {/* / */}
       {/*-Font Icon*/}
       <link

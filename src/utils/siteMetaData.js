@@ -3,6 +3,7 @@ const siteMetadata = {
   title: 'Next.js Blog With Tailwind CSS and Contentlayer',
   author: 'CodeBucks',
   headerTitle: 'Next.js Blog',
+  WebName: "WebKin Solutions",
   description: 'A blog created with Next.js, Tailwind.css and contentlayer.',
   language: 'en-us',
   theme: 'system', // system, dark or light

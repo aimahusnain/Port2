@@ -1,19 +1,15 @@
 "use client";
+import siteMetadata from "@/src/utils/siteMetaData";
 import Link from "next/link";
-import Logo from "./Logo";
+import { useContext, useState } from "react";
+import { AlexioContext } from "../../../Context";
 import {
   DribbbleIcon,
   GithubIcon,
   LinkedinIcon,
-  MoonIcon,
-  SunIcon,
-  TwitterIcon,
+  TwitterIcon
 } from "../Icons";
-import { useContext } from "react";
-import { AlexioContext } from "../../../Context";
-import siteMetadata from "@/src/utils/siteMetaData";
-import { useState } from "react";
-import { cx } from "@/src/utils";
+import Logo from "./Logo";
 
 const Header = () => {
   const [mode, setMode] = useState<string>("dark");
