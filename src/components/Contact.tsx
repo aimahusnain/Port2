@@ -1,10 +1,114 @@
 'use client'
 
-import emailjs from "emailjs-com";
-import { useState } from "react";
 import SectionContainer from "./SectionContainer";
+import { useToast } from "@chakra-ui/react";
+import emailjs from "emailjs-com";
+import { Facebook, Twitter } from "lucide-react";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { ChangeEvent, FormEvent, useState } from "react";
+import { FaGooglePlusG, FaLinkedinIn, FaPhoneAlt } from "react-icons/fa";
+import { IoMdMail } from "react-icons/io";
+
+interface FormData {
+  name: string;
+  email: string;
+  message: string;
+}
+
+interface FormErrors {
+  name?: boolean;
+  email?: boolean;
+  message?: boolean;
+}
 
 const Contact = () => {
+  const [formData, setFormData] = useState<FormData>({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const [formErrors, setFormErrors] = useState<FormErrors>({});
+
+  const toast = useToast({
+    duration: 3000, // Set the duration for how long the toast will be displayed
+    isClosable: true, // Allow the user to close the toast manually
+  });
+
+  const triggerEmail = async (data) => {
+    await emailjs
+      .send("service_8j8ygx5", "template_itv3s7k", data, "gDiiIsHO-vSM4wYX6")
+      .then((success) => {
+        toast({
+          title: "Email Sent Successfully",
+          status: "success",
+          duration: 500,
+          isClosable: true,
+        });
+        // Clear form fields after successful email send
+        setFormData({
+          name: "",
+          email: "",
+          message: "",
+        });
+      })
+      .catch((err) => {
+        toast({
+          title: "Something went wrong",
+          status: "error",
+          duration: 500,
+          isClosable: true,
+        });
+        console.log(err);
+      });
+  };
+
+  const onFormSubmit = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const { name, email, message } = formData;
+    const errors: FormErrors = {};
+
+    if (!name) {
+      errors.name = true;
+    }
+    if (!email) {
+      errors.email = true;
+    }
+    if (!message) {
+      errors.message = true;
+    }
+
+    if (Object.keys(errors).length === 0) {
+      setFormErrors({});
+      triggerEmail(formData);
+    } else {
+      setFormErrors(errors);
+    }
+  };
+
+  const handleInputChange = (
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      [name]: value,
+    }));
+  };
+
+  const [isSent, setIsSent] = useState(false);
+
+  const router = useRouter();
+  const handleClick = () => {
+    setIsSent(true);
+    setTimeout(() => {
+      setIsSent(false);
+    }, 3000);
+    router.refresh();
+  };
+
+
   const [mailData, setMailData] = useState({
     name: "",
     email: "",
@@ -44,118 +148,125 @@ const Contact = () => {
         );
     }
   };
+
+
   return (
+    
     <SectionContainer
-    extraClass="about-section" // Add extraClass or adjust as per your requirements
+    extraClass="about-section bg-darkness " // Add extraClass or adjust as per your requirements
     name={"contact"}
-      title="CONTACT ME"
+      title="CONTACT US"
       subTitle={"GET IN TOUCH"}
       leftImage="static/img/team/Eman.png"
       leftImageTitle={"About Me"} // Add leftImageTitle or adjust as per your requirements
     >
+       <form className="contactform m-0 flex ml-4 mb-6" onSubmit={onFormSubmit}>
       <div className="row">
-        <div className="col-lg-12 m-30px-b sm-m-15px-b">
-          <div className="contact-form">
-            <h4 className="text-white m-20px-b">Say Something</h4>
-            <form className="contactform" onSubmit={(e) => onSubmit(e)}>
-              <div className="row">
-                <div className="col-md-6">
-                  <div className="form-group">
-                    <input
-                      id="name"
-                      name="name"
-                      onChange={(e) => onChange(e)}
-                      value={name}
-                      type="text"
-                      placeholder="Name"
-                      className="validate form-control"
-                      required
-                    />
-                    <span className="input-focus-effect theme-bg" />
-                  </div>
-                </div>
-                <div className="col-md-6">
-                  <div className="form-group">
-                    <input
-                      id="email"
-                      type="email"
-                      placeholder="Email"
-                      name="email"
-                      onChange={(e) => onChange(e)}
-                      value={email}
-                      className="validate form-control"
-                      required
-                    />
-                    <span className="input-focus-effect theme-bg" />
-                  </div>
-                </div>
-                <div className="col-md-12">
-                  <div className="form-group">
-                    <textarea
-                      id="message"
-                      placeholder="Your Comment"
-                      name="message"
-                      onChange={(e) => onChange(e)}
-                      value={message}
-                      className="form-control"
-                      required
-                    />
-                    <span className="input-focus-effect theme-bg" />
-                  </div>
-                </div>
-                <div className="col-md-12">
-                  <div className="send">
-                    <button className="btn btn-theme" type="submit">
-                      {" "}
-                      send message
-                    </button>
-                  </div>
-                  <span
-                    id="suce_message"
-                    className="text-success mt-3"
-                    style={{ display: success ? "block" : "none" }}
-                  >
-                    Message Sent Successfully
-                  </span>
-                </div>
+        <div className="col-md-6">
+          <div className="form-group">
+            <input
+              id="name"
+              name="name"
+              onChange={handleInputChange}
+              value={formData.name}
+              type="text"
+              placeholder="Name"
+              className="validate form-control"
+              required
+            />
+            <span className="input-focus-effect bg-boo" />
+          </div>
+        </div>
+
+        <div className="col-md-6">
+          <div className="form-group">
+            <input
+              id="email"
+              type="email"
+              placeholder="Email"
+              name="email"
+              onChange={handleInputChange}
+              value={formData.email}
+              className="validate form-control"
+              required
+            />
+            <span className="input-focus-effect bg-boo" />
+          </div>
+        </div>
+
+        <div className="col-md-12">
+          <div className="form-group">
+            <textarea
+              name="message"
+              value={formData.message}
+              onChange={handleInputChange}
+              placeholder="Message..."
+              className="w-full focus:ring-0 pl-0 bg-transparent border-none border-b-2 text-[17px] text-white resize-none border-b-white focus:outline-none"
+              style={{ borderBottom: "1px solid #ececec" }}
+              rows={6}
+            />
+
+            <span className="input-focus-effect bg-boo " />
+          </div>
+        </div>
+
+        <div className="flex flex-col ml-3">
+          <button type="submit">
+            <div id="content">
+              <div className="flex flex-row">
+                <button
+                  className="text-black hover:text-white border-black hover:border-white tracking-widest shadow-lg hover:shadow-xl transition-all duration-500 
+               px-4 py-2 rounded-lg font-bold border-2 bg-pinky hover:no-underline"
+                >
+                  Send Message
+                </button>
               </div>
-            </form>
+            </div>
+          </button>
+
+          <div className="flex gap-8 static sm:absolute sm:right-6 sm:flex-col py-0 flex-row justify-center items-center">
+            <div className="flex text-white lg:mt-0 mt-6 mb-0 flex-col gap-0">
+              <p className="m-0 p-0 flex flex-row items-center gap-3">
+                <FaPhoneAlt fill="white" />
+                tahaamindob2013@gmail.com
+              </p>
+              <p className="m-0 p-0 flex flex-row items-center gap-3">
+                <IoMdMail />
+                +92 3074241757
+              </p>
+            <div className="m-0 mt-2 p-0 flex">
+            </div>
+              <ul className="flex flex-row gap-2">
+                <li className="transition-all duration-500 hover:bg-boo p-2 cursor-pointer rounded-full">
+                  <Link href="https://www.facebook.com/" target="_blank">
+                    <Facebook className="fill-white" stroke="0" size={15} />
+                  </Link>
+                </li>
+                <li className="transition-all duration-500 hover:bg-boo p-2 cursor-pointer rounded-full">
+                  <Link href="https://twitter.com/" target="_blank">
+                    <Twitter className="fill-white" stroke="0" size={15} />
+                  </Link>
+                </li>
+                <li className="transition-all duration-500 hover:bg-boo p-2 cursor-pointer rounded-full">
+                  <Link href="https://Google.com/" target="_blank">
+                    <FaGooglePlusG
+                      className="fill-white"
+                      stroke="0"
+                      size={15}
+                    />
+                  </Link>
+                </li>
+                <li className="transition-all duration-500 hover:bg-boo p-2 cursor-pointer rounded-full">
+                  <Link href="https://Linkedin.com/" target="_blank">
+                    <FaLinkedinIn className="fill-white" stroke="0" size={15} />
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>{" "}
-        {/* col */}
+        </div>
       </div>
-      <div className="row">
-        <div className="col-md-4 m-15px-tb">
-          <div className="contact-info">
-            <i className="theme-color ti-location-pin" />
-            <h6 className="text-white font-alt">Our Address</h6>
-            <p>123 Stree New York City , USA 750065.</p>
-          </div>
-        </div>
-        <div className="col-md-4 m-15px-tb">
-          <div className="contact-info">
-            <i className="theme-color ti-mobile" />
-            <h6 className="text-white font-alt">Our Phone</h6>
-            <p>
-              Office: +004 444 444
-              <br />
-              Office: +004 444 444
-              <br />
-            </p>
-          </div>
-        </div>
-        <div className="col-md-4 m-15px-tb sm-m-0px-b">
-          <div className="contact-info">
-            <i className="theme-color ti-email" />
-            <h6 className="text-white font-alt">Our Email</h6>
-            <p>
-              info@domain.com
-              <br />
-              contact@domain.com
-            </p>
-          </div>
-        </div>
-      </div>
+    </form>
     </SectionContainer>
   );
 };

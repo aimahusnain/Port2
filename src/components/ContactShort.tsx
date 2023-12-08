@@ -106,7 +106,7 @@ const Contact = () => {
   };
 
   return (
-    <form className="contactform flex ml-4 mb-6" onSubmit={onFormSubmit}>
+    <form className="contactform m-0 flex ml-4 mb-6" onSubmit={onFormSubmit}>
       <div className="row">
         <div className="col-md-6">
           <div className="form-group">
@@ -170,7 +170,7 @@ const Contact = () => {
             </div>
           </button>
 
-          <div className="flex gap-8 static sm:absolute sm:right-6 sm:flex-row py-0 flex-col justify-center items-center">
+          <div className="flex gap-8 static sm:absolute sm:right-6 sm:flex-col py-0 flex-row justify-center items-center">
             <div className="flex text-white lg:mt-0 mt-6 mb-0 flex-col gap-0">
               <p className="m-0 p-0 flex flex-row items-center gap-3">
                 <FaPhoneAlt fill="white" />
