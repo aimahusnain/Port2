@@ -17,7 +17,7 @@ const SectionContainer = ({
   const activePageClass = (name: any) => (name === nav ? "" : "page--inactive");
   return (
     <div
-      className={`page ${extraClass} bg-darkness ${activePageClass(name)}`}
+      className={`page ${extraClass} bg-darkness ml-0 gap-0  ${activePageClass(name)}`}
       id={name}
       onClick={() => changeNav(name, false)}
     >
@@ -48,10 +48,10 @@ const SectionContainer = ({
         </div>
       </div> */}
 
-      <div className="container-fluid p-0">
+      <div className="container-fluid m-ml-0 gap-0 p-0">
         <div className="row no-gutters full-screen">
           <div className="col-lg-3 overflow-hidden sm:h-screen h-[500px] col-xl-4 bg-boo">
-            <div className="d-flex align-items-end home-user-avtar v-center-box">
+            <div className="d-flex ml-0 gap-0 align-items-end home-user-avtar v-center-box">
               <Image
                 loading="lazy"
                 height={300}

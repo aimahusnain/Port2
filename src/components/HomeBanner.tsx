@@ -76,7 +76,7 @@ const HomeBanner = () => {
               />
             </div>
           </div>
-          <div className="col-lg-20 mb-7 col-xl-8">
+          <div className="col-lg-20 mb-12 col-xl-8">
             <div className="h-full flex flex-col justify-between items-start">
               <div />
               <div className="home-text px-4">

@@ -151,19 +151,19 @@ const Contact = () => {
 
 
   return (
-    
     <SectionContainer
-    extraClass="about-section bg-darkness " // Add extraClass or adjust as per your requirements
-    name={"contact"}
+      extraClass="about-section bg-darkness"
+      name={"contact"}
       title="CONTACT US"
       subTitle={"GET IN TOUCH"}
       leftImage="static/img/team/Eman.png"
-      leftImageTitle={"About Me"} // Add leftImageTitle or adjust as per your requirements
+      leftImageTitle={"About Me"}
     >
-       <form className="contactform m-0 flex ml-4 mb-6" onSubmit={onFormSubmit}>
-      <div className="row">
-        <div className="col-md-6">
-          <div className="form-group">
+      <form className="contactform mb-6 gap-0" onSubmit={onFormSubmit}>
+    
+      <div className="row m-0 gap-0">
+        <div className="col-md-6 m-0 gap-0">
+          <div className="form-group m-0 gap-0">
             <input
               id="name"
               name="name"
@@ -178,7 +178,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="col-md-6">
+        <div className="col-md-6 m-0 gap-0">
           <div className="form-group">
             <input
               id="email"
@@ -194,7 +194,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="col-md-12">
+        <div className="col-md-12 m-0 gap-0">
           <div className="form-group">
             <textarea
               name="message"
@@ -206,37 +206,22 @@ const Contact = () => {
               rows={6}
             />
 
-            <span className="input-focus-effect bg-boo " />
-          </div>
+            <span className="input-focus-effect bg-boo relative top-[200px]" />
+          </div>  
         </div>
 
-        <div className="flex flex-col ml-3">
-          <button type="submit">
-            <div id="content">
-              <div className="flex flex-row">
+        <div className="flex sm:gap-[380px] gap-16">
                 <button
-                  className="text-black hover:text-white border-black hover:border-white tracking-widest shadow-lg hover:shadow-xl transition-all duration-500 
+                type="submit"
+                  className="text-black w-fit ml-2 hover:text-white border-black hover:border-white tracking-widest shadow-lg hover:shadow-xl transition-all duration-500 
                px-4 py-2 rounded-lg font-bold border-2 bg-pinky hover:no-underline"
                 >
                   Send Message
                 </button>
-              </div>
-            </div>
-          </button>
 
-          <div className="flex gap-8 static sm:absolute sm:right-6 sm:flex-col py-0 flex-row justify-center items-center">
-            <div className="flex text-white lg:mt-0 mt-6 mb-0 flex-col gap-0">
-              <p className="m-0 p-0 flex flex-row items-center gap-3">
-                <FaPhoneAlt fill="white" />
-                tahaamindob2013@gmail.com
-              </p>
-              <p className="m-0 p-0 flex flex-row items-center gap-3">
-                <IoMdMail />
-                +92 3074241757
-              </p>
-            <div className="m-0 mt-2 p-0 flex">
-            </div>
-              <ul className="flex flex-row gap-2">
+
+
+          <ul className="flex flex-row gap-2 mt-3">
                 <li className="transition-all duration-500 hover:bg-boo p-2 cursor-pointer rounded-full">
                   <Link href="https://www.facebook.com/" target="_blank">
                     <Facebook className="fill-white" stroke="0" size={15} />
@@ -262,8 +247,6 @@ const Contact = () => {
                   </Link>
                 </li>
               </ul>
-            </div>
-          </div>
         </div>
       </div>
     </form>
