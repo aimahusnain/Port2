@@ -2,8 +2,8 @@ import ContactForm from "@/src/components/(blog)/Contact/ContactForm";
 import dynamic from 'next/dynamic';
 
 export const metadata = {
-  title: "Contact Me",
-  description: `Contact me through the form available on this page or email me at email`,
+  title: "Contact Us",
+  description: `Contact us through the form available on this page or email me at email`,
 };
 
 const DynamicLottieAnimation = dynamic(() => import('@/src/components/(blog)/Contact/LottieAnimation'), {

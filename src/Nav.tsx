@@ -109,7 +109,7 @@ const Nav = () => {
             className="link link--page"
             onClick={() => changeNav("contact", false)}
           >
-            Contact Me
+            Contact Us
           </Link>
         </div>
       </nav>

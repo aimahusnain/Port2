@@ -123,7 +123,7 @@ const Header = () => {
           className="mr-2"
           onClick={() => changeNav("contact", false)}
         >
-          Contact Me
+          Contact Us
         </Link>
 
       </nav>
