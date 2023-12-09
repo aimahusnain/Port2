@@ -240,7 +240,7 @@ const HomeBanner = () => {
           </div>
           <div className="col-lg-20 mb-12 col-xl-8 mt-2">
             <div className="h-full flex flex-col justify-between items-start">
-              <div />
+              <div className="m-6" />
               <div className="home-text flex flex-col px-4">
                 <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
                   <span className="text-transparent bg-clip-text normal-case bg-gradient-to-r from-primaryyy-400 to-secondaryyyy-500">
@@ -266,7 +266,7 @@ const HomeBanner = () => {
                   <div className="">
                     <button
                       onClick={() => changeNav("portfolio", false)}
-                      className="bg-pinky w-32 p-1 border-pinky text-black hover:text-white transition-all duration-500 rounded-lg font-bold hover:no-underline"
+                      className="bg-gradient-to-br from-primaryyy-300 to-pinky w-32 p-2 transition-all duration-500 text-white rounded-lg font-bold hover:no-underline"
                     >
                       View Portfolio
                     </button>
