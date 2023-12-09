@@ -266,7 +266,7 @@ const HomeBanner = () => {
                   <div className="">
                     <button
                       onClick={() => changeNav("portfolio", false)}
-                      className="bg-gradient-to-br from-primaryyy-300 to-pinky w-32 p-2 transition-all duration-500 text-white rounded-lg font-bold hover:no-underline"
+                      className="bg-gradient-to-br from-primaryyy-400 to-pinky w-32 p-2 transition-all duration-500 text-white rounded-lg font-bold hover:no-underline"
                     >
                       View Portfolio
                     </button>
