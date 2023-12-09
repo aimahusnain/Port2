@@ -243,8 +243,8 @@ const HomeBanner = () => {
               <div />
               <div className="home-text flex flex-col px-4">
                 <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
-                  <span className="text-transparent capitalize bg-clip-text bg-gradient-to-r from-white/50 to-pinky">
-                     Welcome to
+                  <span className="normal-case text-transparent bg-clip-text bg-gradient-to-r from-primaryyy-400 to-pinky">
+                    Welcome to
                   </span>
                 </h1>
                 <TypeAnimation

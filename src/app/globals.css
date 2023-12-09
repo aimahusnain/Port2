@@ -239,3 +239,8 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+hellotextclass > p {
+    shape-outside: circle(); /* Use a circle shape for text wrapping */
+    float: left; /* Float the text around the image */
+    margin-right: 20px; /* Margin between the text and the image */
+  }
