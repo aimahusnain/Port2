@@ -115,12 +115,12 @@ const AboutUs = () => {
           <div className="flex ml-2">
             <div className="flex flex-col">
               <div className="flex mx-8">
-              <h3 className="font-bold text-white mt-4">
+              <h4 className="font-bold text-white mt-4">
                  Meet <br /> <span className="underline" style={{textDecorationColor: 'white', textDecorationThickness: '4px'}}>Muhammad Husnain</span>
-                </h3>
+                </h4>
                 <div className="mt-6 h-fit w-full">
                   <img
-                    className="w-[100px] mr-16 mb-3 h-[100px] object-top object-cover rounded-full"
+                    className="w-[100px] ml-10 mb-3 h-[100px] object-top object-cover rounded-full"
                     src="static/img/H1.png"
                     alt="Husnain Image"
                   />
@@ -147,12 +147,12 @@ const AboutUs = () => {
           <div className="flex ml-2">
             <div className="flex flex-col">
               <div className="flex mx-8">
-                <h3 className="font-bold w-full text-white mt-8">
+                <h4 className="font-bold w-full text-white mt-8">
                 Meet <br /> <span className="underline" style={{textDecorationColor: 'white', textDecorationThickness: '4px'}}>Taha Amin</span>
-                </h3>
+                </h4>
                 <div className="mt-6 h-fit w-full">
                   <img
-                    className="w-[100px] mb-3 h-[100px] ml-[45px] object-top object-cover rounded-full"
+                    className="w-[100px] mb-3 h-[100px] ml-7 object-top object-cover rounded-full"
                     src="static/img/T1.png"
                     alt="Husnain Image"
                   />
