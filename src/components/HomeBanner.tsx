@@ -240,19 +240,19 @@ const HomeBanner = () => {
           </div>
           <div className="col-lg-20 mb-12 col-xl-8 mt-2">
             <div className="h-full flex flex-col justify-between items-start">
-              <div className="m-6" />
+              <div />
               <div className="home-text flex flex-col px-4">
                 <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
-                  <span className="text-transparent bg-clip-text normal-case bg-gradient-to-r from-primaryyy-400 to-secondaryyyy-500">
+                  <span className="text-transparent capitalize bg-clip-text bg-gradient-to-r from-white/50 to-pinky">
                      Welcome to
                   </span>
                 </h1>
                 <TypeAnimation
                   className="text-white"
                   sequence={[
-                    "Web Designing",
+                    "WEB Designing",
                     2000,
-                    "Web Development",
+                    "WEB Development",
                     2000,
                     `${siteMetadata.WebName}`,
                     3000,
@@ -266,7 +266,7 @@ const HomeBanner = () => {
                   <div className="">
                     <button
                       onClick={() => changeNav("portfolio", false)}
-                      className="bg-gradient-to-br from-primaryyy-400 to-pinky w-32 p-2 transition-all duration-500 text-white rounded-lg font-bold hover:no-underline"
+                      className="bg-pinky w-32 p-2 border-pinky text-black transition-all duration-500 rounded-lg font-bold hover:no-underline"
                     >
                       View Portfolio
                     </button>
@@ -274,7 +274,7 @@ const HomeBanner = () => {
 
                   <div className="">
                     <button
-                      className="w-32 p-1 border-[3px] border-pinky text-white hover:bg-white/20 transition-all duration-500 rounded-lg font-bold hover:no-underline"
+                      className="w-32 p-1 border-[3px] border-pinky text-white transition-all duration-500 rounded-lg font-bold hover:no-underline"
                       onClick={() => changeNav("resume", false)}
                     >
                       Our Services
