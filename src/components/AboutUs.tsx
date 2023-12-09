@@ -109,7 +109,7 @@ const AboutUs = () => {
                   technical prowess with a client-centric mindset, we ensure
                   that every project is a true reflection of your vision.
                 </p>
-                <div className="block sm:block lg:hidden lg:w-1/3 xl:w-5/12 gap-0 bg-boo">
+                <div className="block sm:block lg:hidden lg:w-1/3 xl:w-5/12 rounded-sm gap-0 bg-boo">
         {/* Image */}
         <section className="text-white mb-[-30px]">
           <div className="flex ml-2">
@@ -120,7 +120,7 @@ const AboutUs = () => {
                 </h3>
                 <div className="mt-6 h-fit w-full">
                   <img
-                    className="w-[100px] ml-16 mb-3 h-[100px] object-top object-cover rounded-full"
+                    className="w-[100px] mr-16 mb-3 h-[100px] object-top object-cover rounded-full"
                     src="static/img/H1.png"
                     alt="Husnain Image"
                   />
@@ -152,7 +152,7 @@ const AboutUs = () => {
                 </h3>
                 <div className="mt-6 h-fit w-full">
                   <img
-                    className="w-[100px] mb-3 h-[100px] ml-16 object-top object-cover rounded-full"
+                    className="w-[100px] mb-3 h-[100px] ml-[45px] object-top object-cover rounded-full"
                     src="static/img/T1.png"
                     alt="Husnain Image"
                   />
