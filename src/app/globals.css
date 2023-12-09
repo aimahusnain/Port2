@@ -228,3 +228,13 @@ img.mfp-img {
 .slick-slide {
   padding: 0 15px;
 }
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}

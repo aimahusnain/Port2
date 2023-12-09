@@ -1326,9 +1326,9 @@ pre code {
     max-width: 33.333333%;
   }
   .col-xl-5 {
-    -ms-flex: 0 0 41.666667%;
-    flex: 0 0 41.666667%;
-    max-width: 41.666667%;
+    -ms-flex: 0 0 32.666667%;
+    flex: 0 0 32.666667%;
+    max-width: 32.666667%;
   }
   .col-xl-6 {
     -ms-flex: 0 0 50%;

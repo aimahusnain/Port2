@@ -5,7 +5,7 @@ const TypingAnimation = () => {
     <span>
       <TypeIt
         options={{
-          speed: 200,
+          speed: 150,
           loop: true,
           strings: ["Designing", "Development"],
           breakLines: false,

@@ -10,7 +10,69 @@ import {
 const AboutUs = () => {
   return (
     <AboutUsLayout name="about" extraClass="about-section">
-      <div className="col-lg-3 overflow-hidden sm:h-screen h-[500px] col-xl-4 bg-boo"></div>
+      <div className="col-lg-3 overflow-hidden h-full col-xl-5 bg-boo">
+        {/* Image */}
+        <section className="text-gray-600 body-font">
+          <div className="container px-5">
+            <div className="flex flex-col gap-0 mb-0">
+              <div className="p-4 float-right md:w-full mb-0">
+                <div className="w-full flex rounded-lg h-44 overflow-hidden">
+                  <img
+                    alt="content"
+                    className="flex object-contain object-top h-full w-full"
+                    src="static/img/H1.png"
+                  />
+                </div>
+
+                <div>
+
+
+                <h2 className="text-xl font-medium title-font text-white mt-5">
+                  Muhammad Husnain
+                </h2>
+                <p className="text-[12px] leading-[17px] text-white/70 mt-2">
+                  Our design maestro, Muhammad Husnain, is a Figma virtuoso with
+                  a keen eye for detail. Specializing in UI/UX design, he
+                  transforms concepts into visually stunning and user-friendly
+                  interfaces. His proficiency in Figma allows him to sculpt
+                  digital landscapes that not only captivate but also ensure a
+                  seamless and delightful user experience. Beyond design,
+                  Muhammad is the backbone of our backend development,
+                  specializing in Next.js. His mastery in translating design
+                  into functional, high-performance applications is what sets us
+                  apart.
+                </p>
+                </div>
+              </div>
+
+
+              <div className="p-4 md:w-full mb-0">
+                <div className="w-full flex rounded-lg h-44 overflow-hidden">
+                  <img
+                    alt="content"
+                    className="flex object-contain bg-white object-top h-full w-full"
+                    src="static/img/Taha Image.jpg"
+                  />
+                </div>
+                <h2 className="text-xl font-medium title-font text-white mt-5">
+                  Taha Amin
+                </h2>
+                <p className="text-[12px] leading-[17px] text-white/70 mt-2">
+                  Meet Taha Amin: The frontend wizard of our team, Taha Amin, is
+                  a React and Next.js aficionado. With a passion for crafting
+                  immersive user interfaces, Taha turns visions into interactive
+                  and responsive web applications. His expertise lies in
+                  bringing designs to life, creating dynamic and engaging user
+                  interfaces that leave a lasting impression. Taha's commitment
+                  to staying on the cutting edge of React and Next.js ensures
+                  that your digital presence is not only modern but also
+                  future-proof.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
       <div className="col-lg-20 mb-7 col-xl-8">
         <div className="h-full flex flex-col justify-between items-start">
           <div className="page-scroll">
@@ -26,7 +88,7 @@ const AboutUs = () => {
                   Welcome to {siteMetadata.WebName} - Crafting Digital
                   Excellence!
                 </p>
-                <p>
+                <p className="text-white/50">
                   At {siteMetadata.WebName}, we are a dynamic duo of two
                   passionate brothers, Muhammad Husnain and Taha Amin, united by
                   a shared vision to create exceptional digital experiences.
@@ -35,7 +97,7 @@ const AboutUs = () => {
                 </p>
                 <br />
                 <p className="font-bold text-white text-lg">Our Approach:</p>
-                <p>
+                <p className="text-white/50">
                   At {siteMetadata.WebName}, we believe in a collaborative
                   approach. We work closely with our clients, understanding
                   their unique requirements and goals. By combining our
@@ -43,7 +105,7 @@ const AboutUs = () => {
                   that every project is a true reflection of your vision.
                 </p>
                 <br />
-                <div className="flex sm:flex-row flex-col gap-14 mb-36">
+                <div className="flex sm:flex-row flex-col gap-14 mb-6">
                   <div className="sm:w-1/2 w-full">
                     <h5 className="text-white pb-1 border-b-2 border-boo">
                       Why Choose Devkin Solutions?
@@ -169,7 +231,7 @@ const AboutUs = () => {
                     </Accordion>
                   </div>
                 </div>
-                <p>
+                <p className="text-white/50">
                   Thank you for considering Devkin Solutions for your digital
                   journey. Let's collaborate and turn your ideas into reality!
                 </p>
