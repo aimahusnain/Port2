@@ -236,9 +236,10 @@ const HomeBanner = () => {
     //       </div>
     //     </div>
     //   </div> */}
+
       <div className="container-fluid p-0">
         <div className="row no-gutters full-screen">
-          <div className="col-lg-3 overflow-hidden sm:h-screen h-[500px] col-xl-4 bg-boo">
+          <div className="col-lg-3 overflow-hidden sm:h-screen h-[455px] col-xl-4 bg-boo">
             <div className=" flex flex-col justify-end align-items-end home-user-avtar v-center-box">
               <Image
               className=""
