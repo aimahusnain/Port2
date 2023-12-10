@@ -232,7 +232,7 @@ const Services = () => {
 
           <div>
             <h4 className="text-pinky">Let's Build Something Extraordinary</h4>
-            <p>
+            <p className="text-white/50">
               No matter the scope or complexity of your project, our React and
               Next.js experts are ready to take on the challenge. Collaborate
               with us to transform your vision into a stunning, functional, and
