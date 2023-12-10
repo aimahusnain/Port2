@@ -15,16 +15,17 @@ const Services = () => {
   const features = [
     {
       id: 1,
-      text: "Dynamic Websites",
-      description:
-        "Harness the power of real-time updates and interactive user interfaces. Our dynamic web development services using React and Next.js ensure seamless functionality and engaging user experiences.",
-    },
-    {
-      id: 2,
       text: "Static Websites",
       description:
         "For lightning-fast performance and simplicity, we excel in crafting static websites that deliver content with speed and efficiency.",
     },
+    {
+      id: 2,
+      text: "Dynamic Websites",
+      description:
+        "Harness the power of real-time updates and interactive user interfaces. Our dynamic web development services using React and Next.js ensure seamless functionality and engaging user experiences.",
+    },
+    
   ];
 
   const { changeNav } = useContext(AlexioContext);
@@ -53,7 +54,7 @@ const Services = () => {
               vision, our team is ready to bring your ideas to life.
             </p>
 
-            <div className="flex sm:flex-row flex-col w-full gap-6">
+            <div className="flex sm:flex-row flex-col w-full sm:gap-6 gap-0">
               <Accordion
                 type="single"
                 collapsible
