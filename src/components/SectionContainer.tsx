@@ -21,7 +21,7 @@ const SectionContainer = ({
         name
       )}`}
       id={name}
-      onClick={() => changeNav(name, false)}
+      // onClick={() => changeNav(name, false)}
     >
       {/* <div className="bg-darkness container-fluid full-screen p-0">
         <div className="row no-gutters">

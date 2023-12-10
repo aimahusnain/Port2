@@ -50,6 +50,7 @@
     "tailwind-merge": "^2.1.0",
     "tailwindcss": "3.3.3",
     "tailwindcss-animate": "^1.0.7",
+    "tw-elements": "^1.1.0",
     "typeit-react": "^2.7.0"
   },
   "devDependencies": {

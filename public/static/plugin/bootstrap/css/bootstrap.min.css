@@ -1777,6 +1777,7 @@ pre code {
 .d-flex {
   display: -ms-flexbox !important;
   display: flex !important;
+  flex-direction: row;
 }
 
 

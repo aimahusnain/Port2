@@ -168,6 +168,18 @@ import { TypeAnimation } from "react-type-animation";
 import { AlexioContext } from "../Context";
 import siteMetadata from "../utils/siteMetaData";
 import ContactShort from "./ContactShort";
+import InsightRoll from "@/src/components/(blog)/About/InsightRoll";
+
+const insights = [
+  "FIGMA",
+  "HTML",
+  "CSS",
+  "TAILWIND CSS",
+  "JAVASCRIPT",
+  "TYPESCRIPT",
+  "REACT",
+  "NEXT.JS",
+];
 
 const HomeBanner = () => {
   const activePageClass = (page) => (page === nav ? "" : "page--inactive"); // Accepts a parameter
@@ -227,20 +239,28 @@ const HomeBanner = () => {
       <div className="container-fluid p-0">
         <div className="row no-gutters full-screen">
           <div className="col-lg-3 overflow-hidden sm:h-screen h-[500px] col-xl-4 bg-boo">
-            <div className="d-flex align-items-end home-user-avtar v-center-box">
+            <div className=" flex flex-col justify-end align-items-end home-user-avtar v-center-box">
               <Image
+              className=""
                 loading="lazy"
                 height={300}
-                width={3020}
+                width={800}
                 src="/static/img/H1.png"
                 title=""
                 alt=""
               />
+            <div className="sm:hidden lg:block">
+              <InsightRoll insights={insights} />
+            </div>
             </div>
           </div>
           <div className="col-lg-20 mb-12 col-xl-8 mt-2">
             <div className="h-full flex flex-col justify-between items-start">
               <div />
+              
+            <div className="sm:block lg:hidden">
+              <InsightRoll insights={insights} />
+            </div>
               <div className="home-text flex flex-col px-4">
                 <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
                   <span className="normal-case text-transparent bg-clip-text bg-gradient-to-r from-primaryyy-400 to-pinky">

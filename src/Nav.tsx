@@ -83,7 +83,7 @@ const Nav = () => {
             className="link link--page"
             onClick={() => changeNav("resume", false)}
           >
-            Resume
+            Our Services
           </Link>
         </div>
 

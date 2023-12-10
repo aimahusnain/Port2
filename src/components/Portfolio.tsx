@@ -72,22 +72,51 @@ const Portfolio = () => {
               onClick={handleFilterKeyChange("photoshop")}
               data-filter=".photoshop"
             >
-              Photoshop
+              Websites Cloning
             </li>{" "}
             <li
               className={`${activeBtn("website")} theme-after`}
               onClick={handleFilterKeyChange("website")}
               data-filter=".website"
             >
-              Website
+              Business Websites
             </li>{" "}
             <li
               className={`${activeBtn("apps")} theme-after`}
               onClick={handleFilterKeyChange("apps")}
               data-filter=".apps"
             >
-              Apps
+              SaaS Applications
             </li>
+            <li
+              className={`${activeBtn("apps")} theme-after`}
+              onClick={handleFilterKeyChange("apps")}
+              data-filter=".apps"
+            >
+              Portfolio Websites
+            </li>
+            <li
+              className={`${activeBtn("apps")} theme-after`}
+              onClick={handleFilterKeyChange("apps")}
+              data-filter=".apps"
+            >
+              Ecommerce Websites
+            </li>
+            <li
+              className={`${activeBtn("apps")} theme-after`}
+              onClick={handleFilterKeyChange("apps")}
+              data-filter=".apps"
+            >
+              Affiliate Websites
+            </li>
+            <li
+              className={`${activeBtn("apps")} theme-after`}
+              onClick={handleFilterKeyChange("apps")}
+              data-filter=".apps"
+            >
+              Blog Development
+            </li>
+            
           </ul>
         </div>{" "}
         {/* Portfolio Filter */}
