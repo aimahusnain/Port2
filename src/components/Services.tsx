@@ -61,7 +61,7 @@ const Services = () => {
                 className="text-sm sm:w-1/2 w-full h-fit"
               >
                 <AccordionItem value="item-1">
-                  <AccordionTrigger className="text-sm px-5 hover:no-underline p-3 outline-none">
+                  <AccordionTrigger className="text-sm px-5 text-left hover:no-underline p-3 outline-none">
                     Dynamic and Static Web Development
                   </AccordionTrigger>
                   <AccordionContent className="text-white/40">
