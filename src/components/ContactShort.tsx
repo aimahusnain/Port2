@@ -29,8 +29,8 @@ const Contact = () => {
   const [formErrors, setFormErrors] = useState<FormErrors>({});
 
   const toast = useToast({
-    duration: 3000, // Set the duration for how long the toast will be displayed
-    isClosable: true, // Allow the user to close the toast manually
+    duration: 3000,
+    isClosable: true,
   });
 
   const triggerEmail = async (data) => {
@@ -43,7 +43,7 @@ const Contact = () => {
           duration: 500,
           isClosable: true,
         });
-        // Clear form fields after successful email send
+        
         setFormData({
           name: "",
           email: "",
@@ -106,7 +106,7 @@ const Contact = () => {
   };
 
   return (
-    <form className="contactform m-0 flex ml-4 mb-6" onSubmit={onFormSubmit}>
+    <form className="contactform m-0 flex" onSubmit={onFormSubmit}>
       <div className="row">
         <div className="col-md-6">
           <div className="form-group">

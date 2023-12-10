@@ -9,7 +9,7 @@ const Nav = () => {
   useEffect(() => {
     const pages = document.querySelectorAll(".page");
     pages.forEach((page, index) => {
-      const pageElement = page as HTMLElement; // Explicitly cast to HTMLElement
+      const pageElement = page as HTMLElement;
       pageElement.style.opacity = "0";
       pageElement.style.zIndex = "2";
       pageElement.style.transform = `translate3d(0px, 75%, -300px)`;

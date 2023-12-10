@@ -1,4 +1,4 @@
-// FeatureCarousel.tsx
+
 import { Button } from "@chakra-ui/react";
 import React, { useState } from "react";
 
@@ -9,28 +9,7 @@ interface Feature {
 }
 
 const FeatureCarousel = ({ features }: { features: Feature[]}) => {
-  //   const features: Feature[] = [
-  //     {
-  //       id: 1,
-  //       text: "Generate outlines, code blocks, and summaries.",
-  //       imageUrl: "static/img/portfolio-1.jpg",
-  //     },
-  //     {
-  //       id: 2,
-  //       text: "Create SEO-optimized titles for better search visibility.",
-  //       imageUrl: "static/img/portfolio-2.jpg",
-  //     },
-  //     {
-  //       id: 3,
-  //       text: "Interact with a contextually-aware chatbot.",
-  //       imageUrl: "static/img/portfolio-3.jpg",
-  //     },
-  //     {
-  //       id: 4,
-  //       text: "Improve text clarity, style, and tone.",
-  //       imageUrl: "static/img/portfolio-4.jpg",
-  //     },
-  //   ];
+  
 
   const [selectedFeature, setSelectedFeature] = useState<Feature>(features[0]);
 
@@ -51,15 +30,6 @@ const FeatureCarousel = ({ features }: { features: Feature[]}) => {
           onClick={() => handleFeatureClick(feature)}>
             {feature.text}
           </Button>
-        //   <div
-        //   key={feature.id}
-        //   className={`border rounded cursor-pointer ${
-        //     selectedFeature.id === feature.id ? "bg-black" : "bg-blue-50"
-        //   }`}
-        //   onClick={() => handleFeatureClick(feature)}
-        // >
-        //   {feature.text}
-        // </div>
         ))}
 
       </div>

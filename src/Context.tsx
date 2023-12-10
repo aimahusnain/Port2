@@ -2,28 +2,27 @@
 
 import { createContext, useCallback, useReducer } from "react";
 
-// Create Context
 const AlexioContext = createContext({
   nav: "home",
-  changeNav: (value, toggleValue) => {}, // Adjust function signature to match expected arguments
+  changeNav: (value, toggleValue) => {},
   toggle: false,
 });
 
 
-// Type
+
 const type = {
   NAV: "NAV",
   TOGGLE: "TOGGLE",
 };
 const { NAV, TOGGLE } = type;
 
-// Initial Value
+
 const initialState = {
   nav: "home",
   toggle: false,
 };
 
-// Reducer
+
 const reducer = (state, action) => {
   const { type, payload } = action;
   switch (type) {
@@ -42,7 +41,7 @@ const reducer = (state, action) => {
   }
 };
 
-// Watson State
+
 const AlexioState = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
 

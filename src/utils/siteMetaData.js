@@ -6,7 +6,7 @@ const siteMetadata = {
   WebName: "WebKin Solutions",
   description: 'A blog created with Next.js, Tailwind.css and contentlayer.',
   language: 'en-us',
-  theme: 'system', // system, dark or light
+  theme: 'system',
   siteUrl: 'http://localhost:3000', // your website URL
   siteLogo: '/logo.png',
   socialBanner: '/social-banner.png', // add social banner in the public folder

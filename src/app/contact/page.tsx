@@ -7,7 +7,7 @@ export const metadata = {
 };
 
 const DynamicLottieAnimation = dynamic(() => import('@/src/components/(blog)/Contact/LottieAnimation'), {
-  ssr: false, // Set ssr to false to prevent server-side rendering
+  ssr: false,
 });
 
 export default function Contact() {

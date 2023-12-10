@@ -32,8 +32,8 @@ const Contact = () => {
   const [formErrors, setFormErrors] = useState<FormErrors>({});
 
   const toast = useToast({
-    duration: 3000, // Set the duration for how long the toast will be displayed
-    isClosable: true, // Allow the user to close the toast manually
+    duration: 3000,
+    isClosable: true,
   });
 
   const triggerEmail = async (data) => {
@@ -46,7 +46,7 @@ const Contact = () => {
           duration: 500,
           isClosable: true,
         });
-        // Clear form fields after successful email send
+        
         setFormData({
           name: "",
           email: "",
@@ -126,10 +126,10 @@ const Contact = () => {
     } else {
       emailjs
         .send(
-          "service_seruhwu", // service id
-          "template_21aw58z", // template id
+          "service_seruhwu",
+          "template_21aw58z",
           mailData,
-          "Q3pccdLZhU-mZT7tQ" // public api
+          "Q3pccdLZhU-mZT7tQ"
         )
         .then(
           (response) => {
