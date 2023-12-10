@@ -54,13 +54,14 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
+
     <html>
       <AlexioState>
         <AlexioHead />
 
         <body
           className={cx(inter.variable)}
-        >
+          >
           {children}
         </body>
       </AlexioState>

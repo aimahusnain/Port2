@@ -1,13 +1,14 @@
 // FeatureCarousel.tsx
+import { Button } from "@chakra-ui/react";
 import React, { useState } from "react";
 
 interface Feature {
   id: number;
   text: string;
-  imageUrl: string;
+  description: string;
 }
 
-const FeatureCarousel = ({ features }: { features: Feature[] }) => {
+const FeatureCarousel = ({ features }: { features: Feature[]}) => {
   //   const features: Feature[] = [
   //     {
   //       id: 1,
@@ -38,27 +39,43 @@ const FeatureCarousel = ({ features }: { features: Feature[] }) => {
   };
 
   return (
-    <div className="flex justify-between m-4 bg-slate-800">
-      <div className="flex flex-col space-y-3">
+    <div className="flex flex-col justify-between m-4">
+      <div className="flex gap-6 flex-wrap">
+        
         {features.map((feature) => (
-          <div
-            key={feature.id}
-            className={`p-4 border rounded cursor-pointer ${
-              selectedFeature.id === feature.id ? "bg-gray-200" : ""
-            }`}
-            onClick={() => handleFeatureClick(feature)}
-          >
+          <Button
+          key={feature.id}
+          className={`cursor-pointer focus:outline-none transition-all duration-75 ${
+            selectedFeature.id === feature.id ? "text-white py-1 border-b-2": "text-white"
+          }`}
+          onClick={() => handleFeatureClick(feature)}>
             {feature.text}
-          </div>
+          </Button>
+        //   <div
+        //   key={feature.id}
+        //   className={`border rounded cursor-pointer ${
+        //     selectedFeature.id === feature.id ? "bg-black" : "bg-blue-50"
+        //   }`}
+        //   onClick={() => handleFeatureClick(feature)}
+        // >
+        //   {feature.text}
+        // </div>
         ))}
+
       </div>
-      <div className="flex-1 ml-4">
-        <div className="w-[100px] overflow-hidden">
-          <img
-            src={selectedFeature.imageUrl}
+
+
+      <div className="flex-1 mt-4">
+        <div className="w-full border-[0.5px] transition-all duration-75  border-white/20 rounded-sm p-3 h-fit overflow-hidden">
+           {/* <img
+            src={selectedFeature.description}
             alt={`Feature ${selectedFeature.id}`}
             className="w-full rounded"
-          />
+          /> */}
+
+          <p className="text-white/50">
+            {selectedFeature.description}
+          </p>
         </div>
       </div>
     </div>
