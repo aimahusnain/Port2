@@ -8,7 +8,7 @@ import Link from "next/link";
 import { useContext } from "react";
 import { AlexioContext } from "../Context";
 import siteMetadata from "../utils/siteMetaData";
-import SectionContainer from "./SectionContainer";
+import ServicesContainer from "./ServicesContainer";
 import Slider from "./Slider";
 
 const Services = () => {
@@ -31,15 +31,15 @@ const Services = () => {
   const { changeNav } = useContext(AlexioContext);
 
   return (
-    <SectionContainer
-      extraClass="service-section resume-section"
+    <ServicesContainer
+      extraClass="service-section !m-0 !gap-0 resume-section"
       name="resume"
       title="Our Services"
       subTitle="History"
       leftImage="static/img/title-2.jpg"
       leftImageTitle="services"
     >
-      <div className="row text-white">
+      <div className="row text-white m-0 gap-0">
         <div className="flex flex-col gap-6">
           <div className="flex flex-col gap-2">
             <h4 className="text-pinky">
@@ -255,7 +255,7 @@ const Services = () => {
           </div>
         </div>
       </div>
-    </SectionContainer>
+    </ServicesContainer>
   );
 };
 export default Services;
