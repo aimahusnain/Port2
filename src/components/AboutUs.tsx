@@ -95,19 +95,95 @@ const AboutUs = () => {
           </div>
         </section>
       </div> */}
-      <div className="p-0 overflow-hidden sm:items-end items-start sm:justify-end justify-end flex sm:h-screen h-[455px] md:w-[40%] w-full bg-boo">
-            <img
-              className="m-0 p-0 mt-10 object-cover object-top w-full h-full"
-              loading="lazy"
-              src="/static/img/H1.png"
-              alt=""
-            />
-          </div>
 
-<div>
+      <div className="p-0 overflow-hidden sm:items-end hidden sm:hidden lg:block sm:visible md:w-[40%] w-full bg-boo">
+      <section className="text-white mb-[-30px]">
+                    <div className="flex ml-2">
+                      <div className="flex flex-col">
+                        <div className="flex mx-8">
+                          <h4 className="font-bold text-white mt-4">
+                            Meet <br />{" "}
+                            <span
+                              className="underline"
+                              style={{
+                                textDecorationColor: "white",
+                                textDecorationThickness: "4px",
+                              }}
+                            >
+                              Muhammad Husnain
+                            </span>
+                          </h4>
+                          <div className="mt-6 h-fit w-full">
+                            <img
+                              className="w-[100px] ml-9 mb-3 h-[100px] object-top object-cover rounded-full"
+                              src="static/img/H1.png"
+                              alt="Husnain Image"
+                            />
+                          </div>
+                        </div>
+                        <div className="flex justify-center items-center ">
+                          <p className="w-full bg-white rounded-lg text-black mx-8 py-6 pb-4 px-4 text-sm">
+                            Our design maestro, Muhammad Husnain, is a Figma
+                            virtuoso with a keen eye for detail. Specializing in
+                            UI/UX design, he transforms concepts into visually
+                            stunning and user-friendly interfaces. His
+                            proficiency in Figma allows him to sculpt digital
+                            landscapes that not only captivate but also ensure a
+                            seamless and delightful user experience. Beyond
+                            design, Muhammad is the backbone of our backend
+                            development, specializing in Next.js. His mastery in
+                            translating design into functional, high-performance
+                            applications is what sets us apart.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <section className="text-white">
+                    <div className="flex ml-2">
+                      <div className="flex flex-col">
+                        <div className="flex mx-8">
+                          <h4 className="font-bold w-full text-white mt-8">
+                            Meet <br />{" "}
+                            <span
+                              className="underline"
+                              style={{
+                                textDecorationColor: "white",
+                                textDecorationThickness: "4px",
+                              }}
+                            >
+                              Taha Amin
+                            </span>
+                          </h4>
+                          <div className="mt-6 h-fit w-full">
+                            <img
+                              className="w-[100px] mb-3 h-[100px] ml-7 object-top object-cover rounded-full"
+                              src="static/img/T1.png"
+                              alt="Husnain Image"
+                            />
+                          </div>
+                        </div>
+                        <div className="flex justify-center items-center ">
+                          <p className="w-full bg-white rounded-lg text-black mx-8 py-5 pb-3 px-4 text-sm">
+                            Meet Taha Amin: The frontend wizard of our team,
+                            Taha Amin, is a React and Next.js aficionado. With a
+                            passion for crafting immersive user interfaces, Taha
+                            turns visions into interactive and responsive web
+                            applications. His expertise lies in bringing designs
+                            to life, creating dynamic and engaging user
+                            interfaces that leave a lasting impression. Taha's
+                            commitment to staying on the cutting edge of React
+                            and Next.js ensures that your digital presence is
+                            not only modern but also future-proof.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+      </div>
 
-
-        <div className="h-full -m-6 mx-3 flex flex-col justify-between items-start">
+      <div>
+        <div className="h-full mx-3 flex flex-col justify-between items-start">
           <div className="page-scroll">
             <div className="page-content">
               <div className="section-titel">
@@ -138,7 +214,6 @@ const AboutUs = () => {
                   that every project is a true reflection of your vision.
                 </p>
                 <div className="block sm:block lg:hidden lg:w-1/3 xl:w-5/12 rounded-sm gap-0 bg-boo">
-                  {/* Image */}
                   <section className="text-white mb-[-30px]">
                     <div className="flex ml-2">
                       <div className="flex flex-col">
@@ -352,8 +427,9 @@ const AboutUs = () => {
                   </div>
                 </div>
                 <p className="text-white/50">
-                  Thank you for considering {siteMetadata.WebName} Solutions for your digital
-                  journey. Let's collaborate and turn your ideas into reality!
+                  Thank you for considering {siteMetadata.WebName} Solutions for
+                  your digital journey. Let's collaborate and turn your ideas
+                  into reality!
                 </p>
               </div>
             </div>

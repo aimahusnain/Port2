@@ -14,8 +14,8 @@ const AboutUsLayout = ({
       id={name}
       onClick={() => changeNav(name, false)}
     >
-      <div className="p-0">
-        <div className="flex sm:flex-row flex-col !mx-0 h-full">
+      <div className="p-0 !my-0">
+      <div className="flex sm:flex-row flex-col !mx-0  !my-0 h-full">
         {children}
         </div>
       </div>
