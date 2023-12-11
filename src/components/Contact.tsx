@@ -1,14 +1,19 @@
 "use client";
 
-import SectionContainer from "./SectionContainer";
 import { useToast } from "@chakra-ui/react";
 import emailjs from "emailjs-com";
-import { Facebook, Twitter } from "lucide-react";
+import { Facebook, Instagram, Youtube } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { ChangeEvent, FormEvent, useState } from "react";
-import { FaGooglePlusG, FaLinkedinIn, FaPhoneAlt } from "react-icons/fa";
+import { FaLinkedinIn, FaPhoneAlt } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
+import SectionContainer from "./SectionContainer";
+import { BsTwitterX, BsMastodon } from "react-icons/bs";
+import { TbBrandYoutube } from "react-icons/tb";
+import { FiGithub } from "react-icons/fi";
+import { FaHashnode } from "react-icons/fa6";
+import { IoLogoStackoverflow } from "react-icons/io5";
 
 interface FormData {
   name: string;
@@ -46,7 +51,7 @@ const Contact = () => {
           duration: 500,
           isClosable: true,
         });
-        
+
         setFormData({
           name: "",
           email: "",
@@ -164,37 +169,87 @@ const Contact = () => {
       <br />
       <div>
         <div className="w-full flex justify-center p-0 h-fit items-center text-left">
-          <div className="flex flex-col sm:w-full align-middle w-fit sm:flex-row text-center gap-4 sm:gap-0  sm:justify-between">
-            <p className="m-0 text-white p-0 flex flex-row items-center gap-3">
-              <FaPhoneAlt fill="white" />
-              tahaamindob2013@gmail.com <br />
-            </p>
+          <div className="flex flex-col sm:w-full align-middle w-fit text-center gap-8  sm:justify-between">
+            <div className="flex flex-row w-full gap-40">
             <p className="m-0 text-white p-0 flex flex-row items-center gap-3">
               <IoMdMail />
-              +92 3074241757
+              canals786@gmail.com
+              <br />
             </p>
 
+            <p className="m-0 text-white p-0 flex flex-row items-center gap-3">
+              <FaPhoneAlt fill="white" />
+              +92 3074241757
+            </p>
+            </div>
+
             <ul className="flex flex-row gap-2">
-              <li className="transition-all duration-500 hover:bg-boo p-2 cursor-pointer rounded-full">
+
+
+              {/* FACEBOOK */}
+              <li className="transition-all duration-500 hover:bg-boo-700  p-2 cursor-pointer rounded-full">
                 <Link href="https://www.facebook.com/" target="_blank">
                   <Facebook className="fill-white" stroke="0" size={15} />
                 </Link>
               </li>
-              <li className="transition-all duration-500 hover:bg-boo p-2 cursor-pointer rounded-full">
+
+              {/* TWITTER */}
+              <li className="transition-all duration-500 hover:bg-boo-700 p-2 cursor-pointer rounded-full">
                 <Link href="https://twitter.com/" target="_blank">
-                  <Twitter className="fill-white" stroke="0" size={15} />
+                  <BsTwitterX className="fill-white" stroke="0" size={15} />
                 </Link>
               </li>
-              <li className="transition-all duration-500 hover:bg-boo p-2 cursor-pointer rounded-full">
-                <Link href="https://Google.com/" target="_blank">
-                  <FaGooglePlusG className="fill-white" stroke="0" size={15} />
+
+              {/* INSTAGRAM */}
+              <li className="transition-all duration-500 hover:bg-boo-700 p-2 cursor-pointer rounded-full">
+                <Link href="https://instagram.com/" target="_blank">
+                  <Instagram className="stroke-white" size={15} />
                 </Link>
               </li>
-              <li className="transition-all duration-500 hover:bg-boo p-2 cursor-pointer rounded-full">
-                <Link href="https://Linkedin.com/" target="_blank">
+
+              {/* LINKEDIN */}
+              <li className="transition-all duration-500 hover:bg-boo-700 p-2 cursor-pointer rounded-full">
+                <Link href="https://linkedin.com/" target="_blank">
                   <FaLinkedinIn className="fill-white" stroke="0" size={15} />
                 </Link>
               </li>
+
+              {/* YOUTUBE */}
+              <li className="transition-all duration-500 hover:bg-boo-700 p-2 cursor-pointer rounded-full">
+                <Link href="https://youtube.com/" target="_blank">
+                  <TbBrandYoutube className="stroke-white" size={15} />
+                </Link>
+              </li>
+
+              {/* GITHUB */}
+              <li className="transition-all duration-500 hover:bg-boo-700 p-2 cursor-pointer rounded-full">
+                <Link href="https://github.com/" target="_blank">
+                  <FiGithub className="stroke-white" size={15} />
+                </Link>
+              </li>
+
+              {/* HASHNODE */}
+              <li className="transition-all duration-500 hover:bg-boo-700 p-2 cursor-pointer rounded-full">
+                <Link href="https://hashnode.com/" target="_blank">
+                  <FaHashnode  className="fill-white stroke-white" size={15} />
+                </Link>
+              </li>
+
+              {/* MASTODON */}
+              <li className="transition-all duration-500 hover:bg-boo-700 -700 p-2 cursor-pointer rounded-full">
+                <Link href="https://mastodon.social/" target="_blank">
+                  <BsMastodon className="fill-white" size={15} />
+                </Link>
+              </li>
+
+              {/* STACKOVERFLOW */}
+              <li className="transition-all duration-500 hover:bg-boo-700  p-2 cursor-pointer rounded-full">
+                <Link href="https://stackoverflow.com/" target="_blank">
+                  <IoLogoStackoverflow className="fill-white" size={15} />
+                </Link>
+              </li>
+            
+            
             </ul>
           </div>
         </div>
@@ -205,69 +260,78 @@ const Contact = () => {
         </p>
         <br />
       </div>
-      <form className="contactform mb-6 gap-0" onSubmit={onFormSubmit}>
-        <div className="row m-0 gap-0">
-          <div className="flex flex-col sm:flex-row">
-          <div className="col-md-6 m-0 gap-0">
-            <div className="form-group m-0 gap-0">
-              <input
-                id="name"
-                name="name"
-                onChange={handleInputChange}
-                value={formData.name}
-                type="text"
-                placeholder="Name"
-                className="validate form-control"
-                required
-              />
-              <span className="input-focus-effect bg-boo" />
-            </div>
-          </div>
 
-          <div className="col-md-6 m-0 gap-0">
-            <div className="form-group">
-              <input
-                id="email"
-                type="email"
-                placeholder="Email"
-                name="email"
-                onChange={handleInputChange}
-                value={formData.email}
-                className="validate form-control"
-                required
-              />
-              <span className="input-focus-effect bg-boo" />
-            </div>
-          </div>
-          </div>
-          <div className="col-md-12 m-0 gap-0">
-            <div className="form-group">
-              <textarea
-                name="message"
-                value={formData.message}
-                onChange={handleInputChange}
-                placeholder="Message..."
-                className="w-full focus:ring-0 pl-0 bg-transparent border-none border-b-2 text-[17px] text-white resize-none border-b-white focus:outline-none"
-                style={{ borderBottom: "1px solid #ececec" }}
-                rows={5}
-              />
-
-              <span className="input-focus-effect bg-boo relative top-[169px]" />
-            </div>
-          </div>
-
-          <div className="flex sm:gap-[380px] gap-16">
-            <button
-              type="submit"
-              className="text-black w-fit ml-2 hover:text-white border-black hover:border-white tracking-widest shadow-lg hover:shadow-xl transition-all duration-500 
-               px-4 py-2 rounded-lg font-bold border-2 bg-pinky hover:no-underline"
+      <form className="flex flex-col w-full" onSubmit={onFormSubmit}>
+        <div className="flex gap-7 w-full">
+          {/* Email */}
+          <div className="mb-6 w-full">
+            <label
+              htmlFor="name"
+              className="text-white block mb-2 text-sm font-medium"
             >
-              Send Message
-            </button>
+              Name
+            </label>
+            <input
+              id="name"
+              name="name"
+              onChange={handleInputChange}
+              value={formData.name}
+              required
+              className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-zinc-100 text-sm rounded-lg block w-full p-2.5"
+              placeholder="name@example.com"
+            />
+          </div>
+
+          {/* Subject */}
+          <div className="mb-6 w-full">
+            <label
+              htmlFor="email"
+              className="text-white block text-sm mb-2 font-medium"
+            >
+              Email
+            </label>
+            <input
+              id="email"
+              type="email"
+              placeholder="Email"
+              name="email"
+              onChange={handleInputChange}
+              value={formData.email}
+              required
+              className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+            />
           </div>
         </div>
+
+        {/* Message */}
+        <div className="mb-6">
+          <label
+            htmlFor="message"
+            className="text-white block text-sm mb-2 font-medium"
+          >
+            Message
+          </label>
+          <textarea
+            name="message"
+            value={formData.message}
+            onChange={handleInputChange}
+            id="message"
+            className="bg-[#18191E] border border-[#33353F] resize-none placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+            placeholder="Let's talk about..."
+            rows={6}
+          />
+        </div>
+
+        {/* Submit Button */}
+        <button
+          type="submit"
+          className="bg-boo-800 hover:bg-pinky-600 transition-all duration-150 text-white font-medium py-2.5 px-5 rounded-lg w-full"
+        >
+          Send Message
+        </button>
       </form>
-      <p className="text-white tracking-widest mt-[60px] text-lg">
+
+      <p className="text-white tracking-widest mt-[16px] text-lg">
         We value your feedback and aim to respond witin 24 hours.
       </p>
     </SectionContainer>
