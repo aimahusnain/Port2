@@ -213,7 +213,7 @@ const AboutUs = () => {
                   technical prowess with a client-centric mindset, we ensure
                   that every project is a true reflection of your vision.
                 </p>
-                <div className="block sm:block lg:hidden lg:w-1/3 xl:w-5/12 rounded-sm gap-0 bg-boo">
+                <div className="block sm:block lg:hidden lg:w-1/3 xl:w-5/12 rounded-sm gap-0 bg-boo-700">
                   <section className="text-white mb-[-30px]">
                     <div className="flex ml-2">
                       <div className="flex flex-col">
