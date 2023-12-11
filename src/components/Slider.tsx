@@ -18,8 +18,8 @@ const FeatureCarousel = ({ features }: { features: Feature[]}) => {
   };
 
   return (
-    <div className="flex flex-col justify-between m-4">
-      <div className="flex gap-6 flex-wrap">
+    <div className="flex flex-col w-full justify-between m-4">
+      <div className="flex gap-6 w-full flex-wrap">
         
         {features.map((feature) => (
           <Button

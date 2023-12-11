@@ -58,51 +58,277 @@ const Portfolio = () => {
       leftImageTitle={"Portfolio"}
     >
       <div className="">
-        <ul className="">
+        <div>
+        <ul className="portfolio-filter m-10px-b">
           <li
-          className={`${activeBtn("*")} theme-after`}
-          onClick={handleFilterKeyChange("*")}
+            className={`${activeBtn("*")} theme-after`}
+            onClick={handleFilterKeyChange("*")}
           >
             All
           </li>
           <li
-          className={`${activeBtn("photoshop")} theme-after`}
-          onClick={handleFilterKeyChange("photoshop")}
-          data-filter=".photoshop"
+            className={`${activeBtn("cloning")} theme-after`}
+            onClick={handleFilterKeyChange("cloning")}
+            data-filter=".cloning"
           >
             Websites Cloning
           </li>
           <li
-          className={`${activeBtn("photoshop")} theme-after`}
-          onClick={handleFilterKeyChange("photoshop")}
-          data-filter=".photoshop"
+            className={`${activeBtn("business")} theme-after`}
+            onClick={handleFilterKeyChange("business")}
+            data-filter=".business"
           >
-            Websites Cloning
+            Business Websites
           </li>
           <li
-          className={`${activeBtn("photoshop")} theme-after`}
-          onClick={handleFilterKeyChange("photoshop")}
-          data-filter=".photoshop"
-          >
-            Websites Cloning
+            className={`${activeBtn("saas")} theme-after`}
+            onClick={handleFilterKeyChange("saas")}
+            data-filter=".saas"
+            >
+            SaaS Applications
           </li>
           <li
-          className={`${activeBtn("photoshop")} theme-after`}
-          onClick={handleFilterKeyChange("photoshop")}
-          data-filter=".photoshop"
+            className={`${activeBtn("portfolio")} theme-after`}
+            onClick={handleFilterKeyChange("portfolio")}
+            data-filter=".portfolio"
           >
-            Websites Cloning
+            Portfolio Websites
+          </li>
+          <li
+            className={`${activeBtn("ecommerce")} theme-after`}
+            onClick={handleFilterKeyChange("ecommerce")}
+            data-filter=".ecommerce"
+          >
+            Ecommerce Websites
+          </li>
+          <li
+            className={`${activeBtn("affiliate")} theme-after`}
+            onClick={handleFilterKeyChange("affiliate")}
+            data-filter=".affiliate"
+            >
+            Affiliate Websites
+          </li>
+          <li
+            className={`${activeBtn("blog")} theme-after`}
+            onClick={handleFilterKeyChange("blog")}
+            data-filter=".blog"
+            >
+            Blog Development
           </li>
         </ul>
+      </div>
+
+      <div className="portfolio-content">
+          <ul className="portfolio-cols portfolio-cols-3">
+            <li className="portfolio-item website">
+              <div className="portfolio-col portfolio-hover-01">
+                <div className="portfolio-img">
+                  <Link href="#">
+                  <Image width={230} height={100}  src="/static/img/portfolio-1.jpg" title="" alt="" />
+                  </Link>
+                  <div className="hover">
+                    <div className="action-btn">
+                      <Link
+                        href="http://www.youtube.com/watch?v=0O2aH4XLbto"
+                        className="popup-video theme-color"
+                      >
+                        <i className="fa fa-play" />
+                      </Link>
+                      <Link
+                        className="lightbox-gallery theme-color"
+                        href="static/img/portfolio-1.jpg"
+                        title="Lightbox gallery image title..."
+                      >
+                        <i className="fas fa-expand" />
+                      </Link>
+                      <Link href="#" className="theme-color">
+                        <i className="fa fa-link" />
+                        </Link>
+                    </div>{" "}
+                  </div>{" "}
+                </div>
+                <div className="portfolio-info">
+                  <h5>Portpolio Template</h5>
+                  <span>Resent Work</span>
+                </div>
+              </div>{" "}
+            </li>{" "}
+            <li className="portfolio-item apps">
+              <div className="portfolio-col portfolio-hover-01">
+                <div className="portfolio-img">
+                  <Link href="#">
+                  <Image width={230} height={100} src="/static/img/portfolio-2.jpg" title="" alt="" />
+                  </Link>
+                  <div className="hover">
+                    <div className="action-btn">
+                      <Link
+                        href="http://www.youtube.com/watch?v=0O2aH4XLbto"
+                        className="popup-video theme-color"
+                      >
+                        <i className="fa fa-play" />
+                      </Link>
+                      <Link
+                        className="lightbox-gallery theme-color"
+                        href="static/img/portfolio-2.jpg"
+                        title="Lightbox gallery image title..."
+                      >
+                        <i className="fas fa-expand" />
+                      </Link>
+                      <Link href="#" className="theme-color">
+                        <i className="fa fa-link" />
+                      </Link>
+                    </div>{" "}
+                  </div>{" "}
+                </div>
+                <div className="portfolio-info">
+                  <h5>Portpolio Template</h5>
+                  <span>Resent Work</span>
+                </div>
+              </div>{" "}
+            </li>{" "}
+            <li className="portfolio-item photoshop apps">
+              <div className="portfolio-col portfolio-hover-01">
+                <div className="portfolio-img">
+                  <Link href="#">
+                    <Image width={230} height={100}  src="/static/img/portfolio-3.jpg" title="" alt="" />
+                  </Link>
+                  <div className="hover">
+                    <div className="action-btn">
+                      <Link
+                        href="http://www.youtube.com/watch?v=0O2aH4XLbto"
+                        className="popup-video theme-color"
+                      >
+                        <i className="fa fa-play" />
+                      </Link>
+                      <Link
+                        className="lightbox-gallery theme-color"
+                        href="static/img/portfolio-3.jpg"
+                        title="Lightbox gallery image title..."
+                      >
+                        <i className="fas fa-expand" />
+                      </Link>
+                      <Link href="#" className="theme-color">
+                        <i className="fa fa-link" />
+                      </Link>
+                    </div>{" "}
+                  </div>{" "}
+                </div>
+                <div className="portfolio-info">
+                  <h5>Portpolio Template</h5>
+                  <span>Resent Work</span>
+                </div>
+              </div>{" "}
+            </li>{" "}
+            <li className="portfolio-item photoshop website">
+              <div className="portfolio-col portfolio-hover-01">
+                <div className="portfolio-img">
+                  <Link href="#">
+                  <Image width={230} height={100}  src="/static/img/portfolio-4.jpg" title="" alt="" />
+                  </Link>
+                  <div className="hover">
+                    <div className="action-btn">
+                      <Link
+                        href="http://www.youtube.com/watch?v=0O2aH4XLbto"
+                        className="popup-video theme-color"
+                      >
+                        <i className="fa fa-play" />
+                      </Link>
+                      <Link
+                        className="lightbox-gallery theme-color"
+                        href="static/img/portfolio-4.jpg"
+                        title="Lightbox gallery image title..."
+                      >
+                        <i className="fas fa-expand" />
+                      </Link>
+                      <Link href="#" className="theme-color">
+                        <i className="fa fa-link" />
+                      </Link>
+                    </div>{" "}
+                  </div>{" "}
+                </div>
+                <div className="portfolio-info">
+                  <h5>Portpolio Template</h5>
+                  <span>Resent Work</span>
+                </div>
+              </div>{" "}
+            </li>{" "}
+            <li className="portfolio-item photoshop apps">
+              <div className="portfolio-col portfolio-hover-01">
+                <div className="portfolio-img">
+                  <Link href="#">
+                  <Image width={230} height={100}  src="/static/img/portfolio-5.jpg" title="" alt="" />
+                  </Link>
+                  <div className="hover">
+                    <div className="action-btn">
+                      <Link
+                        href="http://www.youtube.com/watch?v=0O2aH4XLbto"
+                        className="popup-video theme-color"
+                      >
+                        <i className="fa fa-play" />
+                      </Link>
+                      <Link
+                        className="lightbox-gallery theme-color"
+                        href="static/img/portfolio-5.jpg"
+                        title="Lightbox gallery image title..."
+                      >
+                        <i className="fas fa-expand" />
+                      </Link>
+                      <Link href="#" className="theme-color">
+                        <i className="fa fa-link" />
+                      </Link>
+                    </div>{" "}
+                  </div>{" "}
+                </div>
+                <div className="portfolio-info">
+                  <h5>Portpolio Template</h5>
+                  <span>Resent Work</span>
+                </div>
+              </div>{" "}
+            </li>{" "}
+            <li className="portfolio-item app website">
+              <div className="portfolio-col portfolio-hover-01">
+                <div className="portfolio-img">
+                  <Link href="#">
+                  <Image width={230} height={100} src="/static/img/portfolio-6.jpg" title="" alt="" />
+                  </Link>
+                  <div className="hover">
+                    <div className="action-btn">
+                      <Link
+                        href="http://www.youtube.com/watch?v=0O2aH4XLbto"
+                        className="popup-video theme-color"
+                      >
+                        <i className="fa fa-play" />
+                      </Link>
+                      <Link
+                        className="lightbox-gallery theme-color"
+                        href="static/img/portfolio-6.jpg"
+                        title="Lightbox gallery image title..."
+                      >
+                        <i className="fas fa-expand" />
+                      </Link>
+                      <Link href="#" className="theme-color">
+                        <i className="fa fa-link" />
+                      </Link>
+                    </div>{" "}
+                  </div>{" "}
+                </div>
+                <div className="portfolio-info">
+                  <h5>Portpolio Template</h5>
+                  <span>Resent Work</span>
+                </div>
+              </div>{" "}
+            </li>{" "}
+          </ul>{" "}
+        </div>
       </div>
       {/* <div className="portfolio-section">
         <div className="portfolio-filter m-10px-b">
           <ul className="filter text-left text-md-center">
-            {" "}
+          {" "}
             <li
               className={`${activeBtn("*")} theme-after`}
               onClick={handleFilterKeyChange("*")}
-            >
+              >
               All
             </li>{" "}
             <li
@@ -360,7 +586,7 @@ const Portfolio = () => {
           </ul>{" "}
         </div>{" "}
       </div> */}
-      
+
       {/* <Testimonials /> */}
     </SectionContainer>
   );
