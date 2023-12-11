@@ -73,7 +73,7 @@ const HomeBanner = () => {
                     transition={{ duration: 0.5 }}
                     className="w-full place-self-center text-center sm:text-left justify-self-center"
                   >
-                    <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-7xl lg:leading-normal font-extrabold">
+                    <h1 className="text-white mb-4 text-2xl sm:text-5xl lg:text-7xl lg:leading-normal font-extrabold">
                       <span className="text-transparent bg-clip-text bg-gradient-to-r from-boo-400 to-pinky-600">
                         Welcome to
                       </span>
