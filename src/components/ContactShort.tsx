@@ -222,73 +222,77 @@ const Contact = () => {
     //   </div>
     // </form>
 
- <section id="contact" className="w-full mb-8 flex gap-4">
-     <form className="flex flex-col w-full" onSubmit={onFormSubmit}>
-       <div className="flex gap-7 w-full">
-         {/* Email */}
-         <div className="mb-6 w-full">
-           <label
-             htmlFor="email"
-             className="text-white block mb-2 text-sm font-medium"
-           >
-             Your email
-           </label>
-           <input
-             name="email"
-             type="email"
-             id="email"
-             required
-             className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-zinc-100 text-sm rounded-lg block w-full p-2.5"
-             placeholder="name@example.com"
-           />
-         </div>
+    <section id="contact" className="w-full mb-8 flex gap-4">
+      <form className="flex flex-col w-full" onSubmit={onFormSubmit}>
+        <div className="flex gap-7 w-full">
+          {/* Email */}
+          <div className="mb-6 w-full">
+            <label
+              htmlFor="name"
+              className="text-white block mb-2 text-sm font-medium"
+            >
+              Name
+            </label>
+            <input
+              id="name"
+              name="name"
+              onChange={handleInputChange}
+              value={formData.name}
+              required
+              className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-zinc-100 text-sm rounded-lg block w-full p-2.5"
+              placeholder="name@example.com"
+            />
+          </div>
 
-         {/* Subject */}
-         <div className="mb-6 w-full">
-           <label
-             htmlFor="subject"
-             className="text-white block text-sm mb-2 font-medium"
-           >
-             Subject
-           </label>
-           <input
-             name="subject"
-             type="text"
-             id="subject"
-             required
-             className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-             placeholder="Just saying hi"
-           />
-         </div>
-       </div>
+          {/* Subject */}
+          <div className="mb-6 w-full">
+            <label
+              htmlFor="email"
+              className="text-white block text-sm mb-2 font-medium"
+            >
+              Email
+            </label>
+            <input
+              id="email"
+              type="email"
+              placeholder="Email"
+              name="email"
+              onChange={handleInputChange}
+              value={formData.email}
+              required
+              className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+            />
+          </div>
+        </div>
 
-       {/* Message */}
-       <div className="mb-6">
-         <label
-           htmlFor="message"
-           className="text-white block text-sm mb-2 font-medium"
-         >
-           Message
-         </label>
-         <textarea
-           name="message"
-           id="message"
-           className="bg-[#18191E] border border-[#33353F] resize-none placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-           placeholder="Let's talk about..."
-         />
-       </div>
+        {/* Message */}
+        <div className="mb-6">
+          <label
+            htmlFor="message"
+            className="text-white block text-sm mb-2 font-medium"
+          >
+            Message
+          </label>
+          <textarea
+            name="message"
+            value={formData.message}
+            onChange={handleInputChange}
+            id="message"
+            className="bg-[#18191E] border border-[#33353F] resize-none placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+            placeholder="Let's talk about..."
+          />
+        </div>
 
-       {/* Submit Button */}
-       <button
-         type="submit"
-         className="bg-boo hover:bg-pinky transition-all duration-150 text-white font-medium py-2.5 px-5 rounded-lg w-full"
-       >
-         Send Message
-       </button>
-     </form>
- </section>
-  
-    );
+        {/* Submit Button */}
+        <button
+          type="submit"
+          className="bg-boo-800 hover:bg-pinky-600 transition-all duration-150 text-white font-medium py-2.5 px-5 rounded-lg w-full"
+        >
+          Send Message
+        </button>
+      </form>
+    </section>
+  );
 };
 
 export default Contact;

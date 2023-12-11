@@ -52,7 +52,7 @@ const SectionContainer = ({
 
       <div className="p-0">
         <div className="flex sm:flex-row flex-col !mx-0 h-full">
-          <div className="p-0 overflow-hidden sm:items-end items-start sm:justify-end justify-end flex flex-col sm:h-screen h-[500px] md:w-[30%] w-full bg-boo">
+          <div className="p-0 overflow-hidden sm:items-end items-start sm:justify-end justify-end flex flex-col sm:h-screen h-[500px] md:w-[50%] w-full bg-boo-700">
             <img
               className="m-0 p-0 mt-10 object-cover object-top w-full h-full"
               loading="lazy"
@@ -61,19 +61,19 @@ const SectionContainer = ({
             />
           </div>
 
-            <div className="h-full -m-6 mx-3 flex flex-col justify-between items-start">
-              <div className="page-scroll">
-                <div className="page-content">
-                  <div className="section-titel">
-                    <h6 className="theme-after text-white">{subTitle}</h6>
-                    <div className="st-title">
-                      <h2 className="theme-after text-white">{title}</h2>
-                    </div>
+          <div className="h-full -m-6 mx-3 flex flex-col justify-between items-start">
+            <div className="page-scroll">
+              <div className="page-content">
+                <div className="section-titel">
+                  <h6 className="theme-after text-white">{subTitle}</h6>
+                  <div className="st-title">
+                    <h2 className="theme-after text-white">{title}</h2>
                   </div>
-                  {children}
                 </div>
+                {children}
               </div>
             </div>
+          </div>
         </div>
       </div>
     </div>
