@@ -1,10 +1,10 @@
 // please update required information
 const siteMetadata = {
-  title: 'Next.js Blog With Tailwind CSS and Contentlayer',
-  author: 'CodeBucks',
-  headerTitle: 'Next.js Blog',
+  title: 'WebKin Solutions',
+  author: 'Muhammad Husnain',
+  headerTitle: 'WebKin Solutions',
   WebName: "WebKin Solutions",
-  description: 'A blog created with Next.js, Tailwind.css and contentlayer.',
+  description: 'WebKin Solutions: Crafting Digital Excellence | Elevate your online presence with our innovative solutions. Expertise, Collaboration, Quality - Experience the Difference!',
   language: 'en-us',
   theme: 'system',
   siteUrl: 'http://localhost:3000', // your website URL
