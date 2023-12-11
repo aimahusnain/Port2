@@ -207,6 +207,7 @@ const Contact = () => {
       </div>
       <form className="contactform mb-6 gap-0" onSubmit={onFormSubmit}>
         <div className="row m-0 gap-0">
+          <div className="flex flex-col sm:flex-row">
           <div className="col-md-6 m-0 gap-0">
             <div className="form-group m-0 gap-0">
               <input
@@ -238,7 +239,7 @@ const Contact = () => {
               <span className="input-focus-effect bg-boo" />
             </div>
           </div>
-
+          </div>
           <div className="col-md-12 m-0 gap-0">
             <div className="form-group">
               <textarea

@@ -96,7 +96,7 @@ const AboutUs = () => {
         </section>
       </div> */}
 
-      <div className="p-0 overflow-hidden sm:items-end hidden sm:hidden lg:block sm:visible md:w-[40%] w-full bg-boo">
+      <div className="p-0 overflow-hidden sm:items-end hidden sm:hidden lg:block sm:visible md:w-[30%] w-full bg-boo">
       <section className="text-white mb-[-30px]">
                     <div className="flex ml-2">
                       <div className="flex flex-col">

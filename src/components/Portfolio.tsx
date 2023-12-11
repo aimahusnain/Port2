@@ -59,72 +59,79 @@ const Portfolio = () => {
     >
       <div className="">
         <div>
-        <ul className="portfolio-filter m-10px-b">
-          <li
-            className={`${activeBtn("*")} theme-after`}
-            onClick={handleFilterKeyChange("*")}
-          >
-            All
-          </li>
-          <li
-            className={`${activeBtn("cloning")} theme-after`}
-            onClick={handleFilterKeyChange("cloning")}
-            data-filter=".cloning"
-          >
-            Websites Cloning
-          </li>
-          <li
-            className={`${activeBtn("business")} theme-after`}
-            onClick={handleFilterKeyChange("business")}
-            data-filter=".business"
-          >
-            Business Websites
-          </li>
-          <li
-            className={`${activeBtn("saas")} theme-after`}
-            onClick={handleFilterKeyChange("saas")}
-            data-filter=".saas"
+          <ul className="portfolio-filter m-10px-b">
+            <li
+              className={`${activeBtn("*")} theme-after`}
+              onClick={handleFilterKeyChange("*")}
             >
-            SaaS Applications
-          </li>
-          <li
-            className={`${activeBtn("portfolio")} theme-after`}
-            onClick={handleFilterKeyChange("portfolio")}
-            data-filter=".portfolio"
-          >
-            Portfolio Websites
-          </li>
-          <li
-            className={`${activeBtn("ecommerce")} theme-after`}
-            onClick={handleFilterKeyChange("ecommerce")}
-            data-filter=".ecommerce"
-          >
-            Ecommerce Websites
-          </li>
-          <li
-            className={`${activeBtn("affiliate")} theme-after`}
-            onClick={handleFilterKeyChange("affiliate")}
-            data-filter=".affiliate"
+              All
+            </li>
+            <li
+              className={`${activeBtn("cloning")} theme-after`}
+              onClick={handleFilterKeyChange("cloning")}
+              data-filter=".cloning"
             >
-            Affiliate Websites
-          </li>
-          <li
-            className={`${activeBtn("blog")} theme-after`}
-            onClick={handleFilterKeyChange("blog")}
-            data-filter=".blog"
+              Websites Cloning
+            </li>
+            <li
+              className={`${activeBtn("business")} theme-after`}
+              onClick={handleFilterKeyChange("business")}
+              data-filter=".business"
             >
-            Blog Development
-          </li>
-        </ul>
-      </div>
+              Business Websites
+            </li>
+            <li
+              className={`${activeBtn("saas")} theme-after`}
+              onClick={handleFilterKeyChange("saas")}
+              data-filter=".saas"
+            >
+              SaaS Applications
+            </li>
+            <li
+              className={`${activeBtn("portfolio")} theme-after`}
+              onClick={handleFilterKeyChange("portfolio")}
+              data-filter=".portfolio"
+            >
+              Portfolio Websites
+            </li>
+            <li
+              className={`${activeBtn("ecommerce")} theme-after`}
+              onClick={handleFilterKeyChange("ecommerce")}
+              data-filter=".ecommerce"
+            >
+              Ecommerce Websites
+            </li>
+            <li
+              className={`${activeBtn("affiliate")} theme-after`}
+              onClick={handleFilterKeyChange("affiliate")}
+              data-filter=".affiliate"
+            >
+              Affiliate Websites
+            </li>
+            <li
+              className={`${activeBtn("blog")} theme-after`}
+              onClick={handleFilterKeyChange("blog")}
+              data-filter=".blog"
+            >
+              Blog Development
+            </li>
+          </ul>
+        </div>
 
-      <div className="portfolio-content">
+        <div className="portfolio-content">
           <ul className="portfolio-cols portfolio-cols-3">
-            <li className="portfolio-item website">
+            
+            <li className="portfolio-item cloning">
               <div className="portfolio-col portfolio-hover-01">
                 <div className="portfolio-img">
                   <Link href="#">
-                  <Image width={230} height={100}  src="/static/img/portfolio-1.jpg" title="" alt="" />
+                    <Image
+                      width={230}
+                      height={100}
+                      src="/static/img/portfolio-1.jpg"
+                      title=""
+                      alt=""
+                    />
                   </Link>
                   <div className="hover">
                     <div className="action-btn">
@@ -143,13 +150,13 @@ const Portfolio = () => {
                       </Link>
                       <Link href="#" className="theme-color">
                         <i className="fa fa-link" />
-                        </Link>
+                      </Link>
                     </div>{" "}
                   </div>{" "}
                 </div>
                 <div className="portfolio-info">
-                  <h5>Portpolio Template</h5>
-                  <span>Resent Work</span>
+                  <h5>Websie Cloning</h5>
+                  <span>Emerates Visa</span>
                 </div>
               </div>{" "}
             </li>{" "}
@@ -157,7 +164,13 @@ const Portfolio = () => {
               <div className="portfolio-col portfolio-hover-01">
                 <div className="portfolio-img">
                   <Link href="#">
-                  <Image width={230} height={100} src="/static/img/portfolio-2.jpg" title="" alt="" />
+                    <Image
+                      width={230}
+                      height={100}
+                      src="/static/img/portfolio-2.jpg"
+                      title=""
+                      alt=""
+                    />
                   </Link>
                   <div className="hover">
                     <div className="action-btn">
@@ -190,7 +203,13 @@ const Portfolio = () => {
               <div className="portfolio-col portfolio-hover-01">
                 <div className="portfolio-img">
                   <Link href="#">
-                    <Image width={230} height={100}  src="/static/img/portfolio-3.jpg" title="" alt="" />
+                    <Image
+                      width={230}
+                      height={100}
+                      src="/static/img/portfolio-3.jpg"
+                      title=""
+                      alt=""
+                    />
                   </Link>
                   <div className="hover">
                     <div className="action-btn">
@@ -223,7 +242,13 @@ const Portfolio = () => {
               <div className="portfolio-col portfolio-hover-01">
                 <div className="portfolio-img">
                   <Link href="#">
-                  <Image width={230} height={100}  src="/static/img/portfolio-4.jpg" title="" alt="" />
+                    <Image
+                      width={230}
+                      height={100}
+                      src="/static/img/portfolio-4.jpg"
+                      title=""
+                      alt=""
+                    />
                   </Link>
                   <div className="hover">
                     <div className="action-btn">
@@ -252,11 +277,17 @@ const Portfolio = () => {
                 </div>
               </div>{" "}
             </li>{" "}
-            <li className="portfolio-item photoshop apps">
+            <li className="portfolio-item ecommerce apps">
               <div className="portfolio-col portfolio-hover-01">
                 <div className="portfolio-img">
                   <Link href="#">
-                  <Image width={230} height={100}  src="/static/img/portfolio-5.jpg" title="" alt="" />
+                    <Image
+                      width={230}
+                      height={100}
+                      src="/static/img/portfolio-5.jpg"
+                      title=""
+                      alt=""
+                    />
                   </Link>
                   <div className="hover">
                     <div className="action-btn">
@@ -289,7 +320,13 @@ const Portfolio = () => {
               <div className="portfolio-col portfolio-hover-01">
                 <div className="portfolio-img">
                   <Link href="#">
-                  <Image width={230} height={100} src="/static/img/portfolio-6.jpg" title="" alt="" />
+                    <Image
+                      width={230}
+                      height={100}
+                      src="/static/img/portfolio-6.jpg"
+                      title=""
+                      alt=""
+                    />
                   </Link>
                   <div className="hover">
                     <div className="action-btn">
