@@ -14,8 +14,8 @@ const AboutUsLayout = ({
       id={name}
       onClick={() => changeNav(name, false)}
     >
-      <div className="container-fluid m-ml-0 gap-0 p-0">
-        <div className="row no-gutters full-screen">
+      <div className="p-0">
+        <div className="flex sm:flex-row flex-col !mx-0 h-full">
         {children}
         </div>
       </div>

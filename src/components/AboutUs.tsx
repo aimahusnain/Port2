@@ -10,11 +10,11 @@ import {
 const AboutUs = () => {
   return (
     <AboutUsLayout name="about" extraClass="about-section">
-      <div className="hidden sm:hidden lg:block lg:w-1/3 xl:w-5/12 gap-0 bg-boo">
-        {/* Image */}
+      {/* <div className="hidden sm:hidden lg:block lg:w-1/3 xl:w-5/12 gap-0 bg-boo">
         <section className="text-white mb-[-30px]">
           <div className="flex ml-2">
             <div className="flex flex-col">
+              
               <div className="flex mx-8">
                 <h3 className="font-bold text-white mt-4">
                   Meet <br />{" "}
@@ -51,6 +51,7 @@ const AboutUs = () => {
                 </p>
               </div>
             </div>
+
           </div>
         </section>
         <section className="text-white">
@@ -93,10 +94,20 @@ const AboutUs = () => {
             </div>
           </div>
         </section>
-      </div>
+      </div> */}
+      <div className="p-0 overflow-hidden sm:items-end items-start sm:justify-end justify-end flex sm:h-screen h-[455px] md:w-[40%] w-full bg-boo">
+            <img
+              className="m-0 p-0 mt-10 object-cover object-top w-full h-full"
+              loading="lazy"
+              src="/static/img/H1.png"
+              alt=""
+            />
+          </div>
 
-      <div className="col-lg-20 mb-7 col-xl-8">
-        <div className="h-full flex flex-col justify-between items-start">
+<div>
+
+
+        <div className="h-full -m-6 mx-3 flex flex-col justify-between items-start">
           <div className="page-scroll">
             <div className="page-content">
               <div className="section-titel">

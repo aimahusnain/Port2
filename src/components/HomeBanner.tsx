@@ -46,28 +46,30 @@ const HomeBanner = () => {
     >
       <div className="p-0">
         <div className="flex sm:flex-row flex-col !mx-0 h-full">
-          <div className="p-0 overflow-hidden sm:items-end items-start sm:justify-end justify-end flex sm:h-screen h-[455px] md:w-[40%] w-full bg-boo">
+          <div className="p-0 overflow-hidden sm:items-end items-start sm:justify-end justify-end flex flex-col sm:h-screen h-[680px] md:w-[30%] w-full bg-boo">
             <img
-              className="m-0 mt-5 p-0 object-cover object-top w-full h-full"
+              className="m-0 p-0 mt-10 object-cover object-top w-full h-full"
               loading="lazy"
               src="/static/img/H1.png"
               alt=""
             />
+            <div className="lg:visible">
+            <InsightRoll insights={insights} />
+            </div>
           </div>
 
           <div>
             <div className="h-full -m-6 mx-3 flex flex-col justify-between items-start">
               <div />
 
-              <div className="flex flex-col px-4 w-full mt-5">
-                <h1 className="font-extrabold lg:text-6xl md:text-5xl sm:text-4xl">
+              <div className="flex mt-7 flex-col px-4 w-full">
+                <p className="font-extrabold text-3xl lg:text-5xl md:text-3xl">
                   <span className="normal-case text-transparent bg-clip-text bg-gradient-to-r from-primaryyy-400 to-pinky">
                     Welcome to
                   </span>
-                </h1>
-                <InsightRoll insights={insights} />
+                </p>
                 <TypeAnimation
-                  className="text-white lg:text-7xl md:text-5xl sm:text-3xl"
+                  className="text-white text-4xl lg:text-7xl md:text-6xl"
                   sequence={[
                     `${siteMetadata.WebName}`,
                     3000,
@@ -84,13 +86,13 @@ const HomeBanner = () => {
                 <div className="flex max-w-full mt-2 gap-2 flex-row justify-between sm:justify-start items-center">
                   <button
                     onClick={() => changeNav("portfolio", false)}
-                    className="bg-pinky w-32 p-2 border-pinky text-black transition-all duration-500 rounded-lg font-bold hover:no-underline"
+                    className="bg-pinky w-32 py-2 border-pinky text-black transition-all duration-500 rounded-lg font-bold hover:no-underline"
                   >
                     View Portfolio
                   </button>
 
                   <button
-                    className="w-32 p-1 border-[3px] border-pinky text-white transition-all duration-500 rounded-lg font-bold hover:no-underline"
+                    className="w-32 p-1 border-[3px] border-pinky text-white hover:bg-white/20 transition-all duration-500 rounded-lg font-bold hover:no-underline"
                     onClick={() => changeNav("resume", false)}
                   >
                     Our Services
@@ -99,6 +101,8 @@ const HomeBanner = () => {
               </div>
 
               <div className="flex justify-end flex-row gap-2">
+                {/* Assuming 'ContactShort' is a custom component */}
+                {/* Replace it with your actual component */}
                 <ContactShort />
               </div>
             </div>
