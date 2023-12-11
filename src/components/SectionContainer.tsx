@@ -50,22 +50,18 @@ const SectionContainer = ({
         </div>
       </div> */}
 
-      <div className="container-fluid m-ml-0 gap-0 p-0">
-        <div className="row no-gutters full-screen">
-          <div className="col-lg-3 overflow-hidden sm:h-screen h-[500px] col-xl-4 bg-boo">
-            <div className="d-flex ml-0 gap-0 align-items-end home-user-avtar v-center-box">
-              <Image
-                loading="lazy"
-                height={300}
-                width={3020}
-                src="/static/img/H1.png"
-                title=""
-                alt=""
-              />
-            </div>
+      <div className="p-0">
+        <div className="flex sm:flex-row flex-col !mx-0 h-full">
+          <div className="p-0 overflow-hidden sm:items-end items-start sm:justify-end justify-end flex flex-col sm:h-screen h-[500px] md:w-[30%] w-full bg-boo">
+            <img
+              className="m-0 p-0 mt-10 object-cover object-top w-full h-full"
+              loading="lazy"
+              src="/static/img/H1.png"
+              alt=""
+            />
           </div>
-          <div className="col-lg-20 mb-7 col-xl-8">
-            <div className="h-full flex flex-col justify-between items-start">
+
+            <div className="h-full -m-6 mx-3 flex flex-col justify-between items-start">
               <div className="page-scroll">
                 <div className="page-content">
                   <div className="section-titel">
@@ -78,7 +74,6 @@ const SectionContainer = ({
                 </div>
               </div>
             </div>
-          </div>
         </div>
       </div>
     </div>

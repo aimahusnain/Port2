@@ -57,7 +57,45 @@ const Portfolio = () => {
       leftImage="static/img/title-3.jpg"
       leftImageTitle={"Portfolio"}
     >
-      <div className="portfolio-section">
+      <div className="">
+        <ul className="">
+          <li
+          className={`${activeBtn("*")} theme-after`}
+          onClick={handleFilterKeyChange("*")}
+          >
+            All
+          </li>
+          <li
+          className={`${activeBtn("photoshop")} theme-after`}
+          onClick={handleFilterKeyChange("photoshop")}
+          data-filter=".photoshop"
+          >
+            Websites Cloning
+          </li>
+          <li
+          className={`${activeBtn("photoshop")} theme-after`}
+          onClick={handleFilterKeyChange("photoshop")}
+          data-filter=".photoshop"
+          >
+            Websites Cloning
+          </li>
+          <li
+          className={`${activeBtn("photoshop")} theme-after`}
+          onClick={handleFilterKeyChange("photoshop")}
+          data-filter=".photoshop"
+          >
+            Websites Cloning
+          </li>
+          <li
+          className={`${activeBtn("photoshop")} theme-after`}
+          onClick={handleFilterKeyChange("photoshop")}
+          data-filter=".photoshop"
+          >
+            Websites Cloning
+          </li>
+        </ul>
+      </div>
+      {/* <div className="portfolio-section">
         <div className="portfolio-filter m-10px-b">
           <ul className="filter text-left text-md-center">
             {" "}
@@ -118,8 +156,7 @@ const Portfolio = () => {
             </li>
             
           </ul>
-        </div>{" "}
-        {/* Portfolio Filter */}
+        </div>
         <div className="portfolio-content">
           <ul className="portfolio-cols portfolio-cols-3">
             <li className="portfolio-item website">
@@ -147,18 +184,14 @@ const Portfolio = () => {
                         <i className="fa fa-link" />
                         </Link>
                     </div>{" "}
-                    {/* Video Btn */}
                   </div>{" "}
-                  {/* Hover */}
                 </div>
                 <div className="portfolio-info">
                   <h5>Portpolio Template</h5>
                   <span>Resent Work</span>
                 </div>
               </div>{" "}
-              {/* Portfolio */}
             </li>{" "}
-            {/* col */}
             <li className="portfolio-item apps">
               <div className="portfolio-col portfolio-hover-01">
                 <div className="portfolio-img">
@@ -184,18 +217,14 @@ const Portfolio = () => {
                         <i className="fa fa-link" />
                       </Link>
                     </div>{" "}
-                    {/* Video Btn */}
                   </div>{" "}
-                  {/* Hover */}
                 </div>
                 <div className="portfolio-info">
                   <h5>Portpolio Template</h5>
                   <span>Resent Work</span>
                 </div>
               </div>{" "}
-              {/* Portfolio */}
             </li>{" "}
-            {/* col */}
             <li className="portfolio-item photoshop apps">
               <div className="portfolio-col portfolio-hover-01">
                 <div className="portfolio-img">
@@ -221,18 +250,14 @@ const Portfolio = () => {
                         <i className="fa fa-link" />
                       </Link>
                     </div>{" "}
-                    {/* Video Btn */}
                   </div>{" "}
-                  {/* Hover */}
                 </div>
                 <div className="portfolio-info">
                   <h5>Portpolio Template</h5>
                   <span>Resent Work</span>
                 </div>
               </div>{" "}
-              {/* Portfolio */}
             </li>{" "}
-            {/* col */}
             <li className="portfolio-item photoshop website">
               <div className="portfolio-col portfolio-hover-01">
                 <div className="portfolio-img">
@@ -258,18 +283,14 @@ const Portfolio = () => {
                         <i className="fa fa-link" />
                       </Link>
                     </div>{" "}
-                    {/* Video Btn */}
                   </div>{" "}
-                  {/* Hover */}
                 </div>
                 <div className="portfolio-info">
                   <h5>Portpolio Template</h5>
                   <span>Resent Work</span>
                 </div>
               </div>{" "}
-              {/* Portfolio */}
             </li>{" "}
-            {/* col */}
             <li className="portfolio-item photoshop apps">
               <div className="portfolio-col portfolio-hover-01">
                 <div className="portfolio-img">
@@ -295,18 +316,14 @@ const Portfolio = () => {
                         <i className="fa fa-link" />
                       </Link>
                     </div>{" "}
-                    {/* Video Btn */}
                   </div>{" "}
-                  {/* Hover */}
                 </div>
                 <div className="portfolio-info">
                   <h5>Portpolio Template</h5>
                   <span>Resent Work</span>
                 </div>
               </div>{" "}
-              {/* Portfolio */}
             </li>{" "}
-            {/* col */}
             <li className="portfolio-item app website">
               <div className="portfolio-col portfolio-hover-01">
                 <div className="portfolio-img">
@@ -332,29 +349,19 @@ const Portfolio = () => {
                         <i className="fa fa-link" />
                       </Link>
                     </div>{" "}
-                    {/* Video Btn */}
                   </div>{" "}
-                  {/* Hover */}
                 </div>
                 <div className="portfolio-info">
                   <h5>Portpolio Template</h5>
                   <span>Resent Work</span>
                 </div>
               </div>{" "}
-              {/* Portfolio */}
             </li>{" "}
-            {/* col */}
           </ul>{" "}
-          {/* row */}
         </div>{" "}
-        {/* portfolio content */}
-      </div>
-      {/* 
-          ==========================
-            Testimonials
-          ==========================
-          */}
-      <Testimonials />
+      </div> */}
+      
+      {/* <Testimonials /> */}
     </SectionContainer>
   );
 };
