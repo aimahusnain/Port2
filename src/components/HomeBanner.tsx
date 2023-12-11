@@ -47,32 +47,31 @@ const HomeBanner = () => {
       id={"home"}
       // onClick={() => changeNav("home", false)}
     >
-      <div className="p-0">
-        <div className="flex sm:flex-row flex-col !mx-0 h-full">
-          <div className="p-0 overflow-hidden sm:items-end items-start sm:justify-end justify-end flex flex-col sm:h-screen h-[450px] md:w-[50%] w-full bg-boo-700">
-            <img
-              className="m-0 p-0 mt-10 object-cover object-top w-full h-full"
-              loading="lazy"
-              src="/static/img/H1.png"
-              alt=""
-            />
-            <div className="lg:visible">
-              <InsightRoll insights={insights} />
+      <motion.div
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5 }}
+      >
+        <div className="p-0">
+          <div className="flex sm:flex-row flex-col !mx-0 h-full">
+            <div className="pt-20 p-0 overflow-hidden sm:items-end items-start sm:justify-end justify-end flex flex-col sm:h-screen h-[450px] md:w-[50%] w-full bg-boo-700">
+              <img
+                className="m-0 p-0 object-cover object-top w-full h-full"
+                loading="lazy"
+                src="/static/img/H1.png"
+                alt=""
+              />
+              <div className="lg:visible">
+                <InsightRoll insights={insights} />
+              </div>
             </div>
-          </div>
 
-          <div className="w-full">
-            {/* 70% container */}
-            <div className="h-full mx-16 flex flex-col justify-between sm:items-start items-center">
-              <div />
-              <section>
-                <div>
-                  <motion.div
-                    initial={{ opacity: 0, scale: 0.5 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.5 }}
-                    className="w-full place-self-center text-center sm:text-left justify-self-center"
-                  >
+            <div className="w-full">
+              {/* 70% container */}
+              <div className="h-full mx-16 flex flex-col justify-between sm:items-start items-center">
+                <div />
+                <section>
+                  <div className="w-full place-self-center text-center sm:text-left justify-self-center">
                     <h1 className="text-white mb-4 text-2xl sm:text-5xl lg:text-7xl lg:leading-normal font-extrabold">
                       <span className="text-transparent bg-clip-text bg-gradient-to-r from-boo-400 to-pinky-600">
                         Welcome to
@@ -111,17 +110,17 @@ const HomeBanner = () => {
                         </span>
                       </Link>
                     </div>
-                  </motion.div>
-                </div>
-              </section>
+                  </div>
+                </section>
 
-              <div className=" w-full">
-                <ContactShort />
+                <div className=" w-full">
+                  <ContactShort />
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
