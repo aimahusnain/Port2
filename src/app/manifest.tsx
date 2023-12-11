@@ -1,8 +1,8 @@
 export default function manifest() {
     return {
-      name: 'Next.js App',
-      short_name: 'Next.js App',
-      description: 'Next.js App',
+      name: 'WebKin Solutions',
+      short_name: 'WebKin',
+      description: 'WebKin Solutions: Crafting Digital Excellence | Elevate your online presence with our innovative solutions. Expertise, Collaboration, Quality - Experience the Difference!',
       start_url: '/',
       display: 'standalone',
       icons: [

@@ -17,7 +17,6 @@ const insights = [
   "TYPESCRIPT",
   "REACT",
   "NEXT.JS",
-
   "FIGMA",
   "HTML",
   "CSS",
@@ -26,7 +25,6 @@ const insights = [
   "TYPESCRIPT",
   "REACT",
   "NEXT.JS",
-
   "FIGMA",
   "HTML",
   "CSS",
