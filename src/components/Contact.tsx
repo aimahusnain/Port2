@@ -170,7 +170,7 @@ const Contact = () => {
       <div>
         <div className="w-full flex justify-center p-0 h-fit items-center text-left">
           <div className="flex flex-col sm:w-full align-middle w-fit text-center gap-8  sm:justify-between">
-            <div className="flex flex-row w-full gap-40">
+            <div className="flex w-full sm:gap-40 gap-10 sm:flex-row flex-col">
             <p className="m-0 text-white p-0 flex flex-row items-center gap-3">
               <IoMdMail />
               canals786@gmail.com
@@ -261,8 +261,13 @@ const Contact = () => {
         <br />
       </div>
 
+
+
+
+
+      <section id="contact" className="w-full mt-12 mb-8 flex gap-4">
       <form className="flex flex-col w-full" onSubmit={onFormSubmit}>
-        <div className="flex gap-7 w-full">
+        <div className="flex sm:flex-row flex-col sm:gap-7 gap-0 w-full">
           {/* Email */}
           <div className="mb-6 w-full">
             <label
@@ -278,14 +283,14 @@ const Contact = () => {
               value={formData.name}
               required
               className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-zinc-100 text-sm rounded-lg block w-full p-2.5"
-              placeholder="name@example.com"
+              placeholder="Your name"
             />
           </div>
 
           {/* Subject */}
           <div className="mb-6 w-full">
             <label
-              htmlFor="email"
+              htmlFor="email" 
               className="text-white block text-sm mb-2 font-medium"
             >
               Email
@@ -293,7 +298,7 @@ const Contact = () => {
             <input
               id="email"
               type="email"
-              placeholder="Email"
+              placeholder="name@example.com"
               name="email"
               onChange={handleInputChange}
               value={formData.email}
@@ -318,7 +323,6 @@ const Contact = () => {
             id="message"
             className="bg-[#18191E] border border-[#33353F] resize-none placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
             placeholder="Let's talk about..."
-            rows={6}
           />
         </div>
 
@@ -330,6 +334,11 @@ const Contact = () => {
           Send Message
         </button>
       </form>
+    </section>
+
+
+
+
 
       <p className="text-white tracking-widest mt-[16px] text-lg">
         We value your feedback and aim to respond witin 24 hours.

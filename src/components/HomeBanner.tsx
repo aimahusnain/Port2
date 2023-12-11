@@ -95,7 +95,7 @@ const HomeBanner = () => {
                       <Link
                         href=""
                         onClick={() => changeNav("portfolio", false)}
-                        className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-boo-500 to-pinky-700 text-white"
+                        className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-boo-500 to-pinky-600 text-white"
                       >
                         View Portfolio
                       </Link>

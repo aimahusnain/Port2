@@ -61,9 +61,8 @@ const SectionContainer = ({
             />
           </div>
 
-          <div className="h-full -m-6 mx-3 flex flex-col justify-between items-start">
+          <div className="h-full mt-8 -m-6 mx-3 flex flex-col justify-between items-start">
             <div className="page-scroll">
-              <div className="page-content">
                 <div className="section-titel">
                   <h6 className="theme-after text-white">{subTitle}</h6>
                   <div className="st-title">
@@ -73,7 +72,6 @@ const SectionContainer = ({
                 {children}
               </div>
             </div>
-          </div>
         </div>
       </div>
     </div>
