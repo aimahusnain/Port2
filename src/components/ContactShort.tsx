@@ -222,7 +222,7 @@ const Contact = () => {
     //   </div>
     // </form>
 
- <section id="contact" className="w-full  bg-boo flex gap-4">
+ <section id="contact" className="w-full mb-8 flex gap-4">
      <form className="flex flex-col w-full" onSubmit={onFormSubmit}>
        <div className="flex gap-7 w-full">
          {/* Email */}
