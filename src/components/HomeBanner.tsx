@@ -68,7 +68,7 @@ const HomeBanner = () => {
 
             <div className="w-full">
               {/* 70% container */}
-              <div className="h-full mx-16 flex flex-col justify-between sm:items-start items-center">
+              <div className="h-full sm:mx-16 mx-3 flex flex-col justify-between sm:items-start items-center">
                 <div />
                 <section>
                   <div className="w-full place-self-center text-center sm:text-left justify-self-center">
