@@ -242,9 +242,9 @@ const Services = () => {
             <p>
               Ready to get started?{" "}
               <span>
-                <Link href="" onClick={() => changeNav("contact", false)}>
+                <p className=" text-blue-800 hover:text-blue-700 underline inline-block cursor-pointer" onClick={() => changeNav("contact", false)}>
                   Contact
-                </Link>
+                </p>
               </span>{" "}
               Us and let's embark on this exciting journey together!
             </p>

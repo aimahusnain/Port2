@@ -1,11 +1,11 @@
-import { cx } from "../utils";
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Inter, Manrope } from "next/font/google";
-import siteMetadata from "../utils/siteMetaData";
-import "./globals.css";
 import AlexioHead from "../AlexioHead";
 import AlexioState from "../Context";
-import ThemeScript from "../components/(blog)/ThemeScript";
 import NextThemeProvider from "../providers/theme-provider";
+import { cx } from "../utils";
+import siteMetadata from "../utils/siteMetaData";
+import "./globals.css";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -66,6 +66,7 @@ export default function RootLayout({ children }) {
           >
           <NextThemeProvider>
           {children}
+          <SpeedInsights />
           </NextThemeProvider>
         </body>
       </AlexioState>
