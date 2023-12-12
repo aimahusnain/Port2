@@ -11,7 +11,6 @@ const BlogLayoutTwo = ({ blog }) => {
         className=" col-span-12  lg:col-span-4 h-full rounded-xl overflow-hidden"
       >
         <Image
-        loading="lazy"
           src={blog.image.filePath.replace("../public", "")}
           placeholder="blur"
           blurDataURL={blog.image.blurhashDataUrl}

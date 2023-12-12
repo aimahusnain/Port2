@@ -13,7 +13,6 @@ const BlogLayoutOne = ({ blog }) => {
             "
       />
       <Image
-      loading="lazy"
         src={blog.image.filePath.replace("../public", "")}
         placeholder="blur"
         blurDataURL={blog.image.blurhashDataUrl}
