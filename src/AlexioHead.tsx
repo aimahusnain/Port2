@@ -11,10 +11,7 @@ const AlexioHead = () => {
         content="width=device-width, initial-scale=1, shrink-to-fit=no"
       />
       <title>{siteMetadata.title}</title> 
-      <link
-        href="static/plugin/owl-carousel/css/owl.carousel.min.css"
-        rel="stylesheet"
-      />
+    
       <link href="static/plugin/magnific/magnific-popup.css" rel="stylesheet" />
       <link href="static/plugin/nav/css/component.css" rel="stylesheet" />
       <link href="static/css/styles.css" rel="stylesheet" />
