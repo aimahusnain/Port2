@@ -1,3 +1,4 @@
+import manifest from "./app/manifest";
 import siteMetadata from "./utils/siteMetaData";
 
 const AlexioHead = () => {
@@ -9,7 +10,7 @@ const AlexioHead = () => {
         name="viewport"
         content="width=device-width, initial-scale=1, shrink-to-fit=no"
       />
-      <title>{siteMetadata.WebName} - Professional Web Developer Team</title>
+      <title>{siteMetadata.title}</title> 
       <link
         href="static/plugin/owl-carousel/css/owl.carousel.min.css"
         rel="stylesheet"

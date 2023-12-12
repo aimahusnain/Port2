@@ -55,7 +55,6 @@ const HomeBanner = () => {
             <div className="pt-20 p-0 overflow-hidden sm:items-end items-start sm:justify-end justify-end flex flex-col sm:h-screen h-[450px] md:w-[50%] w-full bg-boo-700">
               <img
                 className="m-0 p-0 object-cover object-top w-full h-full"
-                loading="lazy"
                 src="/static/img/H1.png"
                 alt=""
               />

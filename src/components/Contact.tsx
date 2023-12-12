@@ -188,63 +188,63 @@ const Contact = () => {
 
               {/* FACEBOOK */}
               <li className="transition-all duration-500 hover:bg-boo-700  p-2 cursor-pointer rounded-full">
-                <Link href="https://www.facebook.com/" target="_blank">
+                <Link href="https://www.facebook.com/" aria-label="Facebook" target="_blank">
                   <Facebook className="fill-white" stroke="0" size={15} />
                 </Link>
               </li>
 
               {/* TWITTER */}
               <li className="transition-all duration-500 hover:bg-boo-700 p-2 cursor-pointer rounded-full">
-                <Link href="https://twitter.com/" target="_blank">
+                <Link href="https://twitter.com/" aria-label="Twitter" target="_blank">
                   <BsTwitterX className="fill-white" stroke="0" size={15} />
                 </Link>
               </li>
 
               {/* INSTAGRAM */}
               <li className="transition-all duration-500 hover:bg-boo-700 p-2 cursor-pointer rounded-full">
-                <Link href="https://instagram.com/" target="_blank">
+                <Link href="https://instagram.com/" target="_blank" aria-label="Instagram">
                   <Instagram className="stroke-white" size={15} />
                 </Link>
               </li>
 
               {/* LINKEDIN */}
               <li className="transition-all duration-500 hover:bg-boo-700 p-2 cursor-pointer rounded-full">
-                <Link href="https://linkedin.com/" target="_blank">
+                <Link href="https://linkedin.com/" target="_blank" aria-label="Linkedin">
                   <FaLinkedinIn className="fill-white" stroke="0" size={15} />
                 </Link>
               </li>
 
               {/* YOUTUBE */}
               <li className="transition-all duration-500 hover:bg-boo-700 p-2 cursor-pointer rounded-full">
-                <Link href="https://youtube.com/" target="_blank">
+                <Link href="https://youtube.com/" aria-label="Youtube" target="_blank">
                   <TbBrandYoutube className="stroke-white" size={15} />
                 </Link>
               </li>
 
               {/* GITHUB */}
               <li className="transition-all duration-500 hover:bg-boo-700 p-2 cursor-pointer rounded-full">
-                <Link href="https://github.com/" target="_blank">
+                <Link href="https://github.com/" aria-label="Github" target="_blank">
                   <FiGithub className="stroke-white" size={15} />
                 </Link>
               </li>
 
               {/* HASHNODE */}
               <li className="transition-all duration-500 hover:bg-boo-700 p-2 cursor-pointer rounded-full">
-                <Link href="https://hashnode.com/" target="_blank">
+                <Link href="https://hashnode.com/" aria-label="Hashnode" target="_blank">
                   <FaHashnode  className="fill-white stroke-white" size={15} />
                 </Link>
               </li>
 
               {/* MASTODON */}
               <li className="transition-all duration-500 hover:bg-boo-700 -700 p-2 cursor-pointer rounded-full">
-                <Link href="https://mastodon.social/" target="_blank">
+                <Link href="https://mastodon.social/" aria-label="Mastodon" target="_blank">
                   <BsMastodon className="fill-white" size={15} />
                 </Link>
               </li>
 
               {/* STACKOVERFLOW */}
               <li className="transition-all duration-500 hover:bg-boo-700  p-2 cursor-pointer rounded-full">
-                <Link href="https://stackoverflow.com/" target="_blank">
+                <Link href="https://stackoverflow.com/" aria-label="StackOverFlow" target="_blank">
                   <IoLogoStackoverflow className="fill-white" size={15} />
                 </Link>
               </li>
@@ -277,6 +277,7 @@ const Contact = () => {
               Name
             </label>
             <input
+            aria-label="Your Name"
               id="name"
               name="name"
               onChange={handleInputChange}
@@ -296,6 +297,7 @@ const Contact = () => {
               Email
             </label>
             <input
+            aria-label="Your Email"
               id="email"
               type="email"
               placeholder="name@example.com"
@@ -317,6 +319,7 @@ const Contact = () => {
             Message
           </label>
           <textarea
+          aria-label="Your Message here"
             name="message"
             value={formData.message}
             onChange={handleInputChange}
@@ -329,6 +332,7 @@ const Contact = () => {
         {/* Submit Button */}
         <button
           type="submit"
+          aria-label="Send Message"
           className="bg-boo-800 hover:bg-pinky-600 transition-all duration-150 text-white font-medium py-2.5 px-5 rounded-lg w-full"
         >
           Send Message
