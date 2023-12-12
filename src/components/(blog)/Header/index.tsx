@@ -3,9 +3,6 @@ import siteMetadata from "@/src/utils/siteMetaData";
 import Link from "next/link";
 import { useContext, useState } from "react";
 import { AlexioContext } from "../../../Context";
-import ThemeToggler from "../../theme";
-import { DribbbleIcon, GithubIcon, LinkedinIcon, TwitterIcon } from "../Icons";
-import Logo from "./Logo";
 
 const Header = () => {
   const [mode, setMode] = useState<string>("dark");
@@ -17,141 +14,66 @@ const Header = () => {
   };
 
   return (
-    <header className="w-full p-4  px-5 sm:px-10 flex items-center justify-between">
-      <Logo />
+    <header className="w-full p-4 px-5 sm:px-10 flex items-center justify-between">
 
-      <button
-        className="inline-block sm:hidden z-50"
-        onClick={toggle2}
-        aria-label="Hamburger Menu"
-      >
-        <div className="w-6 cursor-pointer transition-all ease duration-300">
-          <div className="relative">
-            <span
-              className="absolute top-0 inline-block w-full h-0.5 bg-black dark:bg-light rounded transition-all ease duration-200"
-              style={{
-                transform: click
-                  ? "rotate(-45deg) translateY(0)"
-                  : "rotate(0deg) translateY(6px)",
-              }}
-            >
-              &nbsp;
-            </span>
-            <span
-              className="absolute top-0 inline-block w-full h-0.5 bg-black dark:bg-light rounded transition-all ease duration-200"
-              style={{
-                opacity: click ? 0 : 1,
-              }}
-            >
-              &nbsp;
-            </span>
-            <span
-              className="absolute top-0 inline-block w-full h-0.5 bg-black dark:bg-light rounded transition-all ease duration-200"
-              style={{
-                transform: click
-                  ? "rotate(45deg) translateY(0)"
-                  : "rotate(0deg) translateY(-6px)",
-              }}
-            >
-              &nbsp;
-            </span>
-          </div>
+      <header className="bg-boo-700 fixed top-0 right-0 flex justify-end sm:w-fit w-full z-[9999]">
+        <Link
+          href=""
+          className="text-white w-full flex justify-left items-center text-xl font-bold uppercase float-left leading-8 tracking-wider py-[15px] px-5"
+        >
+          {siteMetadata.WebName}
+        </Link>
+        <div
+          onClick={toggle2}
+          className="relative cursor-pointer top-0 bottom-0 right-0 bg-black items-center  flex w-[60px]"
+        >
+          <button aria-label="Hamburger Menu">
+            <div className="w-6 cursor-pointer transition-all ease duration-300">
+              <div className="relative">
+                <span
+                  className="absolute top-0 inline-block w-full h-0.5 bg-light dark:bg-black rounded transition-all ease duration-200"
+                  style={{
+                    transform: click
+                      ? "rotate(-45deg) translateY(0)"
+                      : "rotate(0deg) translateY(6px)",
+                  }}
+                >
+                  &nbsp;
+                </span>
+                <span
+                  className="absolute top-0 inline-block w-full h-0.5 bg-light dark:bg-dark rounded transition-all ease duration-200"
+                  style={{
+                    opacity: click ? 0 : 1,
+                  }}
+                >
+                  &nbsp;
+                </span>
+                <span
+                  className="absolute top-0 inline-block w-full h-0.5 bg-light dark:bg-dark rounded transition-all ease duration-200"
+                  style={{
+                    transform: click
+                      ? "rotate(45deg) translateY(0)"
+                      : "rotate(0deg) translateY(-6px)",
+                  }}
+                >
+                  &nbsp;
+                </span>
+              </div>
+            </div>
+          </button>
         </div>
-      </button>
+      </header>
 
       <nav
-        className=" w-max py-3 px-6 sm:px-8 border border-solid border-black rounded-full font-medium capitalize  items-center flex  sm:hidden
+        className={`w-max py-3 px-6 sm:px-8 border border-solid border-black rounded-full font-medium capitalize  items-center flex 
         fixed top-6 right-1/2 translate-x-1/2 bg-light/80 backdrop-blur-sm z-50
         transition-all ease duration-300
-        "
-        style={{
-          top: click ? "1rem" : "-5rem",
-        }}
+        ${click ? "top-20 sm:top-6" : "-top-20 sm:-top-20"}`}
       >
         <Link href="/" className="mr-2">
           Home
         </Link>
       </nav>
-
-      <nav
-        className="w-max py-3 px-8 border border-solid border-black rounded-full font-medium capitalize items-center hidden sm:flex
-        fixed top-6 right-1/2 translate-x-1/2 bg-light/80 backdrop-blur-sm z-50"
-      >
-        <Link
-          href="/"
-          className="mr-2 hover:no-underline"
-          onClick={() => changeNav("home", false)}
-        >
-          Home
-        </Link>
-
-        <Link
-          href="/"
-          className="mr-2 hover:no-underline"
-          onClick={() => changeNav("about", false)}
-        >
-          About Us
-        </Link>
-
-        <Link
-          href="/"
-          className="mr-2 hover:no-underline"
-          onClick={() => changeNav("resume", false)}
-        >
-          Resume
-        </Link>
-
-        <Link
-          href="/"
-          className="mr-2 hover:no-underline"
-          onClick={() => changeNav("portfolio", false)}
-        >
-          Portfolio
-        </Link>
-
-        <Link
-          href="/"
-          className="mr-2 hover:no-underline"
-          onClick={() => changeNav("contact", false)}
-        >
-          Contact Us
-        </Link>
-        <ThemeToggler />
-      </nav>
-      <div className=" hidden sm:flex items-center">
-        <Link
-          href={siteMetadata.linkedin}
-          className="inline-block w-6 h-6 mr-4"
-          aria-label="Reach out to me via LinkedIn"
-          target="_blank"
-        >
-          <LinkedinIcon className="hover:scale-125 transition-all ease duration-200" />
-        </Link>
-        <Link
-          href={siteMetadata.twitter}
-          className="inline-block w-6 h-6 mr-4"
-          aria-label="Reach out to me via Twitter"
-          target="_blank"
-        >
-          <TwitterIcon className="hover:scale-125 transition-all ease duration-200" />
-        </Link>
-        <Link
-          href={siteMetadata.github}
-          className="inline-block w-6 h-6 mr-4"
-          aria-label="Check my profile on Github"
-          target="_blank"
-        >
-          <GithubIcon className="  hover:scale-125 transition-all ease duration-200 dark:fill-light" />
-        </Link>
-        <Link
-          href={siteMetadata.dribbble}
-          className="inline-block w-6 h-6 mr-4"
-          aria-label="Check my profile on Dribbble"
-          target="_blank"
-        >
-          <DribbbleIcon className="hover:scale-125 transition-all ease duration-200" />
-        </Link>
-      </div>
     </header>
   );
 };

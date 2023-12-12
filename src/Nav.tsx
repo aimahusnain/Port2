@@ -59,59 +59,54 @@ const Nav = () => {
     <div className={toggle ? "visible" : "hidden"}>
       <nav className={`pages-nav ${toggle ? "pages-nav--open" : ""}`}>
         <div>
-          <Link
-            href=""
-            className="link link--page"
+          <p
+            className="text-dark dark:text-light cursor-pointer"
             onClick={() => changeNav("home", false)}
           >
             Home
-          </Link>
+          </p>
         </div>
         
         <div className="pages-nav__item">
-          <Link
-            href=""
-            className="link link--page"
+          <p
+            className="link link--page cursor-pointer"
             onClick={() => changeNav("about", false)}
           >
             About Us
-          </Link>
+          </p>
         </div>
 
         <div className="pages-nav__item">
-          <Link
-            href=""
-            className="link link--page"
+          <p
+            className="link link--page cursor-pointer"
             onClick={() => changeNav("resume", false)}
           >
             Our Services
-          </Link>
+          </p>
         </div>
 
         <div className="pages-nav__item">
-          <Link className="link link--page" href="blog">
+          <Link className="link link--page" href="/blog">
             Blog
           </Link>
         </div>
 
         <div className="pages-nav__item">
-          <Link
-            href=""
-            className="link link--page"
+          <p
+            className="link link--page cursor-pointer"
             onClick={() => changeNav("portfolio", false)}
           >
             Portfolio
-          </Link>
+          </p>
         </div>
         
         <div className="pages-nav__item">
-          <Link
-            href=""
-            className="link link--page"
+          <p
+            className="link link--page cursor-pointer"
             onClick={() => changeNav("contact", false)}
           >
             Contact Us
-          </Link>
+          </p>
         </div>
         
         <ThemeToggler />

@@ -42,9 +42,9 @@ const Services = () => {
       <div className="row text-white m-0 gap-0">
         <div className="flex flex-col gap-6">
           <div className="flex flex-col gap-2">
-            <h4 className="text-pinky">
+            <h3 className="text-2xl text-boo-700">
               Crafting Exceptional Web Experiences with React and Next.js
-            </h4>
+            </h3>
             <p>
               At {siteMetadata.WebName} Solutions, we are passionate about
               turning your digital dreams into reality. As dedicated React and
@@ -232,7 +232,7 @@ const Services = () => {
           </div>
 
           <div>
-            <h4 className="text-pinky">Let's Build Something Extraordinary</h4>
+            <h3 className="text-2xl text-boo-700">Let's Build Something Extraordinary</h3>
             <p className="text-white/50">
               No matter the scope or complexity of your project, our React and
               Next.js experts are ready to take on the challenge. Collaborate

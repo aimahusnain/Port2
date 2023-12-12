@@ -57,7 +57,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
 
-    <html>
+    <html lang="en">
       <AlexioState>
         <AlexioHead />
 
