@@ -1,5 +1,3 @@
-import Head from "next/head";
-import Link from "next/link";
 import siteMetadata from "./utils/siteMetaData";
 
 const AlexioHead = () => {
@@ -11,25 +9,16 @@ const AlexioHead = () => {
         name="viewport"
         content="width=device-width, initial-scale=1, shrink-to-fit=no"
       />
-      {/* Page Title */}
       <title>{siteMetadata.WebName} - Professional Web Developer Team</title>
-      {/* / */}
-      {/*-Font Icon*/}
-      {/* / */}
       <link
         href="static/plugin/owl-carousel/css/owl.carousel.min.css"
         rel="stylesheet"
       />
       <link href="static/plugin/magnific/magnific-popup.css" rel="stylesheet" />
       <link href="static/plugin/nav/css/component.css" rel="stylesheet" />
-      {/* / */}
-      {/* Theme Style */}
       <link href="static/css/styles.css" rel="stylesheet" />
       <link href="static/css/color/default.css" rel="stylesheet" />
-      {/* / */}
-      {/* Favicon */}
       <link rel="icon" href="favicon.ico" />
-      {/* / */}
     </head>
   );
 };

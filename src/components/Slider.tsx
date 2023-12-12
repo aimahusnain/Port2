@@ -43,7 +43,7 @@ const FeatureCarousel = ({ features }: { features: Feature[]}) => {
             className="w-full rounded"
           /> */}
 
-          <p className="text-white/50">
+          <p className="w-full text-white/50">
             {selectedFeature.description}
           </p>
         </div>
