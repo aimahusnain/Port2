@@ -20,92 +20,6 @@ const AboutUs = () => {
 
   return (
     <AboutUsLayout name="about" extraClass="about-section">
-      {/* <div className="hidden sm:hidden lg:block lg:w-1/3 xl:w-5/12 gap-0 bg-boo">
-        <section className="text-white mb-[-30px]">
-          <div className="flex ml-2">
-            <div className="flex flex-col">
-              
-              <div className="flex mx-8">
-                <h3 className="font-bold text-white mt-4">
-                  Meet <br />{" "}
-                  <span
-                    className="underline"
-                    style={{
-                      textDecorationColor: "white",
-                      textDecorationThickness: "4px",
-                    }}
-                  >
-                    Muhammad Husnain
-                  </span>
-                </h3>
-                <div className="mt-6 h-fit w-full">
-                  <img
-                    className="w-[100px] ml-16 mb-3 h-[100px] object-top object-cover rounded-full"
-                    src="static/img/H1.png"
-                    alt="Husnain Image"
-                  />
-                </div>
-              </div>
-              <div className="flex justify-center items-center ">
-                <p className="w-full bg-white rounded-lg text-black mx-8 py-6 pb-4 px-4 text-sm">
-                  Our design maestro, Muhammad Husnain, is a Figma virtuoso with
-                  a keen eye for detail. Specializing in UI/UX design, he
-                  transforms concepts into visually stunning and user-friendly
-                  interfaces. His proficiency in Figma allows him to sculpt
-                  digital landscapes that not only captivate but also ensure a
-                  seamless and delightful user experience. Beyond design,
-                  Muhammad is the backbone of our backend development,
-                  specializing in Next.js. His mastery in translating design
-                  into functional, high-performance applications is what sets us
-                  apart.
-                </p>
-              </div>
-            </div>
-
-          </div>
-        </section>
-        <section className="text-white">
-          <div className="flex ml-2">
-            <div className="flex flex-col">
-              <div className="flex mx-8">
-                <h3 className="font-bold w-full text-white mt-8">
-                  Meet <br />{" "}
-                  <span
-                    className="underline"
-                    style={{
-                      textDecorationColor: "white",
-                      textDecorationThickness: "4px",
-                    }}
-                  >
-                    Taha Amin
-                  </span>
-                </h3>
-                <div className="mt-6 h-fit w-full">
-                  <img
-                    className="w-[100px] mb-3 h-[100px] ml-16 object-top object-cover rounded-full"
-                    src="static/img/T1.png"
-                    alt="Husnain Image"
-                  />
-                </div>
-              </div>
-              <div className="flex justify-center items-center ">
-                <p className="w-full bg-white rounded-lg text-black mx-8 py-5 pb-3 px-4 text-sm">
-                  Meet Taha Amin: The frontend wizard of our team, Taha Amin, is
-                  a React and Next.js aficionado. With a passion for crafting
-                  immersive user interfaces, Taha turns visions into interactive
-                  and responsive web applications. His expertise lies in
-                  bringing designs to life, creating dynamic and engaging user
-                  interfaces that leave a lasting impression. Taha's commitment
-                  to staying on the cutting edge of React and Next.js ensures
-                  that your digital presence is not only modern but also
-                  future-proof.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div> */}
-
       <div className="p-0 py-10 px-5 overflow-hidden lg:flex flex-col items-between justify-between hidden sm:hidden lg:block sm:visible md:w-[50%] w-full bg-boo-700 gap-16">
         <div className="bg-white shadow-2xl rounded-3xl text-center flex flex-col justify-center transition-colors h-[40vh] lg:h-[calc(30vh - 70px)]">
           <div>
@@ -131,7 +45,7 @@ const AboutUs = () => {
 
           <section className="flex h-full lg:h-[50%] /* Half the height on large screens */ flex-col gap-4">
             <div className="flex flex-col justify-center items-center h-full">
-              {/* Description taking the full height */}
+  
               <div className="w-full rounded-lg bg-white text-black text-sm p-4 px-8 pb-4 overflow-hidden">
                 <div className="text-justify h-[90px] overflow-y-auto custom-scrollbar">
                   <p>
@@ -146,7 +60,6 @@ const AboutUs = () => {
                     modern but also future-proof.
                   </p>
                 </div>
-                {/* "Learn More" button */}
               </div>
             </div>
           </section>
@@ -194,66 +107,10 @@ const AboutUs = () => {
                     us apart.{" "}
                   </p>
                 </div>
-                {/* "Learn More" button */}
               </div>
             </div>
           </section>
         </div>
-
-        {/* <section className="flex h-1/2 flex-col gap-4">
-          <div className="flex w-full justify-between items-center gap-2">
-            <div className="flex flex-col gap-0 w-full text-center items-center">
-              <p className="text-white text-3xl font-bold">Meet</p>
-              <img
-                className="w-[100px] h-[100px] object-top object-cover rounded-full"
-                src="static/img/H1.png"
-                alt="Husnain Image"
-              />
-              <p className="text-xl text-white font-semibold">
-                Muhammad Husnain
-              </p>
-            </div>
-          </div>
-          <div className="flex justify-center items-center">
-            <p className="w-full rounded-lg bg-white text-black text-sm p-5">
-              Our design maestro, Muhammad Husnain, is a Figma virtuoso with a
-              keen eye for detail. Specializing in UI/UX design, he transforms
-              concepts into visually stunning and user-friendly interfaces. His
-              proficiency in Figma allows him to sculpt digital landscapes that
-              not only captivate but also ensure a seamless and delightful user
-              experience. Beyond design, Muhammad is the backbone of our backend
-              development, specializing in Next.js. His mastery in translating
-              design into functional, high-performance applications is what sets
-              us apart.
-            </p>
-          </div>
-        </section> */}
-
-        {/* <section className="flex h-1/2 flex-col gap-4">
-          <div className="flex w-full justify-between items-center gap-2">
-            <div className="flex flex-col gap-0 w-full text-center items-center">
-              <p className="text-white text-3xl font-bold">Meet</p>
-              <img
-                className="w-[100px] h-[100px] object-top object-cover rounded-full"
-                src="static/img/T1.png"
-                alt="Husnain Image"
-              />
-              <p className="text-xl text-white font-semibold">Taha Amin</p>
-            </div>
-          </div>
-          <div className="flex justify-center items-center">
-            <p className="w-full rounded-lg bg-white text-black text-sm p-5">
-              Meet Taha Amin: The frontend wizard of our team, Taha Amin, is a
-              React and Next.js aficionado. With a passion for crafting
-              immersive user interfaces, Taha turns visions into interactive and
-              responsive web applications. His expertise lies in bringing
-              designs to life, creating dynamic and engaging user interfaces
-              that leave a lasting impression. Taha's commitment to staying on
-              the cutting edge of React and Next.js ensures that your digital
-              presence is not only modern but also future-proof.
-            </p>
-          </div>
-        </section> */}
       </div>
 
       <div>

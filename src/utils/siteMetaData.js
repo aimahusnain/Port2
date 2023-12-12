@@ -1,4 +1,3 @@
-// please update required information
 const siteMetadata = {
   title: 'WebKin Solutions',
   author: 'Muhammad Husnain',
@@ -7,7 +6,7 @@ const siteMetadata = {
   description: 'WebKin Solutions: Crafting Digital Excellence | Elevate your online presence with our innovative solutions. Expertise, Collaboration, Quality - Experience the Difference!',
   language: 'en-us',
   theme: 'system',
-  siteUrl: 'http://localhost:3000', // your website URL
+  siteUrl: 'http://localhost:3000',
   siteLogo: '/logo.png',
   socialBanner: '/social-banner.png', // add social banner in the public folder
   email: 'aimahusnain@gmail.com',

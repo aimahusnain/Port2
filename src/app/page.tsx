@@ -18,7 +18,6 @@ const Portfolio = dynamic(() => import("../components/Portfolio"), {
 const Index = () => {
   useEffect(() => {
     document.querySelector("html").classList.add("js");
-    // document.querySelector("body").classList.add("#201926");
   }, []);
 
   const { toggle } = useContext(AlexioContext);

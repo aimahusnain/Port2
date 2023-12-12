@@ -16,7 +16,6 @@ const Header = () => {
 
   return (
     <header className="w-full p-4 px-5 sm:px-10 flex items-center justify-between">
-
       <header className="bg-boo-700 fixed top-0 right-0 flex justify-end sm:w-fit w-full z-[9999]">
         <Link
           href=""
@@ -65,10 +64,10 @@ const Header = () => {
         </div>
       </header>
       <nav
-  className={`w-max py-3 px-6 sm:px-8 border border-solid border-black rounded-full font-medium capitalize items-center flex 
+        className={`w-max py-3 px-6 sm:px-8 gap-5 border border-solid border-black rounded-full font-medium capitalize items-center flex 
   fixed bg-light/80 backdrop-blur-sm z-50 transition-all ease duration-300 
-  ${click ? 'top-20 sm:top-6' : '-top-20 sm:-top-20'}`}
->
+  ${click ? "top-20 sm:top-6" : "-top-20 sm:-top-20"}`}
+      >
         <NavLinks />
       </nav>
     </header>

@@ -36,7 +36,7 @@ const insights = [
 ];
 
 const HomeBanner = () => {
-  const activePageClass = (page) => (page === nav ? "" : "page--inactive"); // Accepts a parameter
+  const activePageClass = (page) => (page === nav ? "" : "page--inactive");
   const { changeNav, nav } = useContext(AlexioContext);
 
   return (
