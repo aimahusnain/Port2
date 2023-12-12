@@ -3,18 +3,14 @@ import siteMetadata from "@/src/utils/siteMetaData";
 import Link from "next/link";
 import { useContext, useState } from "react";
 import { AlexioContext } from "../../../Context";
-import {
-  DribbbleIcon,
-  GithubIcon,
-  LinkedinIcon,
-  TwitterIcon
-} from "../Icons";
+import ThemeToggler from "../../theme";
+import { DribbbleIcon, GithubIcon, LinkedinIcon, TwitterIcon } from "../Icons";
 import Logo from "./Logo";
 
 const Header = () => {
   const [mode, setMode] = useState<string>("dark");
   const { changeNav, toggle, nav } = useContext(AlexioContext);
-  const [click, setClick] = useState(false)
+  const [click, setClick] = useState(false);
 
   const toggle2 = () => {
     setClick(!click);
@@ -32,7 +28,7 @@ const Header = () => {
         <div className="w-6 cursor-pointer transition-all ease duration-300">
           <div className="relative">
             <span
-              className="absolute top-0 inline-block w-full h-0.5 bg-dark dark:bg-light rounded transition-all ease duration-200"
+              className="absolute top-0 inline-block w-full h-0.5 bg-black dark:bg-light rounded transition-all ease duration-200"
               style={{
                 transform: click
                   ? "rotate(-45deg) translateY(0)"
@@ -42,7 +38,7 @@ const Header = () => {
               &nbsp;
             </span>
             <span
-              className="absolute top-0 inline-block w-full h-0.5 bg-dark dark:bg-light rounded transition-all ease duration-200"
+              className="absolute top-0 inline-block w-full h-0.5 bg-black dark:bg-light rounded transition-all ease duration-200"
               style={{
                 opacity: click ? 0 : 1,
               }}
@@ -50,7 +46,7 @@ const Header = () => {
               &nbsp;
             </span>
             <span
-              className="absolute top-0 inline-block w-full h-0.5 bg-dark dark:bg-light rounded transition-all ease duration-200"
+              className="absolute top-0 inline-block w-full h-0.5 bg-black dark:bg-light rounded transition-all ease duration-200"
               style={{
                 transform: click
                   ? "rotate(45deg) translateY(0)"
@@ -64,7 +60,7 @@ const Header = () => {
       </button>
 
       <nav
-        className=" w-max py-3 px-6 sm:px-8 border border-solid border-dark rounded-full font-medium capitalize  items-center flex  sm:hidden
+        className=" w-max py-3 px-6 sm:px-8 border border-solid border-black rounded-full font-medium capitalize  items-center flex  sm:hidden
         fixed top-6 right-1/2 translate-x-1/2 bg-light/80 backdrop-blur-sm z-50
         transition-all ease duration-300
         "
@@ -75,11 +71,10 @@ const Header = () => {
         <Link href="/" className="mr-2">
           Home
         </Link>
-
       </nav>
 
       <nav
-        className="w-max py-3 px-8 border border-solid border-dark rounded-full font-medium capitalize items-center hidden sm:flex
+        className="w-max py-3 px-8 border border-solid border-black rounded-full font-medium capitalize items-center hidden sm:flex
         fixed top-6 right-1/2 translate-x-1/2 bg-light/80 backdrop-blur-sm z-50"
       >
         <Link
@@ -121,7 +116,7 @@ const Header = () => {
         >
           Contact Us
         </Link>
-
+        <ThemeToggler />
       </nav>
       <div className=" hidden sm:flex items-center">
         <Link

@@ -1,10 +1,11 @@
-import Header from "@/src/components/(blog)/Header";
+import "../globals.css";
 import { cx } from "@/src/utils";
 import { Inter, Manrope } from "next/font/google";
+import Header from "@/src/components/(blog)/Header";
 import Footer from "../../components/(blog)/Footer";
-
 import siteMetadata from "../../utils/siteMetaData";
-import "../globals.css";
+import ThemeScript from "../../components/(blog)/ThemeScript";
+import NextThemeProvider from "@/src/providers/theme-provider";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -22,7 +23,7 @@ export const metadata = {
   metadataBase: new URL(siteMetadata.siteUrl),
   title: {
     template: `%s | ${siteMetadata.title}`,
-    default: siteMetadata.title,
+    default: siteMetadata.title, // a default is required when creating a template
   },
   description: siteMetadata.description,
   openGraph: {
@@ -55,18 +56,20 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html>
-        <body
-          className={cx(
-            inter.variable,
-            manrope.variable,
-            "font-mr bg-dark"
-          )}
-        >
-          <Header />
-          {children}
-          <Footer />
-        </body>
+    <html lang="en">
+      <body
+        className={cx(
+          inter.variable,
+          manrope.variable,
+          "font-mr bg-light dark:bg-black"
+        )}
+      >
+        <NextThemeProvider>
+        <Header />
+        {children}
+        <Footer />
+        </NextThemeProvider>
+      </body>
     </html>
   );
 }

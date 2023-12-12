@@ -1,6 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { AlexioContext } from "./Context";
 import Link from "next/link";
+import ThemeToggler from "./components/theme";
 
 const Nav = () => {
   const { changeNav, toggle, nav } = useContext(AlexioContext);
@@ -112,6 +113,9 @@ const Nav = () => {
             Contact Us
           </Link>
         </div>
+        
+        <ThemeToggler />
+
       </nav>
     </div>
   );

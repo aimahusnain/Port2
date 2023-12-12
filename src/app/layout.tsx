@@ -4,6 +4,8 @@ import siteMetadata from "../utils/siteMetaData";
 import "./globals.css";
 import AlexioHead from "../AlexioHead";
 import AlexioState from "../Context";
+import ThemeScript from "../components/(blog)/ThemeScript";
+import NextThemeProvider from "../providers/theme-provider";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -60,9 +62,12 @@ export default function RootLayout({ children }) {
         <AlexioHead />
 
         <body
-          className={cx(inter.variable)}
+          className={cx(inter.variable, "font-mr bg-light dark:bg-darkness")}
           >
+          {/* <ThemeScript /> */}
+          <NextThemeProvider>
           {children}
+          </NextThemeProvider>
         </body>
       </AlexioState>
     </html>

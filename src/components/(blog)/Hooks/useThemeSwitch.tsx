@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState } from "react";  
 
 export function useThemeSwitch() {
   const preferDarkQuery = "(prefers-color-schema:dark)";
@@ -14,7 +14,7 @@ export function useThemeSwitch() {
     }
     window.localStorage.setItem(storageKey, theme);
   };
-  
+
   const getUserPreference = () => {
     const userPref = window.localStorage.getItem(storageKey);
     if (userPref) {

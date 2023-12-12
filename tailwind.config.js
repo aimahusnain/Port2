@@ -2,12 +2,12 @@
 const colors = require("tailwindcss/colors");
 
 module.exports = {
-  darkMode: "class",
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: 'class',
   theme: {
     container: {
       center: true,
@@ -30,6 +30,8 @@ module.exports = {
         // boo: "#8000FF",
         lightes: "#fff",
         darkness: "#000",
+        dark: "#1b1b1b",
+        light: "#fff",
         accent: "#7B00D3",
         accentDark: "#ffdb4d",
         gray: "#747474",
