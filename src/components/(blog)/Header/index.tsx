@@ -3,6 +3,7 @@ import siteMetadata from "@/src/utils/siteMetaData";
 import Link from "next/link";
 import { useContext, useState } from "react";
 import { AlexioContext } from "../../../Context";
+import NavLinks from "../../NavLinks";
 
 const Header = () => {
   const [mode, setMode] = useState<string>("dark");
@@ -63,16 +64,12 @@ const Header = () => {
           </button>
         </div>
       </header>
-
       <nav
-        className={`w-max py-3 px-6 sm:px-8 border border-solid border-black rounded-full font-medium capitalize  items-center flex 
-        fixed top-6 right-1/2 translate-x-1/2 bg-light/80 backdrop-blur-sm z-50
-        transition-all ease duration-300
-        ${click ? "top-20 sm:top-6" : "-top-20 sm:-top-20"}`}
-      >
-        <Link href="/" className="mr-2">
-          Home
-        </Link>
+  className={`w-max py-3 px-6 sm:px-8 border border-solid border-black rounded-full font-medium capitalize items-center flex 
+  fixed bg-light/80 backdrop-blur-sm z-50 transition-all ease duration-300 
+  ${click ? 'top-20 sm:top-6' : '-top-20 sm:-top-20'}`}
+>
+        <NavLinks />
       </nav>
     </header>
   );
