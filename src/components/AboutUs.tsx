@@ -288,23 +288,12 @@ const AboutUs = () => {
                   that every project is a true reflection of your vision.
                 </p>
 
-                <div className="block sm:block lg:hidden h-fit rounded-sm my-10 gap-32">
-                  <div className="bg-white shadow-2xl mb-20 rounded-3xl text-center flex flex-col justify-center transition-colors h-[40vh] lg:h-[calc(30vh - 70px)]">
+                <div className="block sm:block lg:hidden h-fit rounded-sm my-20 gap-32">
+                  <div className="bg-white shadow-2xl mb-24 rounded-3xl text-center flex flex-col justify-center transition-colors">
                     <div>
                       <img
                         src="static/img/T1.png"
-                        className=" object-cover
-           object-top
-           rounded-3xl
-            shadow-2xl
-            h-40
-            w-40
-            bg-boo-400
-            mx-auto
-            transition-all
-            mt-10
-            hover:scale-125
-          "
+                        className=" object-cover object-top rounded-3xl shadow-2xl h-32 w-32 bg-boo-400 mx-auto transition-all mt-10 hover:scale-125"
                         alt="avatar"
                       />
                     </div>
@@ -317,7 +306,7 @@ const AboutUs = () => {
                       <div className="flex flex-col justify-center items-center h-full">
                         {/* Description taking the full height */}
                         <div className="w-full rounded-lg bg-white text-black text-sm p-4 px-8 pb-4 overflow-hidden">
-                          <div className="text-justify h-[90px] overflow-y-auto custom-scrollbar">
+                          <div className="text-justify">
                             <p>
                               The frontend wizard of our team, Taha Amin, is a
                               React and Next.js aficionado. With a passion for
@@ -337,7 +326,7 @@ const AboutUs = () => {
                     </section>
                   </div>
 
-                  <div className="bg-white shadow-2xl rounded-3xl text-center flex flex-col justify-center transition-colors h-[40vh] lg:h-[calc(30vh - 70px)]">
+                  <div className="bg-white shadow-2xl rounded-3xl text-center flex flex-col justify-center transition-colors">
                     <div>
                       <img
                         src="static/img/H1.png"
@@ -358,14 +347,14 @@ const AboutUs = () => {
                     </div>
 
                     <h1 className="mt-12 text-3xl font-bold text-black">
-                      Muhammad Husnain
+                      Muhammad<br /> Husnain
                     </h1>
 
                     <section className="flex h-full lg:h-[50%] /* Half the height on large screens */ flex-col gap-4">
                       <div className="flex flex-col justify-center items-center h-full">
                         {/* Description taking the full height */}
                         <div className="w-full rounded-lg bg-white text-black text-sm p-4 px-8 pb-4 overflow-hidden">
-                          <div className="text-justify h-[90px] overflow-y-auto custom-scrollbar">
+                          <div className="text-justify">
                             <p>
                               Our design maestro, Muhammad Husnain, is a Figma
                               virtuoso with a keen eye for detail. Specializing
@@ -457,7 +446,7 @@ const AboutUs = () => {
                       className="text-sm w-full h-fit"
                     >
                       <AccordionItem value="item-1">
-                        <AccordionTrigger className="text-sm px-5 hover:no-underline p-3">
+                        <AccordionTrigger className="text-sm text-left px-5 hover:no-underline p-3">
                           Unleashing Lightning-Fast Performance:
                         </AccordionTrigger>
                         <AccordionContent className=" text-white/40">

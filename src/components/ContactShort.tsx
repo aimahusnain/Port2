@@ -240,7 +240,7 @@ const Contact = () => {
               value={formData.name}
               required
               className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-zinc-100 text-sm rounded-lg block w-full p-2.5"
-              placeholder="name@example.com"
+              placeholder="Your Name"
             />
           </div>
 
@@ -255,7 +255,7 @@ const Contact = () => {
             <input
               id="email"
               type="email"
-              placeholder="Email"
+              placeholder="example@website.com"
               name="email"
               onChange={handleInputChange}
               value={formData.email}

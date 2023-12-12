@@ -11,29 +11,11 @@ const AlexioHead = () => {
         name="viewport"
         content="width=device-width, initial-scale=1, shrink-to-fit=no"
       />
-      {/*
-     ========================================================================
-     EXCLUSIVE ON themeforest.net
-     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     Template Name   : Alexio
-     Author          : Codeeflw~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     Copyright (c) 2013 - Codeefly
-     ========================================================================
-     */}
       {/* Page Title */}
       <title>{siteMetadata.WebName} - Professional Web Developer Team</title>
       {/* / */}
       {/*-Font Icon*/}
-      <link
-        href="static/plugin/themify-icons/themify-icons.css"
-        rel="stylesheet"
-      />
       {/* / */}
-      {/* Plugin CSS */}
-       <link
-        href="static/plugin/bootstrap/css/bootstrap.min.css"
-        rel="stylesheet"
-      />
       <link
         href="static/plugin/owl-carousel/css/owl.carousel.min.css"
         rel="stylesheet"
