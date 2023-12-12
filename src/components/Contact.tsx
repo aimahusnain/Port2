@@ -255,7 +255,7 @@ const Contact = () => {
         </div>
         <br />
         <p className="text-white/60 tracking-widest text-lg">
-          Have a specific question our request? Feel free to use the form below
+          Have a specific question or request? Feel free to use the form below
           to send us a direct message:
         </p>
         <br />
