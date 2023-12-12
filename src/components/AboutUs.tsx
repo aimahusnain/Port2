@@ -24,6 +24,7 @@ const AboutUs = () => {
         <div className="bg-white shadow-2xl rounded-3xl text-center flex flex-col justify-center transition-colors h-[40vh] lg:h-[calc(30vh - 70px)]">
           <div>
             <img
+            loading="lazy"
               src="static/img/T1.png"
               className=" object-cover
            object-top
@@ -68,6 +69,7 @@ const AboutUs = () => {
         <div className="bg-white shadow-2xl rounded-3xl text-center flex flex-col justify-center transition-colors h-[40vh] lg:h-[calc(30vh - 70px)]">
           <div>
             <img
+            loading="lazy"
               src="static/img/H1.png"
               className=" object-cover
            object-top
@@ -149,6 +151,7 @@ const AboutUs = () => {
                   <div className="bg-white shadow-2xl mb-24 rounded-3xl text-center flex flex-col justify-center transition-colors">
                     <div>
                       <img
+                      loading="lazy"
                         src="static/img/T1.png"
                         className=" object-cover object-top rounded-3xl shadow-2xl h-32 w-32 bg-boo-400 mx-auto transition-all mt-10 hover:scale-125"
                         alt="avatar"
@@ -186,6 +189,7 @@ const AboutUs = () => {
                   <div className="bg-white shadow-2xl rounded-3xl text-center flex flex-col justify-center transition-colors">
                     <div>
                       <img
+                      loading="lazy"
                         src="static/img/H1.png"
                         className=" object-cover
            object-top

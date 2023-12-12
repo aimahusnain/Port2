@@ -21,7 +21,7 @@ const ImgViews = ({ close, src }) => {
         >
           <div className="mfp-content" ref={domNode}>
             <div className="mfp-iframe-scaler">
-              <Image width={500} height={500} className="mfp-img" src={src} alt="" />
+              <Image width={500} height={500} loading="lazy" className="mfp-img" src={src} alt="" />
             </div>
           </div>
           <div className="mfp-preloader">Loading...</div>

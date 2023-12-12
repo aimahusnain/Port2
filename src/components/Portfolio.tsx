@@ -124,6 +124,7 @@ const Portfolio = () => {
                 <div className="portfolio-img">
                   <Link href="#">
                     <Image
+                    loading="lazy"
                       width={230}
                       height={100}
                       src="/static/img/portfolio-1.jpg"
@@ -163,6 +164,7 @@ const Portfolio = () => {
                 <div className="portfolio-img">
                   <Link href="#">
                     <Image
+                    loading="lazy"
                       width={230}
                       height={100}
                       src="/static/img/portfolio-2.jpg"
@@ -202,6 +204,7 @@ const Portfolio = () => {
                 <div className="portfolio-img">
                   <Link href="#">
                     <Image
+                    loading="lazy"
                       width={230}
                       height={100}
                       src="/static/img/portfolio-3.jpg"
@@ -241,6 +244,7 @@ const Portfolio = () => {
                 <div className="portfolio-img">
                   <Link href="#">
                     <Image
+                    loading="lazy"
                       width={230}
                       height={100}
                       src="/static/img/portfolio-4.jpg"
@@ -280,6 +284,7 @@ const Portfolio = () => {
                 <div className="portfolio-img">
                   <Link href="#">
                     <Image
+                    loading="lazy"
                       width={230}
                       height={100}
                       src="/static/img/portfolio-5.jpg"
@@ -319,6 +324,7 @@ const Portfolio = () => {
                 <div className="portfolio-img">
                   <Link href="#">
                     <Image
+                    loading="lazy"
                       width={230}
                       height={100}
                       src="/static/img/portfolio-6.jpg"

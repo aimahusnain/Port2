@@ -20,7 +20,7 @@ const Testimonials: React.FC = () => {
           </div>
           <div className="user">
             <div className="img">
-              <Image width={60} height={40} src="/static/img/avtar1.jpg" alt="" title="" />
+              <Image width={60} height={40} loading="lazy" src="/static/img/avtar1.jpg" alt="" title="" />
             </div>
             <div className="name ml-2">
               <span>Jennifer Lutheran</span>
@@ -38,7 +38,7 @@ const Testimonials: React.FC = () => {
           </div>
           <div className="user">
             <div className="img">
-              <Image width={60} height={40} src="/static/img/avtar1.jpg" alt="" title="" />
+              <Image loading="lazy" width={60} height={40} src="/static/img/avtar1.jpg" alt="" title="" />
             </div>
             <div className="name ml-2">
               <span>Salma Hayek</span>
@@ -56,7 +56,7 @@ const Testimonials: React.FC = () => {
           </div>
           <div className="user">
             <div className="img">
-              <Image width={60} height={40} src="/static/img/avtar1.jpg" alt="" title="" />
+              <Image loading="lazy" width={60} height={40} src="/static/img/avtar1.jpg" alt="" title="" />
             </div>
             <div className="name ml-2">
               <span>Martin Lutheran</span>

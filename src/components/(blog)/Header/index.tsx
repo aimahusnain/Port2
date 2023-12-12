@@ -64,8 +64,8 @@ const Header = () => {
         </div>
       </header>
       <nav
-        className={`w-max py-3 flex-col px-6 sm:px-8 gap-5 border border-solid border-black rounded-full font-medium capitalize items-center flex 
-  fixed bg-light/80 backdrop-blur-sm z-50 transition-all ease duration-300 
+        className={`w-max py-3 flex-col px-6 sm:px-8 gap-5 bg-rose-600 font-medium capitalize items-left flex 
+  fixed backdrop-blur-sm z-50 transition-all ease duration-300 
   ${click ? "top-30 sm:top-16" : "-top-20 sm:-top-80"}`}
       >
         <NavLinks />
