@@ -12,7 +12,7 @@ import FeaturedPosts from "./(blog)/Home/FeaturedPosts";
 import RecentPosts from "./(blog)/Home/RecentPosts";
 import { allBlogs } from "@/.contentlayer/generated";
 
-const AboutUs = () => {
+const Blog = () => {
   const { nav, changeNav } = useContext(AlexioContext);
   const activePageClass = (name: any) => (name === nav ? "" : "page--inactive");
 
@@ -32,6 +32,7 @@ const AboutUs = () => {
           </div>
 
           <div className="page-scroll">
+            
             <RecentPosts blogs={allBlogs} />
           </div>
         </div>
@@ -39,4 +40,4 @@ const AboutUs = () => {
     </div>
   );
 };
-export default AboutUs;
+export default Blog;

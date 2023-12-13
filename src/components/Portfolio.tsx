@@ -118,53 +118,7 @@ const Portfolio = () => {
 
         <div className="portfolio-content">
           <ul className="portfolio-cols portfolio-cols-3">
-            {/* Image Src */}
-            {/* Website URL (optional) */}
-            {/* Title */}
-            {/* Description */}
-            <li className="portfolio-item cloning">
-              <div className="portfolio-col portfolio-hover-01">
-                <div className="portfolio-img">
-                  <Link href="#">
-                    <Image
-                    loading="lazy"
-                      width={230}
-                      height={100}
-                      src="/static/img/portfolio-1.jpg"
-                      title=""
-                      alt=""
-                    />
-                  </Link>
-                  <div className="hover">
-                    <div className="action-btn">
-                      <Link
-                        href="http://www.youtube.com/watch?v=0O2aH4XLbto"
-                        className="popup-video theme-color"
-                      >
-                        <i className="fa fa-play" />
-                      </Link>
-                      <Link
-                        className="lightbox-gallery theme-color"
-                        href="static/img/portfolio-1.jpg"
-                        title="Lightbox gallery image title..."
-                      >
-                        <i className="fas fa-expand" />
-                      </Link>
-                      <Link href="#" className="theme-color">
-                        <i className="fa fa-link" />
-                      </Link>
-                    </div>{" "}
-                  </div>{" "}
-                </div>
-                <div className="portfolio-info">
-                  <h5>Websie Cloning</h5>
-                  <span>Emerates Visa</span>
-                </div>
-              </div>{" "}
-            </li>{" "}
-
-
-            <li className="portfolio-item cloning">
+            <li className="portfolio-item apps">
               <div className="portfolio-col portfolio-hover-01">
                 <div className="portfolio-img">
                   <Link href="#">
@@ -324,6 +278,7 @@ const Portfolio = () => {
                 </div>
               </div>{" "}
             </li>{" "}
+            
             <li className="portfolio-item app website">
               <div className="portfolio-col portfolio-hover-01">
                 <div className="portfolio-img">
