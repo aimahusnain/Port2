@@ -92,7 +92,7 @@ const HomeBanner = () => {
                     <div>
                       <p
                         onClick={() => changeNav("portfolio", false)}
-                        className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-boo-500 to-pinky-600 text-white"
+                        className="px-6 inline-block py-3 w-full cursor-pointer sm:w-fit rounded-full mr-4 bg-gradient-to-br from-boo-500 to-pinky-600 text-white"
                       >
                         View Portfolio
                       </p>
@@ -101,7 +101,7 @@ const HomeBanner = () => {
                         onClick={() => changeNav("resume", false)}
                         className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-boo-500 to-pinky-700 hover:bg-slate-800 text-white mt-3"
                       >
-                        <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
+                        <span className="block bg-[#121212] cursor-pointer transtion-all duration-500 hover:bg-slate-800 rounded-full px-5 py-2">
                           Our Services
                         </span>
                       </p>

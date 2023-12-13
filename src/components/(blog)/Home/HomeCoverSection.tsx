@@ -35,7 +35,7 @@ const HomeCoverSection = ({ blogs }) => {
               <span
                 className="bg-gradient-to-r from-boo-700 to-boo-700 dark:from-accentDark/50 
                 dark:to-accentDark/50 bg-[length:0px_6px]
-                hover:bg-[length:100%_6px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500 "
+                hover:bg-[length:100%_6px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500"
               >
                 {blog.title}
               </span>

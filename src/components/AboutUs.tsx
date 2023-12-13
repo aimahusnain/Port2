@@ -5,8 +5,10 @@ import {
   AccordionTrigger,
 } from "@/src/components/ui/accordion";
 import { useContext } from "react";
+import Image from "next/image"
 import { AlexioContext } from "../Context";
 import siteMetadata from "../utils/siteMetaData";
+
 
 const AboutUs = () => {
   const { nav, changeNav } = useContext(AlexioContext);
@@ -22,31 +24,22 @@ const AboutUs = () => {
     >
       <div className="p-0">
         <div className="flex sm:flex-row flex-col  !mx-0 h-full">
-          <div className="p-0 py-10 px-5 overflow-hidden lg:flex flex-col items-between justify-between hidden sm:hidden lg:block sm:visible md:w-[50%] w-full bg-boo-700 gap-16">
+          <div className="p-0 py-7 px-5 overflow-hidden lg:flex flex-col items-between justify-between hidden sm:hidden lg:block sm:visible md:w-[50%] w-full bg-boo-700 gap-16">
             <div className="bg-white shadow-2xl rounded-3xl text-center flex flex-col justify-center transition-colors h-[40vh] lg:h-[calc(30vh - 70px)]">
               <div>
-                <img
+                <Image
                   loading="lazy"
-                  src="static/img/T1.png"
-                  className=" object-cover
-           object-top
-           rounded-3xl
-            shadow-2xl
-            h-40
-            w-40
-            bg-boo-400
-            mx-auto
-            transition-all
-            mt-10
-            hover:scale-125
-          "
+                  src="/static/img/T1.png"
+                  width={292} 	
+                  height={415}
+                  className="object-cover object-top rounded-3xl shadow-2xl !h-40 !w-40 bg-boo-400 mx-auto  transition-all  mt-10  hover:scale-125"
                   alt="avatar"
                 />
               </div>
 
-              <h1 className="mt-12 text-3xl font-bold text-black">Taha Amin</h1>
+              <h1 className="mt-1 text-3xl font-bold text-black">Taha Amin</h1>
 
-              <section className="flex h-full lg:h-[50%] /* Half the height on large screens */ flex-col gap-4">
+              <section className="flex h-full lg:h-[50%] flex-col gap-4">
                 <div className="flex flex-col justify-center items-center h-full">
                   <div className="w-full rounded-lg bg-white text-black text-sm p-4 px-8 pb-4 overflow-hidden">
                     <div className="text-justify h-[90px] overflow-y-auto custom-scrollbar">
@@ -70,19 +63,21 @@ const AboutUs = () => {
 
             <div className="bg-white shadow-2xl rounded-3xl text-center flex flex-col justify-center transition-colors h-[40vh] lg:h-[calc(30vh - 70px)]">
               <div>
-                <img
+                <Image
+                width={487}
+                height={842}
                   loading="lazy"
-                  src="static/img/H1.png"
+                  src="/static/img/H1.png"
                   className=" object-cover
            object-top
            rounded-3xl
             shadow-2xl
-            h-40
-            w-40
+            !h-40
+            !w-40
             bg-boo-400
             mx-auto
             transition-all
-            mt-10
+            mt-12
             hover:scale-125
           "
                   alt="avatar"
@@ -154,7 +149,7 @@ const AboutUs = () => {
                     </p>
 
                     <div className="block sm:block lg:hidden h-fit rounded-sm my-20 gap-32">
-                      <div className="bg-white shadow-2xl mb-24 rounded-3xl text-center flex flex-col justify-center transition-colors">
+                      <div className="bg-white shadow-2xl mb-2  4 rounded-3xl text-center flex flex-col justify-center transition-colors">
                         <div>
                           <img
                             loading="lazy"

@@ -460,10 +460,6 @@ body.dark-body {
   position: relative;
 }
 
-.pages-nav .pages-nav__item {
-  margin: 0 13px;
-}
-
 .pages-nav .link:after {
   content: "";
   position: absolute;

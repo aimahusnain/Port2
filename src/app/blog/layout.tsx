@@ -4,7 +4,6 @@ import { Inter, Manrope } from "next/font/google";
 import Header from "@/src/components/(blog)/Header";
 import Footer from "../../components/(blog)/Footer";
 import siteMetadata from "../../utils/siteMetaData";
-import ThemeScript from "../../components/(blog)/ThemeScript";
 import NextThemeProvider from "@/src/providers/theme-provider";
 
 const inter = Inter({
@@ -61,7 +60,7 @@ export default function RootLayout({ children }) {
         className={cx(
           inter.variable,
           manrope.variable,
-          "font-mr bg-light dark:bg-black"
+          "font-mr bg-light dark:bg-black dard"
         )}
       >
         <NextThemeProvider>

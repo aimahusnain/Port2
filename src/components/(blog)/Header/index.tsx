@@ -15,7 +15,7 @@ const Header = () => {
   };
 
   return (
-    <header className="w-full p-4 px-5 sm:px-10 flex items-center justify-between">
+    <header className="w-full px-5 sm:px-10 flex items-center justify-between">
       <header className="bg-boo-700 fixed top-0 right-0 flex justify-end sm:w-fit w-full z-[9999]">
         <div
           className=" cursor-pointer text-white w-full flex justify-left items-center text-xl font-bold uppercase float-left leading-8 tracking-wider py-[15px] px-5"
@@ -63,9 +63,9 @@ const Header = () => {
         </div>
       </header>
       <nav
-        className={`w-max py-3 sm:flex-row flex-col px-6 sm:px-8 gap-5 bg-rose-600 font-medium capitalize items-left flex 
+        className={`w-max py-3 sm:flex-row flex-col px-6 sm:px-8 gap-5 bg-white border border-black font-medium capitalize items-left flex 
   fixed backdrop-blur-sm z-50 transition-all ease duration-300 
-  ${click ? "top-80 sm:top-16" : "-top-20 sm:-top-80"}`}
+  ${click ? "top-[4rem] sm:top-16" : "hidden -top-20 sm:-top-80"}`}
       >
         <NavLinks />
       </nav>

@@ -11,6 +11,7 @@ import HomeBanner from "../components/HomeBanner";
 import Services from "../components/Services";
 import ImageView from "../components/popup/ImageView";
 import VideoPopup from "../components/popup/VideoPopup";
+import Blog from "../components/Blog";
 const Portfolio = dynamic(() => import("../components/Portfolio"), {
   ssr: false,
 });
@@ -46,6 +47,7 @@ const Index = () => {
         <Services />
         <Portfolio />
         <Contact />
+        <Blog />
       </div>
       <Header />
     </div>
