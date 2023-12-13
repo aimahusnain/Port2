@@ -108,7 +108,7 @@ const Contact = () => {
           <div className="mb-6 w-full">
             <label
               htmlFor="name"
-              className="text-black dark:text-white block mb-2 text-sm font-medium"
+              className="text-white dark:text-black block mb-2 text-sm font-medium"
             >
               Name
             </label>
@@ -126,7 +126,7 @@ const Contact = () => {
           <div className="mb-6 w-full">
             <label
               htmlFor="email"
-              className="text-black dark:text-white block text-sm mb-2 font-medium"
+              className="text-white dark:text-black block text-sm mb-2 font-medium"
             >
               Email
             </label>
@@ -145,7 +145,7 @@ const Contact = () => {
         <div className="mb-6">
           <label
             htmlFor="message"
-            className="text-black dark:text-white block text-sm mb-2 font-medium"
+            className="text-white dark:text-black block text-sm mb-2 font-medium"
           >
             Message
           </label>
