@@ -118,7 +118,10 @@ const Portfolio = () => {
 
         <div className="portfolio-content">
           <ul className="portfolio-cols portfolio-cols-3">
-            
+            {/* Image Src */}
+            {/* Website URL (optional) */}
+            {/* Title */}
+            {/* Description */}
             <li className="portfolio-item cloning">
               <div className="portfolio-col portfolio-hover-01">
                 <div className="portfolio-img">
@@ -159,6 +162,8 @@ const Portfolio = () => {
                 </div>
               </div>{" "}
             </li>{" "}
+
+
             <li className="portfolio-item apps">
               <div className="portfolio-col portfolio-hover-01">
                 <div className="portfolio-img">

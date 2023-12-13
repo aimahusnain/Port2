@@ -4,8 +4,8 @@ import { cx } from "../../utils";
 export const SunIcon = ({ className, ...rest }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
+    width="40"
+    height="40"
     viewBox="0 0 24 24"
     {...rest}
     className={cx("w-full h-auto", className)}
@@ -160,8 +160,8 @@ export const SunIcon = ({ className, ...rest }) => (
 export const MoonIcon = ({ className, ...rest }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
+    width="40"
+    height="40"
     viewBox="0 0 24 24"
     {...rest}
     className={cx("w-full h-auto", className)}
