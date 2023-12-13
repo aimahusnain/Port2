@@ -120,7 +120,7 @@ const Portfolio = () => {
 
         <div className="portfolio-content">
         {/* imageSrc, webURL, title, catogary , description */}
-        <PortfolioBox imageSrc="/static/img/portfolio-2.jpg" webURL="https://www.google.com/" title="fdsgggggg" catogary="cloning" description="fasd"/>
+        <PortfolioBox imageSrc="/static/img/portfolio-2.jpg" webURL="https://www.google.com/" title="fdsgggggg" categary="cloning" description="fasd"/>
           <ul className="portfolio-cols portfolio-cols-3">
             <li className="portfolio-item apps">
               <div className="portfolio-col portfolio-hover-01">
