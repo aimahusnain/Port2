@@ -164,7 +164,7 @@ const Portfolio = () => {
             </li>{" "}
 
 
-            <li className="portfolio-item apps">
+            <li className="portfolio-item cloning">
               <div className="portfolio-col portfolio-hover-01">
                 <div className="portfolio-img">
                   <Link href="#">
