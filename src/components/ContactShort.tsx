@@ -1,11 +1,7 @@
 import { useToast } from "@chakra-ui/react";
 import emailjs from "emailjs-com";
-import { Facebook, Twitter } from "lucide-react";
-import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { ChangeEvent, FormEvent, useState } from "react";
-import { FaGooglePlusG, FaLinkedinIn, FaPhoneAlt } from "react-icons/fa";
-import { IoMdMail } from "react-icons/io";
 
 interface FormData {
   name: string;

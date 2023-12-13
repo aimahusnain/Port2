@@ -8,30 +8,33 @@ const NavLinks = () => {
   return (
     <>
      <div>
-          <p
+          <Link
+          href='/'
             className="text-dark dark:text-light cursor-pointer"
             onClick={() => changeNav("home", false)}
           >
             Home
-          </p>
+          </Link>
         </div>
         
         <div className="pages-nav__item">
-          <p
+          <Link
+          href='/'
             className="link link--page cursor-pointer"
             onClick={() => changeNav("about", false)}
           >
             About Us
-          </p>
+          </Link>
         </div>
 
         <div className="pages-nav__item">
-          <p
+          <Link
+          href='/'
             className="link link--page cursor-pointer"
             onClick={() => changeNav("resume", false)}
           >
             Our Services
-          </p>
+          </Link>
         </div>
 
         <div className="pages-nav__item">
@@ -41,21 +44,23 @@ const NavLinks = () => {
         </div>
 
         <div className="pages-nav__item">
-          <p
+          <Link
+          href='/'
             className="link link--page cursor-pointer"
             onClick={() => changeNav("portfolio", false)}
           >
             Portfolio
-          </p>
+          </Link>
         </div>
         
         <div className="pages-nav__item">
-          <p
+          <Link
+          href='/'
             className="link link--page cursor-pointer"
             onClick={() => changeNav("contact", false)}
           >
             Contact Us
-          </p>
+          </Link>
         </div>
     </>
   )

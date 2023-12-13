@@ -46,7 +46,7 @@ const Header = () => {
                   }}
                 >
                   &nbsp;
-                </span>
+                </span> 
                 <span
                   className="absolute top-0 inline-block w-full h-0.5 bg-light dark:bg-dark rounded transition-all ease duration-200"
                   style={{
@@ -63,9 +63,9 @@ const Header = () => {
         </div>
       </header>
       <nav
-        className={`w-max py-3 flex-col px-6 sm:px-8 gap-5 bg-rose-600 font-medium capitalize items-left flex 
+        className={`w-max py-3 sm:flex-row flex-col px-6 sm:px-8 gap-5 bg-rose-600 font-medium capitalize items-left flex 
   fixed backdrop-blur-sm z-50 transition-all ease duration-300 
-  ${click ? "top-30 sm:top-16" : "-top-20 sm:-top-80"}`}
+  ${click ? "top-80 sm:top-16" : "-top-20 sm:-top-80"}`}
       >
         <NavLinks />
       </nav>

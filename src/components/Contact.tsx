@@ -124,34 +124,34 @@ const Contact = () => {
   const onChange = (e) => {
     setMailData({ ...mailData, [e.target.name]: e.target.value });
   };
-  const onSubmit = (e) => {
-    e.preventDefault();
-    if (name.length === 0 || email.length === 0 || message.length === 0) {
-      setError(true);
-    } else {
-      emailjs
-        .send(
-          "service_seruhwu",
-          "template_21aw58z",
-          mailData,
-          "Q3pccdLZhU-mZT7tQ"
-        )
-        .then(
-          (response) => {
-            setError(false);
-            setSuccess(true);
-            console.log("respons");
-            setTimeout(() => {
-              setSuccess(false);
-            }, 3000);
-            setMailData({ name: "", email: "", message: "" });
-          },
-          (err) => {
-            console.log(err.text);
-          }
-        );
-    }
-  };
+  // const onSubmit = (e) => {
+  //   e.preventDefault();
+  //   if (name.length === 0 || email.length === 0 || message.length === 0) {
+  //     setError(true);
+  //   } else {
+  //     emailjs
+  //       .send(
+  //         "service_seruhwu",
+  //         "template_21aw58z",
+  //         mailData,
+  //         "Q3pccdLZhU-mZT7tQ"
+  //       )
+  //       .then(
+  //         (response) => {
+  //           setError(false);
+  //           setSuccess(true);
+  //           console.log("respons");
+  //           setTimeout(() => {
+  //             setSuccess(false);
+  //           }, 3000);
+  //           setMailData({ name: "", email: "", message: "" });
+  //         },
+  //         (err) => {
+  //           console.log(err.text);
+  //         }
+  //       );
+  //   }
+  // };
 
   return (
     <SectionContainer
