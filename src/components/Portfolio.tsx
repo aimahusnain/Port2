@@ -1,4 +1,4 @@
-"use client";
+"use client"
 
 import Isotope from "isotope-layout";
 import { useCallback, useEffect, useRef, useState } from "react";
@@ -6,6 +6,7 @@ import SectionContainer from "./SectionContainer";
 import Testimonials from "./Testimonials";
 import Link from "next/link";
 import Image from "next/image";
+import PortfolioBox from "./PortfolioBox";
 
 const Portfolio = () => {
   const isotope = useRef<Isotope | null>(null);
@@ -55,6 +56,7 @@ const Portfolio = () => {
       leftImage="static/img/title-3.jpg"
       leftImageTitle={"Portfolio"}
     >
+      
       <div className="">
         <div>
           <ul className="portfolio-filter m-10px-b">
@@ -117,6 +119,8 @@ const Portfolio = () => {
         </div>
 
         <div className="portfolio-content">
+        {/* imageSrc, webURL, title, catogary , description */}
+        <PortfolioBox imageSrc="/static/img/portfolio-2.jpg" webURL="https://www.google.com/" title="fdsgggggg" catogary="cloning" description="fasd"/>
           <ul className="portfolio-cols portfolio-cols-3">
             <li className="portfolio-item apps">
               <div className="portfolio-col portfolio-hover-01">
@@ -327,3 +331,4 @@ const Portfolio = () => {
   );
 };
 export default Portfolio;
+// 

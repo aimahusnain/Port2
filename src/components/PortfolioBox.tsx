@@ -2,9 +2,9 @@ import React from 'react'
 import Link from "next/link";
 import Image from "next/image";
 
-const PortfolioBox = ({imageSrc, webURL, title, catogary , description}:{catogary: string ,  imageSrc: string, webURL?: string, title: string, description: any}) => {
+const PortfolioBox = ({imageSrc, webURL, title, categary , description}:{categary: string ,  imageSrc: string, webURL?: string, title: string, description: any}) => {
   return (
-    <div className={`portfolio-item ${catogary}`}>
+    <div className={`portfolio-item ${categary}`}>  
     <div className="portfolio-col portfolio-hover-01">
       <div className="portfolio-img">
         <Link href={webURL}>

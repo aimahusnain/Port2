@@ -2,52 +2,9 @@ import { sortBlogs } from "@/src/utils";
 import Link from "next/link";
 import React from "react";
 import BlogLayoutThree from "../Blog/BlogLayoutThree";
-import GithubSlugger, { slug } from "github-slugger";
-import { allBlogs } from "@/.contentlayer/generated";
 
-const slugger = new GithubSlugger();
-
-export async function generateStaticParams() {
-  const categories = [];
-  const paths = [{ slug: "all" }];
-
-  allBlogs.map((blog) => {
-    if (blog.isPublished) {
-      blog.tags.map((tag) => {
-        let slugified = slugger.slug(tag);
-        if (!categories.includes(slugified)) {
-          categories.push(slugified);
-          paths.push({ slug: slugified });
-        }
-      });
-    }
-  });
-
-  return paths;
-}
-
-export async function generateMetadata({ params }) {
-  return {
-    title: `${params.slug.replaceAll("-"," ")} Blogs`,
-    description: `Learn more about ${params.slug === "all" ? "web development" : params.slug} through our collection of expert blogs and tutorials`,
-  };
-}
 const RecentPosts = ({ blogs }) => {
   const sortedBlogs = sortBlogs(blogs);
-  const allCategories = ["all"];
-  const blogs = allBlogs.filter((blog) => {
-    return blog.tags.some((tag) => {
-      const slugified = slug(tag);
-      if (!allCategories.includes(slugified)) {
-        allCategories.push(slugified);
-      }
-      if (sortedBlogs.slug === "all") {
-        return true;
-      }
-      return slugified === params.slug;
-    });
-  });
-  
   return (
     <section className="w-full md:mt-32 px-5 sm:px-10 md:px-24  sxl:px-32 flex flex-col items-center justify-center">
       <div className="w-full flex  justify-between">
@@ -56,9 +13,9 @@ const RecentPosts = ({ blogs }) => {
         </h2>
         <Link
           href="/blog/categories/all"
-          className="text-light inline-block font-medium underline underline-offset-2 text-base md:text-lg"
+          className=" capitalize text-light inline-block font-medium underline underline-offset-2 text-base md:text-lg"
         >
-          view all
+          View all categories
         </Link>
       </div>
 
