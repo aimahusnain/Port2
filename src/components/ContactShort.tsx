@@ -154,7 +154,7 @@ const Contact = () => {
             value={formData.message}
             onChange={handleInputChange}
             id="message"
-            className="bg-[#18191E] dark:bg-[#f1f1f1] border border-[#33353F] placeholder-[#9CA2A9] dark:placeholder-[#474444] text-zinc-100 text-sm rounded-lg block w-full p-2.5"
+            className="bg-[#18191E] resize-none dark:bg-[#f1f1f1] border border-[#33353F] placeholder-[#9CA2A9] dark:placeholder-[#474444] text-zinc-100 text-sm rounded-lg block w-full p-2.5"
             placeholder="Let's talk about..."
           />
         </div>
