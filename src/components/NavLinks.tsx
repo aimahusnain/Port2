@@ -6,20 +6,20 @@ const NavLinks = () => {
   const { changeNav, toggle, nav } = useContext(AlexioContext);
 
   return (
-    <>
-      <div className="flex items-center justify-center">
+    <div className="flex gap-3 sm:flex-row flex-col">
+      <div className="flex items-center justify-left">
         <Link
           href="/"
           className="cursor-pointer text-black dark:text-light"
           onClick={() => changeNav("home", false)}
         >
-          <span className="text-xl bg-gradient-to-r from-boo-700 to-pinky-700  bg-[length:0px_3px] hover:bg-[length:100%_3px] bg-left-bottom bg-no-repeat duration-500 p-2">
+          <span className="text-xl bg-gradient-to-r from-boo-700 to-pinky-700 bg-[length:0px_3px] hover:bg-[length:100%_3px] bg-left-bottom bg-no-repeat duration-500 p-2">
             Home
           </span>
         </Link>
       </div>
 
-      <div className="flex items-center justify-center">
+      <div className="flex items-center justify-left">
         <Link
           href="/"
           className="cursor-pointer text-black dark:text-light"
@@ -31,7 +31,7 @@ const NavLinks = () => {
         </Link>
       </div>
 
-      <div className="flex items-center justify-center">
+      <div className="flex items-center justify-left">
         <Link
           href="/"
           className="cursor-pointer text-black dark:text-white"
@@ -43,7 +43,7 @@ const NavLinks = () => {
         </Link>
       </div>
 
-      <div className="flex items-center justify-center">
+      <div className="flex items-center justify-left">
         <Link
           className="cursor-pointer text-black dark:text-white"
           href="/blog"
@@ -54,7 +54,7 @@ const NavLinks = () => {
         </Link>
       </div>
 
-      <div className="flex items-center justify-center">
+      <div className="flex items-center justify-left">
         <Link
           href="/"
           className="text-black dark:text-white cursor-pointer"
@@ -66,7 +66,7 @@ const NavLinks = () => {
         </Link>
       </div>
 
-      <div className="flex items-center justify-center">
+      <div className="flex items-center justify-left">
         <Link
           href="/"
           className="text-black dark:text-white cursor-pointer"
@@ -77,7 +77,7 @@ const NavLinks = () => {
           </span>
         </Link>
       </div>
-      <div className="flex items-center justify-center">
+      <div className="flex items-center justify-left">
         <Link
           href="/"
           className="text-black dark:text-white cursor-pointer"
@@ -88,7 +88,7 @@ const NavLinks = () => {
           </span>
         </Link>
       </div>
-    </>
+    </div>
   );
 };
 

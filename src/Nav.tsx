@@ -58,11 +58,8 @@ const Nav = () => {
 
   return (
     <div className={toggle ? "visible" : "hidden"}>
-      <nav className={`pages-nav gap-4 ${toggle ? "pages-nav--open" : ""}`}>
+      <nav className={`pages-nav ${toggle ? "pages-nav--open" : ""}`}>
         <NavLinks />
-        
-        <ThemeToggler />
-
       </nav>
     </div>
   );
