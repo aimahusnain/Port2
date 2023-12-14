@@ -118,14 +118,14 @@ const Portfolio = () => {
         </div>
  
         <div className="portfolio-content">
-          <ul className="portfolio-cols portfolio-cols-3">
+          <ul>
           <PortfolioBox title="Emirates Visa" description="copied from emiratesvisa.com" webURL="emirates-visa.vercel.app" imageSrc="/static/img/portfolio-1.jpg" categary="cloning" />
-          <PortfolioBox title="Emirates Visa" description="copied from emiratesvisa.com" webURL="emirates-visa.vercel.app" imageSrc="/static/img/portfolio-1.jpg" categary="cloning" />
-          <PortfolioBox title="Emirates Visa" description="copied from emiratesvisa.com" webURL="emirates-visa.vercel.app" imageSrc="/static/img/portfolio-1.jpg" categary="cloning" />
-          <PortfolioBox title="Emirates Visa" description="copied from emiratesvisa.com" webURL="emirates-visa.vercel.app" imageSrc="/static/img/portfolio-1.jpg" categary="cloning" />
-          <PortfolioBox title="Emirates Visa" description="copied from emiratesvisa.com" webURL="emirates-visa.vercel.app" imageSrc="/static/img/portfolio-1.jpg" categary="cloning" />
-          <PortfolioBox title="Emirates Visa" description="copied from emiratesvisa.com" webURL="emirates-visa.vercel.app" imageSrc="/static/img/portfolio-1.jpg" categary="cloning" />
-          
+          <PortfolioBox title="Emirates Visa" description="copied from emiratesvisa.com" webURL="emirates-visa.vercel.app" imageSrc="/static/img/portfolio-1.jpg" categary="blog" />
+          <PortfolioBox title="Emirates Visa" description="copied from emiratesvisa.com" webURL="emirates-visa.vercel.app" imageSrc="/static/img/portfolio-1.jpg" categary="affiliate" />
+          <PortfolioBox title="Emirates Visa" description="copied from emiratesvisa.com" webURL="emirates-visa.vercel.app" imageSrc="/static/img/portfolio-1.jpg" categary="ecommerce" />
+          <PortfolioBox title="Emirates Visa" description="copied from emiratesvisa.com" webURL="emirates-visa.vercel.app" imageSrc="/static/img/portfolio-1.jpg" categary="portfolio" />
+          <PortfolioBox title="Emirates Visa" description="copied from emiratesvisa.com" webURL="emirates-visa.vercel.app" imageSrc="/static/img/portfolio-1.jpg" categary="saas" />
+          <PortfolioBox title="Emirates Visa" description="copied from emiratesvisa.com" webURL="emirates-visa.vercel.app" imageSrc="/static/img/portfolio-1.jpg" categary="business" />
           </ul>
         </div>
       </div>

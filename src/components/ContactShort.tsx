@@ -161,7 +161,7 @@ const Contact = () => {
 
         {/* Submit Button */}
         <button
-
+aria-label="Send Message"
           type="submit"
           className="bg-boo-700 hover:bg-boo-800 transition-all duration-150 text-white font-medium py-2.5 px-5 rounded-lg w-full"
         >

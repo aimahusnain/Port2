@@ -33,9 +33,9 @@ const PortfolioBox = ({
         </div>
         <div className="portfolio-info">
           <Link href={`https://${webURL}`} target="_blank">
-          <h5>{title}</h5>
+          {title}
           </Link>
-          <span>{description}</span>
+          <p>{description}</p>
         </div>
       </div>{" "}
     </li>
