@@ -1,4 +1,3 @@
-import manifest from "./app/manifest";
 import siteMetadata from "./utils/siteMetaData";
 
 const AlexioHead = () => {
