@@ -173,7 +173,7 @@ const Contact = () => {
             <div className="flex w-full sm:gap-40 gap-10 sm:flex-row flex-col">
               <p className="m-0 text-white p-0 flex flex-row items-center gap-3">
                 <IoMdMail />
-                canals786@gmail.com
+                DevKinSolutions@proton.me
                 <br />
               </p>
 
