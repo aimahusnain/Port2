@@ -1,16 +1,9 @@
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/src/components/ui/accordion";
-import { useContext } from "react";
-import Image from "next/image";
-import { AlexioContext } from "../Context";
-import HomeCoverSection from "./(blog)/Home/HomeCoverSection";
-import FeaturedPosts from "./(blog)/Home/FeaturedPosts";
-import RecentPosts from "./(blog)/Home/RecentPosts";
 import { allBlogs } from "@/.contentlayer/generated";
+import { useContext } from "react";
+import { AlexioContext } from "../Context";
+import FeaturedPosts from "./(blog)/Home/FeaturedPosts";
+import HomeCoverSection from "./(blog)/Home/HomeCoverSection";
+import RecentPosts from "./(blog)/Home/RecentPosts";
 
 const Blog = () => {
   const { nav, changeNav } = useContext(AlexioContext);
@@ -32,7 +25,6 @@ const Blog = () => {
           </div>
 
           <div className="page-scroll">
-            
             <RecentPosts blogs={allBlogs} />
           </div>
         </div>
