@@ -25,7 +25,7 @@ export default function manifest() {
         type: "image/png",
       },
       {
-        src: "/android-chrome-512x512.png", // Fixed: Added .png extension
+        src: "/android-chrome-512x512.png",
         sizes: "512x512",
         type: "image/png",
       },
