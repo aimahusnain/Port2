@@ -5,6 +5,8 @@ export default function manifest() {
     description:
       "WebKin Solutions: Crafting Digital Excellence | Elevate your online presence with our innovative solutions. Expertise, Collaboration, Quality - Experience the Difference!",
     start_url: "/",
+    background_color: '#fff',
+    theme_color: '#fff',
     display: "standalone",
     icons: [
       {
