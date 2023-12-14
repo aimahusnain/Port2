@@ -116,7 +116,101 @@ const Portfolio = () => {
             </li>
           </ul>
         </div>
-
+   //  .portfolio-filter ul {
+    //   margin: 0;
+    //   padding: 0;
+    //   list-style-type: none;
+    // }
+    // .portfolio-filter li {
+    //   display: inline-block;
+    //   font-size: 13px;
+    //   color: #fff;
+    //   position: relative;
+    //   text-transform: uppercase;
+    //   padding: 4px 15px;
+    //   font-weight: 600;
+    //   letter-spacing: 1px;
+    //   margin: 2px 1px;
+    //   cursor: pointer;
+    // }
+    // .portfolio-filter li:after {
+    //   content: "";
+    //   position: absolute;
+    //   top: 0;
+    //   bottom: 0;
+    //   left: 0;
+    //   right: 0;
+    //   z-index: -1;
+    //   transform: skew(-20deg);
+    //   -webkit-transform: skew(-20deg);
+    // }
+    // .portfolio-filter li:not(.active):after {
+    //   background: #000;
+    // }
+    
+    // .portfolio-content {
+    //   margin: 0 -10px;
+    // }
+    
+    // .portfolio-cols-3 {
+    //   margin: 0;
+    //   padding: 0;
+    // }
+    // .portfolio-cols-3 .portfolio-item {
+    //   padding: 10px;
+    //   width: 33.33%;
+    //   list-style-type: none;
+    // }
+    
+    // .portfolio-col {
+    //   padding: 10px;
+    //   background: #fff;
+    //   border: 1px solid #ddd;
+    //   border-bottom: 4px solid #ddd;
+    // }
+    // .portfolio-col .portfolio-img {
+    //   position: relative;
+    // }
+    // .portfolio-col .portfolio-info {
+    //   padding: 10px 0 0;
+    // }
+    // .portfolio-col .portfolio-info h5 {
+    //   margin: 0;
+    //   padding: 0 0 2px;
+    //   color: #151515;
+    //   font-weight: 600;
+    //   font-size: 16px;
+    // }
+    // .portfolio-col .portfolio-info span {
+    //   font-size: 14px;
+    //   color: #666;
+    //   font-weight: 400;
+    // }
+    
+    // /*Portfolio Hover 01*/
+    // .portfolio-hover-01 {
+    //   position: relative;
+    // }
+    // .portfolio-hover-01 img {
+    //   display: block;
+    // }
+    
+    // .portfolio-hover-01 .hover {
+    //   background: rgba(255, 255, 255, 0.62);
+    //   position: absolute;
+    //   bottom: 0;
+    //   visibility: hidden;
+    //   opacity: 0;
+    //   left: 0;
+    //   text-align: center;
+    //   padding: 0;
+    //   width: 100%;
+    //   -webkit-transition: ease all 0.35s;
+    //   -o-transition: ease all 0.35s;
+    //   -ms-transition: ease all 0.35s;
+    //   -moz-transition: ease all 0.35s;
+    //   transition: ease all 0.35s;
+    // }
         <div className="portfolio-content">
           <ul className="portfolio-cols portfolio-cols-3">
             {/* Image Src */}
@@ -131,7 +225,7 @@ const Portfolio = () => {
                 <div className="portfolio-img">
                   <Link href="#">
                     <Image
-                    loading="lazy"
+                    loading="eager"
                       width={230}
                       height={100}
                       src="/static/img/portfolio-2.jpg"
@@ -171,7 +265,7 @@ const Portfolio = () => {
                 <div className="portfolio-img">
                   <Link href="#">
                     <Image
-                    loading="lazy"
+                    loading="eager"
                       width={230}
                       height={100}
                       src="/static/img/portfolio-3.jpg"
@@ -211,7 +305,7 @@ const Portfolio = () => {
                 <div className="portfolio-img">
                   <Link href="#">
                     <Image
-                    loading="lazy"
+                    loading="eager"
                       width={230}
                       height={100}
                       src="/static/img/portfolio-4.jpg"
@@ -251,7 +345,7 @@ const Portfolio = () => {
                 <div className="portfolio-img">
                   <Link href="#">
                     <Image
-                    loading="lazy"
+                    loading="eager"
                       width={230}
                       height={100}
                       src="/static/img/portfolio-5.jpg"
@@ -291,7 +385,7 @@ const Portfolio = () => {
                 <div className="portfolio-img">
                   <Link href="#">
                     <Image
-                    loading="lazy"
+                    loading="eager"
                       width={230}
                       height={100}
                       src="/static/img/portfolio-6.jpg"

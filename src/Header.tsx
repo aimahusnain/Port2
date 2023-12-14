@@ -7,7 +7,7 @@ import Link from "next/link";
 const Header = () => {
   const { changeNav, nav, toggle } = useContext(AlexioContext);
   return (
-    <>
+   
       <header className="bg-boo-700 fixed  top-0 right-0 flex justify-end sm:w-fit w-full z-[9999]">
         <p
           onClick={() => changeNav("home", false)}
@@ -26,7 +26,6 @@ const Header = () => {
           </button>
         </div>
       </header>
-    </>
   );
 };
 export default Header;
