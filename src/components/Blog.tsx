@@ -18,8 +18,8 @@ const Blog = () => {
       onClick={() => changeNav("blog", false)}
     >
       <div className="p-0">
-        <div className="flex sm:flex-row flex-col  !mx-0 h-full">
-          <div className="p-0 py-3 px-5 overflow-hidden lg:flex flex-col items-between justify-between hidden sm:hidden lg:block sm:visible md:w-[50%] w-full bg-boo-700 gap-16">
+        <div className="flex sm:flex-row flex-col !mx-0 h-full">
+          <div className="p-0 py-3 px-5 overflow-hidden lg:flex flex-col items-start justify-start hidden sm:hidden lg:block sm:visible md:w-[50%] w-full bg-boo-700">
             <HomeCoverSection blogs={allBlogs} />
             <FeaturedPosts blogs={allBlogs} />
           </div>

@@ -117,8 +117,8 @@ const Portfolio = () => {
           </ul>
         </div>
  
-        <div className="portfolio-content">
-          <ul>
+        <div className="my-0 mx-[-10px]">
+          <ul className="portfolio-cols portfolio-cols-3">
           <PortfolioBox title="Emirates Visa" description="copied from emiratesvisa.com" webURL="emirates-visa.vercel.app" imageSrc="/static/img/portfolio-1.jpg" categary="cloning" />
           <PortfolioBox title="Emirates Visa" description="copied from emiratesvisa.com" webURL="emirates-visa.vercel.app" imageSrc="/static/img/portfolio-1.jpg" categary="blog" />
           <PortfolioBox title="Emirates Visa" description="copied from emiratesvisa.com" webURL="emirates-visa.vercel.app" imageSrc="/static/img/portfolio-1.jpg" categary="affiliate" />

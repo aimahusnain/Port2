@@ -21,7 +21,6 @@ const PortfolioBox = ({
         <div className="portfolio-img">
           <Link href={`https://${webURL}`} target="_blank">
             <Image
-              loading="lazy"
               width={230}
               height={100}
               src={imageSrc}

@@ -44,7 +44,6 @@ const ServicesContainer = ({
             width={487}
             height={842}
               className="m-0 p-0 mt-10 object-cover object-top w-full h-full"
-              loading="lazy"
               src="/static/img/H1.png"
               alt=""
             />
