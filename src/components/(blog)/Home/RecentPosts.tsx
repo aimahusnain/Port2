@@ -3,11 +3,11 @@ import Link from "next/link";
 import React from "react";
 import BlogLayoutThree from "../Blog/BlogLayoutThree";
 
-const RecentPosts = ({ blogs }) => {
+const RecentPosts = ({ blogs, textcolour }) => {
   const sortedBlogs = sortBlogs(blogs);
   return (
     <section className="w-full md:mt-32 px-5 sm:px-10 md:px-24  sxl:px-32 flex flex-col items-center justify-center">
-      <div className="w-full flex  justify-between">
+      <div className="w-full flex justify-between">
         <h2 className="w-fit inline-block font-bold capitalize text-2xl md:text-4xl text-light dark:text-dark">
           Recent Posts
         </h2>
@@ -23,7 +23,7 @@ const RecentPosts = ({ blogs }) => {
         {sortedBlogs.slice(4, 10).map((blog, index) => {
           return (
             <article key={index} className="col-span-1 row-span-1 relative">
-              <BlogLayoutThree blog={blog} />
+              <BlogLayoutThree textcolour={textcolour} blog={blog} />
             </article>
           );
         })}

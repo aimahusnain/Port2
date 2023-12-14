@@ -24,6 +24,7 @@ const FeatureCarousel = ({ features }: { features: Feature[]}) => {
         
         {features.map((feature) => (
           <Button
+          aria-label={feature.text}
           key={feature.id}
           className={`cursor-pointer focus:outline-none transition-all duration-75 ${
             selectedFeature.id === feature.id ? "text-white py-1 border-b-2": "text-white"

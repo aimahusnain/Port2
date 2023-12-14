@@ -25,7 +25,7 @@ const Blog = () => {
           </div>
 
           <div className="page-scroll">
-            <RecentPosts blogs={allBlogs} />
+            <RecentPosts textcolour="text-light dark:text-dark" blogs={allBlogs} />
           </div>
         </div>
       </div>

@@ -894,12 +894,6 @@ body.dark-body {
   margin: 0;
   padding: 0;
 }
-.portfolio-cols-3 .portfolio-item {
-  padding: 10px;
-  width: 33.33%;
-  list-style-type: none;
-}
-
 .portfolio-col {
   padding: 10px;
   background: #fff;
@@ -981,11 +975,6 @@ body.dark-body {
   transform: translateX(0px);
 }
 
-@media (max-width: 991px) {
-  .portfolio-cols-3 .portfolio-item {
-    width: 50%;
-  }
-}
 @media (max-width: 767px) {
   .portfolio-filter li {
     font-size: 11px;
@@ -996,11 +985,7 @@ body.dark-body {
     width: 100%;
   }
 }
-@media (max-width: 640px) {
-  .portfolio-cols-3 .portfolio-item {
-    width: 100%;
-  }
-}
+
 
 .slick-dots {
   text-align: center;

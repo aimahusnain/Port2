@@ -16,9 +16,13 @@ const PortfolioBox = ({
   description: any;
 }) => {
   return (
+    // portfolio-
+    // portfolio-img
+    // portfolio-info
+    // portfolio-hover-01
     <li className={`portfolio-item ${categary}`}>
-      <div className="portfolio-col portfolio-hover-01">
-        <div className="portfolio-img">
+      <div className="">
+        <div className="">
           <Link href={`https://${webURL}`} target="_blank">
             <Image
               width={230}
@@ -36,7 +40,7 @@ const PortfolioBox = ({
           </Link>
           <p>{description}</p>
         </div>
-      </div>{" "}
+      </div>
     </li>
   );
 };

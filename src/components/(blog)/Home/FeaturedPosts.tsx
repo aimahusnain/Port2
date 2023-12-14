@@ -10,9 +10,9 @@ const FeaturedPosts = ({ blogs }) => {
         Featured Posts
       </h2>
 
-      <BlogLayoutThree blog={sortedBlogs[1]} />
-      <BlogLayoutThree blog={sortedBlogs[2]} />
-      <BlogLayoutThree blog={sortedBlogs[3]} />
+      <BlogLayoutThree textcolour="text-light dark:text-dark" blog={sortedBlogs[1]} />
+      <BlogLayoutThree textcolour="text-light dark:text-dark" blog={sortedBlogs[2]} />
+      <BlogLayoutThree textcolour="text-light dark:text-dark" blog={sortedBlogs[3]} />
     </section>
   );
 };

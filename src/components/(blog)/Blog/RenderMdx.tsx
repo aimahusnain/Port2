@@ -25,7 +25,7 @@ const RenderMdx = ({blog}) => {
 
     dark:prose-invert
     dark:prose-blockquote:border-accentDark
-    dark:prose-blockquote:bg-accentDark/20
+    dark:prose-blockquote:bg-accentDark/20a
     dark:prose-li:marker:text-accentDark
 
     first-letter:text-3xl

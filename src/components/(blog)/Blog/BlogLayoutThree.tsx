@@ -1,9 +1,9 @@
 import { format } from "date-fns";
 import Link from "next/link";
 
-const BlogLayoutThree = ({ blog }) => {
+const BlogLayoutThree = ({ blog, textcolour }) => {
   return (
-    <div className="group flex flex-col items-center text-light dark:text-dark">
+    <div className={`group flex flex-col items-center ${textcolour}`}>
       {/* <Link href={`blog/${blog.url}`} className="h-full rounded-xl overflow-hidden">
         <Image
           src={blog.image.filePath.replace("../public", "")}
@@ -21,7 +21,7 @@ const BlogLayoutThree = ({ blog }) => {
         <span className="uppercase text-boo-700 dark:text-accentDark font-semibold text-xs sm:text-sm">
           {blog.tags[0]}
         </span>
-        <Link href={`blog/${blog.url}`} className="inline-block my-1">
+        <Link href={`/blog/${blog.url}`} className="inline-block my-1">
           <h2 className="font-semibold capitalize  text-base sm:text-lg">
             <span
               className="bg-gradient-to-r from-boo-700 to-pinky-700  dark:from-accentDark/50
