@@ -64,6 +64,7 @@ export default function RootLayout({ children }) {
         <body
           className={cx(inter.variable, "font-mr bg-light dark:bg-darkness")}
           >
+            
           <NextThemeProvider>
           {children}
           <SpeedInsights />

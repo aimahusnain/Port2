@@ -31,6 +31,7 @@ const HomeBanner = () => {
           <div className="flex sm:flex-row flex-col !mx-0 h-full">
             <div className="pt-20 p-0 overflow-hidden sm:items-end items-start sm:justify-end justify-end flex flex-col sm:h-screen h-[450px] md:w-[50%] w-full bg-boo-700">
               <Image
+              loading="eager"
               width={487}
               height={842}
                 className="m-0 p-0 object-cover object-top w-full h-full"
