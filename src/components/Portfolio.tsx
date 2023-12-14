@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Isotope from "isotope-layout";
 import { useCallback, useEffect, useRef, useState } from "react";
@@ -56,7 +56,6 @@ const Portfolio = () => {
       leftImage="static/img/title-3.jpg"
       leftImageTitle={"Portfolio"}
     >
-      
       <div className="">
         <div>
           <ul className="portfolio-filter m-10px-b">
@@ -119,10 +118,15 @@ const Portfolio = () => {
         </div>
 
         <div className="portfolio-content">
-        {/* imageSrc, webURL, title, catogary , description */}
-        <PortfolioBox imageSrc="/static/img/portfolio-2.jpg" webURL="https://www.google.com/" title="fdsgggggg" categary="cloning" description="fasd"/>
           <ul className="portfolio-cols portfolio-cols-3">
-            <li className="portfolio-item apps">
+            {/* Image Src */}
+            {/* Website URL (optional) */}
+            {/* Title */}
+            {/* Description */}
+
+            <PortfolioBox title="Emirates Visa" description="copied from emiratesvisa.com" webURL="emirates-visa.vercel.app" imageSrc="/static/img/portfolio-1.jpg" categary="cloning" />
+
+            <li className="portfolio-item cloning">
               <div className="portfolio-col portfolio-hover-01">
                 <div className="portfolio-img">
                   <Link href="#">
@@ -282,7 +286,6 @@ const Portfolio = () => {
                 </div>
               </div>{" "}
             </li>{" "}
-            
             <li className="portfolio-item app website">
               <div className="portfolio-col portfolio-hover-01">
                 <div className="portfolio-img">
@@ -323,12 +326,10 @@ const Portfolio = () => {
                 </div>
               </div>{" "}
             </li>{" "}
-          </ul>{" "}
+          </ul>
         </div>
       </div>
-      {/* <Testimonials /> */}
     </SectionContainer>
   );
 };
 export default Portfolio;
-// 
