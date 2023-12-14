@@ -24,10 +24,15 @@ module.exports = {
     extend: {
       colors: {
         ...colors,
-        boo: colors.purple,
-        pinky: colors.blue,
+        sky: colors.lightBlue,
+        stone: colors.warmGray,
+        neutral: colors.trueGray,
+        gray: colors.coolGray,
+        slate: colors.blueGray,
         // pinky: "#37BEAC",
         // boo: "#8000FF",
+        boo: colors.purple,
+        pinky: colors.blue,
         lightes: "#fff",
         darkness: "#000",
         dark: "#1b1b1b",
