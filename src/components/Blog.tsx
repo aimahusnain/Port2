@@ -4,13 +4,6 @@ import { AlexioContext } from "../Context";
 import FeaturedPosts from "./(blog)/Home/FeaturedPosts";
 import HomeCoverSection from "./(blog)/Home/HomeCoverSection";
 import RecentPosts from "./(blog)/Home/RecentPosts";
-import ImageCarousel from './ImageCarousel';
-
-const images = [
-  'https://placekitten.com/800/600',
-  'https://placekitten.com/800/600',
-  'https://placekitten.com/800/600',
-];
 
 const Blog = () => {
   const { nav, changeNav } = useContext(AlexioContext);
@@ -25,14 +18,19 @@ const Blog = () => {
       onClick={() => changeNav("blog", false)}
     >
       <div className="p-0">
-        <div className="flex sm:flex-row flex-col !mx-0 h-full">
-          <div className="p-0 py-3 px-5 overflow-hidden lg:flex flex-col items-start justify-start hidden sm:hidden lg:block sm:visible md:w-[50%] w-full bg-boo-700">
+        <div className="flex lg:flex-row flex-col !mx-0 h-full">
+          <div className="pt-20 p-0 overflow-hidden lg:items-end items-start lg:justify-end justify-end flex flex-col lg:h-screen h-[450px] lg:w-[45%] w-full bg-boo-700">
             <HomeCoverSection blogs={allBlogs} />
             <FeaturedPosts blogs={allBlogs} />
           </div>
 
-          <div className="page-scroll">
-            <RecentPosts textcolour="text-boo-300 dark:text-dark" blogs={allBlogs} />
+          <div className="page-scroll w-full">
+            <RecentPosts
+              height="lg:h-[230px] h-full"
+              width="lg:w-[330px] h-full"
+              textcolour="text-boo-200 dark:text-dark"
+              blogs={allBlogs}
+            />
           </div>
         </div>
       </div>

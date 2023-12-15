@@ -52,7 +52,7 @@ const ServicesContainer = ({
             </div> */}
           </div>
           
-          <div className="col-lg-20 mb-7 col-xl-8 mt-2">
+          <div className="mb-7 col-xl-8 mt-2">
             <div className="h-full flex flex-col justify-between items-start">
               <div className="page-scroll">
                 <div className="page-content">

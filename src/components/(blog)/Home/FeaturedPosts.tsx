@@ -10,9 +10,24 @@ const FeaturedPosts = ({ blogs }) => {
         Featured Posts
       </h2>
 
-      <BlogLayoutThree textcolour="text-light" blog={sortedBlogs[1]} />
-      <BlogLayoutThree textcolour="text-light" blog={sortedBlogs[2]} />
-      <BlogLayoutThree textcolour="text-light" blog={sortedBlogs[3]} />
+      <BlogLayoutThree
+        width="w-full"
+        height="h-fit"
+        textcolour="text-light"
+        blog={sortedBlogs[1]}
+      />
+      <BlogLayoutThree
+        width="w-full"
+        height="h-fit"
+        textcolour="text-light"
+        blog={sortedBlogs[2]}
+      />
+      <BlogLayoutThree
+        width="w-full"
+        height="h-fit"
+        textcolour="text-light"
+        blog={sortedBlogs[3]}
+      />
     </section>
   );
 };

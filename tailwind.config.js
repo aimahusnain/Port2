@@ -22,6 +22,8 @@ module.exports = {
       },
     },
     extend: {
+      
+      
       colors: {
         ...colors,
         sky: colors.lightBlue,
@@ -80,6 +82,14 @@ module.exports = {
         sm: "calc(var(--radius) - 4px)",
       },
       keyframes: {
+        bounce: {
+          '0%, 100%': {
+            transform: 'translateX(0)',
+          },
+          '50%': {
+            transform: 'translateX(-5px)', // Adjust the value to control the bounce distance
+          },
+        },
         "accordion-down": {
           from: { height: 0 },
           to: { height: "var(--radix-accordion-content-height)" },
@@ -94,6 +104,7 @@ module.exports = {
         },
       },
       animation: {
+        bounce: 'bounce 0.5s infinite',
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         roll: "roll 24s linear infinite",

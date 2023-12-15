@@ -155,7 +155,7 @@ const Contact = () => {
 
   return (
     <SectionContainer
-      extraClass="about-section bg-darkness"
+      extraClass="about-section bg-darkness "
       name={"contact"}
       title="CONTACT US"
       subTitle={"GET IN TOUCH"}
