@@ -18,7 +18,7 @@ const BlogLayoutThree = ({ blog, textcolour }) => {
       </Link> */}
 
       <div className="flex flex-col w-full mt-4">
-        <span className="uppercase text-boo-700 font-semibold text-xs sm:text-sm">
+        <span className="uppercase text-light dark:text-dark font-semibold text-xs sm:text-sm">
           {blog.tags[0]}
         </span>
         <Link href={`/blog/${blog.url}`} className="inline-block my-1">

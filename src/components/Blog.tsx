@@ -32,14 +32,7 @@ const Blog = () => {
           </div>
 
           <div className="page-scroll">
-            <RecentPosts textcolour="text-light dark:text-dark" blogs={allBlogs} />
-          
-          
-          
-
-
-
-          
+            <RecentPosts textcolour="text-boo-300 dark:text-dark" blogs={allBlogs} />
           </div>
         </div>
       </div>
