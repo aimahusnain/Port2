@@ -4,7 +4,7 @@ import { AlexioContext } from "../Context";
 import FeaturedPosts from "./(blog)/Home/FeaturedPosts";
 import HomeCoverSection from "./(blog)/Home/HomeCoverSection";
 import RecentPosts from "./(blog)/Home/RecentPosts";
-import ImageCarousel from './compo/ImageCarousel';
+import ImageCarousel from './ImageCarousel';
 
 const images = [
   'https://placekitten.com/800/600',
