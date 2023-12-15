@@ -6,7 +6,7 @@ const HomeCoverSection = ({ blogs }) => {
   const blog = sortedBlogs[0];
 
   return (
-    <BlogLayoutThree textcolour='text-light dark:text-dark' blog={blog} />
+    <BlogLayoutThree textcolour='text-light' blog={blog} />
   );
 };
 

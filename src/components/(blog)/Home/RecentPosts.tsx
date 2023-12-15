@@ -6,14 +6,14 @@ import BlogLayoutThree from "../Blog/BlogLayoutThree";
 const RecentPosts = ({ blogs, textcolour }) => {
   const sortedBlogs = sortBlogs(blogs);
   return (
-    <section className="w-full md:mt-32 px-5 sm:px-10 md:px-24  sxl:px-32 flex flex-col items-center justify-center">
+    <section className="w-full mb-10 md:mt-32 px-5 sm:px-10 md:px-24 sx:px-32 flex flex-col items-center justify-center">
       <div className="w-full flex justify-between">
         <h2 className="w-fit inline-block font-bold capitalize text-2xl md:text-4xl text-light dark:text-dark">
           Recent Posts
         </h2>
         <Link
           href="/blog/categories/all"
-          className=" capitalize text-light inline-block font-medium underline underline-offset-2 text-base md:text-lg"
+          className=" capitalize text-light dark:text-black inline-block font-medium underline underline-offset-2 text-base md:text-lg"
         >
           View all categories
         </Link>

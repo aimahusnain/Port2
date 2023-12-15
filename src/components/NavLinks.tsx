@@ -45,8 +45,9 @@ const NavLinks = () => {
 
       <div className="flex items-center justify-left">
         <Link
-          className="cursor-pointer text-black dark:text-white"
-          href="/blog"
+          href="/"
+          className="text-black dark:text-white cursor-pointer"
+          onClick={() => changeNav("blog", false)}
         >
           <span className="text-xl bg-gradient-to-r from-boo-700 to-pinky-700  bg-[length:0px_3px] hover:bg-[length:100%_3px] bg-left-bottom bg-no-repeat duration-500 p-2">
             Blog
@@ -77,17 +78,7 @@ const NavLinks = () => {
           </span>
         </Link>
       </div>
-      <div className="flex items-center justify-left">
-        <Link
-          href="/"
-          className="text-black dark:text-white cursor-pointer"
-          onClick={() => changeNav("blog", false)}
-        >
-          <span className="text-xl bg-gradient-to-r from-boo-700 to-pinky-700  bg-[length:0px_3px] hover:bg-[length:100%_3px] bg-left-bottom bg-no-repeat duration-500 p-2">
-            TestBlog
-          </span>
-        </Link>
-      </div>
+      
     </div>
   );
 };

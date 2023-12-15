@@ -4,6 +4,13 @@ import { AlexioContext } from "../Context";
 import FeaturedPosts from "./(blog)/Home/FeaturedPosts";
 import HomeCoverSection from "./(blog)/Home/HomeCoverSection";
 import RecentPosts from "./(blog)/Home/RecentPosts";
+import ImageCarousel from './compo/ImageCarousel';
+
+const images = [
+  'https://placekitten.com/800/600',
+  'https://placekitten.com/800/600',
+  'https://placekitten.com/800/600',
+];
 
 const Blog = () => {
   const { nav, changeNav } = useContext(AlexioContext);
@@ -11,7 +18,7 @@ const Blog = () => {
 
   return (
     <div
-      className={`page about-section bg-darkness ml-0 gap-0  ${activePageClass(
+      className={`page about-section bg-darkness dark:bg-light ml-0 gap-0  ${activePageClass(
         "blog"
       )}`}
       id="blog"
@@ -26,6 +33,13 @@ const Blog = () => {
 
           <div className="page-scroll">
             <RecentPosts textcolour="text-light dark:text-dark" blogs={allBlogs} />
+          
+          
+          
+
+
+
+          
           </div>
         </div>
       </div>

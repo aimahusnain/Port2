@@ -84,12 +84,13 @@ const HomeBanner = () => {
                       />
                     </h1>
                     <div>
-                      <p
-                        onClick={() => changeNav("portfolio", false)}
-                        className="px-6 inline-block py-3 w-full cursor-pointer sm:w-fit rounded-full mr-4 bg-gradient-to-br from-boo-500 to-pinky-600 text-white"
-                      >
-                        View Portfolio
-                      </p>
+                        <p
+                          onClick={() => changeNav("portfolio", false)}
+                          className="px-6 inline-block py-3 w-full cursor-pointer sm:w-fit rounded-full mr-4 bg-gradient-to-br from-boo-500 to-pinky-600 text-white"
+                        >
+                          View Portfolio
+                        </p>
+                        {/* &#9658; */}
 
                       <p
                         onClick={() => changeNav("resume", false)}

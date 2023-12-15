@@ -118,7 +118,7 @@ const Portfolio = () => {
         </div>
  
         <div>
-          <ul className="portfolio-cols">
+          <ul className="portfolio-cols fgap">
           <PortfolioBox title="Emirates Visa" description="copied from emiratesvisa.com" webURL="emirates-visa.vercel.app" imageSrc="/static/img/portfolio-1.jpg" categary="cloning" />
           <PortfolioBox title="Emirates Visa" description="copied from emiratesvisa.com" webURL="emirates-visa.vercel.app" imageSrc="/static/img/portfolio-2.jpg" categary="blog" />
           <PortfolioBox title="Emirates Visa" description="copied from emiratesvisa.com" webURL="emirates-visa.vercel.app" imageSrc="/static/img/portfolio-3.jpg" categary="affiliate" />
