@@ -60,7 +60,7 @@ const CategoryPage = ({ params }) => {
       <div className="grid  grid-cols-1 sm:grid-cols-2  lg:grid-cols-3 grid-rows-2 gap-16 mt-5 sm:mt-10 md:mt-24 sxl:mt-32 px-5 sm:px-10 md:px-24 sxl:px-32">
         {blogs.map((blog, index) => (
           <article key={index} className="col-span-1 row-span-1 relative">
-            <BlogLayoutThree textcolour="text-dark dark:text-light" blog={blog} />
+            <BlogLayoutThree width='w-fit' height='h-fit' textcolour="text-dark dark:text-light" blog={blog} />
           </article>
         ))}
       </div>
