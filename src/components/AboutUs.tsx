@@ -102,7 +102,7 @@ const AboutUs = () => {
                         the backbone of our backend development, specializing in
                         Next.js. His mastery in translating design into
                         functional, high-performance applications is what sets
-                        us apart.{" "}
+                        us apart.
                       </p>
                     </div>
                   </div>

@@ -39,12 +39,12 @@ const Index = () => {
     <div>
       <Nav />
       <div className={`pages-stack ${toggle ? "pages-stack--open" : ""}`}>
+        <Blog />
         <HomeBanner />
         <AboutUs />
         <Services />
         <Portfolio />
         <Contact />
-        <Blog />
       </div>
       <Header />
     </div>

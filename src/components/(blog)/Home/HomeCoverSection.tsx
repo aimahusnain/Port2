@@ -7,8 +7,7 @@ const HomeCoverSection = ({ blogs }) => {
 
   return (
     <BlogLayoutThree
-      width="w-full"
-      height="h-fit"
+      titlesize='text-xl'
       textcolour="text-light"
       blog={blog}
     />

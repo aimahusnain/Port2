@@ -1,12 +1,11 @@
 "use client";
 import siteMetadata from "@/src/utils/siteMetaData";
-import Link from "next/link";
+import { Undo2 } from "lucide-react";
+import { useRouter } from "next/navigation";
 import { useContext, useState } from "react";
 import { AlexioContext } from "../../../Context";
 import NavLinks from "../../NavLinks";
 import ThemeToggler from "../../theme";
-import { useRouter } from "next/navigation";
-import { ChevronLeft } from "lucide-react";
 
 const Header = () => {
   const router = useRouter();
@@ -26,7 +25,7 @@ const Header = () => {
           onClick={router.back}
           className="relative cursor-pointer top-0 bottom-0 right-0 bg-black items-center justify-center flex w-[60px]"
         >
-          <ChevronLeft className="text-white" />
+            <Undo2 className="text-white" />
         </div>
         <div className=" cursor-pointer text-white w-full flex justify-left items-center text-xl font-bold uppercase float-left leading-8 tracking-wider py-[15px] px-5">
           {siteMetadata.WebName}

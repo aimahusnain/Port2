@@ -6,7 +6,7 @@ import { ChevronLeftCircle, ChevronRightCircle } from "lucide-react";
 
 const RecentPosts = ({ blogs, textcolour, width, height }) => {
   const sortedBlogs = sortBlogs(blogs);
-  const blogsPerPage = 4; // Number of blogs to display per page
+  const blogsPerPage = 6;
   const [currentPage, setCurrentPage] = useState(1);
 
   const handlePageChange = (newPage) => {
@@ -33,12 +33,11 @@ const RecentPosts = ({ blogs, textcolour, width, height }) => {
         </Link>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 grid-rows-2 gap-16 mt-16">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 grid-rows-2 gap-16 mt-16">
         {displayedBlogs.map((blog, index) => (
           <article key={index} className="col-span-1 row-span-1 relative">
             <BlogLayoutThree
-            height={height}
-              width={width}
+              titlesize='text-xl'
               textcolour={textcolour}
               blog={blog}
             />

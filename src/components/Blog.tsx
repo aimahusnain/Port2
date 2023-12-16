@@ -1,39 +1,118 @@
-import { allBlogs } from "@/.contentlayer/generated";
-import { useContext } from "react";
-import { AlexioContext } from "../Context";
-import FeaturedPosts from "./(blog)/Home/FeaturedPosts";
-import HomeCoverSection from "./(blog)/Home/HomeCoverSection";
-import RecentPosts from "./(blog)/Home/RecentPosts";
 
+import { useContext } from "react";
+import { TypeAnimation } from "react-type-animation";
+import { AlexioContext } from "../Context";
+import siteMetadata from "../utils/siteMetaData";
+import ContactShort from "./ContactShort";
+import InsightRoll from "./(blog)/About/InsightRoll";
+import Image from "next/image";
+import { motion } from "framer-motion";
+import Link from "next/link";
+const insights = [
+  "FIGMA",
+  "HTML",
+  "CSS",
+  "TAILWIND CSS",
+  "JAVASCRIPT",
+  "TYPESCRIPT",
+  "REACT",
+  "NEXT.JS",
+  "FIGMA",
+  "HTML",
+  "CSS",
+  "TAILWIND CSS",
+  "JAVASCRIPT",
+  "TYPESCRIPT",
+  "REACT",
+  "NEXT.JS",
+  
+];
 const Blog = () => {
   const { nav, changeNav } = useContext(AlexioContext);
   const activePageClass = (name: any) => (name === nav ? "" : "page--inactive");
 
   return (
     <div
-      className={`page about-section bg-darkness dark:bg-light ml-0 gap-0  ${activePageClass(
+      className={`page bg-darkness dark:bg-light ml-0 gap-0  ${activePageClass(
         "blog"
       )}`}
       id="blog"
       onClick={() => changeNav("blog", false)}
     >
-      <div className="p-0">
-        <div className="flex lg:flex-row flex-col !mx-0 h-full">
-          <div className="pt-20 p-0 overflow-hidden lg:items-end items-start lg:justify-end justify-end flex flex-col lg:h-screen h-[450px] lg:w-[45%] w-full bg-boo-700">
-            <HomeCoverSection blogs={allBlogs} />
-            <FeaturedPosts blogs={allBlogs} />
-          </div>
+      <motion.div
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5 }}
+      >
+        <div className="p-0 mb-16">
+          <div className="flex sm:flex-row flex-col !mx-0 h-full">
+            <div className="pt-20 p-0 overflow-hidden sm:items-end items-start sm:justify-end justify-end flex flex-col sm:h-screen h-[450px] md:w-[50%] w-full bg-boo-700">
+              <Image
+                width={487}
+                height={842}
+                className="m-0 p-0 object-cover object-top w-full h-full"
+                src="/static/img/H1.webp"
+                alt=""
+              />
+              <div className="lg:visible">
+                <InsightRoll insights={insights} />
+              </div>
+            </div>
 
-          <div className="page-scroll w-full">
-            <RecentPosts
-              height="lg:h-[230px] h-full"
-              width="lg:w-[330px] h-full"
-              textcolour="text-boo-200 dark:text-dark"
-              blogs={allBlogs}
-            />
+            <div className="w-full">
+              {/* 70% container */}
+              <div className="h-full sm:mx-16 mx-3 flex flex-col justify-between sm:items-start items-center">
+                <div />
+                <section>
+                  <div className="w-full place-self-center text-center sm:text-left justify-self-center">
+                    <h1 className="text-white dark:text-black mb-4 text-2xl sm:text-5xl lg:text-7xl lg:leading-normal font-extrabold">
+                      <span className="text-transparent bg-clip-text bg-gradient-to-r from-boo-400 to-pinky-600">
+                        Welcome to
+                      </span>
+                      <br></br>
+                      <TypeAnimation
+                        sequence={[
+                          "WebKin Solutions",
+                          1500,
+                          "Web Development",
+                          1000,
+                          "UI/UX Designing",
+                          1000,
+                        ]}
+                        wrapper="span"
+                        speed={50}
+                        repeat={Infinity}
+                      />
+                    </h1>
+                    <div>
+                        <p
+                          onClick={() => changeNav("portfolio", false)}
+                          className="px-6 inline-block py-3 w-full cursor-pointer sm:w-fit rounded-full mr-4 bg-gradient-to-br from-boo-500 to-pinky-600 text-white"
+                        >
+                          View Portfolio
+                        </p>
+                        {/* &#9658; */}
+
+                      <p
+                        onClick={() => changeNav("resume", false)}
+                        className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-boo-500 to-pinky-700 hover:dark:bg-zinc-500 hover:bg-slate-800 text-white dark:text-black mt-3"
+                      >
+                        <span className="block bg-[#121212] dark:bg-white cursor-pointer transtion-all duration-500 hover:bg-slate-800 rounded-full px-5 py-2">
+                          Our Services
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                </section>
+
+                <div className=" w-full">
+                  <ContactShort />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

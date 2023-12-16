@@ -120,11 +120,11 @@ const Portfolio = () => {
         <div>
           <ul className="portfolio-cols fgap">
           <PortfolioBox title="Emirates Visa" description="copied from emiratesvisa.com" webURL="emirates-visa.vercel.app" imageSrc="/static/img/portfolio-1.jpg" categary="cloning" />
-          <PortfolioBox title="Emirates Visa" description="copied from emiratesvisa.com" webURL="emirates-visa.vercel.app" imageSrc="/static/img/portfolio-2.jpg" categary="blog" />
+          <PortfolioBox title="Text to Speech" description="Write the Text it will convert to Speech" webURL="text-to-speech-eta-eight.vercel.app/" imageSrc="/static/img/portfolio-2.jpg" categary="saas" />
           <PortfolioBox title="Emirates Visa" description="copied from emiratesvisa.com" webURL="emirates-visa.vercel.app" imageSrc="/static/img/portfolio-3.jpg" categary="affiliate" />
           <PortfolioBox title="Emirates Visa" description="copied from emiratesvisa.com" webURL="emirates-visa.vercel.app" imageSrc="/static/img/portfolio-4.jpg" categary="ecommerce" />
           <PortfolioBox title="Emirates Visa" description="copied from emiratesvisa.com" webURL="emirates-visa.vercel.app" imageSrc="/static/img/portfolio-5.jpg" categary="portfolio" />
-          <PortfolioBox title="Emirates Visa" description="copied from emiratesvisa.com" webURL="emirates-visa.vercel.app" imageSrc="/static/img/portfolio-6.jpg" categary="saas" />
+          <PortfolioBox title="Emirates Visa" description="copied from emiratesvisa.com" webURL="emirates-visa.vercel.app" imageSrc="/static/img/portfolio-6.jpg" categary="blog" />
           <PortfolioBox title="Emirates Visa" description="copied from emiratesvisa.com" webURL="emirates-visa.vercel.app" imageSrc="/static/img/portfolio-1.jpg" categary="business" />
           </ul>
         </div>

@@ -8,10 +8,10 @@ const Header = () => {
   const { changeNav, nav, toggle } = useContext(AlexioContext);
   return (
    
-      <header className="bg-boo-700 fixed  top-0 right-0 flex justify-end sm:w-fit w-full z-[9999]">
+      <header className="bg-boo-700 fixed top-0 right-0 flex justify-end sm:w-fit w-full z-[9999]">
         <p
           onClick={() => changeNav("home", false)}
-          className="cursor-pointer text-white w-full flex justify-left items-center sm:text-xl font-bold uppercase float-left leading-8 tracking-wider py-[12px] px-2"
+          className="cursor-pointer text-white w-full flex justify-left items-center sm:text-xl font-bold uppercase float-left leading-8 tracking-wider py-[12px] px-5"
         >
           {siteMetadata.WebName}
         </p>
