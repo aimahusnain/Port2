@@ -4,15 +4,16 @@ import React from "react";
 
 const Tag = ({ link = "#", name, ...props }) => {
   return (
-    <Link
-      href={link}
-      className={cx(
-        "inline-block hover:no-underline py-2 sm:py-3 px-6 sm:px-10  bg-dark text-light rounded-full capitalize font-semibold border-2 border-solid border-light hover:scale-105 transition-all ease duration-200 text-sm sm:text-base",
-        props.className
-      )}
-    >
-      {name}
-    </Link>
+
+      <div className="w-fit h-fit bg-zinc-800 text-white font-semibold transform inset-0 transform transition-all -skew-x-12 py-2">
+        {/* Content inside the parallelogram */}
+          <Link
+            href={link}
+            className={cx("text-xl", props.className)}
+          >
+            {name}
+          </Link>
+      </div>
   );
 };
 
