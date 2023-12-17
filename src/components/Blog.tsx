@@ -35,8 +35,8 @@ const Blog = () => {
 
   return (
     <div
-      className={`page bg-darkness dark:bg-light ${activePageClass("home")}`}
-      id={"home"}
+      className={`page bg-darkness dark:bg-light ${activePageClass("blog")}`}
+      id={"blog"}
       // onClick={() => changeNav("home", false)}
     >
       <div className="p-0 page-scroll">

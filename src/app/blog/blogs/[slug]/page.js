@@ -122,7 +122,6 @@ export default function BlogPage({ params }) {
             </div>
           </div>
 
-          <div className="absolute top-0 left-0 right-0 bottom-0 h-full bg-dark/60 dark:bg-dark/40" />
           <div className="bg-boo-700 w-full h-full object-cover object-center" />
           {/* <Image
           src={blog.image.filePath.replace("../public", "")}

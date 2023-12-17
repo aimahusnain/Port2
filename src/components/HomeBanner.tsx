@@ -34,10 +34,10 @@ const HomeBanner = () => {
   return (
     <div
       className={`page bg-darkness dark:bg-light ml-0 gap-0  ${activePageClass(
-        "blog"
+        "home"
       )}`}
-      id="blog"
-      onClick={() => changeNav("blog", false)}
+      id="home"
+      onClick={() => changeNav("home", false)}
     >
       <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
