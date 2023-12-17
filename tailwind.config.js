@@ -34,7 +34,7 @@ module.exports = {
         // pinky: "#37BEAC",
         // boo: "#8000FF",
         boo: colors.purple,
-        pinky: colors.blue,
+        pinky: colors.teal,
         lightes: "#fff",
         darkness: "#000",
         dark: "#1b1b1b",

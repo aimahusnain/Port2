@@ -9,13 +9,8 @@ const BlogLayoutThree = ({ blog, textcolour, titlesize}) => {
           {blog.tags[0]}
         </span>
         <Link href={`/blog/${blog.url}`} className="inline-block my-1">
-          <h2 className={`font-bold w-fit h-fit capitalize text-base sm:${titlesize}`}>
-            <span
-              className="hover:text-pinky-600 bg-gradient-to-r from-boo-700 to-pinky-700 bg-[length:0px_6px]
-              group-hover:bg-[length:100%_6px]  bg-left-bottom bg-no-repeat transition-[background-size] duration-500 "
-            >
-              {blog.title}
-            </span>
+          <h2 className={`hover:text-pinky-500 font-bold w-fit h-fit capitalize text-base sm:${titlesize}`}>
+            {blog.title}
           </h2>
         </Link>
         <p className="font-normal text-base sm:text-sm">{blog.description}</p>

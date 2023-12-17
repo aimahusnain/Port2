@@ -1,4 +1,5 @@
-import BlogDetails from "@/src/components/(blog)/Blog/BlogDetails";
+
+import ScrollProgressBar from "@/src/components/(blog)/Blog/Scroll_Indicator_Progress_Bar";
 import RenderMdx from "@/src/components/(blog)/Blog/RenderMdx";
 import Tag from "@/src/components/(blog)/Elements/Tag";
 import siteMetadata from "@/src/utils/siteMetaData";
@@ -82,6 +83,7 @@ export default function BlogPage({ params }) {
 
   return (
     <>
+    <ScrollProgressBar />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
