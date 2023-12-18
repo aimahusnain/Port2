@@ -290,7 +290,6 @@ dark:fill-dark"
                 Name
               </label>
               <input
-                aria-label="Your Name"
                 id="nameField"
                 name="name"
                 onChange={handleInputChange}
@@ -310,7 +309,6 @@ dark:fill-dark"
                 Email
               </label>
               <input
-                aria-label="Email for contact page"
                 id="emailField"
                 type="email"
                 placeholder="name@example.com"
@@ -332,7 +330,6 @@ dark:fill-dark"
               Message
             </label>
             <textarea
-              aria-label="Your Message here"
               name="message"
               value={formData.message}
               onChange={handleInputChange}

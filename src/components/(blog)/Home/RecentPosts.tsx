@@ -103,7 +103,7 @@ const RecentPosts = ({ blogs, textcolour, width, height }) => {
 
         {/* Right arrow for navigation */}
         <button
-aria-label="Left Arrow For Navigation"
+aria-label="Right Arrow For Navigation"
 onClick={() => handlePageChange(currentPage + 1)}
           disabled={
             currentPage === Math.ceil(sortedBlogs.length / blogsPerPage)
