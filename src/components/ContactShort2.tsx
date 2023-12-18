@@ -79,7 +79,7 @@ const Contact = () => {
           <div className="w-full">
             
             <input
-              id="email"
+              id="emailfield2"
               type="email"
               placeholder="Enter your Email"
               name="email"
