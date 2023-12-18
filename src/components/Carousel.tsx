@@ -30,12 +30,6 @@ const Carousel = ({ blogs }) => {
         <div>
           <FeaturedPosts blogs={blogs} index={2} />
         </div>
-        <div>
-          <FeaturedPosts blogs={blogs} index={3} />
-        </div>
-        <div>
-          <FeaturedPosts blogs={blogs} index={4} />
-        </div>
       </Slider>
     </div>
   );

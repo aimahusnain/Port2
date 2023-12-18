@@ -1,12 +1,10 @@
+import { motion } from "framer-motion";
+import Image from "next/image";
 import { useContext } from "react";
 import { TypeAnimation } from "react-type-animation";
 import { AlexioContext } from "../Context";
-import siteMetadata from "../utils/siteMetaData";
-import ContactShort from "./ContactShort";
 import InsightRoll from "./(blog)/About/InsightRoll";
-import Image from "next/image";
-import { motion } from "framer-motion";
-import Link from "next/link";
+import ContactShort from "./ContactShort";
 const insights = [
   "FIGMA",
   "HTML",

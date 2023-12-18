@@ -8,27 +8,6 @@ import Carousel from "./Carousel";
 import { Separator } from "./ui/separator";
 import Footer from "./(blog)/Footer";
 
-const insights = [
-  "FIGMA",
-  "HTML",
-  "CSS",
-  "TAILWIND CSS",
-  "JAVASCRIPT",
-  "TYPESCRIPT",
-  "REACT",
-  "NEXT.JS",
-  "FIGMA",
-  "HTML",
-  "CSS",
-  "TAILWIND CSS",
-  "JAVASCRIPT",
-  "TYPESCRIPT",
-  "REACT",
-  "NEXT.JS",
-];
-
-
-
 
 const Blog = () => {
   const activePageClass = (page) => (page === nav ? "" : "page--inactive");
