@@ -310,7 +310,7 @@ dark:fill-dark"
                 Email
               </label>
               <input
-                aria-label="Your Email"
+                aria-label="Email for contact page"
                 id="emailField"
                 type="email"
                 placeholder="name@example.com"
@@ -345,7 +345,7 @@ dark:fill-dark"
           {/* Submit Button */}
           <button
             type="submit"
-            aria-label="Send Message"
+            aria-label="Send Message button for Contact"
             className="bg-boo-700 hover:bg-boo-800 transition-all duration-150 text-white font-medium py-2.5 px-5 rounded-lg w-full"
           >
             Send Message

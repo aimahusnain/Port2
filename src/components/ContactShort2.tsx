@@ -92,7 +92,7 @@ const Contact = () => {
         </div>
 
         <button
-          aria-label="Send Message"
+          aria-label="Send Message for footer"
           type="submit"
           className="bg-boo-700 dark:bg-black hover:text-black transition-color dark:hover:bg-teal-300 px-5 h-fit  hover:bg-boo-800 transition-all duration-150 text-white font-medium py-2.5 w-full"
         > Send Message
