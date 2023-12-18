@@ -2,12 +2,8 @@
 
 import Isotope from "isotope-layout";
 import { useCallback, useContext, useEffect, useRef, useState } from "react";
-import SectionContainer from "./SectionContainer";
-import Testimonials from "./Testimonials";
-import Link from "next/link";
-import Image from "next/image";
-import PortfolioBox from "./PortfolioBox";
 import { AlexioContext } from "../Context";
+import PortfolioBox from "./PortfolioBox";
 
 const Portfolio = () => {
   const isotope = useRef<Isotope | null>(null);
