@@ -48,6 +48,7 @@ const RecentPosts = ({ blogs, textcolour, width, height }) => {
       <div className="mt-4 flex justify-center">
         {/* Left arrow for navigation */}
         <button
+        aria-label="Left Arrow For Navigation"
           onClick={() => handlePageChange(currentPage - 1)}
           disabled={currentPage === 1}
           className={`mx-2 py-2 px-4 rounded-lg ${
@@ -77,6 +78,7 @@ const RecentPosts = ({ blogs, textcolour, width, height }) => {
           if (isEdgePage || isCurrentOrNeighbor) {
             return (
               <button
+              aria-label="pages"
                 key={index}
                 onClick={() => handlePageChange(pageNumber)}
                 className={`mx-2 py-2 px-4 rounded-full ${
@@ -101,7 +103,8 @@ const RecentPosts = ({ blogs, textcolour, width, height }) => {
 
         {/* Right arrow for navigation */}
         <button
-          onClick={() => handlePageChange(currentPage + 1)}
+aria-label="Left Arrow For Navigation"
+onClick={() => handlePageChange(currentPage + 1)}
           disabled={
             currentPage === Math.ceil(sortedBlogs.length / blogsPerPage)
           }
