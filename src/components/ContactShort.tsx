@@ -1,4 +1,3 @@
-import { useToast } from "@chakra-ui/react";
 import emailjs from "emailjs-com";
 import { useRouter } from "next/navigation";
 import { ChangeEvent, FormEvent, useState } from "react";
@@ -24,21 +23,12 @@ const Contact = () => {
 
   const [formErrors, setFormErrors] = useState<FormErrors>({});
 
-  const toast = useToast({
-    duration: 3000,
-    isClosable: true,
-  });
-
   const triggerEmail = async (data) => {
     await emailjs
       .send("service_8j8ygx5", "template_itv3s7k", data, "gDiiIsHO-vSM4wYX6")
       .then((success) => {
-        toast({
-          title: "Email Sent Successfully",
-          status: "success",
-          duration: 500,
-          isClosable: true,
-        });
+        console.log("Success")
+
 
         setFormData({
           name: "",
@@ -47,12 +37,7 @@ const Contact = () => {
         });
       })
       .catch((err) => {
-        toast({
-          title: "Something went wrong",
-          status: "error",
-          duration: 500,
-          isClosable: true,
-        });
+        console.log("message cannot go Successfully!")
         console.log(err);
       });
   };

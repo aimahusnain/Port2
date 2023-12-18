@@ -39,7 +39,7 @@ const Services = () => {
       leftImage="static/img/title-2.jpg"
       leftImageTitle="services"
     >
-      <div className="row text-white m-0 gap-0">
+      <div className="row text-white dark:text-dark m-0 gap-0">
         <div className="flex flex-col gap-6">
           <div className="flex flex-col gap-2">
             <h3 className="text-2xl text-boo-700">
@@ -64,7 +64,7 @@ const Services = () => {
                   <AccordionTrigger className="text-sm px-5 text-left hover:no-underline p-3 outline-none">
                     Dynamic and Static Web Development
                   </AccordionTrigger>
-                  <AccordionContent className="text-white/40">
+                  <AccordionContent className="text-white/40 dark:text-dark/80">
                     <Slider features={features} />
                   </AccordionContent>
                 </AccordionItem>
@@ -73,7 +73,7 @@ const Services = () => {
                   <AccordionTrigger className="text-sm px-5 hover:no-underline p-3 outline-none">
                     Full Stack Development
                   </AccordionTrigger>
-                  <AccordionContent className="text-white/40">
+                  <AccordionContent className="text-white/40 dark:text-dark/80">
                     Elevate your project with end-to-end solutions. Our full
                     stack development expertise covers both frontend and backend
                     technologies, providing a cohesive and comprehensive web
@@ -85,7 +85,7 @@ const Services = () => {
                   <AccordionTrigger className="text-sm px-5 hover:no-underline p-3 outline-none">
                     Blog Development
                   </AccordionTrigger>
-                  <AccordionContent className="text-white/50">
+                  <AccordionContent className="text-white/50 dark:text-dark/80">
                     Share your thoughts and stories with the world through a
                     custom-tailored blog that suits your style and vision.
                   </AccordionContent>
@@ -96,7 +96,7 @@ const Services = () => {
                     Ecommerce Websites
                   </AccordionTrigger>
 
-                  <AccordionContent className="text-white/50">
+                  <AccordionContent className="text-white/50 dark:text-dark/80">
                     Open up new avenues for your business with an online store
                     that is not only visually appealing but also optimized for
                     seamless transactions.
@@ -107,7 +107,7 @@ const Services = () => {
                   <AccordionTrigger className="text-sm px-5 hover:no-underline p-3 outline-none">
                     SaaS Applications
                   </AccordionTrigger>
-                  <AccordionContent className="text-white/50">
+                  <AccordionContent className="text-white/50 dark:text-dark/80">
                     Take your software ideas to the next level with our SaaS
                     development services, built to scale and adapt to your
                     growing user base.
@@ -118,7 +118,7 @@ const Services = () => {
                   <AccordionTrigger className="text-sm px-5 hover:no-underline p-3 outline-none">
                     Affiliate Websites
                   </AccordionTrigger>
-                  <AccordionContent className="text-white/50">
+                  <AccordionContent className="text-white/50 dark:text-dark/80">
                     Monetize your platform with affiliate marketing strategies,
                     implemented seamlessly into a website designed for
                     conversions.
@@ -129,7 +129,7 @@ const Services = () => {
                   <AccordionTrigger className="text-sm px-5 hover:no-underline p-3 outline-none">
                     Portfolio Websites
                   </AccordionTrigger>
-                  <AccordionContent className="text-white/50">
+                  <AccordionContent className="text-white/50 dark:text-dark/80">
                     Showcase your work in style. Our portfolio websites are
                     crafted to reflect your unique identity and leave a lasting
                     impression.
@@ -140,7 +140,7 @@ const Services = () => {
                   <AccordionTrigger className="text-sm px-5 hover:no-underline p-3 outline-none">
                     Educational Course Selling Websites
                   </AccordionTrigger>
-                  <AccordionContent className="text-white/50">
+                  <AccordionContent className="text-white/50 dark:text-dark/80">
                     Empower your educational initiatives with a platform
                     designed for intuitive course browsing, enrollment, and
                     learning.
@@ -157,7 +157,7 @@ const Services = () => {
                   <AccordionTrigger className="text-sm px-5 hover:no-underline p-3 outline-none">
                     Forum or Community Websites
                   </AccordionTrigger>
-                  <AccordionContent className="text-white/50">
+                  <AccordionContent className="text-white/50 dark:text-dark/80">
                     Foster engagement and connection among your audience with a
                     feature-rich forum or community website.
                   </AccordionContent>
@@ -167,7 +167,7 @@ const Services = () => {
                   <AccordionTrigger className="text-sm px-5 hover:no-underline p-3 outline-none">
                     News or Magazine Websites
                   </AccordionTrigger>
-                  <AccordionContent className="text-white/50">
+                  <AccordionContent className="text-white/50 dark:text-dark/80">
                     Stay at the forefront of information delivery with a news or
                     magazine website that balances speed, aesthetics, and
                     content presentation.
@@ -178,7 +178,7 @@ const Services = () => {
                   <AccordionTrigger className="text-sm px-5 hover:no-underline p-3 outline-none">
                     Business Websites{" "}
                   </AccordionTrigger>
-                  <AccordionContent className="text-white/50">
+                  <AccordionContent className="text-white/50 dark:text-dark/80">
                     Establish a strong online presence for your business with a
                     website that communicates your brand values and offerings
                     effectively.
@@ -189,7 +189,7 @@ const Services = () => {
                   <AccordionTrigger className="text-sm px-5 hover:no-underline p-3 outline-none">
                     Non-Profit Websites
                   </AccordionTrigger>
-                  <AccordionContent className="text-white/50">
+                  <AccordionContent className="text-white/50 dark:text-dark/80">
                     Amplify your cause with a purpose-driven website that
                     encourages support and engagement from your audience.
                   </AccordionContent>
@@ -199,7 +199,7 @@ const Services = () => {
                   <AccordionTrigger className="text-sm px-5 hover:no-underline p-3 outline-none">
                     Review Websites
                   </AccordionTrigger>
-                  <AccordionContent className="text-white/50">
+                  <AccordionContent className="text-white/50 dark:text-dark/80">
                     Enable informed decision-making by providing a user-friendly
                     platform for reviews and ratings.
                   </AccordionContent>
@@ -209,7 +209,7 @@ const Services = () => {
                   <AccordionTrigger className="text-sm px-5 hover:no-underline p-3 outline-none">
                     Event Websites
                   </AccordionTrigger>
-                  <AccordionContent className="text-white/50">
+                  <AccordionContent className="text-white/50 dark:text-dark/80">
                     Create anticipation and buzz for your events with a website
                     that highlights details, encourages registration, and
                     enhances overall attendee experience.
@@ -220,7 +220,7 @@ const Services = () => {
                   <AccordionTrigger className="text-sm px-5 hover:no-underline p-3 outline-none">
                     Website Cloning
                   </AccordionTrigger>
-                  <AccordionContent className="text-white/40">
+                  <AccordionContent className="text-white/40 dark:text-dark/80">
                     Inspired by a website you love? We can recreate its magic
                     with our website cloning services. Maintain the essence of
                     what you admire while tailoring it to your specific
@@ -233,7 +233,7 @@ const Services = () => {
 
           <div>
             <h3 className="text-2xl text-boo-700">Let's Build Something Extraordinary</h3>
-            <p className="text-white/50">
+            <p className="text-white/50 dark:text-dark/80">
               No matter the scope or complexity of your project, our React and
               Next.js experts are ready to take on the challenge. Collaborate
               with us to transform your vision into a stunning, functional, and

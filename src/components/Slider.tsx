@@ -1,5 +1,4 @@
 
-import { Button } from "@chakra-ui/react";
 import React, { useState } from "react";
 
 interface Feature {
@@ -23,15 +22,15 @@ const FeatureCarousel = ({ features }: { features: Feature[]}) => {
       <div className="flex gap-6 w-full flex-wrap">
         
         {features.map((feature) => (
-          <Button
+          <button
           aria-label={feature.text}
           key={feature.id}
           className={`cursor-pointer focus:outline-none transition-all duration-75 ${
-            selectedFeature.id === feature.id ? "text-white py-1 border-b-2": "text-white"
+            selectedFeature.id === feature.id ? "text-white dark:text-dark py-1 border-b-2": "text-white dark:text-dark"
           }`}
           onClick={() => handleFeatureClick(feature)}>
             {feature.text}
-          </Button>
+          </button>
         ))}
 
       </div>
@@ -40,7 +39,7 @@ const FeatureCarousel = ({ features }: { features: Feature[]}) => {
       <div className="flex-1 mt-4">
         <div className="w-full border-[0.5px] transition-all duration-75  border-white/20 rounded-sm p-3 h-fit overflow-hidden">
 
-          <p className="w-full text-white/50">
+          <p className="w-full text-white/50 dark:text-dark/70">
             {selectedFeature.description}
           </p>
         </div>

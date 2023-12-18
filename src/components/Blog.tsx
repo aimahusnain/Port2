@@ -6,6 +6,7 @@ import { AlexioContext } from "../Context";
 import RecentPosts from "./(blog)/Home/RecentPosts";
 import Carousel from "./Carousel";
 import { Separator } from "./ui/separator";
+import Footer from "./(blog)/Footer";
 
 const insights = [
   "FIGMA",
@@ -75,6 +76,7 @@ const Blog = () => {
               blogs={allBlogs}
             />
           </div>
+          <Footer />
         </div>
       </div>
     </div>

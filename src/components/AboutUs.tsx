@@ -16,7 +16,7 @@ const AboutUs = () => {
 
   return (
     <div
-      className={`page about-section bg-darkness ml-0 gap-0  ${activePageClass(
+      className={`page about-section bg-darkness dark:bg-light ml-0 gap-0  ${activePageClass(
         "about"
       )}`}
       id="about"
@@ -118,15 +118,15 @@ const AboutUs = () => {
                   <div className="section-titel">
                     <h6 className="theme-after text-white">Who we are</h6>
                     <div className="st-title">
-                      <h2 className="theme-after text-white">About US</h2>
+                      <h2 className="theme-after text-white dark:text-dark">About US</h2>
                     </div>
                   </div>
-                  <div className="flex flex-col text-white">
+                  <div className="flex flex-col text-white dark:text-dark">
                     <p className="tracking-widest capitalize">
                       Welcome to {siteMetadata.WebName} - Crafting Digital
                       Excellence!
                     </p>
-                    <p className="text-white/50">
+                    <p className="text-white/50  dark:text-dark/80">
                       At {siteMetadata.WebName}, we are a dynamic duo of two
                       passionate brothers, Muhammad Husnain and Taha Amin,
                       united by a shared vision to create exceptional digital
@@ -135,10 +135,10 @@ const AboutUs = () => {
                       life.
                     </p>
                     <br />
-                    <p className="font-bold text-white text-lg">
+                    <p className="font-bold text-white dark:text-dark text-lg">
                       Our Approach:
                     </p>
-                    <p className="text-white/50">
+                    <p className="text-white/50  dark:text-dark/80">
                       At {siteMetadata.WebName}, we believe in a collaborative
                       approach. We work closely with our clients, understanding
                       their unique requirements and goals. By combining our
@@ -245,7 +245,7 @@ const AboutUs = () => {
                     <br />
                     <div className="flex sm:flex-row flex-col gap-14 mb-6">
                       <div className="sm:w-1/2 w-full">
-                        <h5 className="text-white pb-1 border-b-2 border-boo">
+                        <h5 className="text-white dark:text-dark pb-1 border-b-2 border-boo">
                           Why Choose {siteMetadata.WebName} Solutions?
                         </h5>
                         <Accordion
@@ -257,7 +257,7 @@ const AboutUs = () => {
                             <AccordionTrigger className="text-sm px-5 hover:no-underline p-3">
                               Expertise:
                             </AccordionTrigger>
-                            <AccordionContent className=" text-white/40">
+                            <AccordionContent className=" text-white/40 dark:text-dark/80">
                               Benefit from the combined expertise of Muhammad
                               Husnain in Figma UI/UX and Next.js backend, and
                               Taha Amin's proficiency in React and Next.js
@@ -269,7 +269,7 @@ const AboutUs = () => {
                             <AccordionTrigger className="text-sm px-5 hover:no-underline p-3">
                               Innovation:
                             </AccordionTrigger>
-                            <AccordionContent className=" text-white/40">
+                            <AccordionContent className=" text-white/40 dark:text-dark/80">
                               We thrive on innovation, constantly pushing the
                               boundaries to deliver cutting-edge solutions that
                               set your brand apart.
@@ -280,7 +280,7 @@ const AboutUs = () => {
                             <AccordionTrigger className="text-sm px-5 hover:no-underline p-3">
                               Collaboration:
                             </AccordionTrigger>
-                            <AccordionContent className=" text-white/40">
+                            <AccordionContent className=" text-white/40 dark:text-dark/80">
                               Your success is our success. We believe in
                               fostering strong, collaborative partnerships to
                               achieve the best possible outcomes.
@@ -291,7 +291,7 @@ const AboutUs = () => {
                             <AccordionTrigger className="text-sm px-5 hover:no-underline p-3">
                               Quality:
                             </AccordionTrigger>
-                            <AccordionContent className=" text-white/40">
+                            <AccordionContent className=" text-white/40 dark:text-dark/80">
                               Our commitment to quality is unwavering. From
                               design to development, we adhere to the highest
                               standards to deliver a flawless end product.
@@ -301,7 +301,7 @@ const AboutUs = () => {
                       </div>
 
                       <div className="sm:w-1/2 w-full">
-                        <h5 className="text-white pb-1 border-b-2 border-boo">
+                        <h5 className="text-white dark:text-dark pb-1 border-b-2 border-boo">
                           Discover the Difference!
                         </h5>
 
@@ -314,7 +314,7 @@ const AboutUs = () => {
                             <AccordionTrigger className="text-sm text-left px-5 hover:no-underline p-3">
                               Unleashing Lightning-Fast Performance:
                             </AccordionTrigger>
-                            <AccordionContent className=" text-white/40">
+                            <AccordionContent className=" text-white/40 dark:text-dark/80">
                               Experience the thrill of swift navigation and
                               lightning-quick loading times for an unparalleled
                               user journey.
@@ -325,7 +325,7 @@ const AboutUs = () => {
                             <AccordionTrigger className="text-sm px-5 hover:no-underline p-3">
                               Sleek and Responsive Designs:
                             </AccordionTrigger>
-                            <AccordionContent className=" text-white/40">
+                            <AccordionContent className=" text-white/40 dark:text-dark/80">
                               Our mobile-friendly layouts redefine consistency
                               across devices, providing a visually stunning
                               experience every time.
@@ -336,7 +336,7 @@ const AboutUs = () => {
                             <AccordionTrigger className="text-sm px-5 hover:no-underline p-3">
                               SEO Magic at Your Fingertips:
                             </AccordionTrigger>
-                            <AccordionContent className=" text-white/40">
+                            <AccordionContent className=" text-white/40 dark:text-dark/80">
                               Elevate your brand's visibility and dominate the
                               online landscape with our expert SEO optimization
                               techniques.
@@ -347,7 +347,7 @@ const AboutUs = () => {
                             <AccordionTrigger className="text-sm px-5 hover:no-underline p-3">
                               Ironclad Security:
                             </AccordionTrigger>
-                            <AccordionContent className=" text-white/40">
+                            <AccordionContent className=" text-white/40 dark:text-dark/80">
                               Your data and users' privacy are our top
                               priorities. Our fortress-like security measures
                               ensure a worry-free digital environment.
@@ -358,7 +358,7 @@ const AboutUs = () => {
                             <AccordionTrigger className="text-sm px-5 hover:no-underline p-3">
                               Picture-Perfect Visuals:
                             </AccordionTrigger>
-                            <AccordionContent className=" text-white/40">
+                            <AccordionContent className=" text-white/40 dark:text-dark/80">
                               Immerse yourself in a world of seamless visual
                               experiences. Our commitment to image optimization
                               means quick-loading, high-quality visuals that
@@ -369,7 +369,7 @@ const AboutUs = () => {
                         </Accordion>
                       </div>
                     </div>
-                    <p className="text-white/50">
+                    <p className="text-white/50 dark:text-dark/80">
                       Thank you for considering {siteMetadata.WebName} Solutions
                       for your digital journey. Let's collaborate and turn your
                       ideas into reality!

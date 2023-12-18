@@ -24,9 +24,9 @@ const RenderMdx = ({blog}) => {
     prose-li:marker:text-boo-700
 
     dark:prose-invert
-    dark:prose-blockquote:border-accentDark
-    dark:prose-blockquote:bg-accentDark/20a
-    dark:prose-li:marker:text-accentDark
+    dark:prose-blockquote:border-pinky-500
+    dark:prose-blockquote:bg-pinky-500/20a
+    dark:prose-li:marker:text-pinky-500
 
     first-letter:text-3xl
     sm:first-letter:text-5xl

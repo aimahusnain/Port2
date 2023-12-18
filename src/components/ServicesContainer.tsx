@@ -31,7 +31,7 @@ const ServicesContainer = ({
   const activePageClass = (name: any) => (name === nav ? "" : "page--inactive");
   return (
     <div
-      className={`page ${extraClass} bg-darkness ml-0 gap-0  ${activePageClass(
+      className={`page ${extraClass} bg-darkness dark:bg-light ml-0 gap-0  ${activePageClass(
         name
       )}`}
       id={name}
@@ -59,7 +59,7 @@ const ServicesContainer = ({
                   <div className="section-titel">
                     <h6 className="theme-after text-white">{subTitle}</h6>
                     <div className="st-title">
-                      <h2 className="theme-after text-white">{title}</h2>
+                      <h2 className="theme-after text-white dark:text-dark">{title}</h2>
                     </div>
                   </div>
                   {children}

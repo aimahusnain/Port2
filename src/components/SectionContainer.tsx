@@ -24,7 +24,7 @@ const SectionContainer = ({
       // onClick={() => changeNav(name, false)}
     >
       <div className="p-0">
-        <div className="flex sm:flex-row flex-col gap-10 !mx-0 h-full">
+        <div className="flex sm:flex-row flex-col gap-1 !mx-0 h-full">
           <div className="p-0 overflow-hidden sm:items-end items-start sm:justify-end justify-end flex flex-col sm:h-screen h-[500px] md:w-[50%] w-full bg-boo-700">
             <Image
               width={487}
@@ -42,7 +42,7 @@ const SectionContainer = ({
                   <div className="section-titel">
                     <h6 className="theme-after text-white">{subTitle}</h6>
                     <div className="st-title">
-                      <h2 className="theme-after text-white">{title}</h2>
+                      <h2 className="theme-after text-white dark:text-darkness">{title}</h2>
                     </div>
                   </div>
                   {children}

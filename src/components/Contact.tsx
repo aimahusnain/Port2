@@ -1,19 +1,18 @@
 "use client";
 
-import { useToast } from "@chakra-ui/react";
 import emailjs from "emailjs-com";
-import { Facebook, Instagram, Youtube } from "lucide-react";
+import { Facebook, Instagram } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { ChangeEvent, FormEvent, useState } from "react";
+import { BsMastodon, BsTwitterX } from "react-icons/bs";
 import { FaLinkedinIn, FaPhoneAlt } from "react-icons/fa";
-import { IoMdMail } from "react-icons/io";
-import SectionContainer from "./SectionContainer";
-import { BsTwitterX, BsMastodon } from "react-icons/bs";
-import { TbBrandYoutube } from "react-icons/tb";
-import { FiGithub } from "react-icons/fi";
 import { FaHashnode } from "react-icons/fa6";
+import { FiGithub } from "react-icons/fi";
+import { IoMdMail } from "react-icons/io";
 import { IoLogoStackoverflow } from "react-icons/io5";
+import { TbBrandYoutube } from "react-icons/tb";
+import SectionContainer from "./SectionContainer";
 
 interface FormData {
   name: string;
@@ -36,21 +35,11 @@ const Contact = () => {
 
   const [formErrors, setFormErrors] = useState<FormErrors>({});
 
-  const toast = useToast({
-    duration: 3000,
-    isClosable: true,
-  });
-
   const triggerEmail = async (data) => {
     await emailjs
       .send("service_8j8ygx5", "template_itv3s7k", data, "gDiiIsHO-vSM4wYX6")
       .then((success) => {
-        toast({
-          title: "Email Sent Successfully",
-          status: "success",
-          duration: 500,
-          isClosable: true,
-        });
+        console.log("Success");
 
         setFormData({
           name: "",
@@ -59,12 +48,8 @@ const Contact = () => {
         });
       })
       .catch((err) => {
-        toast({
-          title: "Something went wrong",
-          status: "error",
-          duration: 500,
-          isClosable: true,
-        });
+        console.log("message cannot go Successfully!");
+
         console.log(err);
       });
   };
@@ -124,45 +109,17 @@ const Contact = () => {
   const onChange = (e) => {
     setMailData({ ...mailData, [e.target.name]: e.target.value });
   };
-  // const onSubmit = (e) => {
-  //   e.preventDefault();
-  //   if (name.length === 0 || email.length === 0 || message.length === 0) {
-  //     setError(true);
-  //   } else {
-  //     emailjs
-  //       .send(
-  //         "service_seruhwu",
-  //         "template_21aw58z",
-  //         mailData,
-  //         "Q3pccdLZhU-mZT7tQ"
-  //       )
-  //       .then(
-  //         (response) => {
-  //           setError(false);
-  //           setSuccess(true);
-  //           console.log("respons");
-  //           setTimeout(() => {
-  //             setSuccess(false);
-  //           }, 3000);
-  //           setMailData({ name: "", email: "", message: "" });
-  //         },
-  //         (err) => {
-  //           console.log(err.text);
-  //         }
-  //       );
-  //   }
-  // };
 
   return (
     <SectionContainer
-      extraClass="about-section bg-darkness "
+      extraClass="about-section bg-darkness dark:bg-light"
       name={"contact"}
       title="CONTACT US"
       subTitle={"GET IN TOUCH"}
       leftImage="static/img/team/Eman.png"
       leftImageTitle={"About Me"}
     >
-      <p className="text-white/60 text-lg tracking-widest">
+      <p className="text-white/60 dark:text-dark/70 text-lg tracking-widest">
         Thank you for reaching out! We're here to assist you. Please feel free
         to contact us using the information below:
       </p>
@@ -171,14 +128,14 @@ const Contact = () => {
         <div className="w-full flex justify-center p-0 h-fit items-center text-left">
           <div className="flex flex-col sm:w-full align-middle w-fit text-center gap-8  sm:justify-between">
             <div className="flex w-full sm:gap-40 gap-10 sm:flex-row flex-col">
-              <p className="m-0 text-white p-0 flex flex-row items-center gap-3">
+              <p className="m-0 text-white dark:text-dark p-0 flex flex-row items-center gap-3">
                 <IoMdMail />
                 DevKinSolutions@proton.me
                 <br />
               </p>
 
-              <p className="m-0 text-white p-0 flex flex-row items-center gap-3">
-                <FaPhoneAlt fill="white" />
+              <p className="m-0 text-white dark:text-dark p-0 flex flex-row items-center gap-3">
+                <FaPhoneAlt fill="white" className="dark:fill-black" />
                 +92 3074241757
               </p>
             </div>
@@ -191,7 +148,11 @@ const Contact = () => {
                   aria-label="Facebook"
                   target="_blank"
                 >
-                  <Facebook className="fill-white" stroke="0" size={15} />
+                  <Facebook
+                    className="fill-white dark:fill-black"
+                    stroke="0"
+                    size={15}
+                  />
                 </Link>
               </li>
 
@@ -202,7 +163,11 @@ const Contact = () => {
                   aria-label="Twitter"
                   target="_blank"
                 >
-                  <BsTwitterX className="fill-white" stroke="0" size={15} />
+                  <BsTwitterX
+                    className="fill-white dark:fill-black"
+                    stroke="0"
+                    size={15}
+                  />
                 </Link>
               </li>
 
@@ -213,7 +178,10 @@ const Contact = () => {
                   target="_blank"
                   aria-label="Instagram"
                 >
-                  <Instagram className="stroke-white" size={15} />
+                  <Instagram
+                    className="stroke-white dark:stroke-dark"
+                    size={15}
+                  />
                 </Link>
               </li>
 
@@ -224,7 +192,11 @@ const Contact = () => {
                   target="_blank"
                   aria-label="Linkedin"
                 >
-                  <FaLinkedinIn className="fill-white" stroke="0" size={15} />
+                  <FaLinkedinIn
+                    className="fill-white dark:fill-black"
+                    stroke="0"
+                    size={15}
+                  />
                 </Link>
               </li>
 
@@ -235,7 +207,10 @@ const Contact = () => {
                   aria-label="Youtube"
                   target="_blank"
                 >
-                  <TbBrandYoutube className="stroke-white" size={15} />
+                  <TbBrandYoutube
+                    className="stroke-white dark:stroke-black"
+                    size={15}
+                  />
                 </Link>
               </li>
 
@@ -246,7 +221,10 @@ const Contact = () => {
                   aria-label="Github"
                   target="_blank"
                 >
-                  <FiGithub className="stroke-white" size={15} />
+                  <FiGithub
+                    className="stroke-white dark:stroke-dark"
+                    size={15}
+                  />
                 </Link>
               </li>
 
@@ -257,7 +235,11 @@ const Contact = () => {
                   aria-label="Hashnode"
                   target="_blank"
                 >
-                  <FaHashnode className="fill-white stroke-white" size={15} />
+                  <FaHashnode
+                    className="fill-white stroke-white dark:stroke-dark
+dark:fill-dark"
+                    size={15}
+                  />
                 </Link>
               </li>
 
@@ -268,7 +250,7 @@ const Contact = () => {
                   aria-label="Mastodon"
                   target="_blank"
                 >
-                  <BsMastodon className="fill-white" size={15} />
+                  <BsMastodon className="fill-white dark:fill-black" size={15} />
                 </Link>
               </li>
 
@@ -279,14 +261,17 @@ const Contact = () => {
                   aria-label="StackOverFlow"
                   target="_blank"
                 >
-                  <IoLogoStackoverflow className="fill-white" size={15} />
+                  <IoLogoStackoverflow
+                    className="fill-white dark:fill-black"
+                    size={15}
+                  />
                 </Link>
               </li>
             </ul>
           </div>
         </div>
         <br />
-        <p className="text-white/60 tracking-widest text-lg">
+        <p className="text-white/60 dark:text-dark/70 tracking-widest text-lg">
           Have a specific question or request? Feel free to use the form below
           to send us a direct message:
         </p>
@@ -300,7 +285,7 @@ const Contact = () => {
             <div className="mb-6 w-full">
               <label
                 htmlFor="name"
-                className="text-white block mb-2 text-sm font-medium"
+                className="text-white dark:text-black block mb-2 text-sm font-medium"
               >
                 Name
               </label>
@@ -311,7 +296,7 @@ const Contact = () => {
                 onChange={handleInputChange}
                 value={formData.name}
                 required
-                className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-zinc-100 text-sm rounded-lg block w-full p-2.5"
+                className="bg-[#18191E] dark:bg-light border border-[#33353F] placeholder-[#9CA2A9] dark:placeholder-black text-zinc-100 text-sm rounded-lg block w-full p-2.5"
                 placeholder="Your name"
               />
             </div>
@@ -320,7 +305,7 @@ const Contact = () => {
             <div className="mb-6 w-full">
               <label
                 htmlFor="email"
-                className="text-white block text-sm mb-2 font-medium"
+                className="text-white dark:text-black block text-sm mb-2 font-medium"
               >
                 Email
               </label>
@@ -333,7 +318,7 @@ const Contact = () => {
                 onChange={handleInputChange}
                 value={formData.email}
                 required
-                className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                className="bg-[#18191E] dark:bg-light dark:text-light border border-[#33353F] placeholder-[#9CA2A9] dark:placeholder-black text-gray-100 text-sm rounded-lg block w-full p-2.5"
               />
             </div>
           </div>
@@ -352,7 +337,7 @@ const Contact = () => {
               value={formData.message}
               onChange={handleInputChange}
               id="messageField"
-              className="bg-[#18191E] border border-[#33353F] resize-none placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+              className="bg-[#18191E] dark:text-black dark:bg-light border border-[#33353F] resize-none placeholder-[#9CA2A9] dark:placeholder-black text-gray-100 text-sm rounded-lg block w-full p-2.5"
               placeholder="Let's talk about..."
             />
           </div>
@@ -368,7 +353,7 @@ const Contact = () => {
         </form>
       </section>
 
-      <p className="text-white tracking-widest mt-[16px] text-lg">
+      <p className="text-white dark:text-dark tracking-widest mt-[16px] text-lg">
         We value your feedback and aim to respond witin 24 hours.
       </p>
     </SectionContainer>
