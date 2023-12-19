@@ -1,7 +1,5 @@
 import { useContext, useEffect, useState } from "react";
 import { AlexioContext } from "./Context";
-import Link from "next/link";
-import ThemeToggler from "./components/theme";
 import NavLinks from "./components/NavLinks";
 
 const Nav = () => {

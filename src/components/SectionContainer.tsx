@@ -25,13 +25,14 @@ const SectionContainer = ({
     >
       <div className="p-0">
         <div className="flex sm:flex-row flex-col gap-1 !mx-0 h-full">
+          
           <div className="p-0 overflow-hidden sm:items-end items-start sm:justify-end justify-end flex flex-col sm:h-screen h-[500px] md:w-[50%] w-full bg-boo-700">
             <Image
               width={487}
               height={842}
-              className="m-0 p-0 mt-10 object-cover object-top w-full h-full"
-              src="/static/img/H1.png"
-              alt=""
+              className="m-0 p-0 object-cover object-top flex justify-end items-end w-full h-full"
+              src={leftImage}
+              alt="Contact Image"
             />
           </div>
 

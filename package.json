@@ -40,7 +40,6 @@
     "next-themes": "^0.2.1",
     "path": "^0.12.7",
     "postcss": "8.4.31",
-    "pwa": "^1.9.7",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-hook-form": "^7.45.4",
