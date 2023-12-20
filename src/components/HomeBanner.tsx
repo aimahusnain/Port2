@@ -10,6 +10,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import React from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Link from 'next/link'
 
 const insights = [
   "FIGMA",
@@ -48,7 +49,7 @@ const HomeBanner = () => {
       },
     ],
   };
-  const { nav, changeNav } = useContext(AlexioContext);
+  const { changeNav, toggle, nav } = useContext(AlexioContext);
   const activePageClass = (name: any) => (name === nav ? "" : "page--inactive");
 
   return (
@@ -57,7 +58,7 @@ const HomeBanner = () => {
         "home"
       )}`}
       id="home"
-      onClick={() => changeNav("home", false)}
+      // onClick={() => changeNav("home", false)}
     >
       <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
@@ -132,7 +133,6 @@ const HomeBanner = () => {
                       >
                         View Portfolio
                       </p>
-                      {/* &#9658; */}
 
                       <p
                         onClick={() => changeNav("resume", false)}

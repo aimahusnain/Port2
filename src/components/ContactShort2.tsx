@@ -86,7 +86,7 @@ const Contact = () => {
               onChange={handleInputChange}
               value={formData.email}
               required
-              className="bg-[#18191E] dark:bg-[#f3f3f3] border border-[#33353F] placeholder-[#9CA2A9] dark:placeholder-[#474444] text-zinc-100 text-sm w-64 p-3"
+              className="bg-[#18191E] dark:text-black dark:bg-[#f3f3f3] border border-[#33353F] placeholder-[#9CA2A9] dark:placeholder-[#474444] text-zinc-100 text-sm w-64 p-3"
             />
           </div>
         </div>
