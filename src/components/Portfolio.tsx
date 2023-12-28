@@ -115,32 +115,25 @@ const Portfolio = () => {
                           All
                         </li>
                         <li
-                          className={`${activeBtn("cloning")} theme-after`}
-                          onClick={handleFilterKeyChange("cloning")}
-                          data-filter=".cloning"
+                          className={`${activeBtn("dynamic")} theme-after`}
+                          onClick={handleFilterKeyChange("dynamic")}
+                          data-filter=".dynamic"
                         >
-                          Websites Cloning
+                          Dynamic Websites
                         </li>
                         <li
-                          className={`${activeBtn("business")} theme-after`}
-                          onClick={handleFilterKeyChange("business")}
-                          data-filter=".business"
+                          className={`${activeBtn("static")} theme-after`}
+                          onClick={handleFilterKeyChange("static")}
+                          data-filter=".static"
                         >
-                          Business Websites
+                          Static Websites
                         </li>
                         <li
-                          className={`${activeBtn("saas")} theme-after`}
-                          onClick={handleFilterKeyChange("saas")}
-                          data-filter=".saas"
+                          className={`${activeBtn("blog")} theme-after`}
+                          onClick={handleFilterKeyChange("blog")}
+                          data-filter=".blog"
                         >
-                          SaaS Applications
-                        </li>
-                        <li
-                          className={`${activeBtn("portfolio")} theme-after`}
-                          onClick={handleFilterKeyChange("portfolio")}
-                          data-filter=".portfolio"
-                        >
-                          Portfolio Websites
+                          Blog Development
                         </li>
                         <li
                           className={`${activeBtn("ecommerce")} theme-after`}
@@ -150,6 +143,12 @@ const Portfolio = () => {
                           Ecommerce Websites
                         </li>
                         <li
+                          className={`${activeBtn("saas")} theme-after`}
+                          onClick={handleFilterKeyChange("saas")}
+                          data-filter=".saas"
+                        >
+SaaS Applications                       </li>
+                        <li
                           className={`${activeBtn("affiliate")} theme-after`}
                           onClick={handleFilterKeyChange("affiliate")}
                           data-filter=".affiliate"
@@ -157,12 +156,68 @@ const Portfolio = () => {
                           Affiliate Websites
                         </li>
                         <li
-                          className={`${activeBtn("blog")} theme-after`}
-                          onClick={handleFilterKeyChange("blog")}
-                          data-filter=".blog"
+                          className={`${activeBtn("portfolio")} theme-after`}
+                          onClick={handleFilterKeyChange("portfolio")}
+                          data-filter=".portfolio"
                         >
-                          Blog Development
+                          Portfolio Websites
                         </li>
+                        <li
+                          className={`${activeBtn("educational")} theme-after`}
+                          onClick={handleFilterKeyChange("educational")}
+                          data-filter=".educational"
+                        >
+                          Educational Course Selling Websites
+                        </li>
+                        <li
+                          className={`${activeBtn("forum")} theme-after`}
+                          onClick={handleFilterKeyChange("forum")}
+                          data-filter=".forum"
+                        >
+                          Forum or Community Websites
+                        </li>
+                        <li
+                          className={`${activeBtn("news")} theme-after`}
+                          onClick={handleFilterKeyChange("news")}
+                          data-filter=".news"
+                        >
+                          News or Magazine Websites
+                        </li>
+                        <li
+                          className={`${activeBtn("business")} theme-after`}
+                          onClick={handleFilterKeyChange("business")}
+                          data-filter=".business"
+                        >
+                          Business Websites
+                        </li>
+                        <li
+                          className={`${activeBtn("non-profit")} theme-after`}
+                          onClick={handleFilterKeyChange("non-profit")}
+                          data-filter=".non-profit"
+                        >
+                          Non-Profit Websites
+                        </li>
+                        <li
+                          className={`${activeBtn("review")} theme-after`}
+                          onClick={handleFilterKeyChange("review")}
+                          data-filter=".review"
+                        >
+                         Review Websites
+                        </li>
+                        <li
+                          className={`${activeBtn("event")} theme-after`}
+                          onClick={handleFilterKeyChange("event")}
+                          data-filter=".event"
+                        >
+                         Event Websites
+                        </li>
+                          <li
+                            className={`${activeBtn("cloning")} theme-after`}
+                            onClick={handleFilterKeyChange("cloning")}
+                            data-filter=".cloning"
+                          >
+                          Website Cloning
+                          </li>
                       </ul>
                     </div>
                     <ul className="portfolio flex w-full justify-center flex-wrap">
