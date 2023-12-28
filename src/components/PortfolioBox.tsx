@@ -6,6 +6,7 @@ import {
 import Link from "next/link";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 const PortfolioBox = ({
   imageSrcs,
@@ -38,7 +39,7 @@ const PortfolioBox = ({
             <DialogContent className="w-11/12 md:w-3/4 lg:max-w-3xl xl:w-1/3 2xl:w-1/4 mx-auto my-8 p-4">
               <Carousel showArrows={true} showStatus={true} showThumbs={true}>
                 {imageSrcs.map((src, index) => (
-                  <div key={index}>
+                  <div key={index} className="w-full">
                     <img
                       alt="ecommerce"
                       className="object-cover object-center w-full h-full block"
@@ -55,8 +56,9 @@ const PortfolioBox = ({
             {category}
           </h3>
           <Link href={`https://${webURL}`} target="_blank">
-            <h2 className="text-gray-900 title-font text-lg font-medium">
+            <h2 className="text-gray-900 flex items-center gap-1 hover:text-blue-500 w-fit title-font text-lg font-medium">
               {title}
+              <FaExternalLinkAlt />
             </h2>
           </Link>
           <p className="mt-1">{description}</p>

@@ -61,7 +61,6 @@ const HomeBanner = () => {
               >
                 <div className="!max-h-full">
                   <Image
-                  
                     width={400}
                     height={842}
                     className="m-0 p-0 object-cover object-top w-screen h-screen"
@@ -119,7 +118,7 @@ const HomeBanner = () => {
 
                       <p
                         onClick={() => changeNav("resume", false)}
-                        className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-boo-500 to-pinky-700 hover:dark:bg-zinc-500 hover:bg-slate-800 text-white dark:text-black mt-3"
+                        className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-boo-500 to-pinky-700 hover:dark:bg-zinc-500 hover:bg-slate-800 text-white dark:text-black sm:mt-0 mt-3"
                       >
                         <span className="block bg-[#121212] dark:bg-white cursor-pointer transtion-all duration-500 hover:bg-slate-800 rounded-full px-5 py-2">
                           Our Services

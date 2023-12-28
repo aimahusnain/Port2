@@ -4,10 +4,13 @@ import Isotope from "isotope-layout";
 import { useCallback, useContext, useEffect, useRef, useState } from "react";
 import { AlexioContext } from "../Context";
 import PortfolioBox from "./PortfolioBox";
+import { PortCat } from "../utils/Static Data";
 
 const Portfolio = () => {
   const isotope = useRef<Isotope | null>(null);
   const [filterKey, setFilterKey] = useState("*");
+  const [showAllCategories, setShowAllCategories] = useState(false);
+
   useEffect(() => {
     const imagesLoaded = require("imagesloaded");
     imagesLoaded(document.querySelector(".portfolio"), function (instance) {
@@ -25,6 +28,7 @@ const Portfolio = () => {
       });
     });
   }, []);
+
   useEffect(() => {
     if (isotope.current) {
       filterKey === "*"
@@ -32,6 +36,7 @@ const Portfolio = () => {
         : isotope.current.arrange({ filter: `.${filterKey}` });
     }
   }, [filterKey]);
+
   const handleFilterKeyChange = useCallback(
     (key) => () => {
       setFilterKey(key);
@@ -39,9 +44,19 @@ const Portfolio = () => {
     []
   );
 
+  const toggleCategories = () => {
+    setShowAllCategories((prev) => !prev);
+  };
+
   const activeBtn = (value) => (value === filterKey ? "active" : "");
   const { nav, changeNav } = useContext(AlexioContext);
   const activePageClass = (name: any) => (name === nav ? "" : "page--inactive");
+
+  // Decide which categories are initially shown and which are hidden
+  const initiallyShownCategories = showAllCategories
+    ? PortCat
+    : PortCat.slice(0, 6);
+
   return (
     // extraClass="portfolio-section"
     //   name={"home"}
@@ -106,119 +121,29 @@ const Portfolio = () => {
                   </div>
 
                   <div className="">
-                    <div>
-                      <ul className="portfolio-filter m-10px-b">
+                  <div>
+                      <ul className="portfolio-filter m-10px-b w-[800px]">
                         <li
                           className={`${activeBtn("*")} theme-after`}
                           onClick={handleFilterKeyChange("*")}
                         >
                           All
                         </li>
-                        <li
-                          className={`${activeBtn("dynamic")} theme-after`}
-                          onClick={handleFilterKeyChange("dynamic")}
-                          data-filter=".dynamic"
-                        >
-                          Dynamic Websites
-                        </li>
-                        <li
-                          className={`${activeBtn("static")} theme-after`}
-                          onClick={handleFilterKeyChange("static")}
-                          data-filter=".static"
-                        >
-                          Static Websites
-                        </li>
-                        <li
-                          className={`${activeBtn("blog")} theme-after`}
-                          onClick={handleFilterKeyChange("blog")}
-                          data-filter=".blog"
-                        >
-                          Blog Development
-                        </li>
-                        <li
-                          className={`${activeBtn("ecommerce")} theme-after`}
-                          onClick={handleFilterKeyChange("ecommerce")}
-                          data-filter=".ecommerce"
-                        >
-                          Ecommerce Websites
-                        </li>
-                        <li
-                          className={`${activeBtn("saas")} theme-after`}
-                          onClick={handleFilterKeyChange("saas")}
-                          data-filter=".saas"
-                        >
-SaaS Applications                       </li>
-                        <li
-                          className={`${activeBtn("affiliate")} theme-after`}
-                          onClick={handleFilterKeyChange("affiliate")}
-                          data-filter=".affiliate"
-                        >
-                          Affiliate Websites
-                        </li>
-                        <li
-                          className={`${activeBtn("portfolio")} theme-after`}
-                          onClick={handleFilterKeyChange("portfolio")}
-                          data-filter=".portfolio"
-                        >
-                          Portfolio Websites
-                        </li>
-                        <li
-                          className={`${activeBtn("educational")} theme-after`}
-                          onClick={handleFilterKeyChange("educational")}
-                          data-filter=".educational"
-                        >
-                          Educational Course Selling Websites
-                        </li>
-                        <li
-                          className={`${activeBtn("forum")} theme-after`}
-                          onClick={handleFilterKeyChange("forum")}
-                          data-filter=".forum"
-                        >
-                          Forum or Community Websites
-                        </li>
-                        <li
-                          className={`${activeBtn("news")} theme-after`}
-                          onClick={handleFilterKeyChange("news")}
-                          data-filter=".news"
-                        >
-                          News or Magazine Websites
-                        </li>
-                        <li
-                          className={`${activeBtn("business")} theme-after`}
-                          onClick={handleFilterKeyChange("business")}
-                          data-filter=".business"
-                        >
-                          Business Websites
-                        </li>
-                        <li
-                          className={`${activeBtn("non-profit")} theme-after`}
-                          onClick={handleFilterKeyChange("non-profit")}
-                          data-filter=".non-profit"
-                        >
-                          Non-Profit Websites
-                        </li>
-                        <li
-                          className={`${activeBtn("review")} theme-after`}
-                          onClick={handleFilterKeyChange("review")}
-                          data-filter=".review"
-                        >
-                         Review Websites
-                        </li>
-                        <li
-                          className={`${activeBtn("event")} theme-after`}
-                          onClick={handleFilterKeyChange("event")}
-                          data-filter=".event"
-                        >
-                         Event Websites
-                        </li>
+                        {initiallyShownCategories.map((button) => (
                           <li
-                            className={`${activeBtn("cloning")} theme-after`}
-                            onClick={handleFilterKeyChange("cloning")}
-                            data-filter=".cloning"
+                            key={button.key}
+                            className={`${activeBtn(button.key)} theme-after`}
+                            onClick={handleFilterKeyChange(button.key)}
+                            data-filter={`.${button.key}`}
                           >
-                          Website Cloning
+                            {button.label}
                           </li>
+                        ))}
                       </ul>
+
+                      <button onClick={toggleCategories}>
+                        {showAllCategories ? "See Less" : "See More"}
+                      </button>
                     </div>
                     <ul className="portfolio flex w-full justify-center flex-wrap">
                       <PortfolioBox
@@ -236,15 +161,15 @@ SaaS Applications                       </li>
                       />
                       <PortfolioBox
                         imageSrcs={[
-                          "/static/img/portfolio-1.jpg",
-                          "/static/img/portfolio-2.jpg",
-                          "/static/img/portfolio-3.jpg",
-                          "/static/img/portfolio-4.jpg",
+                          "/static/img/TextToSpeech1.png",
+                          "/static/img/TextToSpeech2.png",
+                          "/static/img/portfolio-3.png",
+                          "/static/img/portfolio-4.png",
                         ]}
-                        title="Emirates Visa"
-                        category="cloning"
-                        description="Cloned by emiratesvisa.com"
-                        webURL="emirates-visa.vercel.app"
+                        title="Text To Speech"
+                        category="saas"
+                        description="This Will Convert Your Text To Speech"
+                        webURL="text-to-speech-example.vercel.app"
                         black="dark:text-black"
                       />
                       <PortfolioBox

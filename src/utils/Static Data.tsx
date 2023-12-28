@@ -1,0 +1,17 @@
+export const PortCat = [
+  { key: "dynamic", label: "Dynamic" },
+  { key: "static", label: "Static" },
+  { key: "blog", label: "Blog Development" },
+  { key: "forum", label: "Forum or Community" },
+  { key: "cloning", label: "Cloning" },
+  { key: "saas", label: "SaaS Applications" },
+  { key: "ecommerce", label: "Ecommerce" },
+  { key: "affiliate", label: "Affiliate" },
+  { key: "portfolio", label: "Portfolio" },
+  { key: "educational", label: "Educational Course Selling" },
+  { key: "news", label: "News or Magazine" },
+  { key: "business", label: "Business" },
+  { key: "non-profit", label: "Non-Profit" },
+  { key: "review", label: "Review" },
+  { key: "event", label: "Event" },
+];
