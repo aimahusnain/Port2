@@ -113,7 +113,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="w-full mt-8 mb-8 flex gap-4">
+    <section id="contact" className="w-full mt-6 mb-8 flex gap-4">
       <form className="flex flex-col w-full" onSubmit={onFormSubmit}>
         <div className="flex sm:flex-row flex-col sm:gap-7 gap-0 w-full">
           <div className="mb-6 w-full">
