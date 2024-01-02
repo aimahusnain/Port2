@@ -61,21 +61,21 @@ const HomeBanner = () => {
                   <img
                     className="m-0 p-0 object-cover object-top w-screen h-screen"
                     src="/static/img/IMG_3218 Edited.png"
-                    alt=""
+                    alt="665"
                   />
                 </div>
                 <div className="!max-h-full">
                   <img
                     className="md:pb-0 pb-[440px] m-0 p-0 object-cover object-bottom w-screen h-screen"
                     src="/static/img/Eman Best V3.png"
-                    alt=""
+                    alt="ffg"
                   />
                 </div>
                 <div className="!max-h-full">
                   <img
                     className="md:pb-0 pb-[266px] m-0 p-0 object-cover object-bottom w-screen h-screen"
                     src="/static/img/IMG_3195_Edited.png"
-                    alt=""
+                    alt="fgt"
                   />
                 </div>
                 
@@ -85,7 +85,7 @@ const HomeBanner = () => {
                     height={842}
                     className="md:pb-0 pb-40 m-0 p-0 object-cover object-bottom w-screen h-screen"
                     src="/static/img/IMG_3223 Edited.png"
-                    alt=""
+                    alt="sdfsfd"
                   />
                 </div>
                 
