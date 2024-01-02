@@ -74,7 +74,7 @@ const HomeBanner = () => {
                 <div className="!max-h-full">
                   <img
                     className="md:pb-0 pb-[266px] m-0 p-0 object-cover object-bottom w-screen h-screen"
-                    src="/static/img/team/All/EDITED images/IMG_3195 Edited.png"
+                    src="/static/img/team/All/EDITED images/IMG_3195_Edited.png"
                     alt=""
                   />
                 </div>
