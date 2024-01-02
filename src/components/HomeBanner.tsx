@@ -60,21 +60,21 @@ const HomeBanner = () => {
                 <div className="!max-h-full">
                   <img
                     className="m-0 p-0 object-cover object-top w-screen h-screen"
-                    src="/static/img/team/All/EDITED images/IMG_3218 Edited.png"
+                    src="/static/img/team/all/editedimages/IMG_3218 Edited.png"
                     alt=""
                   />
                 </div>
                 <div className="!max-h-full">
                   <img
                     className="md:pb-0 pb-[440px] m-0 p-0 object-cover object-bottom w-screen h-screen"
-                    src="/static/img/team/All/EDITED images/Eman Best V3.png"
+                    src="/static/img/team/all/editedimages/Eman Best V3.png"
                     alt=""
                   />
                 </div>
                 <div className="!max-h-full">
                   <img
                     className="md:pb-0 pb-[266px] m-0 p-0 object-cover object-bottom w-screen h-screen"
-                    src="/static/img/team/All/EDITED images/IMG_3195_Edited.png"
+                    src="/static/img/team/all/editedimages/IMG_3195_Edited.png"
                     alt=""
                   />
                 </div>
@@ -84,7 +84,7 @@ const HomeBanner = () => {
                     width={400}
                     height={842}
                     className="md:pb-0 pb-40 m-0 p-0 object-cover object-bottom w-screen h-screen"
-                    src="/static/img/team/All/EDITED images/IMG_3223 Edited.png"
+                    src="/static/img/team/all/editedimages/IMG_3223 Edited.png"
                     alt=""
                   />
                 </div>
