@@ -1,16 +1,14 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useContext } from "react";
-import { TypeAnimation } from "react-type-animation";
-import { AlexioContext } from "../Context";
-import InsightRoll from "./(blog)/About/InsightRoll";
-import ContactShort from "./ContactShort";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import React from "react";
-import "slick-carousel/slick/slick.css";
+import { TypeAnimation } from "react-type-animation";
 import "slick-carousel/slick/slick-theme.css";
-import Link from 'next/link'
+import "slick-carousel/slick/slick.css";
+import { AlexioContext } from "../Context";
+import InsightRoll from "./(blog)/About/InsightRoll";
+import ContactShort from "./ContactShort";4
 
 const insights = [
   "FIGMA",
