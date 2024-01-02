@@ -53,30 +53,44 @@ const HomeBanner = () => {
           <div className="md:pt-0 pt-2 p-0 overflow-hidden md:items-end items-start md:justify-end justify-end flex flex-col md:h-screen h-[450px] md:w-[50%] w-full bg-boo-700">
               {" "}
               <Carousel
-                className="sm:pt-0 pt-12 h-full overflow-hidden flex items-start justify-center"
+                className="sm:pt-0 pt-2 h-full overflow-hidden flex items-start justify-center"
                 autoPlay
                 infiniteLoop
                 showThumbs={false}
                 showStatus={false}
               >
                 <div className="!max-h-full">
-                  <Image
-                    width={400}
-                    height={842}
+                  <img
                     className="m-0 p-0 object-cover object-top w-screen h-screen"
-                    src="/static/img/Home2.png"
+                    src="/static/img/team/All/EDITED images/IMG_3218 Edited.png"
                     alt=""
                   />
                 </div>
                 <div className="!max-h-full">
-                  <Image
-                    width={400}
-                    height={842}
-                    className="m-0 p-0 object-cover object-top w-screen h-screen"
-                    src="/static/img/Home1.png"
+                  <img
+                    className="md:pb-0 pb-[440px] m-0 p-0 object-cover object-bottom w-screen h-screen"
+                    src="/static/img/team/All/EDITED images/Eman Best V3.png"
                     alt=""
                   />
                 </div>
+                <div className="!max-h-full">
+                  <img
+                    className="md:pb-0 pb-[266px] m-0 p-0 object-cover object-bottom w-screen h-screen"
+                    src="/static/img/team/All/EDITED images/IMG_3195 Edited.png"
+                    alt=""
+                  />
+                </div>
+                
+                <div className="!max-h-full">
+                  <Image
+                    width={400}
+                    height={842}
+                    className="md:pb-0 pb-40 m-0 p-0 object-cover object-bottom w-screen h-screen"
+                    src="/static/img/team/All/EDITED images/IMG_3223 Edited.png"
+                    alt=""
+                  />
+                </div>
+                
               </Carousel>
               <div className="lg:visible">
                 <InsightRoll insights={insights} />
