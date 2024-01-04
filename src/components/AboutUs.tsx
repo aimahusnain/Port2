@@ -39,8 +39,8 @@ const AboutUs = () => {
               showThumbs={false}
               showStatus={false}
             >
-              <HPC />
-              <TPC />
+              <HPC mtopicons='mt-10' height='!h-screen' />
+              <TPC mtopicons='mt-10' height='!h-screen' />
             </Carousel>
           </div>
 
@@ -81,9 +81,10 @@ const AboutUs = () => {
                       that every project is a true reflection of your vision.
                     </p>
 
-                    <div className="block sm:block lg:hidden h-fit rounded-sm my-20 gap-32">
-                      <HPC />
-                      <TPC />
+
+                    <div className="block sm:block lg:hidden h-fit my-6">
+                      <HPC mtopicons='mt-10' height='h-full py-10' />
+                      <TPC mtopicons='mt-10' height='h-full py-10' /> 
                     </div>
 
                     <br />

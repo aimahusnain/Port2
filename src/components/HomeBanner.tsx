@@ -48,7 +48,7 @@ const HomeBanner = () => {
       >
         <div className="p-0 mb-16">
         <div className="flex md:flex-row flex-col !mx-0 h-full">
-          <div className="md:pt-0 pt-2 p-0 overflow-hidden md:items-end items-start md:justify-end justify-end flex flex-col md:h-screen h-[450px] md:w-[50%] w-full bg-boo-700">
+          <div className="md:pt-0 pt-2 p-0 overflow-hidden md:items-end items-start md:justify-end justify-end flex flex-col md:h-screen h-[450px] md:w-[50%] w-full bg-boo-600">
               {" "}
               <Carousel
                 className="sm:pt-0 pt-2 h-full overflow-hidden flex items-start justify-center"
@@ -68,7 +68,7 @@ const HomeBanner = () => {
                 <div className="!max-h-full">
                   <Image
                   fill
-                    className="md:pb-0 pb-[440px] m-0 p-0 object-cover object-bottom w-screen h-screen"
+                    className="md:pb-0 pb-[240px] m-0 p-0 object-cover object-bottom w-screen h-screen"
                     src="/static/img/Eman Best V3.webp"
                     alt="ffg"
                   />
