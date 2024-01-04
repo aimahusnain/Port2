@@ -39,8 +39,8 @@ const AboutUs = () => {
               showThumbs={false}
               showStatus={false}
             >
-              <HPC mtopicons='mt-32' height='!h-screen' />
-              <TPC mtopicons='mt-32' height='!h-screen' />
+              <HPC scale='5.6' mtopicons='mt-32' height='!h-screen' />
+              <TPC scale='5.6' mtopicons='mt-32' height='!h-screen' />
             </Carousel>
           </div>
 
@@ -83,8 +83,8 @@ const AboutUs = () => {
 
 
                     <div className="block sm:block lg:hidden h-fit my-6">
-                      <HPC mtopicons='mt-10' height='h-full py-10' />
-                      <TPC mtopicons='mt-10' height='h-full py-10' /> 
+                      <HPC scale='8' mtopicons='mt-10' height='h-full py-10' />
+                      <TPC scale='5.6' mtopicons='mt-10' height='h-full py-10' /> 
                     </div>
 
                     <br />
@@ -208,10 +208,8 @@ const AboutUs = () => {
                       </div>
                     </div>
 
-                    <p className="text-white/50 dark:text-dark/80">
-                      Thank you for considering {siteMetadata.WebName} Solutions
-                      for your digital journey. Let's collaborate and turn your
-                      ideas into reality!
+                    <p className="mb-8 text-white/50 dark:text-dark/80">
+                      Thank you for considering {siteMetadata.WebName} for your digital journey. Let's collaborate and turn your ideas into reality!
                     </p>
                   </div>
                 </div>
