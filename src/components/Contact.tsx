@@ -159,10 +159,7 @@ const Contact = () => {
       <br />
       <div>
         <div className="w-full flex justify-center p-0 h-fit items-center text-left">
-          <div className="flex flex-col sm:w-full align-middle w-fit text-center gap-8  sm:justify-between">
-            
-            
-            
+          <div className="flex flex-col sm:w-full align-middle w-fit text-center gap-8 sm:justify-between">
           <div className="flex w-full sm:gap-40 gap-10 sm:flex-row flex-col">
               <p className="m-0 text-white dark:text-dark p-0 flex flex-row items-center gap-3">
                 <IoMdMail />
