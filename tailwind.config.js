@@ -12,25 +12,13 @@ module.exports = {
     container: {
       center: true,
       padding: "2rem",
-      screens: {
-        xs: "450px",
-        sm: "575px",
-        md: "768px",
-        lg: "992px",
-        xl: "1200px",
-        "2xl": "1400px",
-      },
+ 
     },
     extend: {
       
       
       colors: {
         ...colors,
-        sky: colors.lightBlue,
-        stone: colors.warmGray,
-        neutral: colors.trueGray,
-        gray: colors.coolGray,
-        slate: colors.blueGray,
         // pinky: "#37BEAC",
         // boo: "#8000FF",
         boo: colors.purple,

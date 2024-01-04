@@ -3,12 +3,12 @@ import Image from "next/image";
 import { useContext } from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { TypeAnimation } from "react-type-animation";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
+import { TypeAnimation } from "react-type-animation";
 import { AlexioContext } from "../Context";
 import InsightRoll from "./(blog)/About/InsightRoll";
-import ContactShort from "./ContactShort";4
+import ContactShort from "./ContactShort";
 
 const insights = [
   "FIGMA",
@@ -73,7 +73,7 @@ const HomeBanner = () => {
                 </div>
                 <div className="!max-h-full">
                   <img
-                    className="md:pb-0 pb-[266px] m-0 p-0 object-cover object-bottom w-screen h-screen"
+                    className="sm:pb-0 pb-[266px] m-0 p-0 object-cover object-bottom w-screen h-screen"
                     src="/static/img/IMG_3195_Edited.png"
                     alt="fgt"
                   />
