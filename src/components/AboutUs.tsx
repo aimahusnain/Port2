@@ -39,8 +39,8 @@ const AboutUs = () => {
               showThumbs={false}
               showStatus={false}
             >
-              <HPC mtopicons='mt-10' height='!h-screen' />
-              <TPC mtopicons='mt-10' height='!h-screen' />
+              <HPC mtopicons='mt-32' height='!h-screen' />
+              <TPC mtopicons='mt-32' height='!h-screen' />
             </Carousel>
           </div>
 

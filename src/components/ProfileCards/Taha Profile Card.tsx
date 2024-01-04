@@ -14,7 +14,7 @@ import {
   import "slick-carousel/slick/slick-theme.css";
   import "slick-carousel/slick/slick.css";
   import { LiaFacebookMessenger } from "react-icons/lia";
-const TPC = ({height}) => {
+const TPC = ({height, mtopicons}) => {
     const { nav, changeNav } = useContext(AlexioContext);
   
   return (
@@ -25,8 +25,7 @@ const TPC = ({height}) => {
                     fill
                       className="rounded-full block max-w-full bg-white object-cover z-10 relative object-top"
                       src="/static/img/Taha Image v2.jpg"
-                      alt="Avatar"
-                    />
+                      alt="Avatar" />
                   </div>
                 </figure>
 
@@ -38,21 +37,12 @@ const TPC = ({height}) => {
                     <Badge variant="secondary">Expert of Web Development</Badge>
                   </div>
                   <p className="text-center group-hover:text-white text-white/40 text-sm relative mx-5 my-2">
-                    The frontend wizard of our team, Taha Amin, is a React and
-                    Next.js aficionado. With a passion for crafting immersive
-                    user interfaces, Taha turns visions into interactive and
-                    responsive web applications. His expertise lies in bringing
-                    designs to life, creating dynamic and engaging user
-                    interfaces that leave a lasting impression. Taha's
-                    commitment to staying on the cutting edge of React and
-                    Next.js ensures that your digital presence is not only
-                    modern but also future-proof.
+                    The frontend wizard of our team, Taha Amin, is a React and Next.js aficionado. With a passion for crafting immersive user interfaces, Taha turns visions into interactive and responsive web applications. His expertise lies in bringing designs to life, creating dynamic and engaging user interfaces that leave a lasting impression. Taha's commitment to staying on the cutting edge of React and Next.js ensures that your digital presence is not only modern but also future-proof.
                   </p>
                 </header>
 
                 <ul
-                  className="flex justify-center space-x-4 mt-32 text-white
-                   relative"
+                        className={`flex justify-center space-x-4 ${mtopicons} text-white relative`}
                 >
                   <li className="motion-safe:translate-y-[100px] group-hover:translate-y-0 motion-safe:delay-100 motion-safe:transition">
                     <a
