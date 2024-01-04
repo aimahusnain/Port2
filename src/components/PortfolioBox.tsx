@@ -7,7 +7,7 @@ import Link from "next/link";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { FaExternalLinkAlt } from "react-icons/fa";
-
+import Image from 'next/image'
 const PortfolioBox = ({
   imageSrcs,
   black,
@@ -29,7 +29,8 @@ const PortfolioBox = ({
         <div className="block cursor-pointer relative h-[264px] w-[320px] rounded overflow-hidden">
           <Dialog>
             <DialogTrigger asChild>
-              <img
+              <Image
+              fill
                 alt="ecommerce"
                 className="object-cover object-center w-full h-full block"
                 src={imageSrcs[0]}

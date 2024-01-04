@@ -58,21 +58,24 @@ const HomeBanner = () => {
                 showStatus={false}
               >
                 <div className="!max-h-full">
-                  <img
+                  <Image
+                  fill
                     className="m-0 p-0 object-cover object-top w-screen h-screen"
                     src="/static/img/IMG_3218 Edited.webp"
                     alt="665"
                   />
                 </div>
                 <div className="!max-h-full">
-                  <img
+                  <Image
+                  fill
                     className="md:pb-0 pb-[440px] m-0 p-0 object-cover object-bottom w-screen h-screen"
                     src="/static/img/Eman Best V3.webp"
                     alt="ffg"
                   />
                 </div>
                 <div className="!max-h-full">
-                  <img
+                  <Image
+                  fill
                     className="sm:pb-0 pb-[266px] m-0 p-0 object-cover object-bottom w-screen h-screen"
                     src="/static/img/IMG_3195_Edited.webp"
                     alt="fgt"

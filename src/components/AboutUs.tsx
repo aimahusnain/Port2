@@ -40,8 +40,9 @@ const AboutUs = () => {
               <div className="!h-screen w-full flex items-center justify-center flex-col !max-h-full max-w-full rounded-xl text-trueGray-800 dark:text-trueGray-400 overflow-hidden group motion-safe:transition-all motion-safe:duration-700 m-0 p-0">
                 <figure className="relative w-40 h-40 m-0 mx-auto rounded-full outline outline-offset-4 outline-white before:content-[''] before:absolute before:block before:pointer-events-none before:rounded-full before:h-full before:w-full before:bg-pinky-500 before:-z-[1] group-hover:before:scale-[5.6] motion-safe:before:transition-all motion-safe:transform-gpu motion-safe:before:duration-500 before:origin-center group-hover:outline-pinky-400">
                   <div className="w-40 h-40 overflow-hidden rounded-full">
-                    <img
-                      className="rounded-full block max-w-full bg-white object-cover z-10 relative"
+                    <Image
+                    fill
+                      className="rounded-full block object-top max-w-full bg-white object-cover z-10 relative"
                       src="/static/img/H1.webp"
                       alt="Avatar"
                     />
@@ -130,8 +131,9 @@ const AboutUs = () => {
               <div className="w-full flex items-center justify-center flex-col !h-screen max-h-full !max-w-full rounded-xl text-trueGray-800 dark:text-trueGray-400 overflow-hidden group motion-safe:transition-all motion-safe:duration-700 m-0 p-0">
                 <figure className="relative w-40 h-40 m-0 mx-auto rounded-full outline outline-offset-4 outline-white before:content-[''] before:absolute before:block before:pointer-events-none before:rounded-full before:h-full before:w-full before:bg-pinky-500 before:-z-[1] group-hover:before:scale-[5.6] motion-safe:before:transition-all motion-safe:transform-gpu motion-safe:before:duration-500 before:origin-center group-hover:outline-pinky-400">
                   <div className="w-40 h-40 overflow-hidden rounded-full">
-                    <img
-                      className="rounded-full block max-w-full bg-white object-cover z-10 relative"
+                    <Image
+                    fill
+                      className="rounded-full block max-w-full bg-white object-cover z-10 relative object-top"
                       src="/static/img/Taha Image v2.jpg"
                       alt="Avatar"
                     />
@@ -256,8 +258,9 @@ const AboutUs = () => {
                       <div className="!h-screen w-full flex items-center justify-center flex-col !max-h-full max-w-full rounded-xl text-trueGray-800 dark:text-trueGray-400 overflow-hidden group motion-safe:transition-all motion-safe:duration-700 m-0 p-0">
                         <figure className="relative w-40 h-40 m-0 mx-auto rounded-full outline outline-offset-4 outline-white before:content-[''] before:absolute before:block before:pointer-events-none before:rounded-full before:h-full before:w-full before:bg-pinky-500 before:-z-[1] group-hover:before:scale-[5.6] motion-safe:before:transition-all motion-safe:transform-gpu motion-safe:before:duration-500 before:origin-center group-hover:outline-pinky-400">
                           <div className="w-40 h-40 overflow-hidden rounded-full">
-                            <img
-                              className="rounded-full block max-w-full bg-white object-cover z-10 relative"
+                            <Image
+                            fill
+                              className="rounded-full block max-w-full bg-white object-cover z-10 relative object-top"
                               src="/static/img/H1.webp"
                               alt="Avatar"
                             />
@@ -348,11 +351,12 @@ const AboutUs = () => {
                       <div className="w-full flex items-center justify-center flex-col !h-screen max-h-full !max-w-full rounded-xl text-trueGray-800 dark:text-trueGray-400 overflow-hidden group motion-safe:transition-all motion-safe:duration-700 m-0 p-0">
                         <figure className="relative w-40 h-40 m-0 mx-auto rounded-full outline outline-offset-4 outline-white before:content-[''] before:absolute before:block before:pointer-events-none before:rounded-full before:h-full before:w-full before:bg-pinky-500 before:-z-[1] group-hover:before:scale-[5.6] motion-safe:before:transition-all motion-safe:transform-gpu motion-safe:before:duration-500 before:origin-center group-hover:outline-pinky-400">
                           <div className="w-40 h-40 overflow-hidden rounded-full">
-                            <img
-                              className="rounded-full block max-w-full bg-white object-cover z-10 relative"
-                              src="/static/img/Taha Image v2.jpg"
-                              alt="Avatar"
-                            />
+                          <Image
+                    fill
+                      className="rounded-full block max-w-full bg-white object-cover z-10 relative object-top"
+                      src="/static/img/Taha Image v2.jpg"
+                      alt="Avatar"
+                    />
                           </div>
                         </figure>
 
