@@ -16,6 +16,9 @@ module.exports = {
     },
     extend: {
       
+      filter: {
+        blur: 'blur(20px)',
+      },
       
       colors: {
         ...colors,

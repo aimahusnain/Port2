@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -30,6 +30,7 @@ const insights = [
 ];
 
 const HomeBanner = () => {
+  const [imageLoaded, setImageLoaded] = useState(false);
   const { changeNav, toggle, nav } = useContext(AlexioContext);
   const activePageClass = (name: any) => (name === nav ? "" : "page--inactive");
 
@@ -60,9 +61,10 @@ const HomeBanner = () => {
                 <div className="!max-h-full">
                   <Image
                   fill
-                    className="m-0 p-0 object-cover object-top w-screen h-screen"
+                    className={`${imageLoaded ? 'filter-blur-0' : 'filter-blur-20 transition-filter'} m-0 p-0 object-cover object-top w-screen h-screen`}
                     src="/static/img/IMG_3218 Edited.webp"
                     alt="665"
+                    onLoad={() => setImageLoaded(true)}
                   />
                 </div>
                 <div className="!max-h-full">
