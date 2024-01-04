@@ -78,7 +78,8 @@ const HomeBanner = () => {
                 <div className="!max-h-full">
                   <Image
                   fill
-                    className="sm:pb-0 pb-[266px] m-0 p-0 object-cover object-bottom w-screen h-screen"
+                    className={` ${imageLoaded ? 'filter-blur-0' : 'filter-blur-20 transition-filter'} sm:pb-0 pb-[266px] m-0 p-0 object-cover object-bottom w-screen h-screen`}
+                    onLoad={() => setImageLoaded(true)}
                     src="/static/img/IMG_3195_Edited.webp"
                     alt="fgt"
                   />
@@ -88,7 +89,9 @@ const HomeBanner = () => {
                   <Image
                     width={400}
                     height={842}
-                    className="md:pb-0 pb-40 m-0 p-0 object-cover object-bottom w-screen h-screen"
+                    onLoad={() => setImageLoaded(true)}
+
+                    className={` ${imageLoaded ? 'filter-blur-0' : 'filter-blur-20 transition-filter'} md:pb-0 pb-40 m-0 p-0 object-cover object-bottom w-screen h-screen`}
                     src="/static/img/IMG_3223 Edited.webp"
                     alt="sdfsfd"
                   />
