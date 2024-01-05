@@ -9,7 +9,7 @@ const siteMetadata = {
   siteUrl: 'http://localhost:3000',
   siteLogo: '/logo.png',
   socialBanner: '/social-banner.png', // add social banner in the public folder
-  email: 'DevKinSolutions@proton.me',
+  email: 'WebKinSolutions@proton.me',
   github: 'https://github.com/aimahusnain',
   twitter: 'https://twitter.com/aimahusnain',
   facebook: 'https://facebook.com',

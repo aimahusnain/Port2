@@ -19,7 +19,9 @@ const HPC = ({height, mtopicons, scale}) => {
     const { nav, changeNav } = useContext(AlexioContext);
 
   return (
-    <div className={`${height} w-full flex items-center justify-center flex-col !max-h-full max-w-full rounded-xl text-trueGray-800 dark:text-trueGray-400 overflow-hidden group motion-safe:transition-all motion-safe:duration-700 m-0 p-0`}>
+    <div className={`${height} w-full flex items-center justify-between flex-col py-14 !max-h-full max-w-full rounded-xl text-trueGray-800 dark:text-trueGray-400 overflow-hidden group motion-safe:transition-all motion-safe:duration-700 m-0 p-0`}>
+    
+    <div className="pt-10">
     <figure className={`relative w-40 h-40 m-0 mx-auto rounded-full outline outline-offset-4 outline-white before:content-[''] before:absolute before:block before:pointer-events-none before:rounded-full before:h-full before:w-full before:bg-pinky-500 before:-z-[1] ${scale} motion-safe:before:transition-all motion-safe:transform-gpu motion-safe:before:duration-500 before:origin-center group-hover:outline-pinky-400`}>
       <div className="w-40 h-40 overflow-hidden rounded-full">
         <Image
@@ -55,9 +57,10 @@ const HPC = ({height, mtopicons, scale}) => {
         us apart.
       </p>
     </header>
+      </div>
 
     <ul
-      className={`flex justify-center space-x-4 ${mtopicons} text-white relative`}
+      className={`flex justify-center space-x-4 text-white relative`}
     >
       <li className="motion-safe:translate-y-[100px] group-hover:translate-y-0 motion-safe:delay-100 motion-safe:transition">
         <a

@@ -9,6 +9,7 @@ import { TypeAnimation } from "react-type-animation";
 import { AlexioContext } from "../Context";
 import InsightRoll from "./(blog)/About/InsightRoll";
 import ContactShort from "./ContactShort";
+import { Blurhash } from 'react-blurhash';
 
 const insights = [
   "FIGMA",
@@ -30,9 +31,16 @@ const insights = [
 ];
 
 const HomeBanner = () => {
-  const [imageLoaded, setImageLoaded] = useState(false);
   const { changeNav, toggle, nav } = useContext(AlexioContext);
   const activePageClass = (name: any) => (name === nav ? "" : "page--inactive");
+
+const [imageLoaded, setImageLoaded] = useState(false);
+  const hash = "LID,cmx]YQROxtM_tmxu_4xvMxRi";
+
+  const handleImageLoad = () => {
+    setImageLoaded(true);
+  };
+
 
   return (
     <div
@@ -59,12 +67,20 @@ const HomeBanner = () => {
                 showStatus={false}
               >
                 <div className="!max-h-full">
+                {!imageLoaded && (
+        <>
+        <Blurhash hash={hash} width={300} height={1000} className="" />
+      <p>Loading...</p>
+        </>
+      )}
+
+    
                   <Image
                   fill
-                    className={`${imageLoaded ? 'filter-blur-0' : 'filter-blur-20 transition-filter'} m-0 p-0 object-cover object-top w-screen h-screen`}
+                    className="m-0 p-0 object-cover object-top w-screen h-screen"
                     src="/static/img/IMG_3218 Edited.webp"
                     alt="665"
-                    onLoad={() => setImageLoaded(true)}
+                    onLoad={handleImageLoad}
                   />
                 </div>
                 <div className="!max-h-full">
@@ -78,8 +94,7 @@ const HomeBanner = () => {
                 <div className="!max-h-full">
                   <Image
                   fill
-                    className={` ${imageLoaded ? 'filter-blur-0' : 'filter-blur-20 transition-filter'} sm:pb-0 pb-[266px] m-0 p-0 object-cover object-bottom w-screen h-screen`}
-                    onLoad={() => setImageLoaded(true)}
+                    className="sm:pb-0 pb-[266px] m-0 p-0 object-cover object-bottom w-screen h-screen"
                     src="/static/img/IMG_3195_Edited.webp"
                     alt="fgt"
                   />
@@ -89,9 +104,7 @@ const HomeBanner = () => {
                   <Image
                     width={400}
                     height={842}
-                    onLoad={() => setImageLoaded(true)}
-
-                    className={` ${imageLoaded ? 'filter-blur-0' : 'filter-blur-20 transition-filter'} md:pb-0 pb-40 m-0 p-0 object-cover object-bottom w-screen h-screen`}
+                    className="md:pb-0 pb-40 m-0 p-0 object-cover object-bottom w-screen h-screen"
                     src="/static/img/IMG_3223 Edited.webp"
                     alt="sdfsfd"
                   />

@@ -7,6 +7,7 @@ import ContactShort from "../../ContactShort";
 import ContactShort2 from "../../ContactShort2";
 import NavLinks from "../../NavLinks";
 import { AlexioContext } from "@/src/Context";
+import { metadata } from "@/src/app/layout";
 
 const Footer = () => {
   const {
@@ -59,7 +60,7 @@ const Footer = () => {
 
       <div className="w-full mt-3 relative font-medium border-t border-solid border-light py-6 px-8 flex  flex-col md:flex-row items-center justify-between">
         <span className="text-center">
-          &copy;2023 DevKin Solutions. All rights reserved.
+          &copy;2023 WebKin Solutions. All rights reserved.
         </span>
         <Link
           href="/sitemap.xml"
@@ -74,7 +75,7 @@ const Footer = () => {
             className="underline"
             target="_blank"
           >
-            DevKin Solutions
+            WebKin Solutions
           </Link>
         </div>
       </div>
