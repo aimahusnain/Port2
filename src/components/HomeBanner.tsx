@@ -68,8 +68,8 @@ const [imageLoaded, setImageLoaded] = useState(false);
               >
                 <div className="!max-h-full">
                 {!imageLoaded && (
-        <>
-        <Blurhash hash={hash} width={300} height={1000} className="" />
+                  <>
+                  <Blurhash hash={hash} width={800} height={1000} className="!w-screen !h-screen" />
       <p>Loading...</p>
         </>
       )}
