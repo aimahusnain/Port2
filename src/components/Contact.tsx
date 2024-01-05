@@ -13,7 +13,7 @@ import { IoMdMail } from "react-icons/io";
 import { IoLogoStackoverflow } from "react-icons/io5";
 import { TbBrandYoutube } from "react-icons/tb";
 import SectionContainer from "./SectionContainer";
-
+import TooltipForIcons from "./tooltipforicons";
 
 interface FormData {
   name: string;
@@ -111,7 +111,9 @@ const Contact = () => {
     setMailData({ ...mailData, [e.target.name]: e.target.value });
   };
 
-  const handleBlur = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleBlur = (
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
     const errorMessage = validateInput(name, value);
     setFormErrors((prevErrors) => ({
@@ -126,7 +128,10 @@ const Contact = () => {
     return emailRegex.test(email);
   };
 
-  const validateInput = (fieldName: string, value: string): string | undefined => {
+  const validateInput = (
+    fieldName: string,
+    value: string
+  ): string | undefined => {
     switch (fieldName) {
       case "name":
         return value.trim() === "" ? "Name is required" : undefined;
@@ -160,7 +165,7 @@ const Contact = () => {
       <div>
         <div className="w-full flex justify-center p-0 h-fit items-center text-left">
           <div className="flex flex-col sm:w-full align-middle w-fit text-center gap-8 sm:justify-between">
-          <div className="flex w-full sm:gap-40 gap-10 sm:flex-row flex-col">
+            <div className="flex w-full sm:gap-40 gap-10 sm:flex-row flex-col">
               <p className="m-0 text-white dark:text-dark p-0 flex flex-row items-center gap-3">
                 <IoMdMail />
                 DevKinSolutions@proton.me
@@ -174,128 +179,86 @@ const Contact = () => {
             </div>
 
             <ul className="flex flex-row gap-2">
-              <li className="transition-all duration-500 hover:bg-boo-700  p-2 cursor-pointer rounded-full">
-                <Link
-                  href="https://www.facebook.com/"
-                  aria-label="Facebook"
-                  target="_blank"
-                >
-                  <Facebook
-                    className="fill-white dark:fill-black"
-                    stroke="0"
-                    size={15}
-                  />
-                </Link>
-              </li>
+              <TooltipForIcons
+                linkhref="https://www.facebook.com/"
+                arialabel="Facebook"
+              >
+                <Facebook
+                  className="fill-white dark:hover:fill-white duration-200 transition-all dark:fill-black"
+                  stroke="0"
+                  size={15}
+                />
+              </TooltipForIcons>
 
-              <li className="transition-all duration-500 hover:bg-boo-700 p-2 cursor-pointer rounded-full">
-                <Link
-                  href="https://twitter.com/"
-                  aria-label="Twitter"
-                  target="_blank"
-                >
-                  <BsTwitterX
-                    className="fill-white dark:fill-black"
-                    stroke="0"
-                    size={15}
-                  />
-                </Link>
-              </li>
+              <TooltipForIcons
+                linkhref="https://twitter.com/"
+                arialabel="Twitter"
+              >
+                <BsTwitterX
+                  className="fill-white dark:hover:fill-white duration-200 transition-all dark:fill-black"
+                  stroke="0"
+                  size={15}
+                />
+              </TooltipForIcons>
 
-              <li className="transition-all duration-500 hover:bg-boo-700 p-2 cursor-pointer rounded-full">
-                <Link
-                  href="https://instagram.com/"
-                  target="_blank"
-                  aria-label="Instagram"
-                >
-                  <Instagram
-                    className="stroke-white dark:stroke-dark"
-                    size={15}
-                  />
-                </Link>
-              </li>
+              <TooltipForIcons
+                linkhref="https://instagram.com/"
+                arialabel="Instagram"
+              >
+                <Instagram
+                  className="stroke-white dark:hover:fill-white duration-200 transition-all dark:stroke-dark"
+                  size={15}
+                />
+              </TooltipForIcons>
 
-              <li className="transition-all duration-500 hover:bg-boo-700 p-2 cursor-pointer rounded-full">
-                <Link
-                  href="https://linkedin.com/"
-                  target="_blank"
-                  aria-label="Linkedin"
-                >
-                  <FaLinkedinIn
-                    className="fill-white dark:fill-black"
-                    stroke="0"
-                    size={15}
-                  />
-                </Link>
-              </li>
+              <TooltipForIcons
+                linkhref="https://linkedin.com/"
+                arialabel="Linkedin"
+              >
+                <FaLinkedinIn
+                  className="fill-white dark:hover:fill-white duration-200 transition-all dark:fill-black"
+                  stroke="0"
+                  size={15}
+                />
+              </TooltipForIcons>
 
-              <li className="transition-all duration-500 hover:bg-boo-700 p-2 cursor-pointer rounded-full">
-                <Link
-                  href="https://youtube.com/"
-                  aria-label="Youtube"
-                  target="_blank"
-                >
-                  <TbBrandYoutube
-                    className="stroke-white dark:stroke-black"
-                    size={15}
-                  />
-                </Link>
-              </li>
+              <TooltipForIcons
+                linkhref="https://youtube.com/"
+                arialabel="Youtube"
+              >
+                <TbBrandYoutube
+                  className="stroke-white dark:hover:fill-white duration-200 transition-all dark:stroke-black"
+                  size={15}
+                />
+              </TooltipForIcons>
 
-              <li className="transition-all duration-500 hover:bg-boo-700 p-2 cursor-pointer rounded-full">
-                <Link
-                  href="https://github.com/"
-                  aria-label="Github"
-                  target="_blank"
-                >
-                  <FiGithub
-                    className="stroke-white dark:stroke-dark"
-                    size={15}
-                  />
-                </Link>
-              </li>
+              <TooltipForIcons
+                linkhref="https://hashnode.com/"
+                arialabel="Hashnode"
+              >
+                <FaHashnode
+                  className="fill-white dark:hover:fill-white duration-200 transition-all stroke-white dark:stroke-dark dark:fill-dark"
+                  size={15}
+                />
+              </TooltipForIcons>
 
-              <li className="transition-all duration-500 hover:bg-boo-700 p-2 cursor-pointer rounded-full">
-                <Link
-                  href="https://hashnode.com/"
-                  aria-label="Hashnode"
-                  target="_blank"
-                >
-                  <FaHashnode
-                    className="fill-white stroke-white dark:stroke-dark
-dark:fill-dark"
-                    size={15}
-                  />
-                </Link>
-              </li>
+              <TooltipForIcons
+                linkhref="https://mastodon.social/"
+                arialabel="Mastodon"
+              >
+                <BsMastodon className="fill-white dark:hover:fill-white duration-200 transition-all dark:fill-black" size={15} />
+              </TooltipForIcons>
 
-              <li className="transition-all duration-500 hover:bg-boo-700 -700 p-2 cursor-pointer rounded-full">
-                <Link
-                  href="https://mastodon.social/"
-                  aria-label="Mastodon"
-                  target="_blank"
-                >
-                  <BsMastodon className="fill-white dark:fill-black" size={15} />
-                </Link>
-              </li>
-
-              <li className="transition-all duration-500 hover:bg-boo-700  p-2 cursor-pointer rounded-full">
-                <Link
-                  href="https://stackoverflow.com/"
-                  aria-label="StackOverFlow"
-                  target="_blank"
-                >
-                  <IoLogoStackoverflow
-                    className="fill-white dark:fill-black"
-                    size={15}
-                  />
-                </Link>
-              </li>
+              <TooltipForIcons
+                linkhref="https://stackoverflow.com/"
+                arialabel="StackOverFlow"
+              >
+                <IoLogoStackoverflow
+                  className="fill-white dark:hover:fill-white duration-200 transition-all dark:fill-black"
+                  size={15}
+                />
+              </TooltipForIcons>
             </ul>
-
-
-
-            
           </div>
         </div>
         <br />
@@ -318,20 +281,20 @@ dark:fill-dark"
                 Name
               </label>
               <input
-              id="name"
-              name="name"
-              onBlur={handleBlur}
-              onChange={handleInputChange}
-              value={formData.name}
-              required
-              className={`bg-[#18191E] dark:text-black dark:bg-[#f3f3f3] border border-[#33353F] placeholder-[#9CA2A9] dark:placeholder-[#474444] text-zinc-100 text-sm rounded-lg block w-full p-2.5 ${
-                formErrors.name ? "border-red-500" : ""
-              }`}
-              placeholder="Your Name"
-            />
-            {formErrors.name && (
-              <p className="text-red-500 text-sm mt-1">{formErrors.name}</p>
-            )}
+                id="name"
+                name="name"
+                onBlur={handleBlur}
+                onChange={handleInputChange}
+                value={formData.name}
+                required
+                className={`bg-[#18191E] dark:text-black dark:bg-[#f3f3f3] border border-[#33353F] placeholder-[#9CA2A9] dark:placeholder-[#474444] text-zinc-100 text-sm rounded-lg block w-full p-2.5 ${
+                  formErrors.name ? "border-red-500" : ""
+                }`}
+                placeholder="Your Name"
+              />
+              {formErrors.name && (
+                <p className="text-red-500 text-sm mt-1">{formErrors.name}</p>
+              )}
             </div>
 
             {/* Subject */}
@@ -343,22 +306,21 @@ dark:fill-dark"
                 Email
               </label>
               <input
-              id="emailfield"
-              type="email"
-              onBlur={handleBlur}
-              placeholder="example@website.com"
-              name="email"
-              onChange={handleInputChange}
-              value={formData.email}
-              required
-              className={`bg-[#18191E] dark:text-black dark:bg-[#f3f3f3] border border-[#33353F] placeholder-[#9CA2A9] dark:placeholder-[#474444] text-zinc-100 text-sm rounded-lg block w-full p-2.5 ${
-                formErrors.email ? "border-red-500" : ""
-              }`}
-            />
-            {formErrors.email && (
-              <p className="text-red-500 text-sm mt-1">{formErrors.email}</p>
-            )}
-
+                id="emailfield"
+                type="email"
+                onBlur={handleBlur}
+                placeholder="example@website.com"
+                name="email"
+                onChange={handleInputChange}
+                value={formData.email}
+                required
+                className={`bg-[#18191E] dark:text-black dark:bg-[#f3f3f3] border border-[#33353F] placeholder-[#9CA2A9] dark:placeholder-[#474444] text-zinc-100 text-sm rounded-lg block w-full p-2.5 ${
+                  formErrors.email ? "border-red-500" : ""
+                }`}
+              />
+              {formErrors.email && (
+                <p className="text-red-500 text-sm mt-1">{formErrors.email}</p>
+              )}
             </div>
           </div>
 
@@ -371,19 +333,19 @@ dark:fill-dark"
               Message
             </label>
             <textarea
-            name="message"
-            value={formData.message}
-            onBlur={handleBlur}
-            onChange={handleInputChange}
-            id="messagefield"
-            className={`bg-[#18191E] resize-none dark:bg-[#f3f3f3] border border-[#33353F] placeholder-[#9CA2A9] dark:placeholder-[#474444] text-zinc-100 dark:text-black text-sm rounded-lg block w-full p-2.5 ${
-              formErrors.message ? "border-red-500" : ""
-            }`}
-            placeholder="Let's talk about..."
-          />
-          {formErrors.message && (
-            <p className="text-red-500 text-sm mt-1">{formErrors.message}</p>
-          )}
+              name="message"
+              value={formData.message}
+              onBlur={handleBlur}
+              onChange={handleInputChange}
+              id="messagefield"
+              className={`bg-[#18191E] resize-none dark:bg-[#f3f3f3] border border-[#33353F] placeholder-[#9CA2A9] dark:placeholder-[#474444] text-zinc-100 dark:text-black text-sm rounded-lg block w-full p-2.5 ${
+                formErrors.message ? "border-red-500" : ""
+              }`}
+              placeholder="Let's talk about..."
+            />
+            {formErrors.message && (
+              <p className="text-red-500 text-sm mt-1">{formErrors.message}</p>
+            )}
           </div>
 
           {/* Submit Button */}
