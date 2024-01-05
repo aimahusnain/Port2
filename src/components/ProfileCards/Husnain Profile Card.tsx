@@ -7,7 +7,7 @@ import "slick-carousel/slick/slick.css";
 import { AlexioContext } from "../../Context";
 import { Badge } from "../ui/badge";
 
-const HPC = ({height, mtopicons, scale}) => {
+const HPC = ({height, scale}) => {
     const { nav, changeNav } = useContext(AlexioContext);
 
   return (

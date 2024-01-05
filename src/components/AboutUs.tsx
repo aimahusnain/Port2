@@ -39,8 +39,8 @@ const AboutUs = () => {
               showThumbs={false}
               showStatus={false}
             >
-              <HPC scale='group-hover:before:scale-[5.6]' mtopicons='mt-32' height='!h-screen' />
-              <TPC scale='group-hover:before:scale-[5.6]' mtopicons='mt-32' height='!h-screen' />
+              <HPC scale='group-hover:before:scale-[5.6]' height='!h-screen' />
+              <TPC scale='group-hover:before:scale-[5.6]' height='!h-screen' />
             </Carousel>
           </div>
 
@@ -83,8 +83,8 @@ const AboutUs = () => {
 
 
                     <div className="block sm:block lg:hidden h-fit my-6">
-                      <HPC scale='group-hover:before:scale-[7.3]' mtopicons='mt-10' height='h-full py-10' />
-                      <TPC scale='group-hover:before:scale-[5.8]' mtopicons='mt-10' height='h-full py-10' /> 
+                      <HPC scale='group-hover:before:scale-[7.3]' height='h-full py-10' />
+                      <TPC scale='group-hover:before:scale-[5.8]' height='h-full py-10' /> 
                     </div>
 
                     <br />
