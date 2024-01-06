@@ -73,7 +73,7 @@ const Portfolio = () => {
     >
       <div className="p-0">
         <div className="flex md:flex-row flex-col gap-1 !mx-0 h-full">
-          <div className="p-0 md:pt-0 pt-16 overflow-hidden items-center justify-center flex flex-col h-full md:w-[50%] w-full bg-boo-700">
+          <div className="p-0 md:pt-0 pt-16 pb-3 overflow-hidden items-center justify-center flex flex-col h-full md:max-w-[30%] md:h-screen w-full bg-boo-700">
             <ul>
               <h3 className="text-white text-3xl font-bold mt-5">
                 Featured Projects
