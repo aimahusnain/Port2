@@ -26,7 +26,7 @@ const PortfolioBox = ({
   return (
     <li className={`text-white ${black} portfolio-item ${category}`}>
       <div className="p-4 w-full">
-        <div className="block cursor-pointer relative h-[264px] w-[320px] rounded overflow-hidden">
+        <div className="block cursor-pointer relative h-[200px] w-[300px] rounded overflow-hidden">
           <Dialog>
             <DialogTrigger asChild>
               <Image
