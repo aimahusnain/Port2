@@ -15,11 +15,14 @@ const TooltipForIcons: React.FC<{
   return (
     <TooltipProvider>
     <Tooltip>
-    <TooltipTrigger><li className="transition-all duration-500 hover:bg-boo-700 p-2 cursor-pointer rounded-full">
+    <TooltipTrigger>
+    
       <Link href={linkhref} aria-label={arialabel} target="_blank">
+    <li className="transition-all duration-500 hover:bg-boo-700 p-2 cursor-pointer rounded-full">
         {children}
+    </li>
       </Link>
-    </li></TooltipTrigger>
+    </TooltipTrigger>
     <TooltipContent>
       <p>{arialabel}</p>
     </TooltipContent>

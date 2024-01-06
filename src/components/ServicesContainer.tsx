@@ -47,9 +47,6 @@ const ServicesContainer = ({
               src="/static/img/H1.png"
               alt=""
             />
-            {/* <div className="lg:visible">
-            <InsightRoll insights={insights} />
-            </div> */}
           </div>
           
           <div className="mb-7 col-xl-8 mt-2">

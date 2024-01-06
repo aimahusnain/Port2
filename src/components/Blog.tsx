@@ -30,14 +30,6 @@ const Blog = () => {
             </div>
             <Separator className="my-6 mt-11" />
             <div className="flex mx-5 justify-between gap-5 items-start text-left">
-              {/* <div className="flex sm:flex-row flex-col gap-6">
-                <div className="w-full sm:w-1/2">
-                  <FeaturedPost blogs={allBlogs} index={1} />
-                </div>
-                <div className="w-full sm:w-1/2">
-                  <FeaturedPost blogs={allBlogs} index={2} />
-                </div>
-              </div> */}
 
               <div className="w-3/4 m-auto">
                 <div className="mt-20">

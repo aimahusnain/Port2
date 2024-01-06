@@ -126,19 +126,7 @@ export default function BlogPage({ params }) {
           </div>
 
           <div className="bg-boo-700 w-full h-full object-cover object-center" />
-          {/* <Image
-          src={blog.image.filePath.replace("../public", "")}
-          placeholder="blur"
-          blurDataURL={blog.image.blurhashDataUrl}
-          alt={blog.title}
-          width={blog.image.width}
-          height={blog.image.height}
-          className="aspect-square w-full h-full object-cover object-center"
-          priority
-          sizes="100vw"
-        /> */}
         </div>
-        {/* <BlogDetails blog={blog} slug={params.slug} /> */}
 
         <div className="grid grid-cols-12  gap-y-8 lg:gap-8 sxl:gap-16 mt-8 px-5 md:px-10">
           <div className="col-span-12 lg:col-span-4">

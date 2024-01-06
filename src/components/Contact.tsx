@@ -168,7 +168,7 @@ const Contact = () => {
             <div className="flex w-full sm:gap-40 gap-10 sm:flex-row flex-col">
               <p className="m-0 text-white dark:text-dark p-0 flex flex-row items-center gap-3">
                 <IoMdMail />
-                DevKinSolutions@proton.me
+                webkinSolutions1@proton.me
                 <br />
               </p>
 
@@ -179,6 +179,17 @@ const Contact = () => {
             </div>
 
             <ul className="flex flex-row gap-2">
+            <TooltipForIcons
+                linkhref="https://github.com/WebKinSolutions"
+                arialabel="Github"
+              >
+                <FiGithub
+                  className="fill-white dark:hover:fill-white duration-200 transition-all dark:fill-black"
+                  stroke="0"
+                  size={15}
+                />
+              </TooltipForIcons>
+            
               <TooltipForIcons
                 linkhref="https://www.facebook.com/"
                 arialabel="Facebook"
@@ -297,7 +308,6 @@ const Contact = () => {
               )}
             </div>
 
-            {/* Subject */}
             <div className="mb-6 w-full">
               <label
                 htmlFor="email"
@@ -324,7 +334,6 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* Message */}
           <div className="mb-6">
             <label
               htmlFor="message"
@@ -348,7 +357,6 @@ const Contact = () => {
             )}
           </div>
 
-          {/* Submit Button */}
           <button
             type="submit"
             aria-label="Send Message button for Contact"
