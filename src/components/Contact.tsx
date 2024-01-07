@@ -178,7 +178,7 @@ const Contact = () => {
               </p>
             </div>
 
-            <ul className="flex flex-row gap-1">
+            <ul className="flex flex-row gap-1 flex-wrap">
             <TooltipForIcons
                 linkhref="https://github.com/WebKinSolutions"
                 arialabel="Github"
@@ -191,7 +191,7 @@ const Contact = () => {
               </TooltipForIcons>
             
               <TooltipForIcons
-                linkhref="https://www.facebook.com/"
+                linkhref="https://www.facebook.com/people/WebKin-Solutions/61555631720708/"
                 arialabel="Facebook"
               >
                 <Facebook

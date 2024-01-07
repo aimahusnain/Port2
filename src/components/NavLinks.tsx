@@ -6,7 +6,7 @@ const NavLinks = () => {
   const { changeNav, toggle, nav } = useContext(AlexioContext);
 
   return (
-    <div className="flex gap-3 sm:flex-row flex-col">
+    <div className="flex gap-2 sm:flex-row flex-col">
       <div className="flex items-center justify-left">
         <Link
           href="/"
