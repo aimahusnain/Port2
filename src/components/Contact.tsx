@@ -178,7 +178,7 @@ const Contact = () => {
               </p>
             </div>
 
-            <ul className="flex flex-row gap-2">
+            <ul className="flex flex-row gap-1">
             <TooltipForIcons
                 linkhref="https://github.com/WebKinSolutions"
                 arialabel="Github"

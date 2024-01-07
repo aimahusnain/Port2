@@ -6,7 +6,19 @@ import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import { AlexioContext } from "../../Context";
 import { Badge } from "../ui/badge";
-const TPC = ({ height,  scale }) => {
+const TPC = ({
+  height,
+  scale,
+  isdarkbg,
+  isdarkoutline,
+  isdarktext,
+}: {
+  height: string;
+  scale: string;
+  isdarkbg?: string;
+  isdarkoutline?: string;
+  isdarktext?: string;
+}) => {
   const { nav, changeNav } = useContext(AlexioContext);
 
   return (
@@ -14,11 +26,11 @@ const TPC = ({ height,  scale }) => {
     <div></div>
 
 <div>
-      <figure className={`relative w-40 h-40 m-0 mx-auto rounded-full outline outline-offset-4 outline-white before:content-[''] before:absolute before:block before:pointer-events-none before:rounded-full before:h-full before:w-full before:bg-pinky-500 before:-z-[1] ${scale} motion-safe:before:transition-all motion-safe:transform-gpu motion-safe:before:duration-500 before:origin-center group-hover:outline-pinky-400`}>
+      <figure className={`relative w-40 h-40 m-0 mx-auto rounded-full outline outline-offset-4 outline-white ${isdarkoutline} before:content-[''] before:absolute before:block before:pointer-events-none before:rounded-full before:h-full before:w-full before:bg-pinky-500 before:-z-[1] ${scale} motion-safe:before:transition-all motion-safe:transform-gpu motion-safe:before:duration-500 before:origin-center group-hover:outline-pinky-400`}>
         <div className="w-40 h-40 overflow-hidden rounded-full">
           <Image
             fill
-            className="rounded-full block max-w-full bg-white object-cover z-10 relative object-top"
+            className={`${isdarkbg} rounded-full block max-w-full bg-white object-cover z-10 relative object-top`}
             src="/static/img/Taha Image v2.jpg"
             alt="Avatar"
           />
@@ -26,13 +38,13 @@ const TPC = ({ height,  scale }) => {
       </figure>
 
       <header className="motion-safe:translate-y-4 group-hover:translate-y-0 motion-safe:transition-transform motion-safe:transform-gpu motion-safe:duration-500">
-        <h3 className="font-semibold text-2xl text-center mt-6 text-white relative">
+        <h3  className={`font-semibold text-2xl text-center mt-6 text-white ${isdarktext} relative`}>
           Taha Amin
         </h3>
         <div className="flex flex-wrap items-center justify-center gap-2 my-3">
           <Badge variant="secondary">Expert of Web Development</Badge>
         </div>
-        <p className="text-center group-hover:text-white text-white/40 text-sm relative mx-5 my-2">
+        <p className={`${isdarktext} text-center group-hover:text-white text-white/40 text-sm relative mx-5 my-2`}>
           The frontend wizard of our team, Taha Amin, is a React and Next.js
           aficionado. With a passion for crafting immersive user interfaces,
           Taha turns visions into interactive and responsive web applications.

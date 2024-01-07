@@ -39,8 +39,8 @@ const AboutUs = () => {
               showThumbs={false}
               showStatus={false}
             >
-              <HPC scale='group-hover:before:scale-[5.6]' height='!h-screen' />
-              <TPC scale='group-hover:before:scale-[5.6]' height='!h-screen' />
+              <HPC scale="group-hover:before:scale-[5.6]" height="!h-screen" />
+              <TPC scale="group-hover:before:scale-[5.6]" height="!h-screen" />
             </Carousel>
           </div>
 
@@ -81,10 +81,21 @@ const AboutUs = () => {
                       that every project is a true reflection of your vision.
                     </p>
 
-
                     <div className="block sm:block lg:hidden h-fit my-6">
-                      <HPC scale='group-hover:before:scale-[7.3]' height='h-full py-10' />
-                      <TPC scale='group-hover:before:scale-[5.8]' height='h-full py-10' /> 
+                      <HPC
+                        isdarktext="dark:text-black group-hover:text-whites"
+                        isdarkbg="dark:bg-black"
+                        isdarkoutline="dark:outline-black"
+                        scale="group-hover:before:scale-[6]"
+                        height="h-full py-10"
+                      />
+                      <TPC
+                        isdarktext="dark:text-black group-hover:text-white"
+                        isdarkbg="dark:bg-black"
+                        isdarkoutline="dark:outline-black"
+                        scale="group-hover:before:scale-[5.4]"
+                        height="h-full py-10"
+                      />
                     </div>
 
                     <br />
@@ -209,7 +220,9 @@ const AboutUs = () => {
                     </div>
 
                     <p className="mb-8 text-white/50 dark:text-dark/80">
-                      Thank you for considering {siteMetadata.WebName} for your digital journey. Let's collaborate and turn your ideas into reality!
+                      Thank you for considering {siteMetadata.WebName} for your
+                      digital journey. Let's collaborate and turn your ideas
+                      into reality!
                     </p>
                   </div>
                 </div>
