@@ -13,6 +13,7 @@ import Blog from "../components/Blog";
 const Portfolio = dynamic(() => import("../components/Portfolio"), {
   ssr: false,
 });
+import BButton from "../components/bButton";
 
 const Index = () => {
   useEffect(() => {
@@ -20,20 +21,6 @@ const Index = () => {
   }, []);
 
   const { toggle } = useContext(AlexioContext);
-
-  const { changeNav, nav } = useContext(AlexioContext);
-
-  const insights = [
-    "FIGMA",
-    "HTML",
-    "CSS",
-    "TAILWIND CSS",
-    "JAVASCRIPT",
-    "TYPESCRIPT",
-    "REACT",
-    "NEXT.JS",
-    
-  ];
 
   return (
     <div>
@@ -46,6 +33,7 @@ const Index = () => {
         <Contact />
         <Blog />
       </div>
+      <BButton />
       <Header />
     </div>
 

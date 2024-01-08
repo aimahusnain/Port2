@@ -5,6 +5,11 @@ import { useCallback, useContext, useEffect, useRef, useState } from "react";
 import { AlexioContext } from "../Context";
 import PortfolioBox from "./PortfolioBox";
 import { PortCat } from "../utils/Static Data";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
+import FeaturedPortfolio from './FeaturedPortfolio'
 
 const Portfolio = () => {
   const isotope = useRef<Isotope | null>(null);
@@ -74,11 +79,18 @@ const Portfolio = () => {
       <div className="p-0">
         <div className="flex md:flex-row flex-col gap-1 !mx-0 h-full">
           <div className="p-0 md:pt-0 pt-16 pb-3 overflow-hidden items-center justify-center flex flex-col h-full md:max-w-[30%] md:h-screen w-full bg-boo-700">
-            <ul>
-              <h3 className="text-white text-3xl font-bold mt-5">
+            
+              <h3 className="text-white text-3xl font-bold my-5">
                 Featured Projects
               </h3>
-              <PortfolioBox
+              <Carousel
+                className="w-fit"
+                autoPlay
+                infiniteLoop
+                showThumbs={false}
+                showStatus={false}
+              >
+              <FeaturedPortfolio
                 imageSrcs={[
                   "/static/img/Emirates Visa/Emirates Visa1.png",
                   "/static/img/Emirates Visa/Emirates Visa2.png",
@@ -91,8 +103,8 @@ const Portfolio = () => {
                 description="Cloned by emiratesvisa.com"
                 webURL="emirates-visa.vercel.app"
                 black="text-white"
-              />
-              <PortfolioBox
+                />
+              <FeaturedPortfolio
                         imageSrcs={[
                           "/static/img/TextToSpeech1.PNG",
                           "/static/img/TextToSpeech2.PNG",
@@ -105,7 +117,8 @@ const Portfolio = () => {
                         webURL="text-to-speech-example.vercel.app"
                         black="text-white"
                         />
-            </ul>
+                        </Carousel>
+            
           </div>
 
           <div className="mb-7 col-xl-8">
