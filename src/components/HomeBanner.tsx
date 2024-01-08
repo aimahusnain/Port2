@@ -12,18 +12,10 @@ import ContactShort from "./ContactShort";
 import { Blurhash } from 'react-blurhash';
 
 const insights = [
-  "FIGMA",
   "HTML",
   "CSS",
   "TAILWIND CSS",
-  "JAVASCRIPT",
-  "TYPESCRIPT",
-  "REACT",
-  "NEXT.JS",
   "FIGMA",
-  "HTML",
-  "CSS",
-  "TAILWIND CSS",
   "JAVASCRIPT",
   "TYPESCRIPT",
   "REACT",
@@ -172,17 +164,5 @@ const [imageLoaded, setImageLoaded] = useState(false);
     </div>
   );
 };
-
-const NextArrow = ({ onClick }: { onClick?: () => void }) => (
-  <div className="slick-arrow slick-next" onClick={onClick}>
-    Next
-  </div>
-);
-
-const PrevArrow = ({ onClick }: { onClick?: () => void }) => (
-  <div className="slick-arrow slick-prev" onClick={onClick}>
-    Prev
-  </div>
-);
 
 export default HomeBanner;

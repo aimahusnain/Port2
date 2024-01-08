@@ -202,7 +202,7 @@ const Contact = () => {
               </TooltipForIcons>
 
               <TooltipForIcons
-                linkhref="https://twitter.com/"
+                linkhref="https://twitter.com/webKinSolutions"
                 arialabel="Twitter"
               >
                 <BsTwitterX
@@ -213,7 +213,8 @@ const Contact = () => {
               </TooltipForIcons>
 
               <TooltipForIcons
-                linkhref="https://instagram.com/"
+                linkhref="https://instagram.com/devkinSolutions/"
+                // Change Devkin to WebKin
                 arialabel="Instagram"
               >
                 <Instagram
@@ -223,7 +224,7 @@ const Contact = () => {
               </TooltipForIcons>
 
               <TooltipForIcons
-                linkhref="https://linkedin.com/"
+                linkhref="https://www.linkedin.com/company/webkin-solutions/"
                 arialabel="Linkedin"
               >
                 <FaLinkedinIn
@@ -234,7 +235,7 @@ const Contact = () => {
               </TooltipForIcons>
 
               <TooltipForIcons
-                linkhref="https://youtube.com/"
+                linkhref="https://www.youtube.com/@WebKinSolutions"
                 arialabel="Youtube"
               >
                 <TbBrandYoutube
@@ -244,7 +245,7 @@ const Contact = () => {
               </TooltipForIcons>
 
               <TooltipForIcons
-                linkhref="https://hashnode.com/"
+                linkhref="https://webkinsolutions.hashnode.dev/"
                 arialabel="Hashnode"
               >
                 <FaHashnode
@@ -254,14 +255,14 @@ const Contact = () => {
               </TooltipForIcons>
 
               <TooltipForIcons
-                linkhref="https://mastodon.social/"
+                linkhref="https://mastodon.social/@webkinSolutions"
                 arialabel="Mastodon"
               >
                 <BsMastodon className="fill-white dark:hover:fill-white duration-200 transition-all dark:fill-black" size={15} />
               </TooltipForIcons>
 
               <TooltipForIcons
-                linkhref="https://stackoverflow.com/"
+                linkhref="https://stackoverflow.com/users/23212827/webkin-solutions"
                 arialabel="StackOverFlow"
               >
                 <IoLogoStackoverflow
