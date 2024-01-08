@@ -94,8 +94,8 @@ const Portfolio = () => {
               />
               <PortfolioBox
                         imageSrcs={[
-                          "/static/img/TextToSpeech1.png",
-                          "/static/img/TextToSpeech2.png",
+                          "/static/img/TextToSpeech1.PNG",
+                          "/static/img/TextToSpeech2.PNG",
                           "/static/img/portfolio-3.jpg",
                           "/static/img/portfolio-4.jpg",
                         ]}
