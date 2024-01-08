@@ -80,10 +80,11 @@ const Portfolio = () => {
               </h3>
               <PortfolioBox
                 imageSrcs={[
-                  "/static/img/portfolio-2.jpg",
-                  "/static/img/portfolio-1.jpg",
-                  "/static/img/portfolio-3.jpg",
-                  "/static/img/portfolio-4.jpg",
+                  "/static/img/Emirates Visa/Emirates Visa1.png",
+                  "/static/img/Emirates Visa/Emirates Visa2.png",
+                  "/static/img/Emirates Visa/Emirates Visa3.png",
+                  "/static/img/Emirates Visa/Emirates Visa4.png",
+                  "/static/img/Emirates Visa/Emirates Visa5.png",
                 ]}
                 title="Emirates Visa"
                 category="cloning"
@@ -92,18 +93,18 @@ const Portfolio = () => {
                 black="text-white"
               />
               <PortfolioBox
-                imageSrcs={[
-                  "/static/img/portfolio-5.jpg",
-                  "/static/img/portfolio-2.jpg",
-                  "/static/img/portfolio-3.jpg",
-                  "/static/img/portfolio-4.jpg",
-                ]}
-                title="Emirates Visa"
-                category="cloning"
-                description="Cloned by emiratesvisa.com"
-                webURL="emirates-visa.vercel.app"
-                black="text-white"
-              />
+                        imageSrcs={[
+                          "/static/img/TextToSpeech1.png",
+                          "/static/img/TextToSpeech2.png",
+                          "/static/img/portfolio-3.jpg",
+                          "/static/img/portfolio-4.jpg",
+                        ]}
+                        title="Text To Speech"
+                        category="saas"
+                        description="This Will Convert Your Text To Speech"
+                        webURL="text-to-speech-example.vercel.app"
+                        black="text-white"
+                        />
             </ul>
           </div>
 
@@ -145,7 +146,7 @@ const Portfolio = () => {
                         {showAllCategories ? "See Less" : "See More"}
                       </button>
                     </div>
-                    <ul className="portfolio flex w-full justify-center flex-wrap">
+                    <ul className="portfolio flex w-full justify-between items-between flex-wrap">
                       <PortfolioBox
                         imageSrcs={[
                           "/static/img/portfolio-1.jpg",
