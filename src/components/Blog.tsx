@@ -31,7 +31,7 @@ const Blog = () => {
             <Separator className="my-6 mt-11" />
             <div className="flex mx-5 justify-between gap-5 items-start text-left">
 
-              <div className="w-3/4 m-auto">
+              <div className="sm:w-3/4 w-full m-auto">
                 <div className="mt-20">
                 <Carousel blogs={allBlogs} />
                 </div>
