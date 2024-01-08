@@ -84,7 +84,7 @@ const Portfolio = () => {
                 Featured Projects
               </h3>
               <Carousel
-                className="w-fit"
+                className="w-fit !shadow-none"
                 autoPlay
                 infiniteLoop
                 showThumbs={false}
