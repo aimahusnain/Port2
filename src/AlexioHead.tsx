@@ -4,6 +4,10 @@ const AlexioHead = () => {
   return (
     
     <head>
+      <meta property="og:image" content="/social-banner.png" />
+<meta property="og:image:type" content="png" />
+<meta property="og:image:width" content="1898" />
+<meta property="og:image:height" content="934" />
       <meta charSet="utf-8" />
       <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
       <meta

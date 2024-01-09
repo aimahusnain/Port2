@@ -86,8 +86,9 @@ const [imageLoaded, setImageLoaded] = useState(false);
                 <div className="!max-h-full">
                   <Image
                   fill
+                  loading='eager'
                     className="sm:pb-0 pb-[200px] m-0 p-0 object-cover object-bottom w-screen h-screen"
-                    src="/static/img/IMG_3213 Edited.png"
+                    src="/static/img/IMG_3213-Edited.webp"
                     alt="fgt"
                   />
                 </div>
