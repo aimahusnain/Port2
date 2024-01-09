@@ -46,7 +46,7 @@ const Services = () => {
               Crafting Exceptional Web Experiences with React and Next.js
             </h3>
             <p>
-              At {siteMetadata.WebName} Solutions, we are passionate about
+              At {siteMetadata.WebName}, we are passionate about
               turning your digital dreams into reality. As dedicated React and
               Next.js web developers, we specialize in creating robust and
               innovative solutions tailored to your unique needs. Whether you're

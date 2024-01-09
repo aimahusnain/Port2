@@ -83,10 +83,10 @@ const AboutUs = () => {
 
                     <div className="block sm:block lg:hidden h-fit my-6">
                       <HPC
+                        scale="group-hover:before:scale-[5.4]"
                         isdarktext="dark:text-black group-hover:text-whites"
                         isdarkbg="dark:bg-black"
                         isdarkoutline="dark:outline-black"
-                        scale="group-hover:before:scale-[6]"
                         height="h-full py-10"
                       />
                       <TPC
@@ -102,7 +102,7 @@ const AboutUs = () => {
                     <div className="flex sm:flex-row flex-col gap-14 mb-6">
                       <div className="sm:w-1/2 w-full">
                         <h5 className="text-white dark:text-dark pb-1 border-b-2 border-boo">
-                          Why Choose {siteMetadata.WebName} Solutions?
+                          Why Choose {siteMetadata.WebName}?
                         </h5>
                         <Accordion
                           type="single"

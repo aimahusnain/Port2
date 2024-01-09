@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { useContext } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
 import { LiaFacebookMessenger } from "react-icons/lia";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -22,13 +22,13 @@ const HPC = ({
 }) => {
   const { nav, changeNav } = useContext(AlexioContext);
 
-  return (
+ return (
     <div
       className={`${height} w-full flex items-center justify-between flex-col py-3 !max-h-full max-w-full rounded-xl text-trueGray-800 dark:text-trueGray-400 overflow-hidden group motion-safe:transition-all motion-safe:duration-700 m-0 p-0`}
     >
       <div></div>
       <div className="">
-        <figure
+      <figure
           className={`relative w-40 h-40 m-0 mx-auto rounded-full outline outline-offset-4 outline-white ${isdarkoutline} before:content-[''] before:absolute before:block before:pointer-events-none before:rounded-full before:h-full before:w-full before:bg-pinky-500 before:-z-[1] ${scale} motion-safe:before:transition-all motion-safe:transform-gpu motion-safe:before:duration-500 before:origin-center group-hover:outline-pinky-400`}
         >
           <div className="w-40 h-40 overflow-hidden rounded-full">
@@ -43,7 +43,7 @@ const HPC = ({
 
         <header className="motion-safe:translate-y-4 group-hover:translate-y-0 motion-safe:transition-transform motion-safe:transform-gpu motion-safe:duration-500">
           <h3
-            className={`font-semibold text-2xl text-center mt-6 text-white  ${isdarktext} relative`}
+            className={`font-semibold text-2xl text-center mt-6 text-white ${isdarktext} relative`}
           >
             Muhammad Husnain
           </h3>
