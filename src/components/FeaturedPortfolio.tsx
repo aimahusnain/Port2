@@ -25,7 +25,7 @@ const PortfolioBox = ({
 }) => {
   return (
     <li className={`!max-h-full text-white ${black}`}>
-      <div className="w-full">
+      <div>
         <Dialog>
           <DialogTrigger asChild>
             <a className="cursor-pointer block relative h-64 rounded overflow-hidden">
