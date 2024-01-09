@@ -14,6 +14,7 @@ const Portfolio = dynamic(() => import("../components/Portfolio"), {
   ssr: false,
 });
 import BButton from "../components/bButton";
+import WhatsUpButton from "../components/bButton/WhatsUpButton";
 
 const Index = () => {
   useEffect(() => {
@@ -33,6 +34,7 @@ const Index = () => {
         <Contact />
         <Blog />
       </div>
+      <WhatsUpButton />
       <BButton />
       <Header />
     </div>

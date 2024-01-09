@@ -118,7 +118,6 @@ const [imageLoaded, setImageLoaded] = useState(false);
                       <span className="text-transparent bg-clip-text bg-gradient-to-r from-boo-400 to-pinky-500">
                         Welcome to
                       </span>
-                      <a href="//wa.me/03074241757">WhatsUp</a>
                       <br></br>
                       <TypeAnimation
                         sequence={[
