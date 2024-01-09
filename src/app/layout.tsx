@@ -1,6 +1,6 @@
 
 import { SpeedInsights } from '@vercel/speed-insights/next';
-import { Inter, Manrope } from 'next/font/google';
+import { Inter } from 'next/font/google';
 import AlexioHead from '../AlexioHead';
 import AlexioState from '../Context';
 import NextThemeProvider from '../providers/theme-provider';
@@ -12,12 +12,6 @@ const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-in',
-});
-
-const manrope = Manrope({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-mr',
 });
 
 export const metadata = {
