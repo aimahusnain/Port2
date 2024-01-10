@@ -8,11 +8,11 @@ const siteMetadata = {
   theme: 'system',
   siteUrl: 'http://localhost:3000',
   siteLogo: '/logo.png',
-  socialBanner: '/social-banner.png', // add social banner in the public folder
+  socialBanner: '/social-banner copy.png', // add social banner in the public folder
   email: 'WebKinSolutions@proton.me',
   github: 'https://github.com/webkinSolutions',
   twitter: 'https://twitter.com/aimahusnain',
-  facebook: 'https://facebook.com',
+  facebook: 'https://facebook.com/webkinSolutions',
   youtube: 'https://youtube.com/aimahusnain',
   linkedin: 'https://www.linkedin.com/in/aimahusnain/',
   dribbble: 'https://www.dribbble.com/aimahusnain',
