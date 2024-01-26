@@ -9,7 +9,7 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
-import FeaturedPortfolio from './FeaturedPortfolio'
+import FeaturedPortfolio from "./FeaturedPortfolio";
 
 const Portfolio = () => {
   const isotope = useRef<Isotope | null>(null);
@@ -79,17 +79,16 @@ const Portfolio = () => {
       <div className="p-0">
         <div className="flex md:flex-row flex-col gap-1 !mx-0 h-full">
           <div className="p-0 md:pt-0 pt-16 pb-3 overflow-hidden items-center justify-center flex flex-col h-full md:max-w-[30%] md:h-screen w-full bg-boo-700">
-            
-              <h3 className="text-white text-3xl font-bold my-5">
-                Featured Projects
-              </h3>
-              <Carousel
-                className="w-fit px-7 !shadow-none"
-                autoPlay
-                infiniteLoop
-                showThumbs={false}
-                showStatus={false}
-              >
+            <h3 className="text-white text-3xl font-bold my-5">
+              Featured Projects
+            </h3>
+            <Carousel
+              className="w-fit px-7 !shadow-none"
+              autoPlay
+              infiniteLoop
+              showThumbs={false}
+              showStatus={false}
+            >
               <FeaturedPortfolio
                 imageSrcs={[
                   "/static/img/Emirates Visa/Emirates Visa1.png",
@@ -103,22 +102,30 @@ const Portfolio = () => {
                 description="Cloned by emiratesvisa.com"
                 webURL="emirates-visa.vercel.app"
                 black="text-white"
-                />
+              />
               <FeaturedPortfolio
-                        imageSrcs={[
-                          "/static/img/TextToSpeech1.PNG",
-                          "/static/img/TextToSpeech2.PNG",
-                          "/static/img/portfolio-3.jpg",
-                          "/static/img/portfolio-4.jpg",
-                        ]}
-                        title="Text To Speech"
-                        category="saas"
-                        description="This Will Convert Your Text To Speech"
-                        webURL="text-to-speech-example.vercel.app"
-                        black="text-white"
-                        />
-                        </Carousel>
-            
+                imageSrcs={[
+                  "/static/img/Alight Motion/Image1.PNG",
+                  "/static/img/Alight Motion/Image2.PNG",
+                  "/static/img/Alight Motion/Image3.PNG",
+                  "/static/img/Alight Motion/Image4.PNG",
+                  "/static/img/Alight Motion/Image5.PNG",
+                  "/static/img/Alight Motion/Image6.PNG",
+                  "/static/img/Alight Motion/Image7.PNG",
+                  "/static/img/Alight Motion/Image8.PNG",
+                  "/static/img/Alight Motion/Image9.PNG",
+                  "/static/img/Alight Motion/Image10.PNG",
+                  "/static/img/Alight Motion/Image11.PNG",
+                  "/static/img/Alight Motion/Image12.PNG",
+                  "/static/img/Alight Motion/Image13.PNG",
+                ]}
+                title="Alight Motion"
+                category="apk"
+                description="This is the Micro Apk website"
+                webURL="alight-motion.vercel.app"
+                black="text-white"
+              />
+            </Carousel>
           </div>
 
           <div className="mb-7 col-xl-8">
@@ -135,7 +142,7 @@ const Portfolio = () => {
                   </div>
 
                   <div className="">
-                  <div>
+                    <div>
                       <ul className="portfolio-filter flex flex-wrap">
                         <li
                           className={`${activeBtn("*")} theme-after`}
@@ -160,12 +167,53 @@ const Portfolio = () => {
                       </button>
                     </div>
                     <ul className="portfolio flex w-full justify-between items-between flex-wrap">
+                    <PortfolioBox
+                imageSrcs={[
+                  "/static/img/Alight Motion/Image1.PNG",
+                  "/static/img/Alight Motion/Image4.PNG",
+                  "/static/img/Alight Motion/Image5.PNG",
+                  "/static/img/Alight Motion/Image8.PNG",
+                  "/static/img/Alight Motion/Image9.PNG",
+                  "/static/img/Alight Motion/Image10.PNG",
+                ]}
+                title="Alight Motion"
+                category="apk"
+                description="This is the Micro Apk website"
+                webURL="alight-motion.vercel.app"
+                black="text-white"
+              />
                       <PortfolioBox
                         imageSrcs={[
-                          "/static/img/portfolio-1.jpg",
-                          "/static/img/portfolio-2.jpg",
-                          "/static/img/portfolio-3.jpg",
-                          "/static/img/portfolio-4.jpg",
+                          "/static/img/Youtube Video Downloader/image1.png",
+                          "/static/img/Youtube Video Downloader/image2.png",
+                          "/static/img/Youtube Video Downloader/image3.png",
+                          "/static/img/Youtube Video Downloader/image4.png",
+                        ]}
+                        title="Youtube Video Downloader"
+                        category="saas"
+                        description="Download any video of youtube"
+                        webURL="taha-video-downloader.vercel.app"
+                        black="dark:text-black"
+                      />
+                      <PortfolioBox
+                        imageSrcs={[
+                          "/static/img/Bypass/image1.png",
+                          "/static/img/Bypass/image2.png",
+                          "/static/img/Bypass/image3.png",
+                        ]}
+                        title="LinkVertise Bypass"
+                        category="saas"
+                        description="LinkVertise Bypass"
+                        webURL="iftikhar-bypass.vercel.app/"
+                        black="dark:text-black"
+                      />
+                      <PortfolioBox
+                        imageSrcs={[
+                          "/static/img/Emirates Visa/Emirates Visa1.png",
+                          "/static/img/Emirates Visa/Emirates Visa2.png",
+                          "/static/img/Emirates Visa/Emirates Visa3.png",
+                          "/static/img/Emirates Visa/Emirates Visa4.png",
+                          "/static/img/Emirates Visa/Emirates Visa5.png",
                         ]}
                         title="Emirates Visa"
                         category="cloning"
@@ -173,6 +221,7 @@ const Portfolio = () => {
                         webURL="emirates-visa.vercel.app"
                         black="dark:text-black"
                       />
+
                       <PortfolioBox
                         imageSrcs={[
                           "/static/img/TextToSpeech1.PNG",
@@ -184,61 +233,6 @@ const Portfolio = () => {
                         category="saas"
                         description="This Will Convert Your Text To Speech"
                         webURL="text-to-speech-example.vercel.app"
-                        black="dark:text-black"
-                      />
-                      <PortfolioBox
-                        imageSrcs={[
-                          "/static/img/portfolio-1.jpg",
-                          "/static/img/portfolio-2.jpg",
-                          "/static/img/portfolio-3.jpg",
-                          "/static/img/portfolio-4.jpg",
-                        ]}
-                        title="Emirates Visa"
-                        category="cloning"
-                        description="Cloned by emiratesvisa.com"
-                        webURL="emirates-visa.vercel.app"
-                        black="dark:text-black"
-                      />
-
-                      <PortfolioBox
-                        imageSrcs={[
-                          "/static/img/portfolio-1.jpg",
-                          "/static/img/portfolio-2.jpg",
-                          "/static/img/portfolio-3.jpg",
-                          "/static/img/portfolio-4.jpg",
-                        ]}
-                        title="Emirates Visa"
-                        category="cloning"
-                        description="Cloned by emiratesvisa.com"
-                        webURL="emirates-visa.vercel.app"
-                        black="dark:text-black"
-                      />
-
-                      <PortfolioBox
-                        imageSrcs={[
-                          "/static/img/portfolio-1.jpg",
-                          "/static/img/portfolio-2.jpg",
-                          "/static/img/portfolio-3.jpg",
-                          "/static/img/portfolio-4.jpg",
-                        ]}
-                        title="Emirates Visa"
-                        category="cloning"
-                        description="Cloned by emiratesvisa.com"
-                        webURL="emirates-visa.vercel.app"
-                        black="dark:text-black"
-                      />
-
-                      <PortfolioBox
-                        imageSrcs={[
-                          "/static/img/portfolio-1.jpg",
-                          "/static/img/portfolio-2.jpg",
-                          "/static/img/portfolio-3.jpg",
-                          "/static/img/portfolio-4.jpg",
-                        ]}
-                        title="Emirates Visa"
-                        category="cloning"
-                        description="Cloned by emiratesvisa.com"
-                        webURL="emirates-visa.vercel.app"
                         black="dark:text-black"
                       />
                     </ul>{" "}
