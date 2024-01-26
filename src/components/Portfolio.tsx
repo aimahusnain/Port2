@@ -106,18 +106,11 @@ const Portfolio = () => {
               <FeaturedPortfolio
                 imageSrcs={[
                   "/static/img/Alight Motion/Image1.PNG",
-                  "/static/img/Alight Motion/Image2.PNG",
-                  "/static/img/Alight Motion/Image3.PNG",
                   "/static/img/Alight Motion/Image4.PNG",
                   "/static/img/Alight Motion/Image5.PNG",
-                  "/static/img/Alight Motion/Image6.PNG",
-                  "/static/img/Alight Motion/Image7.PNG",
                   "/static/img/Alight Motion/Image8.PNG",
                   "/static/img/Alight Motion/Image9.PNG",
                   "/static/img/Alight Motion/Image10.PNG",
-                  "/static/img/Alight Motion/Image11.PNG",
-                  "/static/img/Alight Motion/Image12.PNG",
-                  "/static/img/Alight Motion/Image13.PNG",
                 ]}
                 title="Alight Motion"
                 category="apk"
@@ -184,10 +177,10 @@ const Portfolio = () => {
               />
                       <PortfolioBox
                         imageSrcs={[
-                          "/static/img/Youtube Video Downloader/image1.png",
-                          "/static/img/Youtube Video Downloader/image2.png",
-                          "/static/img/Youtube Video Downloader/image3.png",
-                          "/static/img/Youtube Video Downloader/image4.png",
+                          "/static/img/Youtube Video Downloader/image1.PNG",
+                          "/static/img/Youtube Video Downloader/image2.PNG",
+                          "/static/img/Youtube Video Downloader/image3.PNG",
+                          "/static/img/Youtube Video Downloader/image4.PNG",
                         ]}
                         title="Youtube Video Downloader"
                         category="saas"
@@ -197,9 +190,9 @@ const Portfolio = () => {
                       />
                       <PortfolioBox
                         imageSrcs={[
-                          "/static/img/Bypass/image1.png",
-                          "/static/img/Bypass/image2.png",
-                          "/static/img/Bypass/image3.png",
+                          "/static/img/Bypass/image1.PNG",
+                          "/static/img/Bypass/image2.PNG",
+                          "/static/img/Bypass/image3.PNG",
                         ]}
                         title="LinkVertise Bypass"
                         category="saas"
