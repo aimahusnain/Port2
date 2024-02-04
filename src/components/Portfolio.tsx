@@ -4,7 +4,7 @@ import Isotope from "isotope-layout";
 import { useCallback, useContext, useEffect, useRef, useState } from "react";
 import { AlexioContext } from "../Context";
 import PortfolioBox from "./PortfolioBox";
-import { PortCat } from "../utils/Static Data";
+import { PortCat, PortPosts } from "../utils/Static Data";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -160,74 +160,16 @@ const Portfolio = () => {
                       </button>
                     </div>
                     <ul className="portfolio flex w-full justify-between items-between flex-wrap">
-                    <PortfolioBox
-                imageSrcs={[
-                  "/static/img/Alight Motion/Image1.PNG",
-                  "/static/img/Alight Motion/Image4.PNG",
-                  "/static/img/Alight Motion/Image5.PNG",
-                  "/static/img/Alight Motion/Image8.PNG",
-                  "/static/img/Alight Motion/Image9.PNG",
-                  "/static/img/Alight Motion/Image10.PNG",
-                ]}
-                title="Alight Motion"
-                category="apk"
-                description="This is the Micro Apk website"
-                webURL="alight-motion.vercel.app"
-                black="text-white"
-              />
-                      <PortfolioBox
-                        imageSrcs={[
-                          "/static/img/Youtube Video Downloader/image1.PNG",
-                          "/static/img/Youtube Video Downloader/image2.PNG",
-                          "/static/img/Youtube Video Downloader/image3.PNG",
-                          "/static/img/Youtube Video Downloader/image4.PNG",
-                        ]}
-                        title="Youtube Video Downloader"
-                        category="saas"
-                        description="Download any video of youtube"
-                        webURL="taha-video-downloader.vercel.app"
-                        black="dark:text-black"
-                      />
-                      <PortfolioBox
-                        imageSrcs={[
-                          "/static/img/Bypass/image1.PNG",
-                          "/static/img/Bypass/image2.PNG",
-                          "/static/img/Bypass/image3.PNG",
-                        ]}
-                        title="LinkVertise Bypass"
-                        category="saas"
-                        description="LinkVertise Bypass"
-                        webURL="iftikhar-bypass.vercel.app/"
-                        black="dark:text-black"
-                      />
-                      <PortfolioBox
-                        imageSrcs={[
-                          "/static/img/Emirates Visa/Emirates Visa1.png",
-                          "/static/img/Emirates Visa/Emirates Visa2.png",
-                          "/static/img/Emirates Visa/Emirates Visa3.png",
-                          "/static/img/Emirates Visa/Emirates Visa4.png",
-                          "/static/img/Emirates Visa/Emirates Visa5.png",
-                        ]}
-                        title="Emirates Visa"
-                        category="cloning"
-                        description="Cloned by emiratesvisa.com"
-                        webURL="emirates-visa.vercel.app"
-                        black="dark:text-black"
-                      />
-
-                      <PortfolioBox
-                        imageSrcs={[
-                          "/static/img/TextToSpeech1.PNG",
-                          "/static/img/TextToSpeech2.PNG",
-                          "/static/img/portfolio-3.jpg",
-                          "/static/img/portfolio-4.jpg",
-                        ]}
-                        title="Text To Speech"
-                        category="saas"
-                        description="This Will Convert Your Text To Speech"
-                        webURL="text-to-speech-example.vercel.app"
-                        black="dark:text-black"
-                      />
+                      {PortPosts.map((portfolioPost) => (
+                        <PortfolioBox
+                          imageSrcs={portfolioPost.images}
+                          title={portfolioPost.title}
+                          category={portfolioPost.category}
+                          description={portfolioPost.description}
+                          webURL={portfolioPost.webURL}
+                          black="text-white"
+                        />
+                      ))}
                     </ul>{" "}
                   </div>
                 </div>

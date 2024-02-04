@@ -37,7 +37,7 @@ const PortfolioBox = ({
               />
             </DialogTrigger>
             {/* Adjusted size with Tailwind classes */}
-            <DialogContent className="w-11/12 md:w-3/4 lg:max-w-3xl xl:w-1/3 2xl:w-1/4 mx-auto my-8 p-4">
+            <DialogContent className="sm:w-fit w-full my-8 p-4">
               <Carousel showArrows={true} showStatus={true} showThumbs={true}>
                 {imageSrcs.map((src, index) => (
                   <div key={index} className="w-full">
