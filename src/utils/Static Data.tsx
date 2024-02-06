@@ -1,17 +1,14 @@
 export const PortCat = [
-  { key: "cloning", label: "Cloning" },
   { key: "ecommerce", label: "Ecommerce" },
   { key: "saas", label: "SaaS Applications" },
   { key: "apk", label: "Apk" },
-  { key: "dynamic", label: "Dynamic" },
-  { key: "static", label: "Static" },
-  { key: "blog", label: "Blog Development" },
+  { key: "business", label: "Business" },
   { key: "forum", label: "Forum or Community" },
+  { key: "blog", label: "Blog Development" },
   { key: "affiliate", label: "Affiliate" },
   { key: "portfolio", label: "Portfolio" },
   { key: "educational", label: "Educational Course Selling" },
   { key: "news", label: "News or Magazine" },
-  { key: "business", label: "Business" },
   { key: "non-profit", label: "Non-Profit" },
   { key: "review", label: "Review" },
   { key: "event", label: "Event" },
@@ -34,6 +31,22 @@ export const PortPosts = [
   },
 
   {
+    title: "Taha Render Forum",
+    description:
+      "Inspiring creativity, sharing expertise.",
+    images: [
+      "/static/img/Taha Render Forum/Image1.png",
+      "/static/img/Taha Render Forum/Image2.png",
+      "/static/img/Taha Render Forum/Image3.png",
+      "/static/img/Taha Render Forum/Image4.png",
+      "/static/img/Taha Render Forum/Image5.png",
+      "/static/img/Taha Render Forum/Image6.png",
+    ],
+    category: "forum",
+    webURL: "taha-renderforum.vercel.app",
+  },
+
+  {
     title: "Husnain Ecommerce",
     description: "Buy anything you want from here!",
     images: [
@@ -44,7 +57,21 @@ export const PortPosts = [
       "/static/img/Husnain Ecommerce/Image5.png",
     ],
     category: "ecommerce",
-    webURL: "https://husnain-commerce.vercel.app/",
+    webURL: "husnain-commerce.vercel.app/",
+  },
+
+  {
+    title: "Taha Ecommerce",
+    description: "Buy anything you want from here!",
+    images: [
+      "/static/img/Taha Ecommerce/Image1.png",
+      "/static/img/Taha Ecommerce/Image2.png",
+      "/static/img/Taha Ecommerce/Image3.png",
+      "/static/img/Taha Ecommerce/Image4.png",
+      "/static/img/Taha Ecommerce/Image5.png",
+    ],
+    category: "ecommerce",
+    webURL: "taha-commerce.vercel.app/",
   },
 
   {
@@ -82,7 +109,7 @@ export const PortPosts = [
       "/static/img/Emirates Visa/Emirates Visa4.png",
       "/static/img/Emirates Visa/Emirates Visa5.png",
     ],
-    category: "cloning",
+    category: "business",
     webURL: "emirates-visa.vercel.app",
   },
 

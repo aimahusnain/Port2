@@ -8,7 +8,7 @@ const siteMetadata = {
   theme: 'system',
   siteUrl: 'http://localhost:3000',
   siteLogo: '/logo.png',
-  socialBanner: '/social-banner copy.png', // add social banner in the public folder
+  socialBanner: '/social-banner.png', // add social banner in the public folder
   email: 'WebKinSolutions@proton.me',
   github: 'https://github.com/webkinSolutions',
   twitter: 'https://twitter.com/aimahusnain',

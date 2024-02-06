@@ -4,10 +4,17 @@ import {
   DialogTrigger,
 } from "@/src/components/ui/dialog";
 import Link from "next/link";
-import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/src/components/ui/carousel";
+import Image from "next/image";
 import { FaExternalLinkAlt } from "react-icons/fa";
-import Image from 'next/image'
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+
 const PortfolioBox = ({
   imageSrcs,
   black,
@@ -30,29 +37,33 @@ const PortfolioBox = ({
           <Dialog>
             <DialogTrigger asChild>
               <Image
-              fill
+                fill
                 alt="ecommerce"
                 className="object-cover object-center w-full h-full block"
                 src={imageSrcs[0]}
               />
             </DialogTrigger>
             {/* Adjusted size with Tailwind classes */}
-            <DialogContent className="sm:w-fit w-full my-8 p-4">
-              <Carousel showArrows={true} showStatus={true} showThumbs={true}>
-                {imageSrcs.map((src, index) => (
-                  <div key={index} className="w-full">
-                    <img
-                      alt="ecommerce"
-                      className="object-cover object-center w-full h-full block"
-                      src={src}
-                    />
-                  </div>
-                ))}
+            <DialogContent className="my-8 p-4 flex items-center justify-center">
+              <Carousel className="min-w-full py-6">
+                <CarouselContent>
+                  {imageSrcs.map((src, index) => (
+                    <CarouselItem key={index}>
+                      <img
+                        alt="ecommerce"
+                        className="object-center max-w-full h-96"
+                        src={src}
+                      />
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+                <CarouselPrevious className="mx-14" />
+                <CarouselNext className="mx-14" />
               </Carousel>
             </DialogContent>
           </Dialog>
         </div>
-        <div className="mt-4">
+        <div className="mt-4 max-w-fit">
           <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1 capitalize">
             {category}
           </h3>

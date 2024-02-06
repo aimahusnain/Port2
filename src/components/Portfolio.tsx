@@ -91,16 +91,17 @@ const Portfolio = () => {
             >
               <FeaturedPortfolio
                 imageSrcs={[
-                  "/static/img/Emirates Visa/Emirates Visa1.png",
-                  "/static/img/Emirates Visa/Emirates Visa2.png",
-                  "/static/img/Emirates Visa/Emirates Visa3.png",
-                  "/static/img/Emirates Visa/Emirates Visa4.png",
-                  "/static/img/Emirates Visa/Emirates Visa5.png",
+                  "/static/img/Taha Render Forum/Image1.png",
+                  "/static/img/Taha Render Forum/Image2.png",
+                  "/static/img/Taha Render Forum/Image3.png",
+                  "/static/img/Taha Render Forum/Image4.png",
+                  "/static/img/Taha Render Forum/Image5.png",
+                  "/static/img/Taha Render Forum/Image6.png",
                 ]}
-                title="Emirates Visa"
-                category="cloning"
-                description="Cloned by emiratesvisa.com"
-                webURL="emirates-visa.vercel.app"
+                title="Taha Render Forum"
+                category="forum"
+                description="Inspiring creativity, sharing expertise."
+                webURL="taha-renderforum.vercel.app"
                 black="text-white"
               />
               <FeaturedPortfolio
