@@ -5,11 +5,18 @@ import { useCallback, useContext, useEffect, useRef, useState } from "react";
 import { AlexioContext } from "../Context";
 import PortfolioBox from "./PortfolioBox";
 import { PortCat, PortPosts } from "../utils/Static Data";
-import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import FeaturedPortfolio from "./FeaturedPortfolio";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/src/components/ui/carousel"
+
 
 const Portfolio = () => {
   const isotope = useRef<Isotope | null>(null);
@@ -82,7 +89,7 @@ const Portfolio = () => {
             <h3 className="text-white text-3xl font-bold my-5">
               Featured Projects
             </h3>
-            <Carousel
+            {/* <Carousel
               className="w-fit px-7 !shadow-none"
               autoPlay
               infiniteLoop
@@ -92,10 +99,10 @@ const Portfolio = () => {
               <FeaturedPortfolio
                 imageSrcs={[
                   "/static/img/Taha Ecommerce/Image1.png",
-      "/static/img/Taha Ecommerce/Image2.png",
-      "/static/img/Taha Ecommerce/Image3.png",
-      "/static/img/Taha Ecommerce/Image4.png",
-      "/static/img/Taha Ecommerce/Image5.png",
+                  "/static/img/Taha Ecommerce/Image2.png",
+                  "/static/img/Taha Ecommerce/Image3.png",
+                  "/static/img/Taha Ecommerce/Image4.png",
+                  "/static/img/Taha Ecommerce/Image5.png",
                 ]}
                 title="Taha Ecommerce"
                 category="ecommerce"
@@ -118,7 +125,8 @@ const Portfolio = () => {
                 webURL="alight-motion.vercel.app"
                 black="text-white"
               />
-            </Carousel>
+            </Carousel> */}
+            
           </div>
 
           <div className="mb-7 col-xl-8">
