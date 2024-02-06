@@ -3,11 +3,15 @@ import {
   DialogContent,
   DialogTrigger,
 } from "@/src/components/ui/dialog";
-import Link from "next/link";
-import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { FaExternalLinkAlt } from "react-icons/fa";
-import Image from "next/image";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/src/components/ui/carousel";
+
 const PortfolioBox = ({
   imageSrcs,
   black,
@@ -37,8 +41,8 @@ const PortfolioBox = ({
             </a>
           </DialogTrigger>
           {/* Adjusted size with Tailwind classes */}
-          <DialogContent className="w-11/12 md:w-3/4 lg:max-w-3xl xl:w-1/3 2xl:w-1/4 mx-auto my-8 p-4">
-            <Carousel showArrows={true} showStatus={true} showThumbs={true}>
+          <DialogContent className="my-8 p-4 flex items-center justify-center">
+            {/* <Carousel showArrows={true} showStatus={true} showThumbs={true}>
               {imageSrcs.map((src, index) => (
                 <div key={index} className="w-full">
                   <img
@@ -48,6 +52,21 @@ const PortfolioBox = ({
                   />
                 </div>
               ))}
+            </Carousel> */}
+            <Carousel className="min-w-full py-6">
+              <CarouselContent>
+                {imageSrcs.map((src, index) => (
+                  <CarouselItem key={index}>
+                    <img
+                      alt="ecommerce"
+                      className="object-center max-w-full h-96"
+                      src={src}
+                    />
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious className="mx-14" />
+              <CarouselNext className="mx-14" />
             </Carousel>
           </DialogContent>
         </Dialog>
