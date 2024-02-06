@@ -62,7 +62,7 @@ export const PortPosts = [
 
   {
     title: "Taha Ecommerce",
-    description: "Buy anything you want from here!",
+    description: "Need to by something?",
     images: [
       "/static/img/Taha Ecommerce/Image1.png",
       "/static/img/Taha Ecommerce/Image2.png",

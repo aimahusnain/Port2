@@ -91,17 +91,16 @@ const Portfolio = () => {
             >
               <FeaturedPortfolio
                 imageSrcs={[
-                  "/static/img/Taha Render Forum/Image1.png",
-                  "/static/img/Taha Render Forum/Image2.png",
-                  "/static/img/Taha Render Forum/Image3.png",
-                  "/static/img/Taha Render Forum/Image4.png",
-                  "/static/img/Taha Render Forum/Image5.png",
-                  "/static/img/Taha Render Forum/Image6.png",
+                  "/static/img/Taha Ecommerce/Image1.png",
+      "/static/img/Taha Ecommerce/Image2.png",
+      "/static/img/Taha Ecommerce/Image3.png",
+      "/static/img/Taha Ecommerce/Image4.png",
+      "/static/img/Taha Ecommerce/Image5.png",
                 ]}
-                title="Taha Render Forum"
-                category="forum"
-                description="Inspiring creativity, sharing expertise."
-                webURL="taha-renderforum.vercel.app"
+                title="Taha Ecommerce"
+                category="ecommerce"
+                description="Need to by something?"
+                webURL="taha-commerce.vercel.app/"
                 black="text-white"
               />
               <FeaturedPortfolio
