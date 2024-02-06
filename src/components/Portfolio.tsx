@@ -15,13 +15,17 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/src/components/ui/carousel"
-
+} from "@/src/components/ui/carousel";
+import * as React from "react"
+import Autoplay from "embla-carousel-autoplay"
 
 const Portfolio = () => {
   const isotope = useRef<Isotope | null>(null);
   const [filterKey, setFilterKey] = useState("*");
   const [showAllCategories, setShowAllCategories] = useState(false);
+  const plugin = React.useRef(
+    Autoplay({ delay: 2000, stopOnInteraction: true })
+  );
 
   useEffect(() => {
     const imagesLoaded = require("imagesloaded");
@@ -126,7 +130,60 @@ const Portfolio = () => {
                 black="text-white"
               />
             </Carousel> */}
-            
+            <Carousel
+              plugins={[plugin.current]}
+              onMouseEnter={plugin.current.stop}
+              onMouseLeave={plugin.current.reset}
+              opts={{
+                align: "start",
+              }}
+              orientation="vertical"
+              className="w-full px-6 list-none my-14"
+            >
+              <CarouselContent className="h-[400px] pt-8">
+                {/* Remember to change the Key with title. */}
+                <CarouselItem
+                  key="Taha Ecommerce"
+                  className="pt-1 md:basis-1/2"
+                >
+                  <FeaturedPortfolio
+                    imageSrcs={[
+                      "/static/img/Taha Ecommerce/Image1.png",
+                      "/static/img/Taha Ecommerce/Image2.png",
+                      "/static/img/Taha Ecommerce/Image3.png",
+                      "/static/img/Taha Ecommerce/Image4.png",
+                      "/static/img/Taha Ecommerce/Image5.png",
+                    ]}
+                    title="Taha Ecommerce"
+                    category="ecommerce"
+                    description="Need to by something?"
+                    webURL="taha-commerce.vercel.app/"
+                    black="text-white"
+                  />
+                </CarouselItem>
+
+                {/* Remember to change the Key with title. */}
+                <CarouselItem key="Alight Motion" className="pt-1 md:basis-1/2">
+                  <FeaturedPortfolio
+                    imageSrcs={[
+                      "/static/img/Alight Motion/Image1.PNG",
+                      "/static/img/Alight Motion/Image4.PNG",
+                      "/static/img/Alight Motion/Image5.PNG",
+                      "/static/img/Alight Motion/Image8.PNG",
+                      "/static/img/Alight Motion/Image9.PNG",
+                      "/static/img/Alight Motion/Image10.PNG",
+                    ]}
+                    title="Alight Motion"
+                    category="apk"
+                    description="This is the Micro Apk website"
+                    webURL="alight-motion.vercel.app"
+                    black="text-white"
+                  />
+                </CarouselItem>
+              </CarouselContent>
+              <CarouselPrevious />
+              <CarouselNext />
+            </Carousel>
           </div>
 
           <div className="mb-7 col-xl-8">
