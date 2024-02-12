@@ -32,8 +32,7 @@ export const PortPosts = [
 
   {
     title: "Taha Render Forum",
-    description:
-      "Inspiring creativity, sharing expertise.",
+    description: "Inspiring creativity, sharing expertise.",
     images: [
       "/static/img/Taha Render Forum/Image1.png",
       "/static/img/Taha Render Forum/Image2.png",
@@ -117,10 +116,9 @@ export const PortPosts = [
     title: "Text To Speech",
     description: "This Will Convert Your Text To Speech",
     images: [
-      "/static/img/TextToSpeech1.PNG",
-      "/static/img/TextToSpeech2.PNG",
-      "/static/img/portfolio-3.jpg",
-      "/static/img/portfolio-4.jpg",
+      "/static/img/Text To Speech/Image1.png",
+      "/static/img/Text To Speech/Image2.png",
+      "/static/img/Text To Speech/Image3.png",
     ],
     category: "saas",
     webURL: "text-to-speech-example.vercel.app",
