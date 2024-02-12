@@ -35,7 +35,7 @@ const PortfolioBox = ({
             <a className="cursor-pointer block relative h-64 rounded overflow-hidden">
               <img
                 alt="ecommerce"
-                className="object-cover object-center w-[420px] h-[340px] overflow-hidden block"
+                className="object-cover object-left w-[420px] h-[340px] overflow-hidden block"
                 src={imageSrcs[0]}
               />
             </a>

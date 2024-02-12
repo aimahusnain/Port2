@@ -29,7 +29,7 @@ const AboutUs = () => {
       id="about"
     >
       <div className="p-0">
-        <div className="flex sm:flex-row flex-col  !mx-0 h-full">
+        <div className="flex sm:flex-row flex-col !mx-0 h-full">
           <div className="p-0 overflow-hidden lg:flex flex-col items-between justify-center hidden sm:hidden lg:block sm:visible md:w-[50%] w-full bg-boo-700 ">
             <Carousel
               className="overflow-hidden flex h-full items-center justify-center"

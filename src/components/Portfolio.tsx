@@ -89,47 +89,10 @@ const Portfolio = () => {
     >
       <div className="p-0">
         <div className="flex md:flex-row flex-col gap-1 !mx-0 h-full">
-          <div className="p-0 md:pt-0 pt-16 pb-3 overflow-hidden items-center justify-center flex flex-col h-full md:max-w-[30%] md:h-screen w-full bg-boo-700">
+          <div className="p-0 sm:flex hidden md:pt-0 pt-16 pb-3 overflow-hidden items-center justify-center flex-col h-full md:max-w-[30%] md:h-screen w-full bg-boo-700">
             <h3 className="text-white text-3xl font-bold my-5">
               Featured Projects
             </h3>
-            {/* <Carousel
-              className="w-fit px-7 !shadow-none"
-              autoPlay
-              infiniteLoop
-              showThumbs={false}
-              showStatus={false}
-            >
-              <FeaturedPortfolio
-                imageSrcs={[
-                  "/static/img/Taha Ecommerce/Image1.png",
-                  "/static/img/Taha Ecommerce/Image2.png",
-                  "/static/img/Taha Ecommerce/Image3.png",
-                  "/static/img/Taha Ecommerce/Image4.png",
-                  "/static/img/Taha Ecommerce/Image5.png",
-                ]}
-                title="Taha Ecommerce"
-                category="ecommerce"
-                description="Need to by something?"
-                webURL="taha-commerce.vercel.app/"
-                black="text-white"
-              />
-              <FeaturedPortfolio
-                imageSrcs={[
-                  "/static/img/Alight Motion/Image1.PNG",
-                  "/static/img/Alight Motion/Image4.PNG",
-                  "/static/img/Alight Motion/Image5.PNG",
-                  "/static/img/Alight Motion/Image8.PNG",
-                  "/static/img/Alight Motion/Image9.PNG",
-                  "/static/img/Alight Motion/Image10.PNG",
-                ]}
-                title="Alight Motion"
-                category="apk"
-                description="This is the Micro Apk website"
-                webURL="alight-motion.vercel.app"
-                black="text-white"
-              />
-            </Carousel> */}
             <Carousel
               plugins={[plugin.current]}
               onMouseEnter={plugin.current.stop}
@@ -140,7 +103,7 @@ const Portfolio = () => {
               orientation="vertical"
               className="w-full px-6 list-none my-14"
             >
-              <CarouselContent className="h-[400px] pt-8">
+              <CarouselContent className="h-[400px] pt-10">
                 {/* Remember to change the Key with title. */}
                 <CarouselItem
                   key="Taha Ecommerce"
@@ -227,6 +190,7 @@ const Portfolio = () => {
                     <ul className="portfolio flex w-full justify-between items-between flex-wrap">
                       {PortPosts.map((portfolioPost) => (
                         <PortfolioBox
+                          key={portfolioPost.title}
                           imageSrcs={portfolioPost.images}
                           title={portfolioPost.title}
                           category={portfolioPost.category}
