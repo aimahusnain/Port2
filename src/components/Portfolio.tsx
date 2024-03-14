@@ -16,13 +16,18 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/src/components/ui/carousel";
-import * as React from "react"
-import Autoplay from "embla-carousel-autoplay"
+import * as React from "react";
+import Autoplay from "embla-carousel-autoplay";
 
 const Portfolio = () => {
   const isotope = useRef<Isotope | null>(null);
   const [filterKey, setFilterKey] = useState("*");
   const [showAllCategories, setShowAllCategories] = useState(false);
+  const [selectedTitles, setSelectedTitles] = useState<string[]>([
+    "Vapes Outlet",
+    "Taha Ecommerce",
+  ]);
+
   const plugin = React.useRef(
     Autoplay({ delay: 2000, stopOnInteraction: true })
   );
@@ -103,13 +108,34 @@ const Portfolio = () => {
               orientation="vertical"
               className="w-full px-6 list-none my-14"
             >
-              <CarouselContent className="h-[400px] pt-10">
+              <CarouselContent className="h-[430px] pt-10">
                 {/* Remember to change the Key with title. */}
-                <CarouselItem
-                  key="Taha Ecommerce"
-                  className="pt-1 md:basis-1/2"
-                >
-                  <FeaturedPortfolio
+                {selectedTitles.map((title) => {
+                  const project = PortPosts.find(
+                    (post) => post.title === title
+                  );
+                  if (project) {
+                    return (
+                      <CarouselItem
+                        key="Taha Ecommerce"
+                        className="pt-1 md:basis-1/2"
+                      >
+                        <FeaturedPortfolio
+                          black="text-white"
+                          key={title}
+                          category={project.category}
+                          imageSrcs={project.images}
+                          description={project.description}
+                          webURL={project.webURL}
+                          {...project}
+                        />
+                      </CarouselItem>
+                    );
+                  }
+                  return null;
+                })}
+
+                {/* <FeaturedPortfolio
                     imageSrcs={[
                       "/static/img/Taha Ecommerce/Image1.png",
                       "/static/img/Taha Ecommerce/Image2.png",
@@ -122,11 +148,10 @@ const Portfolio = () => {
                     description="Need to by something?"
                     webURL="taha-commerce.vercel.app/"
                     black="text-white"
-                  />
-                </CarouselItem>
+                  /> */}
 
                 {/* Remember to change the Key with title. */}
-                <CarouselItem key="Alight Motion" className="pt-1 md:basis-1/2">
+                {/* <CarouselItem key="Alight Motion" className="pt-1 md:basis-1/2">
                   <FeaturedPortfolio
                     imageSrcs={[
                       "/static/img/Alight Motion/Image1.PNG",
@@ -142,7 +167,7 @@ const Portfolio = () => {
                     webURL="alight-motion.vercel.app"
                     black="text-white"
                   />
-                </CarouselItem>
+                </CarouselItem> */}
               </CarouselContent>
               <CarouselPrevious />
               <CarouselNext />

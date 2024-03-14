@@ -4,6 +4,7 @@ export const PortCat = [
   { key: "apk", label: "Apk" },
   { key: "business", label: "Business" },
   { key: "forum", label: "Forum or Community" },
+  { key: "shopify", label: "Shopify Stores" },
   { key: "blog", label: "Blog Development" },
   { key: "affiliate", label: "Affiliate" },
   { key: "portfolio", label: "Portfolio" },
@@ -28,6 +29,40 @@ export const PortPosts = [
     ],
     category: "apk",
     webURL: "alight-motion.vercel.app",
+  },
+
+  {
+    title: "Vapes Outlet",
+    description: "Shopfiy Store",
+    images: [
+      "/static/img/VapesNest/Image 1.PNG",
+      "/static/img/VapesNest/Image 2.PNG",
+      "/static/img/VapesNest/Image 3.PNG",
+      "/static/img/VapesNest/Image 4.PNG",
+      "/static/img/VapesNest/Image 5.PNG",
+      "/static/img/VapesNest/Image 6.PNG",
+    ],
+    category: "shopify",
+    webURL: "vapesnest.com",
+  },
+
+  {
+    title: "Wash Me Car Wash",
+    description: "car wash website",
+    images: [
+      "/static/img/Wash Me Car Wash/Image 1.PNG",
+      "/static/img/Wash Me Car Wash/Image 2.PNG",
+      "/static/img/Wash Me Car Wash/Image 3.PNG",
+      "/static/img/Wash Me Car Wash/Image 4.PNG",
+      "/static/img/Wash Me Car Wash/Image 5.PNG",
+      "/static/img/Wash Me Car Wash/Image 6.PNG",
+      "/static/img/Wash Me Car Wash/Image 7.PNG",
+      "/static/img/Wash Me Car Wash/Image 8.PNG",
+      "/static/img/Wash Me Car Wash/Image 9.PNG",
+      "/static/img/Wash Me Car Wash/Image 10.PNG",
+    ],
+    category: "business",
+    webURL: "washmecarwashlongview.com",
   },
 
   {

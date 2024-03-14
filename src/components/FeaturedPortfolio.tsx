@@ -70,7 +70,7 @@ const PortfolioBox = ({
             </Carousel>
           </DialogContent>
         </Dialog>
-        <div className="my-4 pb-6 text-center">
+        <div className="pb-6 text-center">
           <h3 className="text-xs my-4 title-font mb-1">{category}</h3>
           <h2 className="title-font text-lg font-medium">{title}</h2>
           <p className="mt-1 my-4">{description}</p>
