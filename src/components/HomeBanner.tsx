@@ -9,7 +9,7 @@ import { TypeAnimation } from "react-type-animation";
 import { AlexioContext } from "../Context";
 import InsightRoll from "./(blog)/About/InsightRoll";
 import ContactShort from "./ContactShort";
-import { Blurhash } from 'react-blurhash';
+import { Blurhash } from "react-blurhash";
 
 const insights = [
   "HTML",
@@ -26,13 +26,12 @@ const HomeBanner = () => {
   const { changeNav, toggle, nav } = useContext(AlexioContext);
   const activePageClass = (name: any) => (name === nav ? "" : "page--inactive");
 
-const [imageLoaded, setImageLoaded] = useState(false);
+  const [imageLoaded, setImageLoaded] = useState(false);
   const hash = "LID,cmx]YQROxtM_tmxu_4xvMxRi";
 
   const handleImageLoad = () => {
     setImageLoaded(true);
   };
-
 
   return (
     <div
@@ -48,8 +47,8 @@ const [imageLoaded, setImageLoaded] = useState(false);
         transition={{ duration: 0.5 }}
       >
         <div className="p-0 mb-16">
-        <div className="flex md:flex-row flex-col !mx-0 h-full">
-          <div className="md:pt-0 pt-2 p-0 overflow-hidden md:items-end items-start md:justify-end justify-end flex flex-col md:h-screen h-[450px] md:w-[50%] w-full bg-boo-600">
+          <div className="flex md:flex-row flex-col !mx-0 h-full">
+            <div className="md:pt-0 pt-2 p-0 overflow-hidden md:items-end items-start md:justify-end justify-end flex flex-col md:h-screen h-[450px] md:w-[50%] w-full bg-boo-600">
               {" "}
               <Carousel
                 className="sm:pt-0 pt-2 h-full overflow-hidden flex items-start justify-center"
@@ -59,16 +58,8 @@ const [imageLoaded, setImageLoaded] = useState(false);
                 showStatus={false}
               >
                 <div className="!max-h-full">
-                {!imageLoaded && (
-                  <>
-                  <Blurhash hash={hash} width={800} height={1000} className="!w-screen !h-screen" />
-      <p>Loading...</p>
-        </>
-      )}
-
-    
                   <Image
-                  fill
+                    fill
                     className="m-0 p-0 object-cover object-top w-screen h-screen"
                     src="/static/img/IMG_3218 Edited.webp"
                     alt="665"
@@ -77,7 +68,7 @@ const [imageLoaded, setImageLoaded] = useState(false);
                 </div>
                 <div className="!max-h-full">
                   <Image
-                  fill
+                    fill
                     className="md:pb-0 pb-[240px] m-0 p-0 object-cover object-bottom w-screen h-screen"
                     src="/static/img/Eman Best V3.webp"
                     alt="ffg"
@@ -85,14 +76,14 @@ const [imageLoaded, setImageLoaded] = useState(false);
                 </div>
                 <div className="!max-h-full">
                   <Image
-                  fill
-                  loading='eager'
+                    fill
+                    loading="eager"
                     className="sm:pb-0 pb-[200px] m-0 p-0 object-cover object-bottom w-screen h-screen"
                     src="/static/img/IMG_3213-Edited.webp"
                     alt="fgt"
                   />
                 </div>
-                
+
                 <div className="!max-h-full">
                   <Image
                     width={400}
@@ -102,7 +93,6 @@ const [imageLoaded, setImageLoaded] = useState(false);
                     alt="sdfsfd"
                   />
                 </div>
-                
               </Carousel>
               <div className="lg:visible">
                 <InsightRoll insights={insights} />

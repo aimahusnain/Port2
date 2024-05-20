@@ -4,16 +4,13 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/src/components/ui/accordion";
-import Image from "next/image";
 import { useContext } from "react";
-import { AlexioContext } from "../Context";
-import siteMetadata from "../utils/siteMetaData";
-import { Badge } from "./ui/badge";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
-import { LiaFacebookMessenger } from "react-icons/lia";
+import { AlexioContext } from "../Context";
+import siteMetadata from "../utils/siteMetaData";
 import HPC from "./ProfileCards/Husnain Profile Card";
 import TPC from "./ProfileCards/Taha Profile Card";
 

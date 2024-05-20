@@ -27,36 +27,42 @@ const Footer = () => {
         members community to stay up to date with latest news.
       </p>
 
-      <div className="">
+      <div>
         <ContactShort2 />
       </div>
 
-        <ul className="flex h-fit gap-7 mt-8 text-center">
-          <li>
-            <Link href='/' onClick={() => changeNav("home", false)}>Home</Link>
-          </li>
-          <li>
-            <Link href='/' onClick={() => changeNav("about", false)}>About Us</Link>
-          </li>
-          <li>
-            <Link href='/' onClick={() => changeNav("resume", false)}>
-              Our Services
-            </Link>
-          </li>
-          <li>
-            <Link href='/' onClick={() => changeNav("blog", false)}>Blog</Link>
-          </li>
-          <li>
-            <Link href='/' onClick={() => changeNav("portfolio", false)}>
-              Portfolio
-            </Link>
-          </li>
-          <li>
-            <Link href='/' onClick={() => changeNav("Contact", false)}>
-              Contact Us
-            </Link>
-          </li>
-        </ul>
+      <ul className="flex h-fit gap-7 mt-8 text-center">
+        <li>
+          <Link href="/" onClick={() => changeNav("home", false)}>
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link href="/" onClick={() => changeNav("about", false)}>
+            About Us
+          </Link>
+        </li>
+        <li>
+          <Link href="/" onClick={() => changeNav("resume", false)}>
+            Our Services
+          </Link>
+        </li>
+        <li>
+          <Link href="/" onClick={() => changeNav("blog", false)}>
+            Blog
+          </Link>
+        </li>
+        <li>
+          <Link href="/" onClick={() => changeNav("portfolio", false)}>
+            Portfolio
+          </Link>
+        </li>
+        <li>
+          <Link href="/" onClick={() => changeNav("Contact", false)}>
+            Contact Us
+          </Link>
+        </li>
+      </ul>
 
       <div className="w-full mt-3 relative font-medium border-t border-solid border-light py-6 px-8 flex  flex-col md:flex-row items-center justify-between">
         <span className="text-center">

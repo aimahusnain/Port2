@@ -17,8 +17,19 @@ export const PortCat = [
 
 export const PortPosts = [
   {
+    title: "ConnectFlow",
+    description: "Streamline your conferencing experience",
+    images: [
+      "/static/img/Text To Speech/Image1.png",
+      "/static/img/Text To Speech/Image2.png",
+      "/static/img/Text To Speech/Image3.png",
+    ],
+    category: "saas",
+    webURL: "connect-flow.vercel.app",
+  },
+  {
     title: "Alight Motion",
-    description: "This is the Micro Apk website",
+    description: "Alight Motion Website Clone",
     images: [
       "/static/img/Alight Motion/Image1.PNG",
       "/static/img/Alight Motion/Image4.PNG",
@@ -33,7 +44,7 @@ export const PortPosts = [
 
   {
     title: "Vapes Outlet",
-    description: "Shopfiy Store",
+    description: "Discover vaping essentials",
     images: [
       "/static/img/VapesNest/Image 1.PNG",
       "/static/img/VapesNest/Image 2.PNG",
@@ -48,7 +59,7 @@ export const PortPosts = [
 
   {
     title: "Wash Me Car Wash",
-    description: "car wash website",
+    description: "Experience top-notch car wash services",
     images: [
       "/static/img/Wash Me Car Wash/Image 1.PNG",
       "/static/img/Wash Me Car Wash/Image 2.PNG",
@@ -67,7 +78,7 @@ export const PortPosts = [
 
   {
     title: "Taha Render Forum",
-    description: "Inspiring creativity, sharing expertise.",
+    description: "Connect with fellow creatives",
     images: [
       "/static/img/Taha Render Forum/Image1.png",
       "/static/img/Taha Render Forum/Image2.png",
@@ -82,7 +93,7 @@ export const PortPosts = [
 
   {
     title: "Husnain Ecommerce",
-    description: "Buy anything you want from here!",
+    description: "Shop smartly and effortlessly",
     images: [
       "/static/img/Husnain Ecommerce/Image1.png",
       "/static/img/Husnain Ecommerce/Image2.png",
@@ -96,7 +107,7 @@ export const PortPosts = [
 
   {
     title: "Taha Ecommerce",
-    description: "Need to by something?",
+    description: "Online shopping convenience",
     images: [
       "/static/img/Taha Ecommerce/Image1.png",
       "/static/img/Taha Ecommerce/Image2.png",
@@ -110,7 +121,7 @@ export const PortPosts = [
 
   {
     title: "Youtube Video Downloader",
-    description: "Download any video of youtube",
+    description: "Download videos from YouTube.",
     images: [
       "/static/img/Youtube Video Downloader/image1.PNG",
       "/static/img/Youtube Video Downloader/image2.PNG",
@@ -119,18 +130,6 @@ export const PortPosts = [
     ],
     category: "saas",
     webURL: "taha-video-downloader.vercel.app",
-  },
-
-  {
-    title: "LinkVertise Bypass",
-    description: "LinkVertise Bypass",
-    images: [
-      "/static/img/Bypass/image1.PNG",
-      "/static/img/Bypass/image2.PNG",
-      "/static/img/Bypass/image3.PNG",
-    ],
-    category: "saas",
-    webURL: "iftikhar-bypass.vercel.app",
   },
 
   {
@@ -149,7 +148,7 @@ export const PortPosts = [
 
   {
     title: "Text To Speech",
-    description: "This Will Convert Your Text To Speech",
+    description: "Transform text into speech with ease.",
     images: [
       "/static/img/Text To Speech/Image1.png",
       "/static/img/Text To Speech/Image2.png",
@@ -158,4 +157,5 @@ export const PortPosts = [
     category: "saas",
     webURL: "text-to-speech-example.vercel.app",
   },
+  
 ];

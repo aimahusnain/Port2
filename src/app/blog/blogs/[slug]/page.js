@@ -105,19 +105,19 @@ export default function BlogPage({ params }) {
 
             <div className="flex text-white flex-col gap-2 items-center mt-5">
               <div className="flex gap-4">
-                <time className="">
+                <time >
                   {format(parseISO(blog.publishedAt), "LLLL d, yyyy")}
                 </time>
-                <span className="">
+                <span >
                   <ViewCounter slug={params.slug} />
                 </span>
               </div>
               <div className="flex gap-4">
-                <div className="">{blog.readingTime.text}</div>
+                <div >{blog.readingTime.text}</div>
 
                 <Link
                   href={`/blog/categories/${slug(blog.tags[0])}`}
-                  className=""
+                  
                 >
                   #{blog.tags[0]}
                 </Link>
