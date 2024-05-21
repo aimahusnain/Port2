@@ -42,6 +42,7 @@ const PortfolioBox = ({
                 className="object-cover object-center w-full h-full block"
                 src={imageSrcs[0]}
               />
+              {/* <iframe src={`https://${webURL}`} width="100%" height='100%'></iframe> */}
             </DialogTrigger>
             {/* Adjusted size with Tailwind classes */}
             <DialogContent className="my-8 p-4 flex items-center justify-center">
