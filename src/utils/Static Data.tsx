@@ -22,7 +22,7 @@ export const PortPosts = [
     images: [
       "/static/img/ConnectFlow/1.png",
       "/static/img/ConnectFlow/2.png",
-      // "/static/img/ConnectFlow/3.png",
+      "/static/img/ConnectFlow/3.png",
       // "/static/img/ConnectFlow/4.png",
       // "/static/img/ConnectFlow/5.png",
     ],
