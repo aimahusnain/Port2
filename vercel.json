@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "destination": "https://devkins.dev/:path*",
+      "permanent": true
+    }
+  ]
+}
